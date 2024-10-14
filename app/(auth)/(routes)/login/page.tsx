@@ -1,14 +1,21 @@
-import { signIn } from "@/auth"; // Import the signIn function
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { auth } from "@/auth";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import { GithubButton } from "../components/github-button";
+import { ResendButton } from "../components/resend-button";
 
 export const description =
   "A login page with two columns. The first column has the login form with email and password. There's a Forgot your password link and a link to sign up if you do not have an account. The second column has a cover image.";
 
-export default function Login() {
+export default async function Login() {
+  const session = await auth();
+
+  //TODO : decider de la redirection
+  if (session) {
+    redirect("/admin");
+  }
+
   return (
     <div className="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
       <div className="flex items-center justify-center py-12">
@@ -21,31 +28,9 @@ export default function Login() {
           </div>
           <div className="grid gap-4">
             {/* Standard email/password fields (non-functioning here) */}
-            <div className="grid gap-2">
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder="m@example.com"
-                required
-              />
-            </div>
 
-            <Button type="submit" className="w-full">
-              Send me a magic link
-            </Button>
-
-            <form
-              action={async () => {
-                "use server";
-                // TODO : modifier la redirection
-                await signIn("github", { redirectTo: "/admin" });
-              }}
-            >
-              <Button type="submit" className="w-full">
-                Sign in with GitHub
-              </Button>
-            </form>
+            <ResendButton />
+            <GithubButton />
           </div>
 
           <div className="mt-4 text-center text-sm">
