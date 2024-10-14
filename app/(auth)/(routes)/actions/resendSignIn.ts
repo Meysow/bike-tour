@@ -1,12 +1,14 @@
-// app/(auth)/(routes)/actions/resendSignIn.ts
-
-"use server"; // This file is server-side only
+"use server";
 
 import { signIn } from "@/auth";
 
-// Create a server action for the sign-in logic
+/**
+ * Server-side action to handle sign-in logic with Resend.
+ * @param {FormData} formData - The form data containing the email address for sign-in.
+ * @throws Will throw an error if the email is invalid.
+ */
 export async function resendSignIn(formData: FormData) {
-  const email = formData.get("email");
+  const email = formData.get("email") as string | null;
   if (typeof email !== "string" || !email) {
     throw new Error("Invalid email address");
   }

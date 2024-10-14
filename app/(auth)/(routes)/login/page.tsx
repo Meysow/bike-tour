@@ -5,9 +5,14 @@ import { redirect } from "next/navigation";
 import { GithubButton } from "../components/github-button";
 import { ResendButton } from "../components/resend-button";
 
+//TODO: faire le SEO
 export const description =
-  "A login page with two columns. The first column has the login form with email and password. There's a Forgot your password link and a link to sign up if you do not have an account. The second column has a cover image.";
+  "Login page for accessing the admin dashboard and managing your bike tours. Sign in with your email or GitHub account.";
 
+/**
+ * Login page that allows users to sign in with email or GitHub.
+ * Redirects authenticated users to the admin page.
+ */
 export default async function Login() {
   const session = await auth();
 
@@ -27,8 +32,6 @@ export default async function Login() {
             </p>
           </div>
           <div className="grid gap-4">
-            {/* Standard email/password fields (non-functioning here) */}
-
             <ResendButton />
             <GithubButton />
           </div>
