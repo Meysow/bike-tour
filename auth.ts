@@ -12,17 +12,12 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       // Include the user's role in the session object
       if (session.user) {
         session.user.id = user.id;
-        session.user.role = user.role; // Include role from user object
+        session.user.role = user.role;
       }
       return session;
     },
-    async jwt({ token, user }) {
-      // If it's the first time the token is being created (user has logged in)
-      if (user) {
-        token.id = user.id;
-        token.role = user.role; // Add role to the JWT token
-      }
-      return token;
-    },
+  },
+  pages: {
+    signIn: "/login",
   },
 });

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Additional styles */
+@import url("./additional-styles/theme.css");
+@import url("./additional-styles/utility-patterns.css");
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
