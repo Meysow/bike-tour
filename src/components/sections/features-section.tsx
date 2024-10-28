@@ -25,7 +25,7 @@ export function FeaturesSection() {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Discover Our <br />
-              <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text text-transparent">
                 Wholesome Features
               </span>
             </Balancer>
@@ -45,9 +45,9 @@ export function FeaturesSection() {
                 <div
                   key={feature.title}
                   className={cn(
-                    "group relative rounded-2xl text-center md:rounded-l-xl md:rounded-r-none md:p-6 md:text-start md:hover:bg-gradient-to-br md:hover:from-pink-600/20 md:hover:to-purple-400/20",
+                    "group relative rounded-2xl text-center md:rounded-l-xl md:rounded-r-none md:p-6 md:text-start md:hover:bg-gradient-to-br md:hover:from-orange-600/20 md:hover:to-pink-400/20",
                     activeFeature === feature
-                      ? "md:bg-gradient-to-br md:from-pink-600/10 md:to-purple-400/10"
+                      ? "md:bg-gradient-to-br md:from-orange-600/10 md:to-pink-400/10"
                       : "md:cursor-pointer md:bg-background"
                   )}
                   onClick={() => setActiveFeature(feature)}

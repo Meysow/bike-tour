@@ -32,7 +32,7 @@ export function PricingSection(): JSX.Element {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               It&apos;s{" "}
-              <span className="bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text text-transparent">
                 Free Forever!
               </span>
             </Balancer>
@@ -65,10 +65,10 @@ export function PricingSection(): JSX.Element {
               className={cn(
                 "flex flex-col transition-all duration-1000 ease-out hover:opacity-80 md:hover:-translate-y-3",
                 plan.name === "Standard" &&
-                  "border-pink-600/60 bg-gradient-to-r from-pink-600/10 to-purple-400/10"
+                  "border-orange-600/60 bg-gradient-to-r from-orange-600/10 to-pink-400/10"
               )}
             >
-              <CardHeader className="overflow-hidden rounded-t-lg bg-gradient-to-r from-pink-600/10 to-purple-400/10">
+              <CardHeader className="overflow-hidden rounded-t-lg bg-gradient-to-r from-orange-600/10 to-pink-400/10">
                 <CardTitle className="font-urbanist text-2xl tracking-wide">
                   <Balancer>{plan.name}</Balancer>
                 </CardTitle>
@@ -136,7 +136,7 @@ export function PricingSection(): JSX.Element {
                 </div>
                 <Button
                   variant="outline"
-                  className="h-10 w-full border bg-gradient-to-br from-pink-600/20 to-purple-400/20 font-bold tracking-wide"
+                  className="h-10 w-full border bg-gradient-to-br from-orange-600/20 to-pink-400/20 font-bold tracking-wide"
                 >
                   Purchase
                 </Button>

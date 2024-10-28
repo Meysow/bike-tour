@@ -76,7 +76,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
     <html lang="en" className="overflow-x-hidden overflow-y-scroll">
       <body
         className={cn(
-          "w-full bg-background bg-gradient-to-r from-background to-pink-400/10 font-sans antialiased",
+          "w-full bg-background bg-gradient-to-r from-background to-orange-400/10 font-sans antialiased",
           fontInter.variable,
           fontUrbanist.variable,
           fontHeading.variable
@@ -85,7 +85,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
         <SmoothScrollProvider>
           <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >

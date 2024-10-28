@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Balancer from "react-wrap-balancer"
+import Image from "next/image";
+import Balancer from "react-wrap-balancer";
 
-import { siteConfig } from "@/config/site"
+import { siteConfig } from "@/config/site";
 
 import {
   Card,
@@ -9,7 +9,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 export function BenefitsSection(): JSX.Element {
   return (
@@ -19,7 +19,7 @@ export function BenefitsSection(): JSX.Element {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Why{" "}
-              <span className="relative bg-gradient-to-r from-pink-600 to-purple-400 bg-clip-text font-extrabold text-transparent">
+              <span className="relative bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text font-extrabold text-transparent">
                 Should You Care?
               </span>
             </Balancer>
@@ -40,7 +40,7 @@ export function BenefitsSection(): JSX.Element {
           <div className="space-y-4 md:mt-20 md:space-y-6">
             <Card
               id="1"
-              className="h-fit bg-gradient-to-br from-pink-600/10 to-purple-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
@@ -65,10 +65,10 @@ export function BenefitsSection(): JSX.Element {
                 <div>
                   <div className="pr-8">
                     <div className="relative z-10 flex flex-col gap-3 rounded-xl bg-background p-4 text-center shadow-xl">
-                      <p className="text-3xl font-bold text-pink-800 dark:text-pink-600">
+                      <p className="text-3xl font-bold text-orange-800 dark:text-orange-600">
                         162.9k
                       </p>
-                      <p className="text-xs font-bold tracking-wide text-purple-600 dark:text-purple-300">
+                      <p className="text-xs font-bold tracking-wide text-pink-600 dark:text-pink-300">
                         Last 7 Days Website Visits
                       </p>
                       <p className="text-xs text-muted-foreground">
@@ -93,7 +93,7 @@ export function BenefitsSection(): JSX.Element {
 
             <Card
               id="2"
-              className="h-fit bg-gradient-to-br from-pink-600/10 to-purple-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
@@ -126,7 +126,7 @@ export function BenefitsSection(): JSX.Element {
           <div className="space-y-4 md:space-y-6">
             <Card
               id="3"
-              className="h-fit bg-gradient-to-br from-pink-600/10 to-purple-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
@@ -157,7 +157,7 @@ export function BenefitsSection(): JSX.Element {
 
             <Card
               id="4"
-              className="h-fit w-full bg-gradient-to-br from-pink-600/10 to-purple-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit w-full bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
@@ -190,5 +190,5 @@ export function BenefitsSection(): JSX.Element {
         </div>
       </div>
     </section>
-  )
+  );
 }

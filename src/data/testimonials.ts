@@ -41,7 +41,7 @@ export const testimonials: Testimonial[] = [
     title: "Speachless!",
     body: "It's a treasure trove of well-designed, responsive elements that significantly accelerated our development process. This enabled us to create complex features and interactive elements with ease. SaaSy Land not only saves us time but also ensures a consistent and professional look for our project. We couldn't be happier with the results.",
     name: "Kevin Hamilton",
-    role: "Junior Developer at Purple Dash",
+    role: "Junior Developer at pink Dash",
     avatar: "/images/avatars/kevinhamilton.jpeg",
   },
   {
