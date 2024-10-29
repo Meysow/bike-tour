@@ -9,7 +9,7 @@ import { features } from "@/data/features";
 
 import { cn } from "@/lib/utils";
 
-export function FeaturesSection() {
+export function RentSection() {
   const [activeFeature, setActiveFeature] = React.useState<Feature | null>(
     features?.[0] || null
   );

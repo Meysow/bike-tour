@@ -40,8 +40,11 @@ export function ToursSection(): JSX.Element {
           <div className="space-y-4 md:mt-20 md:space-y-6">
             <Card
               id="1"
-              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+                €45
+              </div>
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
                   Full tour
@@ -57,12 +60,12 @@ export function ToursSection(): JSX.Element {
                     most beautiful spots around the city 🚴🏻‍♂️ The tour is a good
                     mix in between our touch, typical Parisian streets, and
                     emblematic monuments of the city.
-                    <br className="hidden md:inline-block" /> - Starting spot:
-                    20 rue Greneta, 75002 Paris
-                    <br className="hidden md:inline-block" /> - 3-hours ride
+                    <br className="hidden md:inline-block" /> 🌍 - Starting
+                    spot: 20 rue Greneta, 75002 Paris
+                    <br className="hidden md:inline-block" /> ⏰ - 3-hours ride
                     around Paris
-                    <br className="hidden md:inline-block" /> - A nice break in
-                    between to get to know each other
+                    <br className="hidden md:inline-block" />
+                    👤 - A nice break in between to get to know each other
                   </Balancer>
                 </p>
 
@@ -73,10 +76,14 @@ export function ToursSection(): JSX.Element {
                 />
               </CardContent>
             </Card>
+
             <Card
               id="2"
-              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+                €45
+              </div>
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
                   Evening Lights Tour
@@ -94,9 +101,9 @@ export function ToursSection(): JSX.Element {
                     Join us for a nighttime adventure as Paris lights up. See
                     the Eiffel Tower, Champs-Elysées, and the Seine in all their
                     illuminated glory.
-                    <br /> - Starting spot: 15 avenue Montaigne, 75008 Paris
-                    <br /> - 2-hour ride through iconic night views
-                    <br /> - A stop for hot drinks and conversation under the
+                    <br /> 🌍 - Starting spot: 15 avenue Montaigne, 75008 Paris
+                    <br /> ⏰ - 2-hour ride through iconic night views
+                    <br /> 👤 - A stop for hot drinks and conversation under the
                     stars
                   </Balancer>
                 </p>
@@ -112,8 +119,11 @@ export function ToursSection(): JSX.Element {
           <div className="space-y-4 md:space-y-6">
             <Card
               id="3"
-              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+                €45
+              </div>
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
                   Hidden Gems of Paris
@@ -130,9 +140,9 @@ export function ToursSection(): JSX.Element {
                     Venture beyond the tourist trails to discover lesser-known
                     Parisian neighborhoods, hidden alleys, and secret courtyards
                     with local charm.
-                    <br /> - Starting spot: 10 rue Oberkampf, 75011 Paris
-                    <br /> - 3.5-hour exploration of Paris&apos;s hidden gems
-                    <br /> - Includes a stop at a local café for refreshments
+                    <br /> 🌍 - Starting spot: 10 rue Oberkampf, 75011 Paris
+                    <br /> ⏰ - 3.5-hour exploration of Paris&apos;s hidden gems
+                    <br /> 👤 - Includes a stop at a local café for refreshments
                   </Balancer>
                 </p>
                 <Image
@@ -145,8 +155,11 @@ export function ToursSection(): JSX.Element {
 
             <Card
               id="4"
-              className="h-fit w-full bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
+              className="h-fit w-full bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+                €45
+              </div>
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
                   Art and Architecture
@@ -161,9 +174,9 @@ export function ToursSection(): JSX.Element {
                     Perfect for art lovers, this tour covers famous art spots,
                     from the Louvre to local galleries, and architectural
                     highlights around Paris.
-                    <br /> - Starting spot: 40 rue de Richelieu, 75001 Paris
-                    <br /> - 4-hour in-depth art and architecture tour
-                    <br /> - Pause at the Jardin des Tuileries for photos and
+                    <br /> 🌍 - Starting spot: 40 rue de Richelieu, 75001 Paris
+                    <br /> ⏰ - 4-hour in-depth art and architecture tour
+                    <br /> 👤 - Pause at the Jardin des Tuileries for photos and
                     relaxation
                   </Balancer>
                 </p>
