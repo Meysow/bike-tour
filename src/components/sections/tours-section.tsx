@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";
-
-import { siteConfig } from "@/config/site";
+import Burren from "../../../public/images/hero/burren.jpg";
+import Leophil from "../../../public/images/hero/leophil.jpg";
+import Louvre from "../../../public/images/hero/louvre.jpg";
+import Palais from "../../../public/images/hero/palais-royal.jpg";
 
 import {
   Card,
@@ -11,27 +13,25 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-export function BenefitsSection(): JSX.Element {
+export function ToursSection(): JSX.Element {
   return (
-    <section id="about-section" aria-label="about section" className="w-full">
+    <section id="tour-section" aria-label="Tour section" className="w-full">
       <div className="container grid max-w-6xl justify-center gap-16">
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              Why{" "}
+              Discover our{" "}
               <span className="relative bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text font-extrabold text-transparent">
-                Should You Care?
+                Tours
               </span>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              Your competitors are already using{" "}
-              <span className="font-semibold text-foreground">
-                {siteConfig.name}
-              </span>{" "}
-              and similar products, gaining time and competitive advantage.
-              Don&apos;t get left behind!
+              Join us on an unforgettable experience exploring{" "}
+              <span className="font-semibold text-foreground">Paris</span> by
+              bike. Discover hidden gems, iconic landmarks, and gain unique
+              perspectives on every tour.
             </Balancer>
           </h3>
         </div>
@@ -44,79 +44,65 @@ export function BenefitsSection(): JSX.Element {
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  Incredible Time Saver
+                  Full tour
                 </CardDescription>
                 <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>
-                    Get a Head Start <br className="hidden md:inline-block" />{" "}
-                    on Your Competitors
-                  </Balancer>
+                  <Balancer>All around Paris by Bike</Balancer>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <p className="text-base leading-8 tracking-wide text-muted-foreground">
+              <CardContent className="space-y-6 p-0">
+                <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
                   <Balancer>
-                    Since everything is professionally configured and up to
-                    standards, you save a tremendous amount of time and effort,
-                    which you can now spend focusing on what really matters -
-                    core functionality, unique to your business.
+                    Starting in the heart of Paris 💫 we will take you to our
+                    most beautiful spots around the city 🚴🏻‍♂️ The tour is a good
+                    mix in between our touch, typical Parisian streets, and
+                    emblematic monuments of the city.
+                    <br className="hidden md:inline-block" /> - Starting spot:
+                    20 rue Greneta, 75002 Paris
+                    <br className="hidden md:inline-block" /> - 3-hours ride
+                    around Paris
+                    <br className="hidden md:inline-block" /> - A nice break in
+                    between to get to know each other
                   </Balancer>
                 </p>
-                <div>
-                  <div className="pr-8">
-                    <div className="relative z-10 flex flex-col gap-3 rounded-xl bg-background p-4 text-center shadow-xl">
-                      <p className="text-3xl font-bold text-orange-800 dark:text-orange-600">
-                        162.9k
-                      </p>
-                      <p className="text-xs font-bold tracking-wide text-pink-600 dark:text-pink-300">
-                        Last 7 Days Website Visits
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        23% Increase from Last Week
-                      </p>
-                    </div>
-                  </div>
-                  <div className="-mt-14 pl-8">
-                    <div className="flex flex-col gap-3 rounded-xl bg-background p-4 text-center opacity-30 shadow-xl">
-                      <p className="text-3xl font-bold">132.7k</p>
-                      <p className="text-xs font-bold tracking-wide">
-                        Last 14 Days Website Visits
-                      </p>
-                      <p className="text-xs text-muted-foreground">
-                        17% Increase from Last Week
-                      </p>
-                    </div>
-                  </div>
-                </div>
+
+                <Image
+                  alt="illustration"
+                  src={Louvre}
+                  className="overflow-hidden rounded-b-xl"
+                />
               </CardContent>
             </Card>
-
             <Card
               id="2"
               className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  Latest and Greatest in Tech
+                  Evening Lights Tour
                 </CardDescription>
                 <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>Take Advantage of Modern Technologies</Balancer>
+                  <Balancer>
+                    Experience the Magic of Paris{" "}
+                    <br className="hidden md:inline-block" /> Under the Lights
+                  </Balancer>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 p-0">
                 <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
                   <Balancer>
-                    We are constantly updating our templates to take advantage
-                    of the latest and greatest technologies, so you can be sure
-                    that your website is always up to date and as fast as
-                    possible.
+                    Join us for a nighttime adventure as Paris lights up. See
+                    the Eiffel Tower, Champs-Elysées, and the Seine in all their
+                    illuminated glory.
+                    <br /> - Starting spot: 15 avenue Montaigne, 75008 Paris
+                    <br /> - 2-hour ride through iconic night views
+                    <br /> - A stop for hot drinks and conversation under the
+                    stars
                   </Balancer>
                 </p>
                 <Image
-                  width={600}
-                  height={400}
-                  alt="illustration"
-                  src="/images/benefits/3.jpeg"
+                  alt="Paris Evening Lights"
+                  src={Palais}
                   className="overflow-hidden rounded-b-xl"
                 />
               </CardContent>
@@ -130,26 +116,28 @@ export function BenefitsSection(): JSX.Element {
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  High Quality Implementation
+                  Hidden Gems of Paris
                 </CardDescription>
                 <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>Know Everything Works As Expected</Balancer>
+                  <Balancer>
+                    Discover Parisian Secrets Off the Beaten Path
+                  </Balancer>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 p-0">
                 <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
                   <Balancer>
-                    We spent countless hours researching, exploring docs and
-                    testing the best way to implement the most important
-                    features. We have done the hard work so you don&apos;t have
-                    to.
+                    Venture beyond the tourist trails to discover lesser-known
+                    Parisian neighborhoods, hidden alleys, and secret courtyards
+                    with local charm.
+                    <br /> - Starting spot: 10 rue Oberkampf, 75011 Paris
+                    <br /> - 3.5-hour exploration of Paris&apos;s hidden gems
+                    <br /> - Includes a stop at a local café for refreshments
                   </Balancer>
                 </p>
                 <Image
-                  width={600}
-                  height={400}
-                  alt="illustration"
-                  src="/images/benefits/2.jpeg"
+                  alt="Paris Hidden Gems"
+                  src={Burren}
                   className="overflow-hidden rounded-b-xl"
                 />
               </CardContent>
@@ -161,27 +149,27 @@ export function BenefitsSection(): JSX.Element {
             >
               <CardHeader>
                 <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  Flexibility and Support
+                  Art and Architecture
                 </CardDescription>
                 <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>
-                    Easily Customize <br /> Every Single Detail
-                  </Balancer>
+                  <Balancer>Explore the Artistic Soul of Paris</Balancer>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6 p-0">
                 <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
                   <Balancer>
-                    With the help of our detailed documentation, you can now
-                    easily customize every single detail of the template. Should
-                    you need any help, we are a message away.
+                    Perfect for art lovers, this tour covers famous art spots,
+                    from the Louvre to local galleries, and architectural
+                    highlights around Paris.
+                    <br /> - Starting spot: 40 rue de Richelieu, 75001 Paris
+                    <br /> - 4-hour in-depth art and architecture tour
+                    <br /> - Pause at the Jardin des Tuileries for photos and
+                    relaxation
                   </Balancer>
                 </p>
                 <Image
-                  width={600}
-                  height={400}
-                  alt="illustration"
-                  src="/images/benefits/1.jpeg"
+                  alt="Art and Architecture Tour"
+                  src={Leophil}
                   className="overflow-hidden rounded-b-xl"
                 />
               </CardContent>

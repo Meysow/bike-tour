@@ -13,8 +13,12 @@ export async function HeroSection() {
       aria-label="hero section"
       className="mt-8 w-full md:mt-12"
     >
+      <div className="absolute inset-0 z-[-1] bg-gradient-to-t from-primary/25 to-transparent opacity-30 rounded-full blur-lg h-[85%] w-[75%] mx-auto" />
       <div className="container flex flex-col items-center gap-6 text-center ">
-        <h1 className="animate-fade-up font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1
+          className="animate-fade-up font-urbanist text-4xl font-extrabold tracking-tight leading-tight sm:text-5xl md:text-6xl lg:text-7xl"
+          aria-label="Explore Paris like never before with our guided bike tours"
+        >
           <Balancer>
             Explore{" "}
             <span className="bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text text-transparent font-extrabold  ">
@@ -24,7 +28,7 @@ export async function HeroSection() {
           </Balancer>
         </h1>
 
-        <p className="col-start-1 row-start-3 max-w-xl text-muted-foreground md:mt-2 md:text-lg">
+        <p className="col-start-1 row-start-3 max-w-xl text-muted-foreground md:mt-2 md:text-lg leading-relaxed">
           Discover the beauty and history of Paris on our guided bike tours.{" "}
           {/* <span className="bg-gradient-to-r from-orange-600 to-red-400 bg-clip-text text-transparent font-bold"> */}
           Experience {/* </span>{" "} */}
@@ -38,30 +42,34 @@ export async function HeroSection() {
           <Link
             href="/signup"
             className={cn(
-              buttonVariants({ size: "lg" }),
-              "transition-all duration-1000 ease-out md:hover:-translate-y-2"
+              buttonVariants(),
+              "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
             )}
+            aria-label="Explore our tours"
           >
             Explore Tours
           </Link>
           <Link
             href="/tours"
             className={cn(
-              buttonVariants({ variant: "outline", size: "lg" }),
-              "transition-all duration-1000 ease-out md:hover:-translate-y-2"
+              buttonVariants({ variant: "outline" }),
+              "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
             )}
+            aria-label="Rent our Bikes"
           >
             Bike Rental
           </Link>
         </div>
+
         {/* <div className="w-full overflow-hidden flex justify-center -mt-10 -mb-16 sm:-mb-24"> pour la tour effeil */}
-        <div className="w-full overflow-hidden flex justify-center mt-4 -mb-16 sm:-mb-24">
+        <div className="w-full overflow-hidden flex justify-center mt-4 -mb-12 md:-mb-16">
           <Image
             width={1080}
             height={720}
-            alt="illustration"
+            alt="Paris landmark"
             src="/images/hero/palais-royal(1).jpg"
             className="overflow-hidden rounded-3xl"
+            priority={true}
           />
         </div>
       </div>
