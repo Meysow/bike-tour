@@ -1,71 +1,65 @@
 import { type PricingPlan } from "@/types";
+import deluxe7Image from "../../public/images/bikes/deluxe7.webp";
+import childrenBikeImage from "../../public/images/bikes/ebike.webp";
+import ebikeImage from "../../public/images/bikes/ebike2.webp";
 
 // TODO : refaire ce comp
 export const pricingPlans: PricingPlan[] = [
   {
-    id: "basic",
-    name: "Basic",
-    description: "Perfect for when you are just getting started",
-    features: ["Up to 5 projects", "Basic analytics and reporting"],
-    limitations: [
-      "No custom branding",
-      "No commercial license",
-      "Limited customer support",
-      "No access to new features",
+    id: "deluxe7",
+    name: "Deluxe 7 - Normal Bike",
+    description:
+      "A comfortable and reliable city bike, ideal for exploring Paris at your own pace with seven smooth gears.",
+    dailyRate: 15,
+    features: [
+      "7-speed gear system",
+      "Comfortable saddle for long rides",
+      "Robust city-friendly design",
     ],
+    limitations: ["No electric assistance", "Not suitable for off-road"],
     stripePriceId: "",
-    prices: {
-      monthly: 9,
-      yearly: 84,
-    },
     stripeIds: {
       monthly: undefined,
       yearly: undefined,
     },
+    image: deluxe7Image,
   },
   {
-    id: "standard",
-    name: "Standard",
-    description: "Perfect for when you are starting to grow",
+    id: "ebike",
+    name: "Electric Bike - Power 1",
+    description:
+      "Discover Paris effortlessly with pedal-assist technology. Perfect for longer distances and hilly routes.",
+    dailyRate: 25,
     features: [
-      "Up to 10 projects",
-      "Commercial license",
-      "Advanced analytics and reporting",
-      "Priority customer support",
-      "Exclusive training materials",
+      "Electric pedal-assist",
+      "Battery range of up to 50 miles",
+      "Easy-to-use throttle control",
     ],
-    limitations: ["No custom branding", "Limited customer support"],
+    limitations: ["Higher weight due to battery", "Limited battery duration"],
     stripePriceId: "",
-    prices: {
-      monthly: 19,
-      yearly: 180,
-    },
     stripeIds: {
       monthly: undefined,
       yearly: undefined,
     },
+    image: ebikeImage,
   },
   {
-    id: "premium",
-    name: "Premium",
-    description: "Perfect for seriously scaling your business",
+    id: "children",
+    name: 'Children\'s Bike 20" or 24"',
+    description:
+      'Safe and sturdy, ideal for young riders aged 6-9. Perfect for family outings and city park rides. Size 20" or 24"',
+    dailyRate: 13,
     features: [
-      "Unlimited projects",
-      "Commercial licence",
-      "Real-time analytics and reporting",
-      "Exclusive training materials",
-      "24/7 custommer support",
-      "Personal branding",
+      "20-inch wheels for stable riding",
+      "Easy-grip handlebars",
+      "Lightweight frame",
     ],
-    limitations: [],
+    limitations: ["Not suitable for children under 6", "Single-speed gear"],
     stripePriceId: "",
-    prices: {
-      monthly: 29,
-      yearly: 240,
-    },
     stripeIds: {
       monthly: undefined,
       yearly: undefined,
     },
+    image: childrenBikeImage,
   },
 ];

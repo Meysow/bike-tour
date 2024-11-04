@@ -21,7 +21,7 @@ export async function HeroSection() {
         >
           <Balancer>
             Explore{" "}
-            <span className="bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text text-transparent font-extrabold  ">
+            <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent font-extrabold  ">
               Paris{" "}
             </span>
             like never before
@@ -30,10 +30,10 @@ export async function HeroSection() {
 
         <p className="col-start-1 row-start-3 max-w-xl text-muted-foreground md:mt-2 md:text-lg leading-relaxed">
           Discover the beauty and history of Paris on our guided bike tours.{" "}
-          {/* <span className="bg-gradient-to-r from-orange-600 to-red-400 bg-clip-text text-transparent font-bold"> */}
+          {/* <span className="bg-gradient-to-r from-primary to-red-400 bg-clip-text text-transparent font-bold"> */}
           Experience {/* </span>{" "} */}
           the city, pedal through iconic landmarks, and{" "}
-          {/* <span className="bg-gradient-to-r from-orange-600 to-red-400 bg-clip-text text-transparent font-bold"> */}
+          {/* <span className="bg-gradient-to-r from-primary to-red-400 bg-clip-text text-transparent font-bold"> */}
           enjoy {/* </span>{" "} */}
           unique perspectives on every ride.
         </p>

@@ -1,5 +1,6 @@
 "use client";
 
+// TODO: modifier ca :
 import { submitContactForm } from "@/actions/email";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as React from "react";
@@ -125,7 +126,7 @@ export function ContactForm(): JSX.Element {
 
         <Button
           variant="outline"
-          className="h-14 border bg-gradient-to-br from-orange-600/70 to-pink-400/70 text-lg font-bold tracking-wide hover:opacity-70"
+          className="h-14 border bg-gradient-to-br from-primary/70 to-fuchsia-400/70 text-lg font-bold tracking-wide hover:opacity-70"
         >
           {isPending && (
             <Icons.spinner

@@ -23,7 +23,7 @@ export function TestimonialsSection(): JSX.Element {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Join a Growing <br /> Team of{" "}
-              <span className="bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
                 Happy Users
               </span>
             </Balancer>
@@ -45,7 +45,7 @@ export function TestimonialsSection(): JSX.Element {
                 .map((testimonial) => (
                   <Card
                     key={testimonial.title}
-                    className="h-fit bg-gradient-to-r from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out hover:opacity-70 md:hover:-translate-y-2"
+                    className="h-fit bg-gradient-to-r from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out hover:opacity-70 md:hover:-translate-y-2"
                   >
                     <CardHeader>
                       <CardTitle className="font-urbanist text-lg font-semibold tracking-wider">

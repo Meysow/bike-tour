@@ -12,7 +12,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "../ui/button";
 
+// TODO: faire en sorte que les tours viennent de la base de données et puisse etre ajouté, modifié et supprimés depuis le panel admin
 export function ToursSection(): JSX.Element {
   return (
     <section id="tour-section" aria-label="Tour section" className="w-full">
@@ -21,8 +23,8 @@ export function ToursSection(): JSX.Element {
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
               Discover our{" "}
-              <span className="relative bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text font-extrabold text-transparent">
-                Tours
+              <span className="relative bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text font-extrabold text-transparent">
+                Wholesome Tours
               </span>
             </Balancer>
           </h2>
@@ -40,9 +42,9 @@ export function ToursSection(): JSX.Element {
           <div className="space-y-4 md:mt-20 md:space-y-6">
             <Card
               id="1"
-              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
+              className="h-fit bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
                 €45
               </div>
               <CardHeader>
@@ -69,6 +71,12 @@ export function ToursSection(): JSX.Element {
                   </Balancer>
                 </p>
 
+                <div className="flex justify-center px-4">
+                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
+                    Book Now
+                  </Button>
+                </div>
+
                 <Image
                   alt="illustration"
                   src={Louvre}
@@ -79,9 +87,9 @@ export function ToursSection(): JSX.Element {
 
             <Card
               id="2"
-              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
+              className="h-fit bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
                 €45
               </div>
               <CardHeader>
@@ -107,6 +115,13 @@ export function ToursSection(): JSX.Element {
                     stars
                   </Balancer>
                 </p>
+
+                <div className="flex justify-center px-4">
+                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
+                    Book Now
+                  </Button>
+                </div>
+
                 <Image
                   alt="Paris Evening Lights"
                   src={Palais}
@@ -119,9 +134,9 @@ export function ToursSection(): JSX.Element {
           <div className="space-y-4 md:space-y-6">
             <Card
               id="3"
-              className="h-fit bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
+              className="h-fit bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
                 €45
               </div>
               <CardHeader>
@@ -145,6 +160,13 @@ export function ToursSection(): JSX.Element {
                     <br /> 👤 - Includes a stop at a local café for refreshments
                   </Balancer>
                 </p>
+
+                <div className="flex justify-center px-4">
+                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
+                    Book Now
+                  </Button>
+                </div>
+
                 <Image
                   alt="Paris Hidden Gems"
                   src={Burren}
@@ -155,9 +177,9 @@ export function ToursSection(): JSX.Element {
 
             <Card
               id="4"
-              className="h-fit w-full bg-gradient-to-br from-orange-600/10 to-pink-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
+              className="h-fit w-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
             >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-orange-600/95 to-pink-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
                 €45
               </div>
               <CardHeader>
@@ -180,6 +202,13 @@ export function ToursSection(): JSX.Element {
                     relaxation
                   </Balancer>
                 </p>
+
+                <div className="flex justify-center px-4">
+                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
+                    Book Now
+                  </Button>
+                </div>
+
                 <Image
                   alt="Art and Architecture Tour"
                   src={Leophil}

@@ -1,12 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import * as React from "react";
 import Balancer from "react-wrap-balancer";
-
-import { siteConfig } from "@/config/site";
-import { pricingPlans } from "@/data/pricing-plans";
-
-import { cn } from "@/lib/utils";
 
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
@@ -18,9 +14,16 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
+import { pricingPlans } from "@/data/pricing-plans";
+import { cn } from "@/lib/utils";
 
-export function PricingSection(): JSX.Element {
-  const [yearlyBilling, setYearlyBilling] = React.useState<boolean>(false);
+export function RentPricingSection(): JSX.Element {
+  const [isMultiDay, setIsMultiDay] = React.useState(false); // toggle for single or multi-day view
+
+  const calculatePrice = (dailyRate: number, isFourDaysOrMore: boolean) => {
+    return isFourDaysOrMore ? dailyRate * 0.9 : dailyRate; // Apply a 10% discount for 4-day rentals
+  };
+
   return (
     <section
       id="pricing-section"
@@ -31,31 +34,28 @@ export function PricingSection(): JSX.Element {
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              It&apos;s{" "}
-              <span className="bg-gradient-to-r from-orange-600 to-pink-400 bg-clip-text text-transparent">
-                Free Forever!
+              Rent our{" "}
+              <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
+                Awesome Bikes
               </span>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
-            <Balancer>
-              {siteConfig.name} is completely free and open source. The pricing
-              section is there to serve as an example of how you could set it up
-              for your own SaaS product. We have no plans and no intentions to
-              make this a paid product.
-            </Balancer>
+            Choose from our wide range of bikes, perfect for exploring Paris at
+            your own pace. Select the bike that suits your style and hit the
+            road with comfort and ease.
           </h3>
         </div>
 
         <div className="my-4 flex items-center justify-center gap-4 text-lg">
-          <span>Monthly</span>
+          <span>1 to 3 Days Rental</span>
           <Switch
-            checked={yearlyBilling}
-            onCheckedChange={() => setYearlyBilling((prev) => !prev)}
+            checked={isMultiDay}
+            onCheckedChange={() => setIsMultiDay((prev) => !prev)}
             role="switch"
-            aria-label="switch-year"
+            aria-label="switch-to-multi-day"
           />
-          <span>Annual</span>
+          <span>4 Days and more (save 10%)</span>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3 lg:gap-6">
@@ -64,12 +64,17 @@ export function PricingSection(): JSX.Element {
               key={plan.name}
               className={cn(
                 "flex flex-col transition-all duration-1000 ease-out hover:opacity-80 md:hover:-translate-y-3",
-                plan.name === "Standard" &&
-                  "border-orange-600/60 bg-gradient-to-r from-orange-600/10 to-pink-400/10"
+                plan.name === "Electric Bike - Power 1" &&
+                  "border-primary/40 bg-gradient-to-r from-primary/10 to-fuchsia-400/10"
               )}
             >
-              <CardHeader className="overflow-hidden rounded-t-lg bg-gradient-to-r from-orange-600/10 to-pink-400/10">
-                <CardTitle className="font-urbanist text-2xl tracking-wide">
+              <Image
+                src={plan.image}
+                alt={`${plan.name} image`}
+                className="w-full h-48 object-cover rounded-t-lg"
+              />
+              <CardHeader className="overflow-hidden rounded-t-lg bg-gradient-to-r from-primary/10 to-fuchsia-400/10">
+                <CardTitle className="font-urbanist text-2xl tracking-wide mt-4">
                   <Balancer>{plan.name}</Balancer>
                 </CardTitle>
 
@@ -78,33 +83,19 @@ export function PricingSection(): JSX.Element {
                 </CardDescription>
 
                 <div className="flex flex-col gap-4 py-2">
-                  <div className="flex gap-2 text-4xl font-semibold md:gap-1 md:text-2xl lg:gap-2 lg:text-4xl">
-                    <span className="flex items-center justify-center text-3xl font-normal md:text-2xl lg:text-3xl">
-                      $
+                  <div className="flex gap-2 text-3xl font-semibold md:gap-1 md:text-2xl lg:gap-2 lg:text-3xl">
+                    <span className="text-primary">
+                      €{calculatePrice(plan.dailyRate, isMultiDay).toFixed(2)}
                     </span>
-                    <span
-                      className={cn(
-                        yearlyBilling && "text-muted-foreground/60 line-through"
-                      )}
-                    >
-                      {plan.prices.monthly}
-                    </span>
-
-                    {yearlyBilling && <span>{plan.prices.yearly / 12}</span>}
-
-                    <span className="flex items-end text-lg font-semibold md:items-center md:text-base lg:items-end lg:text-lg">
-                      / month
+                    <span className="flex items-center text-base font-normal text-muted-foreground">
+                      / day
                     </span>
                   </div>
 
-                  {yearlyBilling && plan.prices.monthly > 0 && (
+                  {isMultiDay && (
                     <p className="text-xs font-bold text-muted-foreground">
                       <Balancer>
-                        You will be charged{" "}
-                        <span className="text-foreground">
-                          ${plan.prices.yearly}
-                        </span>{" "}
-                        once a year, starting today
+                        10% discount applied for rentals of 4 or more days!
                       </Balancer>
                     </p>
                   )}
@@ -136,9 +127,9 @@ export function PricingSection(): JSX.Element {
                 </div>
                 <Button
                   variant="outline"
-                  className="h-10 w-full border bg-gradient-to-br from-orange-600/20 to-pink-400/20 font-bold tracking-wide"
+                  className="h-10 w-full border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide"
                 >
-                  Purchase
+                  Rent Now
                 </Button>
               </CardContent>
             </Card>

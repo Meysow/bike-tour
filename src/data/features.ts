@@ -1,35 +1,29 @@
 import { type Feature } from "@/types";
 
 // TODO: refaire ce comp
-export const features: Feature[] = [
+export const bikesFeatures: Feature[] = [
   {
-    title: "Advanced authentication",
+    title: "Deluxe 7 - Normal Bike",
     description:
-      "Secure user access with robust authentication features for your application, such as email verification, password reset, magic links and OAuth providers. Powered by Next-Auth.",
-    image: "/images/features/authentication.png",
+      "Perfect for leisurely rides, the Deluxe 7 bike offers comfort and reliability. Equipped with seven gears, it’s ideal for city exploration and provides a smooth riding experience across various terrains.",
+    image: "/images/bikes/deluxe7.webp",
   },
   {
-    title: "Powerful database connection",
+    title: "Electric Bike - Power 1",
     description:
-      "Leverage the strength of a serverless database for efficient data management and lightning-fast content delivery.",
-    image: "/images/features/database.png",
+      "Experience an effortless ride with the Power 1 electric bike. With powerful pedal-assist technology, this e-bike is perfect for longer distances, allowing you to explore more with less effort.",
+    image: "/images/bikes/couple-riding.webp",
   },
   {
-    title: "Markdown and MDX-powered blog",
+    title: "Children's Bike 20\"",
     description:
-      "Modern, lightweight, convenient, and SEO-friendly blogging support. Powered by Contentlayer.",
-    image: "/images/features/blogging.png",
+      "A safe and sturdy bike designed for children around 6-9 years old. The 20-inch children’s bike provides an easy-to-use, enjoyable riding experience for young cyclists.",
+    image: "/images/bikes/riding.webp",
   },
   {
-    title: "Stripe payments integration",
+    title: "Children's Bike 24\"",
     description:
-      "Simply add your products or services, define prices, and start selling online with this fully functional implementation.",
-    image: "/images/features/payments.png",
-  },
-  {
-    title: "Transactional email support",
-    description:
-      "Ensure relaibel email communication for essential updates and notifications. Powered by Resend and React Email.",
-    image: "/images/features/emails.png",
+      "Ideal for kids aged 9-12, the 24-inch bike offers additional stability and control. Designed to support growing children, it’s perfect for family outings and city adventures.",
+    image: "/images/bikes/couple-riding.webp",
   },
 ];

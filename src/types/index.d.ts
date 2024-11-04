@@ -38,20 +38,18 @@ export interface BlogPostParamsProps {
 }
 
 export interface PricingPlan {
-  id: "basic" | "standard" | "premium";
+  id: "deluxe7" | "ebike" | "children";
   name: string;
   description: string;
   features: string[];
   limitations: string[];
   stripePriceId: string;
-  prices: {
-    monthly: number;
-    yearly: number;
-  };
+  dailyRate: number;
   stripeIds: {
     monthly?: string;
     yearly?: string;
   };
+  image: StaticImageData;
 }
 
 export interface UserSubscriptionPlan extends SubscriptionPlan {
@@ -80,4 +78,16 @@ export interface Testimonial {
   name: string;
   role: string;
   avatar: string;
+}
+
+export interface Tour {
+  id: string;
+  title: string;
+  description: string;
+  details: string;
+  startingSpot: string;
+  duration: string;
+  break: string;
+  price: string;
+  image: StaticImageData;
 }
