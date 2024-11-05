@@ -24,7 +24,7 @@ export function TestimonialsSection(): JSX.Element {
             <Balancer>
               Join a Growing <br /> Team of{" "}
               <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
-                Happy Users
+                Happy Customer
               </span>
             </Balancer>
           </h2>
