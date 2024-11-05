@@ -1,29 +1,39 @@
-import { type Feature } from "@/types";
+import { type Accessories } from "@/types";
+import basket from "../../public/images/accessories/basket.jpg";
+import childSeat from "../../public/images/accessories/child-seat.png";
+import helmet from "../../public/images/accessories/helmet.png";
+import lock from "../../public/images/accessories/lock.png";
+import phoneMount from "../../public/images/accessories/phone-mount.png";
 
-// TODO: refaire ce comp
-export const bikesFeatures: Feature[] = [
+export const accessoriesFeatures: Accessories[] = [
   {
-    title: "Deluxe 7 - Normal Bike",
+    title: "Helmet",
     description:
-      "Perfect for leisurely rides, the Deluxe 7 bike offers comfort and reliability. Equipped with seven gears, it’s ideal for city exploration and provides a smooth riding experience across various terrains.",
-    image: "/images/bikes/deluxe7.webp",
+      "Safety first! Our comfortable and durable helmets come in various sizes and designs to ensure a snug fit and optimal protection during your ride.",
+    image: helmet,
   },
   {
-    title: "Electric Bike - Power 1",
+    title: "Basket",
     description:
-      "Experience an effortless ride with the Power 1 electric bike. With powerful pedal-assist technology, this e-bike is perfect for longer distances, allowing you to explore more with less effort.",
-    image: "/images/bikes/couple-riding.webp",
+      "Perfect for carrying small items or a picnic on the go, our sturdy baskets attach securely to the front of your bike, keeping your essentials within reach.",
+    image: basket,
   },
   {
-    title: "Children's Bike 20\"",
+    title: "Phone Mount",
     description:
-      "A safe and sturdy bike designed for children around 6-9 years old. The 20-inch children’s bike provides an easy-to-use, enjoyable riding experience for young cyclists.",
-    image: "/images/bikes/riding.webp",
+      "Stay on track and easily follow your navigation with a secure phone mount. Perfect for exploring new routes while keeping your hands free and safe.",
+    image: phoneMount,
   },
   {
-    title: "Children's Bike 24\"",
+    title: "Child Seat",
     description:
-      "Ideal for kids aged 9-12, the 24-inch bike offers additional stability and control. Designed to support growing children, it’s perfect for family outings and city adventures.",
-    image: "/images/bikes/couple-riding.webp",
+      "Bring the little ones along with our comfortable and safe child seats, designed for secure mounting on the back of your bike.",
+    image: childSeat,
+  },
+  {
+    title: "Bike Lock",
+    description:
+      "Keep your bike secure with a heavy-duty bike lock. Essential for safe stops during your city exploration or while enjoying a coffee break.",
+    image: lock,
   },
 ];

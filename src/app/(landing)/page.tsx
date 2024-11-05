@@ -1,8 +1,8 @@
+import { AccessoriesSection } from "@/components/sections/accessories-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { RentPricingSection } from "@/components/sections/rent-pricing-section";
-import { RentSection } from "@/components/sections/rent-section";
 import { TechSection } from "@/components/sections/tech-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { ToursSection } from "@/components/sections/tours-section";
@@ -13,7 +13,7 @@ export default function LandingPage(): JSX.Element {
       <HeroSection />
       <ToursSection />
       <RentPricingSection />
-      <RentSection />
+      <AccessoriesSection />
       <TestimonialsSection />
       <FAQSection />
       <TechSection />

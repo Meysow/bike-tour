@@ -68,7 +68,7 @@ export function NavigationMobile({ navItems }: NavigationMobileProps) {
             className="flex items-center gap-2"
             onClick={() => setIsOpen(false)}
           >
-            <Icons.rocket className="mr-2 size-8" aria-hidden="true" />
+            <Icons.bike className="mr-2 size-12" aria-hidden="true" />
             <span className="text-2xl font-bold leading-none tracking-wide">
               {siteConfig.name}
             </span>

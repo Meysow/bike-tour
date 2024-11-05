@@ -66,10 +66,10 @@ export interface FrequentlyAskedQuestion {
   answer: string;
 }
 
-export interface Feature {
+export interface Accessories {
   title: string;
   description: string;
-  image: string;
+  image: StaticImageData;
 }
 
 export interface Testimonial {

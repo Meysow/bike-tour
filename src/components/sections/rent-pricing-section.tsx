@@ -65,7 +65,7 @@ export function RentPricingSection(): JSX.Element {
               className={cn(
                 "flex flex-col transition-all duration-1000 ease-out hover:opacity-80 md:hover:-translate-y-3",
                 plan.name === "Electric Bike - Power 1" &&
-                  "border-primary/40 bg-gradient-to-r from-primary/10 to-fuchsia-400/10"
+                  "border-fuchsia-300/30 bg-gradient-to-r from-primary/10 to-fuchsia-400/10"
               )}
             >
               <Image
