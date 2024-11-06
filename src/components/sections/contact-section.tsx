@@ -21,10 +21,9 @@ export function ContactSection(): JSX.Element {
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              Feel free to email us with any questions you might have. While we
-              are always happy to help, please keep in mind that this is a free
-              product and we cannot guarantee any response times. We would also
-              love to know your feedback!
+              Got questions about our tours or rentals? We&apos;re here to help!
+              Whether you&apos;re ready to book, need more information, or just
+              want to share your thoughts, we&apos;d love to hear from you.
             </Balancer>
           </h3>
         </div>

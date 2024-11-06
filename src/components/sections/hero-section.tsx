@@ -6,6 +6,8 @@ import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";
 
+import PalaisRoyal from "../../../public/images/hero/palais-royal(1).jpg";
+
 export async function HeroSection() {
   return (
     <section
@@ -62,12 +64,10 @@ export async function HeroSection() {
         </div>
 
         {/* <div className="w-full overflow-hidden flex justify-center -mt-10 -mb-16 sm:-mb-24"> pour la tour effeil */}
-        <div className="w-full overflow-hidden flex justify-center mt-4 -mb-12 md:-mb-16">
+        <div className="max-w-5xl overflow-hidden flex justify-center mt-4 md:-mb-12">
           <Image
-            width={1080}
-            height={720}
             alt="Paris landmark"
-            src="/images/hero/palais-royal(1).jpg"
+            src={PalaisRoyal}
             className="overflow-hidden rounded-3xl"
             priority={true}
           />

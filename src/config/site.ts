@@ -8,21 +8,32 @@ const links = {
   twitter: "https://twitter.com/pjborowiecki",
   linkedin: "https://www.linkedin.com/in/pjborowiecki",
   discord: "",
-  authorsWebsite: "https://pjborowiecki.com",
-  authorsGitHub: "https://github.com/pjborowiecki",
+  authorsWebsite: "https://tdportfolio-self.vercel.app/",
+  authorsGitHub: "https://github.com/meysow",
   openGraphImage: "https://saasyland.com/images/opengraph-image.png",
 };
 
 export const siteConfig = {
   name: "RentaTour",
   description:
-    "An open-source starter for Next.js 14 full-stack projects with advanced authentication and several database configurations. The aim of this project is to provide a solid foundation for faster building and launching SaaS products, marketing sites, blogs, and more.",
+    "Experience Paris like never before with our tailored bike tours and rental services. We provide everything you need for a memorable ride through the city’s iconic landmarks and hidden gems, ensuring a smooth, hassle-free adventure. Whether you’re planning a leisurely tour or just need a bike for the day, we’ve got you covered.",
   links,
   url: "https://saasyland.com",
   ogImage: links.openGraphImage,
   author: "Meyso",
   hostingRegion: "fra1",
-  keywords: ["SaaS", "Next.js", "Template"],
+  keywords: [
+    "Bike Tours",
+    "Bike Rentals",
+    "Paris Tours",
+    "City Biking",
+    "Adventure Tours",
+    "Bike Hire",
+    "Explore Paris",
+    "Cycling Experiences",
+    "Sightseeing by Bike",
+    "Paris Bike Routes",
+  ],
   navItems: [
     {
       title: "About",
@@ -39,14 +50,6 @@ export const siteConfig = {
     {
       title: "FAQ",
       href: "/faq",
-    },
-    {
-      title: "Docs",
-      href: "/docs",
-    },
-    {
-      title: "Blog",
-      href: "/blog",
     },
   ] satisfies NavItem[],
   navItemsMobile: [],
@@ -69,29 +72,14 @@ export const siteConfig = {
           href: "/tos",
           external: false,
         },
-        {
-          title: "Careers",
-          href: "/careers",
-          external: false,
-        },
       ],
     },
     {
       title: "Support",
       items: [
         {
-          title: "Docs",
-          href: "/docs",
-          external: false,
-        },
-        {
           title: "FAQ",
           href: "/faq",
-          external: false,
-        },
-        {
-          title: "Blog",
-          href: "/blog",
           external: false,
         },
         {
@@ -112,16 +100,6 @@ export const siteConfig = {
         {
           title: "Taxonomy",
           href: "https://tx.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "Skateshop",
-          href: "https://skateshop.sadmn.com/",
-          external: true,
-        },
-        {
-          title: "Acme Corp",
-          href: "https://acme-corp.jumr.dev/",
           external: true,
         },
       ],

@@ -1,6 +1,6 @@
 // TODO : refaire ce comp
 
-export const techStack = [
+export const PartnersStack = [
   {
     title: "Next",
     href: "https://nextjs.org/",
