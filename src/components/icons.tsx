@@ -1,5 +1,6 @@
 type IconProps = React.HTMLAttributes<SVGElement>;
 
+//TODO : faire un tri la dedans, plus ajouter les icones manquantes
 export const Icons = {
   arrowLeft: (props: IconProps) => (
     <svg

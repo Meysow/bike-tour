@@ -1,13 +1,14 @@
 import { Icons } from "../icons";
 
+//TODO mettre les réseaux sociaux, si il y en a
 export function Footer(): JSX.Element {
   return (
-    <footer className="bg-accent rounded-2xl mx-6 mb-6">
-      <div className="max-w-screen-xl px-4 pt-12 pb-6 mx-auto sm:px-6 lg:px-8 lg:pt-24">
+    <footer className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 rounded-2xl mx-6 mb-6 shadow">
+      <div className="max-w-screen-xl px-6 pt-12 pb-6 mx-auto sm:px-8 lg:px-12 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="hidden sm:flex items-center lg:flex-col lg:items-start lg:gap-4">
             <Icons.bike className="size-28 md:size-36 lg:size-48 flex-shrink-0 -mt-3" />
-            <p className="max-w-md mx-auto  sm:text-left">
+            <p className="max-w-md mx-auto  sm:text-left text-muted-foreground">
               Discover Paris on two wheels! Our bike rental and guided tours
               offer an unforgettable way to see the city, tailored to all
               experience levels.
@@ -16,21 +17,23 @@ export function Footer(): JSX.Element {
 
           <div className="flex flex-wrap justify-evenly gap-8 sm:grid sm:grid-cols-2 lg:col-span-2 md:grid-cols-3">
             <div className="text-left">
-              <p className="text-lg font-medium ">Usefull links</p>
+              <p className="text-lg font-medium border-l-4 border-primary pl-4">
+                Usefull links
+              </p>
               <nav className="mt-8">
-                <ul className="space-y-4 text-sm">
+                <ul className="space-y-4 text-sm text-muted-foreground pl-4">
                   <li>
-                    <a href="/about" className=" hover:text-fuchsia-400">
+                    <a href="/about" className=" hover:text-primary">
                       Our Story
                     </a>
                   </li>
                   <li>
-                    <a href="/team" className=" hover:text-fuchsia-400">
+                    <a href="/team" className=" hover:text-primary">
                       Meet the Team
                     </a>
                   </li>
                   <li>
-                    <a href="/careers" className=" hover:text-fuchsia-400">
+                    <a href="/careers" className=" hover:text-primary">
                       Careers
                     </a>
                   </li>
@@ -39,22 +42,24 @@ export function Footer(): JSX.Element {
             </div>
 
             <div>
-              <p className="text-lg font-medium ">Our Services</p>
+              <p className="text-lg font-medium border-l-4 border-primary pl-4">
+                Our Services
+              </p>
               <nav className="mt-8">
-                <ul className="space-y-4 text-sm">
+                <ul className="space-y-4 text-sm text-muted-foreground pl-4">
                   <li>
-                    <a href="/rentals" className=" hover:text-fuchsia-400">
+                    <a href="/rentals" className=" hover:text-primary ">
                       Bike Rentals
                     </a>
                   </li>
                   <li>
-                    <a href="/tours" className=" hover:text-fuchsia-400">
+                    <a href="/tours" className=" hover:text-primary ">
                       Guided Tours
                     </a>
                   </li>
 
                   <li>
-                    <a href="/gear" className=" hover:text-fuchsia-400">
+                    <a href="/gear" className=" hover:text-primary ">
                       Cycling Gear
                     </a>
                   </li>
@@ -63,8 +68,10 @@ export function Footer(): JSX.Element {
             </div>
 
             <div>
-              <p className="text-lg font-medium">Contact Us</p>
-              <ul className="mt-8 space-y-4 text-sm">
+              <p className="text-lg font-medium border-l-4 border-primary pl-4">
+                Contact Us
+              </p>
+              <ul className="mt-8 space-y-4 text-sm text-muted-foreground ">
                 <li className="flex gap-2">
                   <Icons.email className="size-5" />
                   <span>contact@biketours.com</span>
@@ -88,14 +95,14 @@ export function Footer(): JSX.Element {
               <span>All rights reserved. </span>
               <a
                 href="/terms"
-                className="text-accent-foreground hover:text-fuchsia-400"
+                className="text-accent-foreground hover:text-primary"
               >
                 Terms & Conditions{" "}
               </a>
               &middot;
               <a
                 href="/privacy"
-                className="text-accent-foreground hover:text-fuchsia-400"
+                className="text-accent-foreground hover:text-primary"
               >
                 Privacy Policy
               </a>
