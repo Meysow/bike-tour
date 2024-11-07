@@ -31,12 +31,9 @@ export async function HeroSection() {
         </h1>
 
         <p className="col-start-1 row-start-3 max-w-xl text-muted-foreground md:mt-2 md:text-lg leading-relaxed">
-          Discover the beauty and history of Paris on our guided bike tours.{" "}
-          {/* <span className="bg-gradient-to-r from-primary to-red-400 bg-clip-text text-transparent font-bold"> */}
-          Experience {/* </span>{" "} */}
-          the city, pedal through iconic landmarks, and{" "}
-          {/* <span className="bg-gradient-to-r from-primary to-red-400 bg-clip-text text-transparent font-bold"> */}
-          enjoy {/* </span>{" "} */}
+          Discover the beauty and history of Paris on our{" "}
+          <span className="font-semibold text-foreground">guided</span> bike
+          tours. Experience the city, pedal through iconic landmarks, and enjoy
           unique perspectives on every ride.
         </p>
 

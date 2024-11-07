@@ -41,8 +41,11 @@ export function RentPricingSection(): JSX.Element {
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
-            Choose from our wide range of bikes, perfect for exploring Paris at
-            your own pace. Select the bike that suits your style and hit the
+            Choose from our wide range of bikes, perfect for{" "}
+            <span className="font-semibold text-foreground">
+              exploring Paris
+            </span>{" "}
+            at your own pace. Select the bike that suits your style and hit the
             road with comfort and ease.
           </h3>
         </div>

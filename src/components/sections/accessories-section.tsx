@@ -22,7 +22,7 @@ export function AccessoriesSection() {
         <div className="flex flex-col items-center gap-4 mb-8">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              Enhance Your Ride with{" "}
+              Enhance your ride with{" "}
               <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
                 Accessories
               </span>
@@ -30,9 +30,11 @@ export function AccessoriesSection() {
           </h2>
           <h3 className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             Discover our selection of accessories designed to make your journey
-            more comfortable, safe, and enjoyable. Whether you need helmets,
-            baskets, child seats, or phone mounts, we have the extras you need
-            to complete your perfect ride through Paris.
+            more comfortable,{" "}
+            <span className="font-semibold text-foreground">safe</span> and
+            enjoyable. Whether you need helmets, baskets, child seats, or phone
+            mounts, we have the extras you need to complete your perfect ride
+            through Paris.
           </h3>
         </div>
 
