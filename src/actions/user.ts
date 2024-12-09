@@ -10,40 +10,53 @@ import {
   type GetUserByIdInput,
 } from "@/validations/user";
 
-export async function getUserById(
-  rawInput: GetUserByIdInput
-): Promise<User | null> {
-  try {
-    const validatedInput = getUserByIdSchema.safeParse(rawInput);
-    if (!validatedInput.success) return null;
+/**
+ * Get a user by their ID.
+ *
+ * @param id - The ID of the user to fetch.
+ * @returns The user if found, otherwise null.
+ */
+export async function getUserById({
+  id,
+}: GetUserByIdInput): Promise<User | null> {
+  const { data, error } = await getUserByIdSchema.safeParseAsync({ id });
 
-    return await prisma.user.findUnique({
-      where: {
-        id: validatedInput.data.id,
-      },
-    });
-  } catch (error) {
-    console.error(error);
-    throw new Error("Error getting user by Id");
+  if (error) {
+    // If the input is invalid, we don't have a user ID to search for, so return null.
+    return null;
   }
+
+  // Search for the user in the database.
+  return await prisma.user.findUnique({
+    where: { id: data.id },
+  });
 }
 
-export async function getUserByEmail(
-  rawInput: GetUserByEmailInput
-): Promise<User | null> {
-  try {
-    const validatedInput = getUserByEmailSchema.safeParse(rawInput);
-    if (!validatedInput.success) return null;
+/**
+ * Get a user by their email.
+ *
+ * @param {GetUserByEmailInput} getUserByEmailInput - The input containing the email
+ * of the user to fetch.
+ * @returns {Promise<User | null>} The user if found, otherwise null.
+ */
+export async function getUserByEmail({
+  email,
+}: GetUserByEmailInput): Promise<User | null> {
+  /**
+   * Validate the input
+   */
+  const validatedInput = getUserByEmailSchema.safeParse({ email });
 
-    return await prisma.user.findUnique({
-      where: {
-        email: validatedInput.data.email,
-      },
-    });
-  } catch (error) {
-    console.error(error);
-    throw new Error("Error getting user by email");
+  if (!validatedInput.success) {
+    return null;
   }
+
+  /**
+   * Search for the user in the database
+   */
+  return prisma.user.findUnique({
+    where: { email: validatedInput.data.email },
+  });
 }
 
 // TODO check si on garde ou non :

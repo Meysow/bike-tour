@@ -61,13 +61,8 @@ export async function HeroSection() {
         </div>
 
         {/* <div className="w-full overflow-hidden flex justify-center -mt-10 -mb-16 sm:-mb-24"> pour la tour effeil */}
-        <div className="max-w-5xl overflow-hidden flex justify-center mt-4 md:-mb-12">
-          <Image
-            alt="Paris landmark"
-            src={PalaisRoyal}
-            className="overflow-hidden rounded-3xl"
-            priority={true}
-          />
+        <div className="max-w-5xl overflow-hidden flex justify-center mt-4 md:-mb-12 rounded-2xl shadow-lg shadow-muted-foreground">
+          <Image alt="Paris landmark" src={PalaisRoyal} priority={true} />
         </div>
       </div>
     </section>
