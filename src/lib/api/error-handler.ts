@@ -1,20 +1,21 @@
 export class ApiError extends Error {
-  constructor(public statusCode: number, message: string) {
+  public statusCode: number;
+
+  constructor(statusCode: number, message: string) {
     super(message);
     this.name = "ApiError";
+    this.statusCode = statusCode;
   }
 }
 
-export const handleApiError = (error: unknown) => {
-  console.error("API Error:", error);
+
+export const handleApiError = (error: unknown): Response => {
+  const response = { error: "Internal server error" };
 
   if (error instanceof ApiError) {
-    return new Response(JSON.stringify({ error: error.message }), {
-      status: error.statusCode,
-    });
+    response.error = error.message;
+    return new Response(JSON.stringify(response), { status: error.statusCode });
   }
 
-  return new Response(JSON.stringify({ error: "Internal server error" }), {
-    status: 500,
-  });
+  return new Response(JSON.stringify(response), { status: 500 });
 };

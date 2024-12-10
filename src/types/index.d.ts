@@ -80,14 +80,94 @@ export interface Testimonial {
   avatar: string;
 }
 
+export interface Bike {
+  id: string;
+  name: string;
+  type: BikeType;
+  size: BikeSize;
+  price: number;
+  quantity: number;
+  description: string;
+  imageUrl: string;
+}
+
+export interface Accessory {
+  id: string;
+  name: string;
+  type: AccessoryType;
+  price: number;
+  quantity: number;
+  description: string;
+  imageUrl: string;
+}
+
+//TODO prendre en considération les changements pour modifier la landing page
+// export interface Tour {
+//   id: string;
+//   title: string;
+//   description: string;
+//   details: string;
+//   startingSpot: string;
+//   duration: string;
+//   break: string;
+//   price: string;
+//   image: StaticImageData;
+// }
 export interface Tour {
   id: string;
-  title: string;
+  name: string;
   description: string;
-  details: string;
-  startingSpot: string;
-  duration: string;
-  break: string;
-  price: string;
-  image: StaticImageData;
+  duration: number;
+  distance: number;
+  difficulty: Difficulty;
+  price: number;
+  imageUrl: string;
+  maxPeople: number;
+}
+
+export interface Booking {
+  id: string;
+  userId: string;
+  bikeId?: string;
+  tourId?: string;
+  startDate: Date;
+  endDate: Date;
+  totalPrice: number;
+  status: BookingStatus;
+  accessories: Accessory[];
+}
+
+export enum BikeType {
+  KIDS_20 = "KIDS_20",
+  KIDS_24 = "KIDS_24",
+  DELUXE_7 = "DELUXE_7",
+  ELECTRIC_POWER_1 = "ELECTRIC_POWER_1",
+}
+
+export enum BikeSize {
+  SMALL = "SMALL",
+  MEDIUM = "MEDIUM",
+  LARGE = "LARGE",
+}
+
+export enum AccessoryType {
+  HELMET = "HELMET",
+  BASKET = "BASKET",
+  PHONE_HOLDER = "PHONE_HOLDER",
+  BABY_SEAT = "BABY_SEAT",
+  CHILD_SEAT = "CHILD_SEAT",
+  PANNIER = "PANNIER",
+}
+
+export enum Difficulty {
+  EASY = "EASY",
+  MODERATE = "MODERATE",
+  DIFFICULT = "DIFFICULT",
+}
+
+export enum BookingStatus {
+  PENDING = "PENDING",
+  CONFIRMED = "CONFIRMED",
+  CANCELLED = "CANCELLED",
+  COMPLETED = "COMPLETED",
 }
