@@ -2,6 +2,7 @@ import * as z from "zod";
 
 import { emailSchema } from "@/validations/email";
 
+//TODO: faire le tri dans ce qu'on utilise pas
 export const userIdSchema = z
   .string({
     required_error: "User Id is required",

@@ -4,6 +4,8 @@ import Leophil from "../../public/images/hero/leophil.jpg";
 import Louvre from "../../public/images/hero/louvre.jpg";
 import Palais from "../../public/images/hero/palais-royal.jpg";
 
+//TODO Next: modifier ce fichier pour matcher le typing
+//TODO: Voir si on conserve ce fichier, et si oui, faire le lien avec la section tours-section de la landing page
 export const tours: Tour[] = [
   {
     id: "1",
