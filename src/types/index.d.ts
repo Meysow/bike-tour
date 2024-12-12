@@ -100,19 +100,6 @@ export interface Accessory {
   description: string;
   imageUrl: string;
 }
-
-//TODO prendre en considération les changements pour modifier la landing page
-// export interface Tour {
-//   id: string;
-//   title: string;
-//   description: string;
-//   details: string;
-//   startingSpot: string;
-//   duration: string;
-//   break: string;
-//   price: string;
-//   image: StaticImageData;
-// }
 export interface Tour {
   id: string;
   name: string;

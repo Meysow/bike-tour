@@ -1,12 +1,23 @@
-import { Tour } from "@/types";
+import { StaticImageData } from "next/image";
 import Burren from "../../public/images/hero/burren.jpg";
 import Leophil from "../../public/images/hero/leophil.jpg";
 import Louvre from "../../public/images/hero/louvre.jpg";
 import Palais from "../../public/images/hero/palais-royal.jpg";
 
-//TODO Next: modifier ce fichier pour matcher le typing
+export interface TourData {
+  id: string;
+  title: string;
+  description: string;
+  details: string;
+  startingSpot: string;
+  duration: string;
+  break: string;
+  price: string;
+  image: StaticImageData;
+}
+//TODO Next: modifier ce fichier pour matcher le typing de types/index
 //TODO: Voir si on conserve ce fichier, et si oui, faire le lien avec la section tours-section de la landing page
-export const tours: Tour[] = [
+export const tours: TourData[] = [
   {
     id: "1",
     title: "All around Paris by Bike",
