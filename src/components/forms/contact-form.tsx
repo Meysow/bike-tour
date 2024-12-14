@@ -10,7 +10,7 @@ import { contactFormSchema, type ContactFormInput } from "@/validations/email";
 
 import { useToast } from "@/hooks/use-toast";
 
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import {
   Form,

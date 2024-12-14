@@ -59,6 +59,9 @@ dependencies:
   '@studio-freight/react-lenis':
     specifier: ^0.0.47
     version: 0.0.47(react-dom@18.3.1)(react@18.3.1)
+  '@supabase/ssr':
+    specifier: ^0.5.2
+    version: 0.5.2(@supabase/supabase-js@2.47.3)
   '@supabase/supabase-js':
     specifier: ^2.47.3
     version: 2.47.3
@@ -1728,6 +1731,16 @@ packages:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    dev: false
+
+  /@supabase/ssr@0.5.2(@supabase/supabase-js@2.47.3):
+    resolution: {integrity: sha512-n3plRhr2Bs8Xun1o4S3k1CDv17iH5QY9YcoEvXX3bxV1/5XSasA0mNXYycFmADIdtdE6BG9MRjP5CGIs8qxC8A==}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.43.4
+    dependencies:
+      '@supabase/supabase-js': 2.47.3
+      '@types/cookie': 0.6.0
+      cookie: 0.7.1
     dev: false
 
   /@supabase/storage-js@2.7.1:

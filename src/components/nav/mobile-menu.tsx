@@ -1,6 +1,6 @@
 "use client";
 
-import { MainNav } from "@/components/main-nav";
+import { MainNav } from "@/components/nav/main-nav";
 import { Transition } from "@headlessui/react";
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";

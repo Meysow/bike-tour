@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import { SmoothScrollProvider } from "@/providers/smooth-scroll-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
 
-import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { TailwindIndicator } from "@/components/shared/tailwind-indicator";
 import { Toaster } from "@/components/ui/toaster";
 
 export const viewport: Viewport = {

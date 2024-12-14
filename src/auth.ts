@@ -4,6 +4,7 @@ import NextAuth from "next-auth";
 import GitHub from "next-auth/providers/github";
 import Resend from "next-auth/providers/resend";
 
+//TODO: Supprimer ce module et setup l'auth avec supabase
 export const { handlers, auth, signIn, signOut } = NextAuth({
   // @ts-expect-error: https://github.com/nextauthjs/next-auth/issues/9493
   adapter: PrismaAdapter(prisma),

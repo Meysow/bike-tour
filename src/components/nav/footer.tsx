@@ -1,4 +1,4 @@
-import { Icons } from "../icons";
+import { Icons } from "../shared/icons";
 
 //TODO mettre les réseaux sociaux, si il y en a
 export function Footer(): JSX.Element {

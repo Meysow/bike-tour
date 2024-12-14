@@ -6,10 +6,10 @@ import auth from "@/lib/auth";
 import { cn } from "@/lib/utils";
 
 import { SignOutButton } from "@/components/auth/signout-button";
-import { Icons } from "@/components/icons";
 import { Navigation } from "@/components/nav/navigation";
 import { NavigationMobile } from "@/components/nav/navigation-mobile";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { Icons } from "@/components/shared/icons";
+import { ThemeToggle } from "@/components/shared/theme-toggle";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { buttonVariants } from "@/components/ui/button";
 import {

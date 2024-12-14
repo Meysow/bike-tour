@@ -6,7 +6,7 @@ import { DEFAULT_SIGNIN_REDIRECT } from "@/config/defaults";
 
 import { useToast } from "@/hooks/use-toast";
 
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 
 export function OAuthButtons(): JSX.Element {

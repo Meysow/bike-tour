@@ -1,14 +1,11 @@
-import auth from "@/lib/auth";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { redirect } from "next/navigation";
 
-import { DEFAULT_SIGNIN_REDIRECT } from "@/config/defaults";
 import { env } from "@/env.mjs";
 
 import { OAuthButtons } from "@/components/auth/oauth-buttons";
 import { SignInWithEmailForm } from "@/components/forms/signin-with-email-form";
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/shared/icons";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -27,8 +24,7 @@ export const metadata: Metadata = {
 };
 
 export default async function SignInPage(): Promise<JSX.Element> {
-  const session = await auth();
-  if (session) redirect(DEFAULT_SIGNIN_REDIRECT);
+  //TODO: mettre un check si l'utilisateur est déjà connecté, et rediriger vers la page home
 
   return (
     <div className="flex h-auto min-h-screen w-full items-center justify-center">

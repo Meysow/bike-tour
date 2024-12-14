@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { PartnersStack } from "@/data/partners-stack";
 
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/shared/icons";
 import Balancer from "react-wrap-balancer";
 
 export function PartnersSection(): JSX.Element {

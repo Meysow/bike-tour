@@ -4,7 +4,7 @@ import Image from "next/image";
 import * as React from "react";
 import Balancer from "react-wrap-balancer";
 
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import {
   Card,

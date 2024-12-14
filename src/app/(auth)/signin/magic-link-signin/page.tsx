@@ -32,7 +32,7 @@ export default function MagicLinkSignInPage(): JSX.Element {
           <Link
             aria-label="Back to the sign in page"
             href="/signin"
-            className={buttonVariants()}
+            className={buttonVariants({ variant: "ghost" })}
           >
             Go to Sign In page
           </Link>
@@ -41,3 +41,4 @@ export default function MagicLinkSignInPage(): JSX.Element {
     </div>
   );
 }
+
