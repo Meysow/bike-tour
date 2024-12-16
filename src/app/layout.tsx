@@ -9,11 +9,10 @@ import { siteConfig } from "@/config/site";
 import { env } from "@/env.mjs";
 
 import { cn } from "@/lib/utils";
-import { SmoothScrollProvider } from "@/providers/smooth-scroll-provider";
-import { ThemeProvider } from "@/providers/theme-provider";
 
 import { TailwindIndicator } from "@/components/shared/tailwind-indicator";
 import { Toaster } from "@/components/ui/toaster";
+import { Providers } from "@/providers/providers";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -86,19 +85,10 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
           fontHeading.variable
         )}
       >
-        <SmoothScrollProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {children}
-            <Toaster />
-            <Analytics />
-            <TailwindIndicator />
-          </ThemeProvider>
-        </SmoothScrollProvider>
+        <Providers>{children}</Providers>
+        <Toaster />
+        <Analytics />
+        <TailwindIndicator />
       </body>
     </html>
   );
