@@ -15,7 +15,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { DEFAULT_SIGNIN_REDIRECT } from "@/config/defaults";
+import auth from "@/lib/auth";
 import { cn } from "@/lib/utils";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_APP_URL),
@@ -24,7 +27,10 @@ export const metadata: Metadata = {
 };
 
 export default async function SignUpPage(): Promise<JSX.Element> {
-  //TODO: mettre un check si l'utilisateur est déjà connecté, et rediriger vers la page home
+  const session = await auth();
+  if (session) {
+    redirect(DEFAULT_SIGNIN_REDIRECT);
+  }
 
   return (
     <div className="flex h-auto min-h-screen w-full items-center justify-center md:flex">

@@ -1,3 +1,4 @@
+import { DEFAULT_UNAUTHENTICATED_REDIRECT } from "@/config/defaults";
 import auth from "@/lib/auth";
 import { redirect } from "next/navigation";
 
@@ -6,7 +7,7 @@ export default async function AccountPage() {
 
   // If the user is not authenticated, redirect to login
   if (!session) {
-    redirect("/signin");
+    redirect(DEFAULT_UNAUTHENTICATED_REDIRECT);
   }
 
   // If authenticated, render the account page content

@@ -10,8 +10,6 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
-    NEXT_PUBLIC_SUPABASE_URL: z.string(),
-    NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string(),
     DATABASE_URL: z.string(),
     AUTH_SECRET: z.string(),
     // GOOGLE_ID: z.string(),
@@ -34,6 +32,8 @@ export const env = createEnv({
    */
   client: {
     NEXT_PUBLIC_APP_URL: z.string().url(),
+    NEXT_PUBLIC_SUPABASE_URL: z.string(),
+    NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string(),
   },
 
   /**
