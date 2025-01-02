@@ -1,7 +1,13 @@
-import { AccessoryType, BikeSize, BikeType, Difficulty } from "@prisma/client";
-import { z } from "zod";
+import {
+  AccessoryType,
+  BikeSize,
+  BikeType,
+  Difficulty,
+  BookingStatus,
+  Accessory,
+} from '@prisma/client';
+import { z } from 'zod';
 
-//TODO: resoudre cette erreur.
 export const bikeSchema = z.object({
   name: z.string().min(1),
   type: z.nativeEnum(BikeType),
@@ -30,4 +36,16 @@ export const tourSchema = z.object({
   price: z.number().positive(),
   imageUrl: z.string().url(),
   maxPeople: z.number().int().positive(),
+});
+
+//TODO: revérifier cette définition, notamment pour accesories ? et bookingStatus
+export const bookingSchema = z.object({
+  userId: z.string().min(1),
+  bikeId: z.string().optional(),
+  tourId: z.string().optional(),
+  startDate: z.date(),
+  endDate: z.date(),
+  totalPrice: z.number().positive(),
+  status: z.nativeEnum(BookingStatus),
+  accessories: z.array(z.custom<Accessory>()),
 });
