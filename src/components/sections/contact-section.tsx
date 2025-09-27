@@ -1,6 +1,6 @@
 import Balancer from "react-wrap-balancer";
 
-import { ContactForm } from "@/components/forms/contact-form";
+import { ContactForm } from "@/components/sections/contact-form";
 
 export function ContactSection(): JSX.Element {
   return (

@@ -11,7 +11,6 @@ import { env } from "@/env.mjs";
 import { cn } from "@/lib/utils";
 
 import { TailwindIndicator } from "@/components/shared/tailwind-indicator";
-import { Toaster } from "@/components/ui/toaster";
 import { Providers } from "@/providers/providers";
 
 export const viewport: Viewport = {
@@ -86,7 +85,6 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
         )}
       >
         <Providers>{children}</Providers>
-        <Toaster />
         <Analytics />
         <TailwindIndicator />
       </body>

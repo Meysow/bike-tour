@@ -36,20 +36,16 @@ export const siteConfig = {
   ],
   navItems: [
     {
+      title: "Tours",
+      href: "/tours",
+    },
+    {
+      title: "Rent",
+      href: "/rent",
+    },
+    {
       title: "About",
       href: "/about",
-    },
-    {
-      title: "Features",
-      href: "/features",
-    },
-    {
-      title: "Pricing",
-      href: "/pricing",
-    },
-    {
-      title: "FAQ",
-      href: "/faq",
     },
   ] satisfies NavItem[],
   navItemsMobile: [],

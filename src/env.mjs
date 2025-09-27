@@ -1,8 +1,6 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
-// TODO : reprendre ce fichier entierement
-
 export const env = createEnv({
   /**
    * Specify your server-side environment variables schema here. This way you can ensure the app
@@ -10,19 +8,6 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
-    DATABASE_URL: z.string(),
-    AUTH_SECRET: z.string(),
-    // GOOGLE_ID: z.string(),
-    // GOOGLE_SECRET: z.string(),
-    AUTH_GITHUB_ID: z.string(),
-    AUTH_GITHUB_SECRET: z.string(),
-    AUTH_RESEND_KEY: z.string(),
-    // RESEND_API_KEY: z.string(),
-    // RESEND_EMAIL_FROM: z.string().email(),
-    // RESEND_EMAIL_TO: z.string().email(),
-    // RESEND_HOST: z.string(),
-    // RESEND_USERNAME: z.string(),
-    // RESEND_PORT: z.string(),
   },
 
   /**
@@ -32,8 +17,6 @@ export const env = createEnv({
    */
   client: {
     NEXT_PUBLIC_APP_URL: z.string().url(),
-    NEXT_PUBLIC_SUPABASE_URL: z.string(),
-    NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string(),
   },
 
   /**
@@ -42,20 +25,7 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
-    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
-    NEXT_PUBLIC_SUPABASE_ANON_KEY: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     NODE_ENV: process.env.NODE_ENV,
-    DATABASE_URL: process.env.DATABASE_URL,
-    AUTH_SECRET: process.env.AUTH_SECRET,
-    // GOOGLE_ID: process.env.GOOGLE_ID,
-    // GOOGLE_SECRET: process.env.GOOGLE_SECRET,
-    AUTH_GITHUB_ID: process.env.AUTH_GITHUB_ID,
-    AUTH_GITHUB_SECRET: process.env.AUTH_GITHUB_SECRET,
-    AUTH_RESEND_KEY: process.env.AUTH_RESEND_KEY,
-    // RESEND_EMAIL_FROM: process.env.RESEND_EMAIL_FROM,
-    // RESEND_EMAIL_TO: process.env.RESEND_EMAIL_TO,
-    // RESEND_HOST: process.env.RESEND_HOST,
-    // RESEND_USERNAME: process.env.RESEND_USERNAME,
-    // RESEND_PORT: process.env.RESEND_PORT,
   },
 });
+
