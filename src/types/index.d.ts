@@ -1,6 +1,3 @@
-import type { Account, Profile, Session, User } from "next-auth";
-import type { JWT } from "next-auth/jwt";
-
 //TODO : faire le tri de ceux qu'on utilise pas.
 export interface NavItem {
   title: string;
@@ -15,20 +12,6 @@ export interface NavItemFooter {
     href: string;
     external?: boolean;
   }[];
-}
-
-export interface SessionCallbackParams {
-  session: Session;
-  token: JWT;
-  user: User;
-}
-
-export interface JWTCallbackParams {
-  token: JWT;
-  user?: User | undefined;
-  account?: Account | null | undefined;
-  profile?: Profile | undefined;
-  isNewUser?: boolean | undefined;
 }
 
 export interface BlogPostParamsProps {
@@ -112,18 +95,6 @@ export interface Tour {
   maxPeople: number;
 }
 
-export interface Booking {
-  id: string;
-  userId: string;
-  bikeId?: string;
-  tourId?: string;
-  startDate: Date;
-  endDate: Date;
-  totalPrice: number;
-  status: BookingStatus;
-  accessories: Accessory[];
-}
-
 export enum BikeType {
   KIDS_20 = "KIDS_20",
   KIDS_24 = "KIDS_24",
@@ -150,11 +121,4 @@ export enum Difficulty {
   EASY = "EASY",
   MODERATE = "MODERATE",
   DIFFICULT = "DIFFICULT",
-}
-
-export enum BookingStatus {
-  PENDING = "PENDING",
-  CONFIRMED = "CONFIRMED",
-  CANCELLED = "CANCELLED",
-  COMPLETED = "COMPLETED",
 }
