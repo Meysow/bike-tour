@@ -41,16 +41,26 @@ export function AccessoriesSection() {
         {/* Swiper Carousel */}
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={25}
+          spaceBetween={30}
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
           breakpoints={{
-            640: { slidesPerView: 1 },
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 25,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
           }}
           style={{ "--swiper-theme-color": "#e2651d" } as React.CSSProperties}
+          className="w-full"
         >
           {accessoriesFeatures.map((feature) => (
             <SwiperSlide key={feature.title} className="py-8 rounded-xl">
@@ -58,7 +68,9 @@ export function AccessoriesSection() {
                 <Image
                   src={feature.image}
                   alt={feature.title}
-                  className="w-full object-cover "
+                  width={400}
+                  height={250}
+                  className="w-full h-48 object-cover"
                 />
                 <CardHeader>
                   <CardTitle className="font-urbanist text-lg font-semibold tracking-wider">

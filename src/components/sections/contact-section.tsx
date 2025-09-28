@@ -28,7 +28,9 @@ export function ContactSection(): JSX.Element {
           </h3>
         </div>
 
-        <ContactForm />
+        <div className="flex justify-center">
+          <ContactForm />
+        </div>
       </div>
     </section>
   );
