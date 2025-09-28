@@ -18,23 +18,23 @@ export function Footer(): JSX.Element {
           <div className="flex flex-wrap justify-evenly gap-8 sm:grid sm:grid-cols-2 lg:col-span-2 md:grid-cols-3">
             <div className="text-left">
               <p className="text-lg font-medium border-l-4 border-primary pl-4">
-                Usefull links
+                Useful Links
               </p>
               <nav className="mt-8">
                 <ul className="space-y-4 text-sm text-muted-foreground pl-4">
                   <li>
                     <a href="/about" className=" hover:text-primary">
-                      Our Story
+                      About Us
                     </a>
                   </li>
                   <li>
-                    <a href="/team" className=" hover:text-primary">
-                      Meet the Team
+                    <a href="/tours" className=" hover:text-primary">
+                      Guided Tours
                     </a>
                   </li>
                   <li>
-                    <a href="/careers" className=" hover:text-primary">
-                      Careers
+                    <a href="/rent" className=" hover:text-primary">
+                      Bike Rentals
                     </a>
                   </li>
                 </ul>
@@ -48,7 +48,7 @@ export function Footer(): JSX.Element {
               <nav className="mt-8">
                 <ul className="space-y-4 text-sm text-muted-foreground pl-4">
                   <li>
-                    <a href="/rentals" className=" hover:text-primary ">
+                    <a href="/rent" className=" hover:text-primary ">
                       Bike Rentals
                     </a>
                   </li>
@@ -57,10 +57,9 @@ export function Footer(): JSX.Element {
                       Guided Tours
                     </a>
                   </li>
-
                   <li>
-                    <a href="/gear" className=" hover:text-primary ">
-                      Cycling Gear
+                    <a href="/about" className=" hover:text-primary ">
+                      About Us
                     </a>
                   </li>
                 </ul>

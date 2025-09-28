@@ -9,8 +9,8 @@ import { ThemeToggle } from "@/components/shared/theme-toggle";
 
 export function Header(): JSX.Element {
   return (
-    <header className="sticky top-0 z-40 flex h-20 w-full bg-transparent">
-      <div className="container flex items-center justify-between p-4">
+    <header className="fixed top-0 left-0 right-0 z-50 flex h-16 w-full bg-background/80 backdrop-blur-lg border-b border-border/40 shadow-sm">
+      <div className="container flex items-center justify-between py-2 px-4">
         {/* Logo - Prend une largeur fixe pour équilibrer */}
         <div className="flex w-1/3 justify-start">
           <Link

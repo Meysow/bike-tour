@@ -12,11 +12,11 @@ export default function LandingPageLayout({
   children,
 }: LandingLayoutProps): JSX.Element {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <>
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="min-h-screen pt-16">{children}</main>
       <Footer />
       <WhatsAppFloatButton />
-    </div>
+    </>
   );
 }

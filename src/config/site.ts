@@ -36,15 +36,15 @@ export const siteConfig = {
   ],
   navItems: [
     {
-      title: "Tours",
+      title: "Guided Tours",
       href: "/tours",
     },
     {
-      title: "Rent",
+      title: "Bike Rentals",
       href: "/rent",
     },
     {
-      title: "About",
+      title: "About Us",
       href: "/about",
     },
   ] satisfies NavItem[],
