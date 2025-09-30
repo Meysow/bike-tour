@@ -44,6 +44,10 @@ export const siteConfig = {
       href: "/rent",
     },
     {
+      title: "Blog",
+      href: "/blog",
+    },
+    {
       title: "About Us",
       href: "/about",
     },

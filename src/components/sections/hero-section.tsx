@@ -39,7 +39,7 @@ export async function HeroSection() {
 
         <div className="z-10 flex animate-fade-up justify-center gap-4 flex-wrap md:mt-2">
           <Link
-            href="/signup"
+            href="/tours"
             className={cn(
               buttonVariants(),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
@@ -49,7 +49,7 @@ export async function HeroSection() {
             Explore Tours
           </Link>
           <Link
-            href="/tours"
+            href="/rent"
             className={cn(
               buttonVariants({ variant: "outline" }),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
