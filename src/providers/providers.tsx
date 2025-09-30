@@ -1,13 +1,9 @@
 "use client";
 
-import { QueryClientProvider } from "@tanstack/react-query";
 import React from "react";
 import { ThemeProvider } from "./theme-provider";
 
-import { QueryClient } from "@tanstack/react-query";
 import { SmoothScrollProvider } from "./smooth-scroll-provider";
-
-const queryClient = new QueryClient();
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -18,9 +14,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         enableSystem
         disableTransitionOnChange
       >
-        <QueryClientProvider client={queryClient}>
-          {children}
-        </QueryClientProvider>
+        {children}
       </ThemeProvider>
     </SmoothScrollProvider>
   );
