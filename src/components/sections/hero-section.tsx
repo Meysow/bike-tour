@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
@@ -8,7 +11,9 @@ import Balancer from "react-wrap-balancer";
 
 import PalaisRoyal from "../../../public/images/hero/palais-royal(1).jpg";
 
-export async function HeroSection() {
+export function HeroSection() {
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1] || "en";
   return (
     <section
       id="hero-section"
@@ -39,7 +44,7 @@ export async function HeroSection() {
 
         <div className="z-10 flex animate-fade-up justify-center gap-4 flex-wrap md:mt-2">
           <Link
-            href="/tours"
+            href={`/${locale}/tours`}
             className={cn(
               buttonVariants(),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
@@ -49,7 +54,7 @@ export async function HeroSection() {
             Explore Tours
           </Link>
           <Link
-            href="/rent"
+            href={`/${locale}/rent`}
             className={cn(
               buttonVariants({ variant: "outline" }),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"

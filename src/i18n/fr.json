@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "tours": "Visites Guidées",
+    "rent": "Location de Vélos",
+    "blog": "Blog",
+    "about": "À Propos"
+  },
+  "hero": {
+    "title": "Découvrez Paris Comme Jamais Auparavant",
+    "subtitle": "Explorez la Ville Lumière sur deux roues avec nos visites et services de location de vélos premium",
+    "cta": "Commencez Votre Aventure"
+  },
+  "common": {
+    "learnMore": "En Savoir Plus",
+    "bookNow": "Réserver Maintenant",
+    "contact": "Contact",
+    "readMore": "Lire Plus"
+  }
+}

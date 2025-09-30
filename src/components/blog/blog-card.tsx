@@ -1,3 +1,5 @@
+"use client";
+
 import { Icons } from "@/components/shared/icons";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -9,15 +11,19 @@ import {
 } from "@/components/ui/card";
 import { BlogPost } from "@/types/blog";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface BlogCardProps {
   post: BlogPost;
 }
 
 export function BlogCard({ post }: BlogCardProps) {
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1] || "en";
+
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-      <Link href={`/blog/${post.slug}`} className="block">
+      <Link href={`/${locale}/blog/${post.slug}`} className="block">
         <CardHeader>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
             <Icons.calendar className="h-4 w-4" />
@@ -50,4 +56,3 @@ export function BlogCard({ post }: BlogCardProps) {
     </Card>
   );
 }
-

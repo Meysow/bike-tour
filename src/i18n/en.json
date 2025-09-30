@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "tours": "Guided Tours",
+    "rent": "Bike Rentals",
+    "blog": "Blog",
+    "about": "About Us"
+  },
+  "hero": {
+    "title": "Experience Paris Like Never Before",
+    "subtitle": "Discover the City of Light on two wheels with our premium bike tours and rental services",
+    "cta": "Start Your Adventure"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "bookNow": "Book Now",
+    "contact": "Contact",
+    "readMore": "Read More"
+  }
+}

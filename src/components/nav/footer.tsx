@@ -1,7 +1,13 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 import { Icons } from "../shared/icons";
 
 //TODO mettre les réseaux sociaux, si il y en a
 export function Footer(): JSX.Element {
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1] || "en";
   return (
     <footer className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 rounded-2xl mx-6 mb-6 shadow">
       <div className="max-w-screen-xl px-6 pt-12 pb-6 mx-auto sm:px-8 lg:px-12 lg:pt-24">
@@ -23,17 +29,23 @@ export function Footer(): JSX.Element {
               <nav className="mt-8">
                 <ul className="space-y-4 text-sm text-muted-foreground pl-4">
                   <li>
-                    <a href="/about" className=" hover:text-primary">
+                    <a
+                      href={`/${locale}/about`}
+                      className=" hover:text-primary"
+                    >
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="/tours" className=" hover:text-primary">
+                    <a
+                      href={`/${locale}/tours`}
+                      className=" hover:text-primary"
+                    >
                       Guided Tours
                     </a>
                   </li>
                   <li>
-                    <a href="/rent" className=" hover:text-primary">
+                    <a href={`/${locale}/rent`} className=" hover:text-primary">
                       Bike Rentals
                     </a>
                   </li>
@@ -48,17 +60,26 @@ export function Footer(): JSX.Element {
               <nav className="mt-8">
                 <ul className="space-y-4 text-sm text-muted-foreground pl-4">
                   <li>
-                    <a href="/rent" className=" hover:text-primary ">
+                    <a
+                      href={`/${locale}/rent`}
+                      className=" hover:text-primary "
+                    >
                       Bike Rentals
                     </a>
                   </li>
                   <li>
-                    <a href="/tours" className=" hover:text-primary ">
+                    <a
+                      href={`/${locale}/tours`}
+                      className=" hover:text-primary "
+                    >
                       Guided Tours
                     </a>
                   </li>
                   <li>
-                    <a href="/about" className=" hover:text-primary ">
+                    <a
+                      href={`/${locale}/about`}
+                      className=" hover:text-primary "
+                    >
                       About Us
                     </a>
                   </li>
