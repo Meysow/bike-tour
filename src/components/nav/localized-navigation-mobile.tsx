@@ -10,6 +10,7 @@ import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
 import { Icons } from "@/components/shared/icons";
+import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -103,6 +104,14 @@ export function LocalizedNavigationMobile({
               {item.title}
             </MobileLink>
           ))}
+        </div>
+
+        {/* Language Switcher for Mobile */}
+        <div className="pl-4 pt-4 border-t border-border">
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-muted-foreground">Langue:</span>
+            <LanguageSwitcher />
+          </div>
         </div>
       </SheetContent>
     </Sheet>

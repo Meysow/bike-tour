@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 import { LocalizedNavigation } from "@/components/nav/localized-navigation";
 import { LocalizedNavigationMobile } from "@/components/nav/localized-navigation-mobile";
 import { Icons } from "@/components/shared/icons";
+import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 
 export function Header(): JSX.Element {
@@ -35,7 +36,8 @@ export function Header(): JSX.Element {
 
         {/* Actions - Prend une largeur fixe pour équilibrer */}
         <div className="flex w-1/3 justify-end">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center gap-2">
+            <LanguageSwitcher />
             <ThemeToggle />
             <LocalizedNavigationMobile navItems={siteConfig.navItems} />
           </div>
