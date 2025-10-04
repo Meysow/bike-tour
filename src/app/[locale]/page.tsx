@@ -4,6 +4,7 @@ import { AccessoriesSection } from "@/components/sections/accessories-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { HeroSection } from "@/components/sections/hero-section";
+import { InstagramCarousel } from "@/components/sections/instagram-carousel";
 import { PartnersSection } from "@/components/sections/partners-section";
 import { RentPricingSection } from "@/components/sections/rent-pricing-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
@@ -20,6 +21,7 @@ export default function HomePage(): JSX.Element {
         <RentPricingSection />
         <AccessoriesSection />
         <TestimonialsSection />
+        <InstagramCarousel />
         <PartnersSection />
         <FAQSection />
         <ContactSection />

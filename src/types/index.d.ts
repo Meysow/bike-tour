@@ -122,3 +122,24 @@ export enum Difficulty {
   MODERATE = "MODERATE",
   DIFFICULT = "DIFFICULT",
 }
+
+export interface InstagramPost {
+  id: string;
+  media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
+  media_url: string;
+  thumbnail_url?: string;
+  caption?: string;
+  permalink: string;
+  timestamp: string;
+}
+
+export interface InstagramResponse {
+  data: InstagramPost[];
+  paging?: {
+    cursors: {
+      before: string;
+      after: string;
+    };
+    next?: string;
+  };
+}
