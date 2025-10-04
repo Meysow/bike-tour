@@ -3,7 +3,7 @@ title: "Découvrir Paris en vélo : 5 itinéraires incontournables"
 description: "Explorez les plus beaux quartiers de Paris à vélo avec nos itinéraires soigneusement sélectionnés pour une expérience inoubliable."
 date: "2024-09-29"
 author: "Léo"
-tags: ["Paris", "Vélo", "Itinéraires", "Découverte"]
+tags: ["Paris", "Vélo", "Itinéraires", "Découverte", "Tourisme", "Balade"]
 ---
 
 # Découvrir Paris en vélo : 5 itinéraires incontournables
@@ -77,4 +77,3 @@ Suivez le Canal Saint-Martin pour une balade plus paisible et bohème. Parfait p
 Nos vélos sont parfaitement entretenus et équipés pour vous offrir une expérience optimale. Réservez dès maintenant votre tour guidé ou votre location de vélo !
 
 _Bon voyage et profitez bien de votre découverte de Paris !_
-

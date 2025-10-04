@@ -3,7 +3,15 @@ title: "Sécurité à vélo à Paris : guide complet pour rouler en toute séré
 description: "Tous nos conseils pour rouler en sécurité à Paris : code de la route, équipements, comportements à adopter et pièges à éviter."
 date: "2024-09-27"
 author: "Thomas"
-tags: ["Sécurité", "Conseils", "Code de la route", "Paris"]
+tags:
+  [
+    "Sécurité",
+    "Conseils",
+    "Code de la route",
+    "Paris",
+    "Réglementation",
+    "Équipement",
+  ]
 ---
 
 # Sécurité à vélo à Paris : guide complet pour rouler en toute sérénité
@@ -161,4 +169,3 @@ Chez RentaTour, la sécurité est notre priorité :
 Avec ces conseils, vous êtes prêt à découvrir Paris à vélo en toute sécurité. N'hésitez pas à nous poser vos questions !
 
 _Bon vélo et à bientôt sur les routes de Paris !_
-

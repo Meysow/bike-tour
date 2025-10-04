@@ -1,11 +1,16 @@
+"use client";
+
 import { BlogPost } from "@/types/blog";
+import { useState } from "react";
 import { BlogCard } from "./blog-card";
+import { TagFilter } from "./tag-filter";
 
 interface BlogListProps {
   posts: BlogPost[];
 }
 
 export function BlogList({ posts }: BlogListProps) {
+  const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>(posts);
   if (posts.length === 0) {
     return (
       <div className="text-center py-12">
@@ -35,8 +40,12 @@ export function BlogList({ posts }: BlogListProps) {
           Découvrez nos conseils et histoires sur le cyclisme à Paris
         </p>
       </div>
+
+      {/* Filtre par tags */}
+      <TagFilter posts={posts} onFilteredPosts={setFilteredPosts} />
+
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
+        {filteredPosts.map((post) => (
           <BlogCard key={post.slug} post={post} />
         ))}
       </div>

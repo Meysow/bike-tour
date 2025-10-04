@@ -3,7 +3,7 @@ title: "Comment choisir le vélo parfait pour visiter Paris ?"
 description: "Guide complet pour choisir le vélo idéal selon vos besoins et votre style de visite de Paris."
 date: "2024-09-28"
 author: "Marie"
-tags: ["Vélo", "Guide", "Conseils", "Location"]
+tags: ["Vélo", "Guide", "Conseils", "Location", "Équipement", "Débutant"]
 ---
 
 # Comment choisir le vélo parfait pour visiter Paris ?
