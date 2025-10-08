@@ -24,7 +24,7 @@ export const siteConfig = {
   company: {
     name: "Bike Adventures",
     address: "18 Ter Rue Delizy, 93500 Pantin",
-    phone: "0695964747",
+    phone: "+33695964747",
     email: "contact@rentabikeparis.fr",
     website: "https://rentabikeparis.fr/",
   },
@@ -38,6 +38,7 @@ export const siteConfig = {
   legal: {
     effectiveDate: "5/15/2023",
     cguTitle: "Conditions générales d'utilisation",
+    privacyTitle: "Politique de Confidentialité",
   },
   keywords: [
     "Bike Tours",

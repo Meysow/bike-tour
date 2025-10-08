@@ -151,7 +151,7 @@ export function Footer(): JSX.Element {
               </a>
               &middot;
               <a
-                href="/privacy"
+                href={`/${locale}/privacy`}
                 className="text-accent-foreground hover:text-primary"
               >
                 Privacy Policy

@@ -13,12 +13,12 @@ export function InfoBanner(): JSX.Element {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-6">
           {/* Phone */}
           <Link
-            href="tel:+33695964747"
+            href={`tel:${siteConfig.company.phone}`}
             className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
           >
             <span className="text-base">☞</span>
             <span>Call us:</span>
-            <span className="font-medium">+33695964747</span>
+            <span className="font-medium">{siteConfig.company.phone}</span>
           </Link>
 
           {/* Hours */}
