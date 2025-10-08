@@ -11,7 +11,7 @@ export default function AboutPage(): JSX.Element {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-background mt-20">
+      <div className="min-h-screen bg-background mt-20 banner:mt-28">
         {/* Hero Section */}
         <section className="relative py-20 md:py-32">
           <div className="absolute inset-0 z-[-1] bg-gradient-to-t from-primary/25 to-transparent opacity-30 rounded-full blur-lg h-[85%] w-[75%] mx-auto" />
