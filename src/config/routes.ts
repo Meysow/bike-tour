@@ -42,6 +42,11 @@ export const routes = {
     fr: "/a-propos",
     filePath: "/about",
   },
+  terms: {
+    en: "/terms-and-conditions",
+    fr: "/conditions-generales-utilisation",
+    filePath: "/terms",
+  },
 } as const;
 
 export type RouteKey = keyof typeof routes;

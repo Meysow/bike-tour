@@ -14,12 +14,31 @@ const links = {
 export const siteConfig = {
   name: "RentaTour",
   description:
-    "Experience Paris like never before with our tailored bike tours and rental services. We provide everything you need for a memorable ride through the city’s iconic landmarks and hidden gems, ensuring a smooth, hassle-free adventure. Whether you’re planning a leisurely tour or just need a bike for the day, we’ve got you covered.",
+    "Experience Paris like never before with our tailored bike tours and rental services. We provide everything you need for a memorable ride through the city's iconic landmarks and hidden gems, ensuring a smooth, hassle-free adventure. Whether you're planning a leisurely tour or just need a bike for the day, we've got you covered.",
   links,
   url: "https://rentabikeparis.fr",
   ogImage: links.openGraphImage,
   author: "Meyso",
   hostingRegion: "fra1",
+  // Company information
+  company: {
+    name: "Bike Adventures",
+    address: "18 Ter Rue Delizy, 93500 Pantin",
+    phone: "0695964747",
+    email: "contact@rentabikeparis.fr",
+    website: "https://rentabikeparis.fr/",
+  },
+  // Hosting information
+  hosting: {
+    company: "Hostinger",
+    address: "143 rue emile julien 34070 Montpellier",
+    phone: "0892977093",
+  },
+  // Legal information
+  legal: {
+    effectiveDate: "5/15/2023",
+    cguTitle: "Conditions générales d'utilisation",
+  },
   keywords: [
     "Bike Tours",
     "Bike Rentals",

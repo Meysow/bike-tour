@@ -7,7 +7,22 @@ import { Icons } from "../shared/icons";
 
 export function Footer(): JSX.Element {
   const pathname = usePathname();
-  const locale = pathname.split("/")[1] || "en";
+
+  // Détecter la locale de manière plus robuste
+  const getLocale = () => {
+    const segments = pathname.split("/");
+    const firstSegment = segments[1];
+
+    // Si le premier segment est une locale connue
+    if (firstSegment === "en" || firstSegment === "fr") {
+      return firstSegment;
+    }
+
+    // Sinon, utiliser la locale par défaut
+    return "en";
+  };
+
+  const locale = getLocale();
   return (
     <footer className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 rounded-2xl mx-6 mb-6 shadow">
       <div className="max-w-screen-xl px-6 pt-12 pb-6 mx-auto sm:px-8 lg:px-12 lg:pt-24">
@@ -106,15 +121,15 @@ export function Footer(): JSX.Element {
               <ul className="mt-8 space-y-4 text-sm text-muted-foreground ">
                 <li className="flex gap-2">
                   <Icons.email className="size-5" />
-                  <span>contact@rentabikeparis.fr</span>
+                  <span>{siteConfig.company.email}</span>
                 </li>
                 <li className="flex gap-2">
                   <Icons.user className="size-5" />
-                  <span>+33 6 95 96 47 47</span>
+                  <span>+33 {siteConfig.company.phone}</span>
                 </li>
                 <li className="flex gap-2">
                   <Icons.paperPlane className="size-5" />
-                  <span>20 rue Greneta, 75002 Paris</span>
+                  <span>{siteConfig.company.address}</span>
                 </li>
               </ul>
             </div>
@@ -126,7 +141,7 @@ export function Footer(): JSX.Element {
             <p className="text-sm text-gray-400">
               <span>All rights reserved. </span>
               <a
-                href="/terms"
+                href={`/${locale}/terms`}
                 className="text-accent-foreground hover:text-primary"
               >
                 Terms & Conditions{" "}
