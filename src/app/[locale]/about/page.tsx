@@ -7,6 +7,7 @@ import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
 import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
 
 export default function AboutPage(): JSX.Element {
   return (
@@ -291,7 +292,9 @@ export default function AboutPage(): JSX.Element {
                   <span className="text-white">📧</span>
                 </div>
                 <h3 className="font-semibold mb-2">Email Us</h3>
-                <p className="text-muted-foreground">hello@rentatour.com</p>
+                <p className="text-muted-foreground">
+                  {siteConfig.company.email}
+                </p>
               </div>
 
               <div className="text-center">
@@ -299,7 +302,9 @@ export default function AboutPage(): JSX.Element {
                   <span className="text-white">📱</span>
                 </div>
                 <h3 className="font-semibold mb-2">Call Us</h3>
-                <p className="text-muted-foreground">+33 1 23 45 67 89</p>
+                <p className="text-muted-foreground">
+                  {siteConfig.company.phone}
+                </p>
               </div>
 
               <div className="text-center">
@@ -308,7 +313,7 @@ export default function AboutPage(): JSX.Element {
                 </div>
                 <h3 className="font-semibold mb-2">Visit Us</h3>
                 <p className="text-muted-foreground">
-                  20 rue Greneta, 75002 Paris
+                  {siteConfig.company.location}
                 </p>
               </div>
             </div>
@@ -350,7 +355,7 @@ export default function AboutPage(): JSX.Element {
                 </Balancer>
               </p>
             </div>
-            <GoogleMap address="20 rue Greneta, 75002 Paris" />
+            <GoogleMap address={siteConfig.company.location} />
           </div>
         </section>
       </div>

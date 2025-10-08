@@ -7,6 +7,7 @@ import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
 import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
 
 export default function ToursPage(): JSX.Element {
   return (
@@ -102,7 +103,7 @@ export default function ToursPage(): JSX.Element {
                         <div>
                           <div className="font-medium">Starting Point</div>
                           <div className="text-sm text-muted-foreground">
-                            20 rue Greneta, 75002 Paris
+                            {siteConfig.company.location}
                           </div>
                         </div>
                       </div>
@@ -597,20 +598,20 @@ export default function ToursPage(): JSX.Element {
                 <div className="flex items-center gap-2">
                   <Icons.paperPlane className="size-5" />
                   <span className="font-medium">
-                    20 rue Greneta, 75002 Paris
+                    {siteConfig.company.location}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icons.user className="size-5" />
-                  <span>+33 6 95 96 47 47</span>
+                  <span>{siteConfig.company.phone}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icons.email className="size-5" />
-                  <span>contact@rentabikeparis.fr</span>
+                  <span>{siteConfig.company.email}</span>
                 </div>
               </div>
             </div>
-            <GoogleMap address="20 rue Greneta, 75002 Paris" />
+            <GoogleMap address={siteConfig.company.location} />
           </div>
         </section>
       </div>

@@ -24,7 +24,8 @@ export const siteConfig = {
   company: {
     name: "Bike Adventures",
     address: "18 Ter Rue Delizy, 93500 Pantin",
-    phone: "+33695964747",
+    location: "20 rue Greneta, 75002 Paris",
+    phone: "+33 6 95 96 47 47",
     email: "contact@rentabikeparis.fr",
     website: "https://rentabikeparis.fr/",
   },

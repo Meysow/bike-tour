@@ -2,6 +2,7 @@ import Balancer from "react-wrap-balancer";
 
 import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
+import { siteConfig } from "@/config/site";
 
 export function LocationMapSection(): JSX.Element {
   return (
@@ -25,19 +26,19 @@ export function LocationMapSection(): JSX.Element {
           <div className="flex flex-col items-center gap-2 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Icons.paperPlane className="size-5" />
-              <span className="font-medium">20 rue Greneta, 75002 Paris</span>
+              <span className="font-medium">{siteConfig.company.location}</span>
             </div>
             <div className="flex items-center gap-2">
               <Icons.user className="size-5" />
-              <span>+33 6 95 96 47 47</span>
+              <span>{siteConfig.company.phone}</span>
             </div>
             <div className="flex items-center gap-2">
               <Icons.email className="size-5" />
-              <span>contact@rentabikeparis.fr</span>
+              <span>{siteConfig.company.email}</span>
             </div>
           </div>
         </div>
-        <GoogleMap address="20 rue Greneta, 75002 Paris" />
+        <GoogleMap address={siteConfig.company.location} />
       </div>
     </section>
   );

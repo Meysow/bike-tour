@@ -128,11 +128,11 @@ export function Footer(): JSX.Element {
                 </li>
                 <li className="flex gap-2">
                   <Icons.user className="size-5" />
-                  <span>+33 {siteConfig.company.phone}</span>
+                  <span>{siteConfig.company.phone}</span>
                 </li>
                 <li className="flex gap-2">
                   <Icons.paperPlane className="size-5" />
-                  <span>{siteConfig.company.address}</span>
+                  <span>{siteConfig.company.location}</span>
                 </li>
               </ul>
             </div>

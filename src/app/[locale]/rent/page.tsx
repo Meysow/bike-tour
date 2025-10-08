@@ -18,6 +18,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
+import { siteConfig } from "@/config/site";
 import { pricingPlans } from "@/data/pricing-plans";
 import { cn } from "@/lib/utils";
 
@@ -351,20 +352,20 @@ export default function RentPage(): JSX.Element {
                 <div className="flex items-center gap-2">
                   <Icons.paperPlane className="size-5" />
                   <span className="font-medium">
-                    20 rue Greneta, 75002 Paris
+                    {siteConfig.company.location}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icons.user className="size-5" />
-                  <span>+33 6 95 96 47 47</span>
+                  <span>{siteConfig.company.phone}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icons.email className="size-5" />
-                  <span>contact@rentabikeparis.fr</span>
+                  <span>{siteConfig.company.email}</span>
                 </div>
               </div>
             </div>
-            <GoogleMap address="20 rue Greneta, 75002 Paris" />
+            <GoogleMap address={siteConfig.company.location} />
           </div>
         </section>
       </div>

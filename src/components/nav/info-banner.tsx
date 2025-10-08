@@ -30,12 +30,12 @@ export function InfoBanner(): JSX.Element {
 
           {/* Email */}
           <Link
-            href="mailto:contact@rentabikeparis.fr"
+            href={`mailto:${siteConfig.company.email}`}
             className="flex items-center gap-1.5 hover:opacity-80 transition-opacity"
           >
             <span className="text-base">☞</span>
             <span>E-mail:</span>
-            <span className="font-medium">contact@rentabikeparis.fr</span>
+            <span className="font-medium">{siteConfig.company.email}</span>
           </Link>
         </div>
 

@@ -1,12 +1,14 @@
 "use client";
 
+import { siteConfig } from "@/config/site";
+
 interface GoogleMapProps {
   address?: string;
   className?: string;
 }
 
 export function GoogleMap({
-  address = "20 rue Greneta, 75002 Paris",
+  address = siteConfig.company.location,
   className = "",
 }: GoogleMapProps): JSX.Element {
   // Encode the address for the URL
