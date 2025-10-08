@@ -15,5 +15,20 @@
     "bookNow": "Réserver Maintenant",
     "contact": "Contact",
     "readMore": "Lire Plus"
+  },
+  "tours": {
+    "private": {
+      "title": "Visites Privées, Team Building, Événements",
+      "description": "Tours Privés",
+      "details": "Chez Rentabike Paris, nous aimons nous adapter et répondre à vos besoins ! Que vous souhaitiez créer une visite personnalisée, organiser un événement de team building, ou ajouter une touche spéciale à votre événement, nous sommes ouverts à toutes les possibilités et attendons avec impatience vos demandes !",
+      "subtitle": "Donnons vie à votre vision",
+      "features": [
+        "Nous accueillons les demandes pour personnaliser les visites selon vos intérêts spécifiques, durées et tailles de groupe. Explorons Paris à votre façon avec un itinéraire personnalisé conçu spécialement pour vous.",
+        "De plus, nous nous spécialisons dans la création d'expériences exceptionnelles pour les sorties d'entreprise et les activités de team building. Engagez votre équipe dans une aventure passionnante, combinant exploration, cohésion d'équipe et souvenirs inoubliables.",
+        "Nous sommes là pour vous accompagner à chaque étape, de la planification initiale à l'exécution sans faille."
+      ],
+      "conclusion": "Nous valorisons une communication ouverte et vous encourageons à nous contacter pour discuter de vos idées, préférences et exigences spéciales que vous pourriez avoir. Nous sommes ravis de collaborer et de donner vie à votre vision ! 💫🚴🏻‍♂️",
+      "price": "Sur devis"
+    }
   }
 }

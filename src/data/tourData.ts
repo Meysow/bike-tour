@@ -1,19 +1,19 @@
 import { StaticImageData } from "next/image";
-import Burren from "../../public/images/hero/burren.jpg";
-import Leophil from "../../public/images/hero/leophil.jpg";
 import Louvre from "../../public/images/hero/louvre.jpg";
 import Palais from "../../public/images/hero/palais-royal.jpg";
+import Prive from "../../public/images/hero/prive.jpg";
 
 export interface TourData {
   id: string;
   title: string;
   description: string;
   details: string;
-  startingSpot: string;
-  duration: string;
-  break: string;
+  startingSpot?: string;
+  duration?: string;
+  break?: string;
   price: string;
   image: StaticImageData;
+  isPrivate?: boolean;
 }
 //TODO Next: modifier ce fichier pour matcher le typing de types/index
 //TODO: Voir si on conserve ce fichier, et si oui, faire le lien avec la section tours-section de la landing page
@@ -44,26 +44,12 @@ export const tours: TourData[] = [
   },
   {
     id: "3",
-    title: "Discover Parisian Secrets Off the Beaten Path",
-    description: "Hidden Gems of Paris",
+    title: "Private Tours, Team Buildings, Events",
+    description: "Private Tours",
     details:
-      "Venture beyond the tourist trails to discover lesser-known Parisian neighborhoods, hidden alleys, and secret courtyards with local charm.",
-    startingSpot: "10 rue Oberkampf, 75011 Paris",
-    duration: "3.5-hour exploration of Paris's hidden gems",
-    break: "Includes a stop at a local café for refreshments",
-    price: "€45",
-    image: Burren,
-  },
-  {
-    id: "4",
-    title: "Explore the Artistic Soul of Paris",
-    description: "Art and Architecture",
-    details:
-      "Perfect for art lovers, this tour covers famous art spots, from the Louvre to local galleries, and architectural highlights around Paris.",
-    startingSpot: "40 rue de Richelieu, 75001 Paris",
-    duration: "4-hour in-depth art and architecture tour",
-    break: "Pause at the Jardin des Tuileries for photos and relaxation",
-    price: "€45",
-    image: Leophil,
+      "At Rentabike Paris, we like to adapt and cater to your needs! Whether you're seeking to create a personalized tour, organize a team-building event, or add a special touch to your event, we are open to all possibilities and eagerly await your inquiries!",
+    price: "Custom Quote",
+    image: Prive,
+    isPrivate: true,
   },
 ];

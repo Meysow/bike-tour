@@ -1,9 +1,5 @@
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";
-import Burren from "../../../public/images/hero/burren.jpg";
-import Leophil from "../../../public/images/hero/leophil.jpg";
-import Louvre from "../../../public/images/hero/louvre.jpg";
-import Palais from "../../../public/images/hero/palais-royal.jpg";
 
 import {
   Card,
@@ -12,9 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { tours } from "@/data/tourData";
 import { Button } from "../ui/button";
 
-// TODO: faire en sorte que les tours viennent de la base de données et puisse etre ajouté, modifié et supprimés depuis le panel admin
 export function ToursSection(): JSX.Element {
   return (
     <section id="tour-section" aria-label="Tour section" className="w-full">
@@ -39,184 +35,154 @@ export function ToursSection(): JSX.Element {
         </div>
 
         <div className="grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-          <div className="space-y-4 md:mt-20 md:space-y-6">
-            <Card
-              id="1"
-              className="h-fit bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
-            >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
-                €45
-              </div>
-              <CardHeader>
-                <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  Full tour
-                </CardDescription>
-                <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>All around Paris by Bike</Balancer>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6 p-0">
-                <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
-                  <Balancer>
-                    Starting in the heart of Paris 💫 we will take you to our
-                    most beautiful spots around the city 🚴🏻‍♂️ The tour is a good
-                    mix in between our touch, typical Parisian streets, and
-                    emblematic monuments of the city.
-                    <br className="hidden md:inline-block" /> 🌍 - Starting
-                    spot: 20 rue Greneta, 75002 Paris
-                    <br className="hidden md:inline-block" /> ⏰ - 3-hours ride
-                    around Paris
-                    <br className="hidden md:inline-block" />
-                    👤 - A nice break in between to get to know each other
-                  </Balancer>
-                </p>
-
-                <div className="flex justify-center px-4">
-                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
-                    Book Now
-                  </Button>
+          {/* Tours publics côte à côte */}
+          {tours
+            .filter((tour) => !tour.isPrivate)
+            .map((tour) => (
+              <Card
+                key={tour.id}
+                className="h-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative flex flex-col"
+              >
+                <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
+                  {tour.price}
                 </div>
+                <CardHeader>
+                  <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
+                    {tour.description}
+                  </CardDescription>
+                  <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
+                    <Balancer>{tour.title}</Balancer>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6 p-0 flex flex-col flex-grow">
+                  <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground flex-grow">
+                    <Balancer>
+                      {tour.details}
+                      {tour.startingSpot && (
+                        <>
+                          <br className="hidden md:inline-block" /> 🌍 -
+                          Starting spot: {tour.startingSpot}
+                        </>
+                      )}
+                      {tour.duration && (
+                        <>
+                          <br className="hidden md:inline-block" /> ⏰ -{" "}
+                          {tour.duration}
+                        </>
+                      )}
+                      {tour.break && (
+                        <>
+                          <br className="hidden md:inline-block" />
+                          👤 - {tour.break}
+                        </>
+                      )}
+                    </Balancer>
+                  </p>
 
-                <Image
-                  alt="illustration"
-                  src={Louvre}
-                  className="overflow-hidden rounded-b-xl"
-                />
-              </CardContent>
-            </Card>
+                  <div className="flex justify-center px-4">
+                    <Button className="h-10 w-full border font-bold tracking-wide text-white">
+                      Book Now
+                    </Button>
+                  </div>
 
-            <Card
-              id="2"
-              className="h-fit bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
-            >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
-                €45
-              </div>
-              <CardHeader>
-                <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  Evening Lights Tour
-                </CardDescription>
-                <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>
-                    Experience the Magic of Paris{" "}
-                    <br className="hidden md:inline-block" /> Under the Lights
-                  </Balancer>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6 p-0">
-                <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
-                  <Balancer>
-                    Join us for a nighttime adventure as Paris lights up. See
-                    the Eiffel Tower, Champs-Elysées, and the Seine in all their
-                    illuminated glory.
-                    <br /> 🌍 - Starting spot: 15 avenue Montaigne, 75008 Paris
-                    <br /> ⏰ - 2-hour ride through iconic night views
-                    <br /> 👤 - A stop for hot drinks and conversation under the
-                    stars
-                  </Balancer>
-                </p>
+                  <Image
+                    alt={tour.title}
+                    src={tour.image}
+                    className="overflow-hidden rounded-b-xl"
+                  />
+                </CardContent>
+              </Card>
+            ))}
+        </div>
 
-                <div className="flex justify-center px-4">
-                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
-                    Book Now
-                  </Button>
+        {/* Tour privé en dessous, toute la largeur */}
+        <div className="grid max-w-6xl grid-cols-1 gap-4 md:gap-6">
+          {tours
+            .filter((tour) => tour.isPrivate)
+            .map((tour) => (
+              <Card
+                key={tour.id}
+                className="h-fit w-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
+              >
+                <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md z-10">
+                  {tour.price}
                 </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {/* Contenu texte à gauche */}
+                  <div className="p-6 space-y-6">
+                    <div>
+                      <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
+                        {tour.description}
+                      </CardDescription>
+                      <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
+                        <Balancer>{tour.title}</Balancer>
+                      </CardTitle>
+                    </div>
 
-                <Image
-                  alt="Paris Evening Lights"
-                  src={Palais}
-                  className="overflow-hidden rounded-b-xl"
-                />
-              </CardContent>
-            </Card>
-          </div>
+                    <div className="text-base leading-8 tracking-wide text-muted-foreground">
+                      <Balancer>
+                        <div className="space-y-4">
+                          <p>{tour.details}</p>
+                          <p className="font-semibold text-foreground">
+                            Let&apos;s bring your vision to life
+                          </p>
+                          <ul className="space-y-2">
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary">•</span>
+                              <span>
+                                We welcome inquiries for customizing tours based
+                                on specific interests, durations, and group
+                                sizes. Let&apos;s explore Paris your way through
+                                a personalized itinerary designed just for you.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary">•</span>
+                              <span>
+                                Additionally, we specialize in curating
+                                exceptional experiences for corporate outings
+                                and team-building activities. Engage your team
+                                in an exciting adventure, combining exploration,
+                                team bonding, and unforgettable memories.
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-2">
+                              <span className="text-primary">•</span>
+                              <span>
+                                We are here to assist you every step of the way,
+                                from initial planning to seamless execution.
+                              </span>
+                            </li>
+                          </ul>
+                          <p className="italic">
+                            We value open communication and encourage you to get
+                            in touch with us to discuss your ideas, preferences,
+                            and any special requirements you may have. We are
+                            excited to collaborate and make your vision a
+                            reality! 💫🚴🏻‍♂️
+                          </p>
+                        </div>
+                      </Balancer>
+                    </div>
 
-          <div className="space-y-4 md:space-y-6">
-            <Card
-              id="3"
-              className="h-fit bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
-            >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
-                €45
-              </div>
-              <CardHeader>
-                <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  Hidden Gems of Paris
-                </CardDescription>
-                <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>
-                    Discover Parisian Secrets Off the Beaten Path
-                  </Balancer>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6 p-0">
-                <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
-                  <Balancer>
-                    Venture beyond the tourist trails to discover lesser-known
-                    Parisian neighborhoods, hidden alleys, and secret courtyards
-                    with local charm.
-                    <br /> 🌍 - Starting spot: 10 rue Oberkampf, 75011 Paris
-                    <br /> ⏰ - 3.5-hour exploration of Paris&apos;s hidden gems
-                    <br /> 👤 - Includes a stop at a local café for refreshments
-                  </Balancer>
-                </p>
+                    <div className="flex justify-center">
+                      <Button className="h-10 w-full border font-bold tracking-wide text-white">
+                        Contact
+                      </Button>
+                    </div>
+                  </div>
 
-                <div className="flex justify-center px-4">
-                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
-                    Book Now
-                  </Button>
+                  {/* Image à droite */}
+                  <div className="relative">
+                    <Image
+                      alt={tour.title}
+                      src={tour.image}
+                      className="w-full h-full object-cover rounded-xl"
+                    />
+                  </div>
                 </div>
-
-                <Image
-                  alt="Paris Hidden Gems"
-                  src={Burren}
-                  className="overflow-hidden rounded-b-xl"
-                />
-              </CardContent>
-            </Card>
-
-            <Card
-              id="4"
-              className="h-fit w-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
-            >
-              <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
-                €45
-              </div>
-              <CardHeader>
-                <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                  Art and Architecture
-                </CardDescription>
-                <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                  <Balancer>Explore the Artistic Soul of Paris</Balancer>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6 p-0">
-                <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground">
-                  <Balancer>
-                    Perfect for art lovers, this tour covers famous art spots,
-                    from the Louvre to local galleries, and architectural
-                    highlights around Paris.
-                    <br /> 🌍 - Starting spot: 40 rue de Richelieu, 75001 Paris
-                    <br /> ⏰ - 4-hour in-depth art and architecture tour
-                    <br /> 👤 - Pause at the Jardin des Tuileries for photos and
-                    relaxation
-                  </Balancer>
-                </p>
-
-                <div className="flex justify-center px-4">
-                  <Button className="h-10 w-full border font-bold tracking-wide text-white">
-                    Book Now
-                  </Button>
-                </div>
-
-                <Image
-                  alt="Art and Architecture Tour"
-                  src={Leophil}
-                  className="overflow-hidden rounded-b-xl"
-                />
-              </CardContent>
-            </Card>
-          </div>
+              </Card>
+            ))}
         </div>
       </div>
     </section>

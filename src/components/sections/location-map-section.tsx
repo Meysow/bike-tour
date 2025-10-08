@@ -17,12 +17,7 @@ export function LocationMapSection(): JSX.Element {
               </span>
             </Balancer>
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-4">
-            <Balancer>
-              Come visit us at our shop in the heart of Paris. We&apos;re ready
-              to help you start your adventure!
-            </Balancer>
-          </p>
+
           <div className="flex flex-col items-center gap-2 text-muted-foreground">
             <div className="flex items-center gap-2">
               <Icons.paperPlane className="size-5" />

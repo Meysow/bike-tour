@@ -311,7 +311,7 @@ export default function AboutPage(): JSX.Element {
                 <div className="w-12 h-12 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 rounded-full flex items-center justify-center mb-4">
                   <span className="text-white">📍</span>
                 </div>
-                <h3 className="font-semibold mb-2">Visit Us</h3>
+                <h3 className="font-semibold mb-2">Find Us</h3>
                 <p className="text-muted-foreground">
                   {siteConfig.company.location}
                 </p>
@@ -348,12 +348,6 @@ export default function AboutPage(): JSX.Element {
                   </span>
                 </Balancer>
               </h2>
-              <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
-                <Balancer>
-                  Visit us at our location in the heart of Paris. We&apos;re
-                  easily accessible and ready to help you start your adventure.
-                </Balancer>
-              </p>
             </div>
             <GoogleMap address={siteConfig.company.location} />
           </div>
