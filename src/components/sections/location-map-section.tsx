@@ -11,7 +11,7 @@ export function LocationMapSection(): JSX.Element {
         <div className="text-center mb-12">
           <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
             <Balancer>
-              Visit{" "}
+              Find{" "}
               <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
                 Us
               </span>

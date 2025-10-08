@@ -3,7 +3,14 @@ import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
 import { getAllPosts } from "@/lib/blog";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 import Balancer from "react-wrap-balancer";
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) => generatePageMetadata(params, "blog");
 
 export default async function BlogPage() {
   const posts = await getAllPosts();

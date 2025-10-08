@@ -3,7 +3,7 @@
  * Permet d'avoir des URLs différentes selon la langue pour un meilleur SEO
  */
 
-export type Locale = "en" | "fr" | "de" | "nl" | "es";
+import { defaultLocale, type Locale } from "./i18n";
 
 export interface RouteConfig {
   en: string;
@@ -77,7 +77,7 @@ export type RouteKey = keyof typeof routes;
  */
 export function getLocalizedPath(
   routeKey: RouteKey,
-  locale: Locale = "fr"
+  locale: Locale = defaultLocale
 ): string {
   return routes[routeKey][locale];
 }
@@ -148,6 +148,6 @@ export function getLocaleFromPath(pathname: string): {
     return { locale: result.locale, routeKey: result.key, filePath };
   }
 
-  // Par défaut, retourner 'fr' si la route n'est pas trouvée
-  return { locale: "fr", routeKey: null, filePath: null };
+  // Par défaut, retourner la locale par défaut si la route n'est pas trouvée
+  return { locale: defaultLocale, routeKey: null, filePath: null };
 }

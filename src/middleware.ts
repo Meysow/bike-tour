@@ -1,17 +1,22 @@
-import { getLocaleFromPath, routes, type Locale } from "@/config/routes";
+import {
+  defaultLocale,
+  isValidLocale,
+  LOCALE_COOKIE_MAX_AGE,
+  LOCALE_COOKIE_NAME,
+  locales,
+  type Locale,
+} from "@/config/i18n";
+import { getLocaleFromPath, routes } from "@/config/routes";
 import { NextRequest, NextResponse } from "next/server";
-
-const locales: Locale[] = ["en", "fr", "de", "nl", "es"];
-const defaultLocale: Locale = "fr";
 
 /**
  * Détecter la locale préférée de l'utilisateur
  */
 function getPreferredLocale(request: NextRequest): Locale {
   // 1. Vérifier le cookie de préférence de langue
-  const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
-  if (cookieLocale && locales.includes(cookieLocale as Locale)) {
-    return cookieLocale as Locale;
+  const cookieLocale = request.cookies.get(LOCALE_COOKIE_NAME)?.value;
+  if (cookieLocale && isValidLocale(cookieLocale)) {
+    return cookieLocale;
   }
 
   // 2. Vérifier le header Accept-Language
@@ -19,8 +24,8 @@ function getPreferredLocale(request: NextRequest): Locale {
   if (acceptLanguage) {
     // Extraire la langue principale (ex: "fr-FR,fr;q=0.9,en;q=0.8" → "fr")
     const lang = acceptLanguage.split(",")[0].split("-")[0].toLowerCase();
-    if (locales.includes(lang as Locale)) {
-      return lang as Locale;
+    if (isValidLocale(lang)) {
+      return lang;
     }
   }
 
@@ -40,8 +45,8 @@ export function middleware(request: NextRequest) {
     const response = NextResponse.rewrite(url);
 
     // Stocker la locale dans un cookie pour la prochaine visite
-    response.cookies.set("NEXT_LOCALE", preferredLocale, {
-      maxAge: 60 * 60 * 24 * 365, // 1 an
+    response.cookies.set(LOCALE_COOKIE_NAME, preferredLocale, {
+      maxAge: LOCALE_COOKIE_MAX_AGE,
       path: "/",
     });
 

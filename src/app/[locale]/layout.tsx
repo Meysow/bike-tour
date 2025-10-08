@@ -1,6 +1,13 @@
-import { notFound } from "next/navigation";
+import {
+  generatePageMetadata,
+  validateLocaleParams,
+} from "@/lib/utils/metadata";
 
-const locales = ["en", "fr", "de", "nl", "es"];
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) => generatePageMetadata(params, "home");
 
 export default async function LocaleLayout({
   children,
@@ -9,12 +16,8 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale)) {
-    notFound();
-  }
+  // Valider la locale
+  await validateLocaleParams(params);
 
   return <>{children}</>;
 }

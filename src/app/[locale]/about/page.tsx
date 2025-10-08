@@ -8,6 +8,13 @@ import { Icons } from "@/components/shared/icons";
 import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import { generatePageMetadata } from "@/lib/utils/metadata";
+
+export const generateMetadata = async ({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) => generatePageMetadata(params, "about");
 
 export default function AboutPage(): JSX.Element {
   return (
