@@ -2,9 +2,9 @@
 
 import { usePathname } from "next/navigation";
 
+import { siteConfig } from "@/config/site";
 import { Icons } from "../shared/icons";
 
-//TODO mettre les réseaux sociaux, si il y en a
 export function Footer(): JSX.Element {
   const pathname = usePathname();
   const locale = pathname.split("/")[1] || "en";
@@ -24,29 +24,41 @@ export function Footer(): JSX.Element {
           <div className="flex flex-wrap justify-evenly gap-8 sm:grid sm:grid-cols-2 lg:col-span-2 md:grid-cols-3">
             <div className="text-left">
               <p className="text-lg font-medium border-l-4 border-primary pl-4">
-                Useful Links
+                Follow Us
               </p>
               <nav className="mt-8">
-                <ul className="space-y-4 text-sm text-muted-foreground pl-4">
+                <ul className="space-y-4 text-sm pl-4">
                   <li>
                     <a
-                      href={`/${locale}/about`}
-                      className=" hover:text-primary"
+                      href={siteConfig.links.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      About Us
+                      <Icons.facebook className="size-5" />
+                      <span>Facebook</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      href={`/${locale}/tours`}
-                      className=" hover:text-primary"
+                      href={siteConfig.links.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      Guided Tours
+                      <Icons.instagram className="size-5" />
+                      <span>Instagram</span>
                     </a>
                   </li>
                   <li>
-                    <a href={`/${locale}/rent`} className=" hover:text-primary">
-                      Bike Rentals
+                    <a
+                      href={siteConfig.links.tripadvisor}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <Icons.tripadvisor className="size-5" />
+                      <span>TripAdvisor</span>
                     </a>
                   </li>
                 </ul>

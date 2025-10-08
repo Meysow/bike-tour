@@ -3,11 +3,9 @@ import { type NavItem, type NavItemFooter } from "@/types";
 //TODO : reprendre complétement ce component
 
 const links = {
-  github:
-    "https://github.com/pjborowiecki/SAASY-LAND-Next-14-Starters-With-Authentication-And-Database-Implemented",
-  twitter: "https://twitter.com/pjborowiecki",
-  linkedin: "https://www.linkedin.com/in/pjborowiecki",
-  discord: "",
+  facebook: "https://www.facebook.com/rentabikeparis",
+  instagram: "https://www.instagram.com/rentabikeparis",
+  tripadvisor: "https://www.tripadvisor.com/rentabikeparis",
   authorsWebsite: "https://tdportfolio-self.vercel.app/",
   authorsGitHub: "https://github.com/meysow",
   openGraphImage: "https://saasyland.com/images/opengraph-image.png",
@@ -18,7 +16,7 @@ export const siteConfig = {
   description:
     "Experience Paris like never before with our tailored bike tours and rental services. We provide everything you need for a memorable ride through the city’s iconic landmarks and hidden gems, ensuring a smooth, hassle-free adventure. Whether you’re planning a leisurely tour or just need a bike for the day, we’ve got you covered.",
   links,
-  url: "https://saasyland.com",
+  url: "https://rentabikeparis.fr",
   ogImage: links.openGraphImage,
   author: "Meyso",
   hostingRegion: "fra1",

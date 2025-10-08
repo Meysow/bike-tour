@@ -3,6 +3,7 @@
 import Link from "next/link";
 
 import { Icons } from "@/components/shared/icons";
+import { siteConfig } from "@/config/site";
 
 export function InfoBanner(): JSX.Element {
   return (
@@ -41,7 +42,7 @@ export function InfoBanner(): JSX.Element {
         {/* Social Media Icons */}
         <div className="flex items-center gap-3 md:gap-4">
           <Link
-            href="https://www.facebook.com/rentabikeparis"
+            href={siteConfig.links.facebook}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
@@ -50,7 +51,7 @@ export function InfoBanner(): JSX.Element {
             <Icons.facebook className="h-4 w-4 md:h-5 md:w-5 fill-current" />
           </Link>
           <Link
-            href="https://www.instagram.com/rentabikeparis"
+            href={siteConfig.links.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
@@ -59,7 +60,7 @@ export function InfoBanner(): JSX.Element {
             <Icons.instagram className="h-4 w-4 md:h-5 md:w-5" />
           </Link>
           <Link
-            href="https://www.tripadvisor.com/rentabikeparis"
+            href={siteConfig.links.tripadvisor}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
