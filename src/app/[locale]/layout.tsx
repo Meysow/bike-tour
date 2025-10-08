@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 
-const locales = ["en", "fr"];
+const locales = ["en", "fr", "de", "nl", "es"];
 
 export default async function LocaleLayout({
   children,

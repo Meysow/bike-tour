@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "tours": "Rondleidingen",
+    "rent": "Fietsverhuur",
+    "blog": "Blog",
+    "about": "Over Ons"
+  },
+  "hero": {
+    "title": "Beleef Parijs Als Nooit Tevoren",
+    "subtitle": "Ontdek de Lichtstad op twee wielen met onze premium fietstours en verhuurservices",
+    "cta": "Begin Uw Avontuur"
+  },
+  "common": {
+    "learnMore": "Meer Informatie",
+    "bookNow": "Nu Boeken",
+    "contact": "Contact",
+    "readMore": "Lees Meer"
+  }
+}

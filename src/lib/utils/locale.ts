@@ -6,15 +6,21 @@ import { usePathname } from "next/navigation";
 export function useLocale() {
   const pathname = usePathname();
   const locale = pathname.split("/")[1];
-  return locale || "en";
+  return locale || "fr";
 }
 
 /**
  * Fonction utilitaire pour créer des liens localisés
  */
-export function getLocalizedPath(path: string, locale: string = "en"): string {
+export function getLocalizedPath(path: string, locale: string = "fr"): string {
   // Si le chemin commence déjà par une langue, on le retourne tel quel
-  if (path.startsWith("/en/") || path.startsWith("/fr/")) {
+  if (
+    path.startsWith("/en/") ||
+    path.startsWith("/fr/") ||
+    path.startsWith("/de/") ||
+    path.startsWith("/nl/") ||
+    path.startsWith("/es/")
+  ) {
     return path;
   }
 
@@ -33,5 +39,5 @@ export function getLocalizedPath(path: string, locale: string = "en"): string {
 export function extractLocaleFromPath(pathname: string): string {
   const segments = pathname.split("/");
   const locale = segments[1];
-  return ["en", "fr"].includes(locale) ? locale : "en";
+  return ["en", "fr", "de", "nl", "es"].includes(locale) ? locale : "fr";
 }

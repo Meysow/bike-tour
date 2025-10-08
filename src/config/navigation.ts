@@ -17,6 +17,24 @@ export const navigationConfig = {
     blog: "Blog",
     about: "À Propos",
   },
+  de: {
+    tours: "Geführte Touren",
+    rent: "Fahrradverleih",
+    blog: "Blog",
+    about: "Über Uns",
+  },
+  nl: {
+    tours: "Rondleidingen",
+    rent: "Fietsverhuur",
+    blog: "Blog",
+    about: "Over Ons",
+  },
+  es: {
+    tours: "Visitas Guiadas",
+    rent: "Alquiler de Bicicletas",
+    blog: "Blog",
+    about: "Sobre Nosotros",
+  },
 } as const;
 
 /**

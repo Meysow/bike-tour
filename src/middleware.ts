@@ -1,8 +1,8 @@
 import { getLocaleFromPath, routes, type Locale } from "@/config/routes";
 import { NextRequest, NextResponse } from "next/server";
 
-const locales: Locale[] = ["en", "fr"];
-const defaultLocale: Locale = "en";
+const locales: Locale[] = ["en", "fr", "de", "nl", "es"];
+const defaultLocale: Locale = "fr";
 
 /**
  * Détecter la locale préférée de l'utilisateur
@@ -19,8 +19,8 @@ function getPreferredLocale(request: NextRequest): Locale {
   if (acceptLanguage) {
     // Extraire la langue principale (ex: "fr-FR,fr;q=0.9,en;q=0.8" → "fr")
     const lang = acceptLanguage.split(",")[0].split("-")[0].toLowerCase();
-    if (lang === "fr") {
-      return "fr";
+    if (locales.includes(lang as Locale)) {
+      return lang as Locale;
     }
   }
 

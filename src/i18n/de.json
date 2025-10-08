@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "tours": "Geführte Touren",
+    "rent": "Fahrradverleih",
+    "blog": "Blog",
+    "about": "Über Uns"
+  },
+  "hero": {
+    "title": "Erleben Sie Paris Wie Nie Zuvor",
+    "subtitle": "Entdecken Sie die Stadt der Lichter auf zwei Rädern mit unseren Premium-Fahrradtouren und Verleihservices",
+    "cta": "Starten Sie Ihr Abenteuer"
+  },
+  "common": {
+    "learnMore": "Mehr Erfahren",
+    "bookNow": "Jetzt Buchen",
+    "contact": "Kontakt",
+    "readMore": "Weiterlesen"
+  }
+}

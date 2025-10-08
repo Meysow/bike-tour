@@ -1,0 +1,19 @@
+{
+  "navigation": {
+    "tours": "Visitas Guiadas",
+    "rent": "Alquiler de Bicicletas",
+    "blog": "Blog",
+    "about": "Sobre Nosotros"
+  },
+  "hero": {
+    "title": "Experimenta París Como Nunca Antes",
+    "subtitle": "Descubre la Ciudad de la Luz sobre dos ruedas con nuestros tours en bicicleta y servicios de alquiler premium",
+    "cta": "Comienza Tu Aventura"
+  },
+  "common": {
+    "learnMore": "Saber Más",
+    "bookNow": "Reservar Ahora",
+    "contact": "Contacto",
+    "readMore": "Leer Más"
+  }
+}

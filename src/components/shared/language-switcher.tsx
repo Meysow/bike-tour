@@ -15,8 +15,11 @@ import { type Locale } from "@/config/routes";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 
 const languages = [
-  { code: "en", name: "English", flag: "🇺🇸" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "nl", name: "Nederlands", flag: "🇳🇱" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
 ] as const;
 
 export function LanguageSwitcher() {
