@@ -11,26 +11,39 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { type Locale } from "@/config/routes";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 
 const languages = [
   { code: "en", name: "English", flag: "🇺🇸" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
-];
+] as const;
 
 export function LanguageSwitcher() {
   const pathname = usePathname();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const { locale: currentLocale, getLanguageSwitchUrl } = useLocalizedRoutes();
 
-  // Extraire la locale actuelle du pathname
-  const currentLocale = pathname.split("/")[1] || "en";
   const currentLanguage =
     languages.find((lang) => lang.code === currentLocale) || languages[0];
 
   // Fonction pour changer de langue
-  const switchLanguage = (newLocale: string) => {
-    // Remplacer la locale actuelle par la nouvelle dans le pathname
-    const newPath = pathname.replace(`/${currentLocale}`, `/${newLocale}`);
+  const switchLanguage = (newLocale: Locale) => {
+    // Mettre à jour le cookie de préférence de langue
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=${
+      60 * 60 * 24 * 365
+    }`;
+
+    // Si on est sur la page d'accueil, recharger la page pour que le middleware détecte le nouveau cookie
+    if (pathname === "/") {
+      router.refresh();
+      setIsOpen(false);
+      return;
+    }
+
+    // Obtenir l'URL traduite pour la nouvelle langue
+    const newPath = getLanguageSwitchUrl(newLocale);
     router.push(newPath);
     setIsOpen(false);
   };
@@ -67,7 +80,7 @@ export function LanguageSwitcher() {
         {languages.map((language) => (
           <DropdownMenuItem
             key={language.code}
-            onClick={() => switchLanguage(language.code)}
+            onClick={() => switchLanguage(language.code as Locale)}
             className={`flex items-center gap-3 cursor-pointer ${
               currentLocale === language.code
                 ? "bg-primary/10 text-primary font-medium"

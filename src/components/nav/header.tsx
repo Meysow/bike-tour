@@ -13,7 +13,6 @@ import { ThemeToggle } from "@/components/shared/theme-toggle";
 
 export function Header(): JSX.Element {
   const pathname = usePathname();
-  const locale = pathname.split("/")[1] || "en";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex h-16 w-full bg-background/80 backdrop-blur-lg border-b border-border/40 shadow-sm">
@@ -21,7 +20,7 @@ export function Header(): JSX.Element {
         {/* Logo - Prend une largeur fixe pour équilibrer */}
         <div className="flex w-1/3 justify-start">
           <Link
-            href={`/${locale}`}
+            href="/"
             className="flex items-center justify-center gap-2 text-lg font-bold tracking-wide transition-all duration-300 ease-in-out"
           >
             <Icons.bike className="size-12 md:hidden lg:flex" />
@@ -31,7 +30,7 @@ export function Header(): JSX.Element {
 
         {/* Navigation - Centrée dans le tiers du milieu */}
         <div className="flex w-1/3 justify-center">
-          <LocalizedNavigation navItems={siteConfig.navItems} />
+          <LocalizedNavigation />
         </div>
 
         {/* Actions - Prend une largeur fixe pour équilibrer */}
@@ -39,7 +38,7 @@ export function Header(): JSX.Element {
           <div className="flex items-center justify-center gap-2">
             <LanguageSwitcher />
             <ThemeToggle />
-            <LocalizedNavigationMobile navItems={siteConfig.navItems} />
+            <LocalizedNavigationMobile />
           </div>
         </div>
       </div>

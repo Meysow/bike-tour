@@ -1,9 +1,10 @@
 "use client";
 
-import type { NavItem } from "@/types";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { getNavItems } from "@/config/navigation";
+import { useLocale } from "@/hooks/use-localized-routes";
 import { cn } from "@/lib/utils";
 
 import {
@@ -14,24 +15,14 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-interface LocalizedNavigationProps {
-  navItems: NavItem[];
-}
-
-export function LocalizedNavigation({
-  navItems,
-}: LocalizedNavigationProps): JSX.Element {
+export function LocalizedNavigation(): JSX.Element {
   const pathname = usePathname();
+  const locale = useLocale();
+  const navItems = getNavItems(locale);
 
-  // Extraire la locale du pathname
-  const locale = pathname.split("/")[1] || "en";
-
-  // Fonction pour créer des liens localisés
-  const getLocalizedHref = (href: string) => {
-    if (href.startsWith("/en/") || href.startsWith("/fr/")) {
-      return href;
-    }
-    return `/${locale}${href}`;
+  // Vérifier si le lien est actif
+  const isActive = (href: string) => {
+    return pathname === href;
   };
 
   return (
@@ -41,8 +32,12 @@ export function LocalizedNavigation({
           <NavigationMenuItem key={item.title}>
             <NavigationMenuLink asChild>
               <Link
-                href={getLocalizedHref(item.href)}
-                className={cn(navigationMenuTriggerStyle(), "bg-transparent")}
+                href={item.href}
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "bg-transparent",
+                  isActive(item.href) && "text-primary"
+                )}
               >
                 {item.title}
               </Link>

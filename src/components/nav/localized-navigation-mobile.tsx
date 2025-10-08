@@ -1,11 +1,13 @@
 "use client";
 
-import type { NavItem } from "@/types";
 import Link from "next/link";
-import { usePathname, useSelectedLayoutSegment } from "next/navigation";
+import { usePathname } from "next/navigation";
 import * as React from "react";
 
+import { getNavItems } from "@/config/navigation";
+import { routes } from "@/config/routes";
 import { siteConfig } from "@/config/site";
+import { useLocale } from "@/hooks/use-localized-routes";
 
 import { cn } from "@/lib/utils";
 
@@ -14,40 +16,26 @@ import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
-interface LocalizedNavigationMobileProps {
-  navItems: NavItem[];
-}
-
 interface MobileLinkProps extends React.PropsWithChildren {
   href: string;
   disabled?: boolean;
-  segment: string;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  locale: string;
 }
 
 function MobileLink({
   children,
   href,
   disabled,
-  segment,
   setIsOpen,
-  locale,
 }: MobileLinkProps): JSX.Element {
-  // Fonction pour créer des liens localisés
-  const getLocalizedHref = (href: string) => {
-    if (href.startsWith("/en/") || href.startsWith("/fr/")) {
-      return href;
-    }
-    return `/${locale}${href}`;
-  };
+  const pathname = usePathname();
 
   return (
     <Link
-      href={getLocalizedHref(href)}
+      href={href}
       className={cn(
         "text-foreground/70 transition-colors hover:text-foreground",
-        href.includes(segment) && "text-foreground",
+        pathname === href && "text-foreground font-bold",
         disabled && "pointer-events-none opacity-60"
       )}
       onClick={() => setIsOpen(false)}
@@ -57,15 +45,10 @@ function MobileLink({
   );
 }
 
-export function LocalizedNavigationMobile({
-  navItems,
-}: LocalizedNavigationMobileProps) {
-  const pathname = usePathname();
-  const segment = useSelectedLayoutSegment();
+export function LocalizedNavigationMobile() {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
-
-  // Extraire la locale du pathname
-  const locale = pathname.split("/")[1] || "en";
+  const locale = useLocale();
+  const navItems = getNavItems(locale);
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -81,7 +64,7 @@ export function LocalizedNavigationMobile({
       >
         <div className="pl-4">
           <Link
-            href={`/${locale}`}
+            href={routes.home[locale]}
             className="flex items-center gap-2"
             onClick={() => setIsOpen(false)}
           >
@@ -94,13 +77,7 @@ export function LocalizedNavigationMobile({
         </div>
         <div className="flex flex-col gap-4 pl-16 text-xl font-medium leading-none tracking-wide">
           {navItems.map((item) => (
-            <MobileLink
-              key={item.title}
-              href={item.href}
-              segment={String(segment)}
-              setIsOpen={setIsOpen}
-              locale={locale}
-            >
+            <MobileLink key={item.title} href={item.href} setIsOpen={setIsOpen}>
               {item.title}
             </MobileLink>
           ))}
