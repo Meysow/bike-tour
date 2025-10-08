@@ -85,29 +85,32 @@ export function Footer(): JSX.Element {
                 Our Services
               </p>
               <nav className="mt-8">
-                <ul className="space-y-4 text-sm text-muted-foreground pl-4">
+                <ul className="space-y-4 text-sm pl-4">
                   <li>
                     <a
                       href={`/${locale}/rent`}
-                      className=" hover:text-primary "
+                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      Bike Rentals
+                      <span className="text-lg leading-none">🚲</span>
+                      <span>Bike Rentals</span>
                     </a>
                   </li>
                   <li>
                     <a
                       href={`/${locale}/tours`}
-                      className=" hover:text-primary "
+                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      Guided Tours
+                      <span className="text-lg leading-none">🗺️</span>
+                      <span>Guided Tours</span>
                     </a>
                   </li>
                   <li>
                     <a
                       href={`/${locale}/about`}
-                      className=" hover:text-primary "
+                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      About Us
+                      <span className="text-lg leading-none">👋</span>
+                      <span>About Us</span>
                     </a>
                   </li>
                 </ul>
