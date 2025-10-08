@@ -94,15 +94,15 @@ export function Footer(): JSX.Element {
               <ul className="mt-8 space-y-4 text-sm text-muted-foreground ">
                 <li className="flex gap-2">
                   <Icons.email className="size-5" />
-                  <span>contact@biketours.com</span>
+                  <span>contact@rentabikeparis.fr</span>
                 </li>
                 <li className="flex gap-2">
                   <Icons.user className="size-5" />
-                  <span>+33 1 234 5678</span>
+                  <span>+33 6 95 96 47 47</span>
                 </li>
                 <li className="flex gap-2">
                   <Icons.paperPlane className="size-5" />
-                  <span>123 Avenue, Paris, France</span>
+                  <span>20 rue Greneta, 75002 Paris</span>
                 </li>
               </ul>
             </div>

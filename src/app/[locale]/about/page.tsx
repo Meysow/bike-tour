@@ -3,6 +3,7 @@ import Balancer from "react-wrap-balancer";
 
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
+import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
 import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
 import { Button } from "@/components/ui/button";
@@ -327,6 +328,29 @@ export default function AboutPage(): JSX.Element {
                 Rent a Bike
               </Button>
             </div>
+          </div>
+        </section>
+
+        {/* Google Map Section */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
+                <Balancer>
+                  Find{" "}
+                  <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
+                    Us
+                  </span>
+                </Balancer>
+              </h2>
+              <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
+                <Balancer>
+                  Visit us at our location in the heart of Paris. We&apos;re
+                  easily accessible and ready to help you start your adventure.
+                </Balancer>
+              </p>
+            </div>
+            <GoogleMap address="20 rue Greneta, 75002 Paris" />
           </div>
         </section>
       </div>

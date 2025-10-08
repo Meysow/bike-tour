@@ -5,6 +5,7 @@ import { ContactSection } from "@/components/sections/contact-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { InstagramCarousel } from "@/components/sections/instagram-carousel";
+import { LocationMapSection } from "@/components/sections/location-map-section";
 import { PartnersSection } from "@/components/sections/partners-section";
 import { RentPricingSection } from "@/components/sections/rent-pricing-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
@@ -25,6 +26,7 @@ export default function HomePage(): JSX.Element {
         <PartnersSection />
         <FAQSection />
         <ContactSection />
+        <LocationMapSection />
       </div>
       <Footer />
       <WhatsAppFloatButton />
