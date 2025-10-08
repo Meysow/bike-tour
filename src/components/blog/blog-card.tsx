@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { BlogPost } from "@/types/blog";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -22,8 +23,18 @@ export function BlogCard({ post }: BlogCardProps) {
   const locale = pathname.split("/")[1] || "en";
 
   return (
-    <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+    <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
       <Link href={`/${locale}/blog/${post.slug}`} className="block">
+        {post.image && (
+          <div className="relative w-full h-48 overflow-hidden">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        )}
         <CardHeader>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
             <Icons.calendar className="h-4 w-4" />

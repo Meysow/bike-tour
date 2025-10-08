@@ -1,6 +1,7 @@
 import { Icons } from "@/components/shared/icons";
 import { Badge } from "@/components/ui/badge";
 import { BlogPost } from "@/types/blog";
+import Image from "next/image";
 
 interface BlogPostProps {
   post: BlogPost;
@@ -29,13 +30,26 @@ export function BlogPostComponent({ post }: BlogPostProps) {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mb-6">
           {post.tags.map((tag) => (
             <Badge key={tag} variant="secondary">
               {tag}
             </Badge>
           ))}
         </div>
+
+        {/* Featured Image */}
+        {post.image && (
+          <div className="relative w-full h-[400px] rounded-lg overflow-hidden mb-8">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        )}
       </header>
 
       {/* Content */}
@@ -46,4 +60,3 @@ export function BlogPostComponent({ post }: BlogPostProps) {
     </article>
   );
 }
-

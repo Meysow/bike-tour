@@ -7,6 +7,7 @@ export interface BlogPost {
   tags: string[];
   content: string;
   readingTime: number;
+  image?: string;
 }
 
 export interface BlogPostMetadata {
@@ -15,5 +16,5 @@ export interface BlogPostMetadata {
   date: string;
   author: string;
   tags: string[];
+  image?: string;
 }
-

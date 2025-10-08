@@ -4,6 +4,7 @@ description: "Explorez les plus beaux quartiers de Paris à vélo avec nos itin�
 date: "2024-09-29"
 author: "Léo"
 tags: ["Paris", "Vélo", "Itinéraires", "Découverte", "Tourisme", "Balade"]
+image: "/images/hero/louvre.jpg"
 ---
 
 # Découvrir Paris en vélo : 5 itinéraires incontournables

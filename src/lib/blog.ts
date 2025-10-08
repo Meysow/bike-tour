@@ -56,6 +56,7 @@ export async function getPostBySlug(slug: string): Promise<BlogPost> {
     tags: data.tags || [],
     content: contentHtml,
     readingTime,
+    image: data.image || "",
   };
 }
 
@@ -69,4 +70,3 @@ export function getAllPostSlugs(): string[] {
     .filter((name) => name.endsWith(".md"))
     .map((name) => name.replace(/\.md$/, ""));
 }
-

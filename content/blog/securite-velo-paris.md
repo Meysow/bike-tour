@@ -3,6 +3,7 @@ title: "Sécurité à vélo à Paris : guide complet pour rouler en toute séré
 description: "Tous nos conseils pour rouler en sécurité à Paris : code de la route, équipements, comportements à adopter et pièges à éviter."
 date: "2024-09-27"
 author: "Thomas"
+image: "/images/bikes/riding.webp"
 tags:
   [
     "Sécurité",

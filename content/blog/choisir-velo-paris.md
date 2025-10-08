@@ -4,6 +4,7 @@ description: "Guide complet pour choisir le vélo idéal selon vos besoins et vo
 date: "2024-09-28"
 author: "Marie"
 tags: ["Vélo", "Guide", "Conseils", "Location", "Équipement", "Débutant"]
+image: "/images/bikes/bike-illustration.webp"
 ---
 
 # Comment choisir le vélo parfait pour visiter Paris ?
