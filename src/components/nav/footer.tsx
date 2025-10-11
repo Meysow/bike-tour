@@ -1,28 +1,11 @@
 "use client";
 
-import { usePathname } from "next/navigation";
-
 import { siteConfig } from "@/config/site";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { Icons } from "../shared/icons";
 
 export function Footer(): JSX.Element {
-  const pathname = usePathname();
-
-  // Détecter la locale de manière plus robuste
-  const getLocale = () => {
-    const segments = pathname.split("/");
-    const firstSegment = segments[1];
-
-    // Si le premier segment est une locale connue
-    if (firstSegment === "en" || firstSegment === "fr") {
-      return firstSegment;
-    }
-
-    // Sinon, utiliser la locale par défaut
-    return "en";
-  };
-
-  const locale = getLocale();
+  const { createLink } = useLocalizedRoutes();
   return (
     <footer className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 rounded-2xl mx-6 mb-6 shadow">
       <div className="max-w-screen-xl px-6 pt-12 pb-6 mx-auto sm:px-8 lg:px-12 lg:pt-24">
@@ -88,7 +71,7 @@ export function Footer(): JSX.Element {
                 <ul className="space-y-4 text-sm pl-4">
                   <li>
                     <a
-                      href={`/${locale}/rent`}
+                      href={createLink("rent")}
                       className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
                       <span className="text-lg leading-none">🚲</span>
@@ -97,7 +80,7 @@ export function Footer(): JSX.Element {
                   </li>
                   <li>
                     <a
-                      href={`/${locale}/tours`}
+                      href={createLink("tours")}
                       className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
                       <span className="text-lg leading-none">🗺️</span>
@@ -106,7 +89,7 @@ export function Footer(): JSX.Element {
                   </li>
                   <li>
                     <a
-                      href={`/${locale}/about`}
+                      href={createLink("about")}
                       className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
                       <span className="text-lg leading-none">👋</span>
@@ -144,14 +127,14 @@ export function Footer(): JSX.Element {
             <p className="text-sm text-gray-400">
               <span>All rights reserved. </span>
               <a
-                href={`/${locale}/terms`}
+                href={createLink("terms")}
                 className="text-accent-foreground hover:text-primary"
               >
                 Terms & Conditions{" "}
               </a>
               &middot;
               <a
-                href={`/${locale}/privacy`}
+                href={createLink("privacy")}
                 className="text-accent-foreground hover:text-primary"
               >
                 Privacy Policy

@@ -9,18 +9,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { BlogPost } from "@/types/blog";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 interface BlogCardProps {
   post: BlogPost;
 }
 
 export function BlogCard({ post }: BlogCardProps) {
-  const pathname = usePathname();
-  const locale = pathname.split("/")[1] || "en";
+  const { locale } = useLocalizedRoutes();
 
   return (
     <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">

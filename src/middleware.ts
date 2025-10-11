@@ -77,15 +77,26 @@ export function middleware(request: NextRequest) {
   }
 
   // Vérifier si le pathname correspond à une route localisée
-  const { locale, routeKey, filePath } = getLocaleFromPath(pathname);
+  const preferredLocale = getPreferredLocale(request);
+  const { locale, routeKey, filePath } = getLocaleFromPath(
+    pathname,
+    preferredLocale
+  );
 
   if (routeKey && filePath) {
     // Rewrite vers la route avec [locale] et le chemin de fichier réel
     const url = request.nextUrl.clone();
     url.pathname = `/${locale}${filePath}`;
 
-    // Utiliser un rewrite pour que l'URL reste celle demandée par l'utilisateur
-    return NextResponse.rewrite(url);
+    const response = NextResponse.rewrite(url);
+
+    // Stocker la locale dans un cookie pour la prochaine visite
+    response.cookies.set(LOCALE_COOKIE_NAME, locale, {
+      maxAge: LOCALE_COOKIE_MAX_AGE,
+      path: "/",
+    });
+
+    return response;
   }
 
   // Pour toutes les autres routes, on laisse passer

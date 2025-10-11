@@ -19,20 +19,38 @@ export function useLocale(): Locale {
     return params.locale as Locale;
   }
 
-  // 2. Sinon, vérifier si le chemin correspond à une route française
-  for (const config of Object.values(routes)) {
-    // Ignorer la route home car "/" est commun aux deux langues
-    if (config.en === "/" && config.fr === "/") {
-      continue;
-    }
-
-    if (pathname === config.fr || pathname.startsWith(config.fr + "/")) {
-      return "fr";
+  // 2. Extraire la locale du pathname (format: /[locale]/...)
+  const segments = pathname.split("/").filter(Boolean);
+  if (segments.length > 0) {
+    const possibleLocale = segments[0];
+    const locales: Locale[] = ["en", "fr", "de", "nl", "es"];
+    if (locales.includes(possibleLocale as Locale)) {
+      return possibleLocale as Locale;
     }
   }
 
-  // 3. Par défaut, retourner 'en'
-  return "en";
+  // 3. Vérifier si le chemin correspond à une route localisée spécifique
+  for (const [key, config] of Object.entries(routes)) {
+    // Vérifier chaque locale
+    if (pathname === config.fr || pathname.startsWith(config.fr + "/")) {
+      return "fr";
+    }
+    if (pathname === config.de || pathname.startsWith(config.de + "/")) {
+      return "de";
+    }
+    if (pathname === config.nl || pathname.startsWith(config.nl + "/")) {
+      return "nl";
+    }
+    if (pathname === config.es || pathname.startsWith(config.es + "/")) {
+      return "es";
+    }
+    if (pathname === config.en || pathname.startsWith(config.en + "/")) {
+      return "en";
+    }
+  }
+
+  // 4. Par défaut, retourner 'fr' (locale par défaut)
+  return "fr";
 }
 
 /**

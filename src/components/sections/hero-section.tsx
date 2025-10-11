@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { cn } from "@/lib/utils";
 
 import { buttonVariants } from "@/components/ui/button";
@@ -12,8 +12,7 @@ import Balancer from "react-wrap-balancer";
 import PalaisRoyal from "../../../public/images/hero/palais-royal(1).jpg";
 
 export function HeroSection() {
-  const pathname = usePathname();
-  const locale = pathname.split("/")[1] || "en";
+  const { createLink } = useLocalizedRoutes();
   return (
     <section
       id="hero-section"
@@ -44,7 +43,7 @@ export function HeroSection() {
 
         <div className="z-10 flex animate-fade-up justify-center gap-4 flex-wrap md:mt-2">
           <Link
-            href={`/${locale}/tours`}
+            href={createLink("tours")}
             className={cn(
               buttonVariants(),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
@@ -54,7 +53,7 @@ export function HeroSection() {
             Explore Tours
           </Link>
           <Link
-            href={`/${locale}/rent`}
+            href={createLink("rent")}
             className={cn(
               buttonVariants({ variant: "outline" }),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"

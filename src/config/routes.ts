@@ -68,6 +68,14 @@ export const routes = {
     es: "/terminos-y-condiciones",
     filePath: "/terms",
   },
+  privacy: {
+    en: "/privacy-policy",
+    fr: "/politique-de-confidentialite",
+    de: "/datenschutzrichtlinie",
+    nl: "/privacybeleid",
+    es: "/politica-de-privacidad",
+    filePath: "/privacy",
+  },
 } as const;
 
 export type RouteKey = keyof typeof routes;
@@ -133,19 +141,52 @@ export function createPathToLocaleMap() {
 }
 
 /**
+ * Vérifier si une route a le même chemin pour toutes les locales
+ */
+function hasIdenticalPathsAcrossLocales(routeKey: RouteKey): boolean {
+  const config = routes[routeKey];
+  const paths = [config.en, config.fr, config.de, config.nl, config.es];
+  return new Set(paths).size === 1;
+}
+
+/**
  * Obtenir la locale et la route à partir d'un pathname
  */
-export function getLocaleFromPath(pathname: string): {
+export function getLocaleFromPath(
+  pathname: string,
+  preferredLocale: Locale = defaultLocale
+): {
   locale: Locale;
   routeKey: RouteKey | null;
   filePath: string | null;
 } {
-  const pathMap = createPathToLocaleMap();
-  const result = pathMap.get(pathname);
+  // Chercher manuellement dans toutes les routes
+  for (const [key, config] of Object.entries(routes)) {
+    const routeKey = key as RouteKey;
 
-  if (result) {
-    const filePath = routes[result.key].filePath;
-    return { locale: result.locale, routeKey: result.key, filePath };
+    // Vérifier si le pathname correspond à cette route dans n'importe quelle langue
+    if (
+      pathname === config.en ||
+      pathname === config.fr ||
+      pathname === config.de ||
+      pathname === config.nl ||
+      pathname === config.es
+    ) {
+      const filePath = config.filePath;
+
+      // Si la route a le même chemin pour toutes les locales (comme /blog),
+      // utiliser la locale préférée au lieu de deviner
+      if (hasIdenticalPathsAcrossLocales(routeKey)) {
+        return { locale: preferredLocale, routeKey, filePath };
+      }
+
+      // Sinon, déterminer la locale à partir du chemin
+      if (pathname === config.en) return { locale: "en", routeKey, filePath };
+      if (pathname === config.fr) return { locale: "fr", routeKey, filePath };
+      if (pathname === config.de) return { locale: "de", routeKey, filePath };
+      if (pathname === config.nl) return { locale: "nl", routeKey, filePath };
+      if (pathname === config.es) return { locale: "es", routeKey, filePath };
+    }
   }
 
   // Par défaut, retourner la locale par défaut si la route n'est pas trouvée
