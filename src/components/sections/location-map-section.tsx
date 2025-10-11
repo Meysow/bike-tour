@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export function LocationMapSection(): JSX.Element {
   return (
-    <section className="py-16 md:py-24">
+    <section className="pt-0 pb-16 md:pb-24">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
