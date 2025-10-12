@@ -28,92 +28,165 @@ export default function AboutPage(): JSX.Element {
             <div className="text-center space-y-6">
               <h1 className="font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
                 <Balancer>
-                  About{" "}
+                  Welcome to{" "}
                   <span className="relative bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text font-extrabold text-transparent">
-                    RentaTour
+                    RentaBikeParis
                   </span>
                 </Balancer>
               </h1>
               <p className="max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl sm:leading-8">
                 <Balancer>
-                  We&apos;re passionate about helping you discover Paris in the
-                  most authentic way possible. Our mission is to create
-                  unforgettable cycling experiences that connect you with the
-                  heart and soul of the City of Light.
+                  Discover the freedom of exploring Paris like a Parisian! 🚴‍♂️
+                  Join me, Léo, as I share my passion for cycling and the hidden
+                  gems of my beautiful city with travelers from all over the
+                  world.
                 </Balancer>
               </p>
             </div>
           </div>
         </section>
 
-        {/* Our Story Section */}
-        <section className="py-16 md:py-24">
+        {/* My Story Section */}
+        <section className="py-16 md:py-24 bg-orange-50">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <div className="space-y-4">
                   <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
-                    <Balancer>Our Story</Balancer>
+                    <Balancer>My Story 🇫🇷</Balancer>
                   </h2>
                   <div className="w-24 h-1 bg-gradient-to-r from-primary to-fuchsia-400 rounded-full"></div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
-                  <Balancer>
-                    Founded by passionate Parisians who believe that the best
-                    way to experience our beautiful city is on two wheels. We
-                    started RentaTour with a simple vision: to make Paris
-                    accessible to everyone through guided bike tours and quality
-                    bike rentals.
-                  </Balancer>
+                  My name is Léo and I was born and raised in Paris where I
+                  still love to bike around! From a young age, I loved cruising
+                  around, meeting new people and discovering new places.
                 </p>
 
                 <p className="text-lg leading-8 text-muted-foreground">
-                  <Balancer>
-                    Our team of local guides knows every hidden alley, every
-                    secret courtyard, and every story that makes Paris truly
-                    magical. We&apos;re not just showing you the sights –
-                    we&apos;re sharing our love for this incredible city.
-                  </Balancer>
+                  After finishing my studies in Bremen located in Germany, I
+                  wanted to live the &quot;Berlin dream&quot;, where I spent
+                  some wonderful years! This dynamic city gave me the chance to
+                  perfect my English and German, two languages that I&apos;m
+                  happy to speak when I get the chance.
                 </p>
 
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">5+</div>
-                    <div className="text-sm text-muted-foreground">
-                      Years Experience
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">1000+</div>
-                    <div className="text-sm text-muted-foreground">
-                      Happy Customers
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">50+</div>
-                    <div className="text-sm text-muted-foreground">
-                      Bikes Available
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-primary">4.9★</div>
-                    <div className="text-sm text-muted-foreground">
-                      Average Rating
-                    </div>
-                  </div>
-                </div>
+                <p className="text-lg leading-8 text-muted-foreground">
+                  Back in my beautiful Paris, I joined the team at Swapfiets, an
+                  innovative company specialized in bike rental with a
+                  maintenance service included. Thanks to this experience, I saw
+                  a growing demand for short-term rentals, particularly from
+                  tourists.
+                </p>
+
+                <p className="text-lg leading-8 text-muted-foreground">
+                  That&apos;s when I decided to set up{" "}
+                  <span className="font-semibold text-primary">
+                    RentaBikeParis
+                  </span>
+                  , my own bike rental and guided tour company, with the idea of
+                  sharing the beauty of my city in my own way. Thanks to
+                  RentaBikeParis, I have the opportunity to share my passion for
+                  cycling, enriching encounters and discovering Paris with
+                  travelers from all over the world! ✨
+                </p>
               </div>
 
               <div className="relative">
                 <Image
-                  alt="RentaTour team and bikes"
-                  src="/images/hero/louvre.jpg"
+                  alt="Léo with his bike"
+                  src="/images/about/leo.jpg"
                   width={600}
                   height={400}
                   className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Team Section */}
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
+                <Balancer>
+                  Meet our{" "}
+                  <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
+                    Guides
+                  </span>
+                </Balancer>
+              </h2>
+              <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
+                <Balancer>
+                  Passionate locals who love sharing their city with visitors
+                  from around the world.
+                </Balancer>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="text-center space-y-4">
+                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/avatars/rafalkowalski.jpeg"
+                    alt="Pierre - Lead Guide"
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg">Pierre</h3>
+                <p className="text-sm text-muted-foreground">
+                  Lead Guide & Co-founder
+                </p>
+                <p className="text-muted-foreground">
+                  Born and raised in Paris, Pierre knows every corner of the
+                  city. His passion for cycling and local history makes every
+                  tour unforgettable.
+                </p>
+              </div>
+
+              <div className="text-center space-y-4">
+                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/avatars/jennyblack.jpeg"
+                    alt="Marie - Art Specialist"
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg">Marie</h3>
+                <p className="text-sm text-muted-foreground">
+                  Art & Culture Specialist
+                </p>
+                <p className="text-muted-foreground">
+                  An art history graduate, Marie specializes in our artistic
+                  tours. She&apos;ll show you Paris through the eyes of the
+                  great masters.
+                </p>
+              </div>
+
+              <div className="text-center space-y-4">
+                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center overflow-hidden">
+                  <Image
+                    src="/images/avatars/kevinhamilton.jpeg"
+                    alt="Jean - Bike Technician"
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg">Jean</h3>
+                <p className="text-sm text-muted-foreground">Bike Technician</p>
+                <p className="text-muted-foreground">
+                  Our bike whisperer! Jean ensures every bike is in perfect
+                  condition and can fix anything on the spot. Safety is his
+                  middle name.
+                </p>
               </div>
             </div>
           </div>
@@ -133,7 +206,7 @@ export default function AboutPage(): JSX.Element {
               </h2>
               <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
                 <Balancer>
-                  The principles that guide everything we do at RentaTour.
+                  The principles that guide everything we do at RentaBikeParis.
                 </Balancer>
               </p>
             </div>
@@ -212,67 +285,45 @@ export default function AboutPage(): JSX.Element {
           </div>
         </section>
 
-        {/* Our Team Section */}
+        {/* Partnership Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
                 <Balancer>
-                  Meet our{" "}
+                  Our{" "}
                   <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
-                    Team
+                    Partnership
                   </span>
                 </Balancer>
               </h2>
               <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
                 <Balancer>
-                  Passionate locals who love sharing their city with visitors
-                  from around the world.
+                  Quality and reliability through trusted collaboration 🤝
                 </Balancer>
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="max-w-3xl mx-auto space-y-8">
               <div className="text-center space-y-4">
                 <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-3xl">👨‍🚴</span>
+                  <span className="text-3xl">🚴‍♂️</span>
                 </div>
-                <h3 className="font-semibold text-lg">Pierre</h3>
-                <p className="text-sm text-muted-foreground">
-                  Lead Guide & Founder
+                <h3 className="font-semibold text-2xl">
+                  Swapfiets Partnership
+                </h3>
+                <p className="text-lg text-muted-foreground leading-8">
+                  I&apos;m grateful to have Swapfiets as a partner so that
+                  everyone can enjoy their bikes, even for a short time! Their
+                  support has been important in the development of
+                  RentaBikeParis, and I&apos;m proud to work with such a dynamic
+                  and committed company.
                 </p>
-                <p className="text-muted-foreground">
-                  Born and raised in Paris, Pierre knows every corner of the
-                  city. His passion for cycling and local history makes every
-                  tour unforgettable.
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-3xl">👩‍🚴</span>
-                </div>
-                <h3 className="font-semibold text-lg">Marie</h3>
-                <p className="text-sm text-muted-foreground">
-                  Art & Culture Specialist
-                </p>
-                <p className="text-muted-foreground">
-                  An art history graduate, Marie specializes in our artistic
-                  tours. She&apos;ll show you Paris through the eyes of the
-                  great masters.
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-3xl">👨‍🔧</span>
-                </div>
-                <h3 className="font-semibold text-lg">Jean</h3>
-                <p className="text-sm text-muted-foreground">Bike Technician</p>
-                <p className="text-muted-foreground">
-                  Our bike whisperer! Jean ensures every bike is in perfect
-                  condition and can fix anything on the spot. Safety is his
-                  middle name.
+                <p className="text-lg text-muted-foreground leading-8">
+                  Thanks to this partnership, I can offer you high-quality,
+                  stylish bikes with the distinctive blue tires and the
+                  reliability of professional maintenance. Safety, comfort, and
+                  quality are always our top priorities!
                 </p>
               </div>
             </div>
@@ -283,13 +334,14 @@ export default function AboutPage(): JSX.Element {
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-fuchsia-400/5">
           <div className="container mx-auto px-4 max-w-4xl text-center">
             <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-              <Balancer>Ready to explore Paris with us?</Balancer>
+              <Balancer>Ready to hit the road together?</Balancer>
             </h2>
             <p className="max-w-2xl mx-auto text-lg text-muted-foreground mb-8">
               <Balancer>
-                Whether you&apos;re interested in a guided tour or bike rental,
-                we&apos;re here to help you create the perfect Parisian
-                adventure.
+                Whether you&apos;re a tourist eager to discover the city or a
+                Parisian looking for an urban adventure, I&apos;d be more than
+                happy to bring you on your next cycling excursion in Paris city!
+                We look forward to hit the road together! 💫
               </Balancer>
             </p>
 
