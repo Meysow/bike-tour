@@ -54,24 +54,39 @@ export default function ToursPage(): JSX.Element {
                 <div className="space-y-4">
                   <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
                     <span className="text-sm font-semibold text-primary">
-                      Full Tour Experience
+                      Paris Guided Bike Tour
                     </span>
                   </div>
                   <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
                     <Balancer>All around Paris by Bike</Balancer>
                   </h2>
                   <div className="flex items-center gap-2">
-                    <span className="text-3xl font-bold text-primary">€45</span>
+                    <span className="text-3xl font-bold text-primary">
+                      From €40
+                    </span>
                     <span className="text-muted-foreground">per person</span>
                   </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
                   <Balancer>
-                    Starting in the heart of Paris 💫 we will take you to our
-                    most beautiful spots around the city 🚴🏻‍♂️ The tour is a good
-                    mix in between our touch, typical Parisian streets, and
-                    emblematic monuments of the city.
+                    With our Paris Guided Bike Tour, discovering the capital
+                    becomes child&apos;s play! This cycling itinerary is
+                    accessible to all levels. We offer a unique mix of our top
+                    spots, typical Parisian streets and the city&apos;s most
+                    emblematic landmarks. Ideal for those who want to discover
+                    the heart of Paris and its great monuments. The programme
+                    includes discovering both banks of the Seine!
+                  </Balancer>
+                </p>
+
+                <p className="text-lg leading-8 text-muted-foreground">
+                  <Balancer>
+                    Your guide will tell you fascinating and often amusing
+                    stories about the history of Paris. The atmosphere is just
+                    right. All you have to do is let yourself be guided and
+                    enjoy this magnificent bike ride to discover Paris. Get
+                    ready for this exciting adventure! 🚴‍♂️
                   </Balancer>
                 </p>
 
@@ -110,34 +125,43 @@ export default function ToursPage(): JSX.Element {
                         <div>
                           <div className="font-medium">Starting Point</div>
                           <div className="text-sm text-muted-foreground">
-                            20 rue Greneta, 75002 Paris
+                            20 Rue Greneta, 75002 Paris
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="text-xl">⏰</span>
                         <div>
-                          <div className="font-medium">Duration</div>
+                          <div className="font-medium">Duration & Distance</div>
                           <div className="text-sm text-muted-foreground">
-                            3-hours ride around Paris
+                            3 Hours - 12 kilometers
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
-                        <span className="text-xl">👤</span>
+                        <span className="text-xl">📅</span>
                         <div>
-                          <div className="font-medium">Break</div>
+                          <div className="font-medium">Availability</div>
                           <div className="text-sm text-muted-foreground">
-                            A nice break in between to get to know each other
+                            Every day - 10:30 am / 2:30 pm departures
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="text-xl">🚴</span>
                         <div>
-                          <div className="font-medium">Equipment</div>
+                          <div className="font-medium">Bike Options</div>
                           <div className="text-sm text-muted-foreground">
-                            Bike & helmet included
+                            Your choice of bike type
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-xl">📝</span>
+                        <div>
+                          <div className="font-medium">Booking</div>
+                          <div className="text-sm text-muted-foreground">
+                            Reserve at least 1 day in advance
                           </div>
                         </div>
                       </div>
@@ -145,15 +169,36 @@ export default function ToursPage(): JSX.Element {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-lg">Pricing</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div className="p-4 rounded-lg border border-border bg-card">
+                      <div className="text-sm text-muted-foreground mb-1">
+                        Child&apos;s Bike
+                      </div>
+                      <div className="text-2xl font-bold text-primary">€35</div>
+                    </div>
+                    <div className="p-4 rounded-lg border border-primary bg-primary/5">
+                      <div className="text-sm text-muted-foreground mb-1">
+                        Pedal Bike
+                      </div>
+                      <div className="text-2xl font-bold text-primary">€40</div>
+                    </div>
+                    <div className="p-4 rounded-lg border border-border bg-card">
+                      <div className="text-sm text-muted-foreground mb-1">
+                        Electric Bike
+                      </div>
+                      <div className="text-2xl font-bold text-primary">€50</div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic">
+                    Optional: Helmet and/or basket available upon request
+                  </p>
+                </div>
+
+                <div className="flex justify-center">
                   <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
                     Book This Tour
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="h-12 px-8 text-lg font-bold tracking-wide"
-                  >
-                    Learn More
                   </Button>
                 </div>
               </div>
@@ -172,13 +217,13 @@ export default function ToursPage(): JSX.Element {
           </div>
         </section>
 
-        {/* Tour 2 - Evening Lights */}
+        {/* Tour 2 - Canal Saint-Martin */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-fuchsia-400/5">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative lg:order-2">
                 <Image
-                  alt="Paris evening lights tour"
+                  alt="Canal Saint-Martin bike tour"
                   src="/images/hero/palais-royal.jpg"
                   width={600}
                   height={500}
@@ -191,53 +236,65 @@ export default function ToursPage(): JSX.Element {
                 <div className="space-y-4">
                   <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
                     <span className="text-sm font-semibold text-primary">
-                      Evening Lights Tour
+                      Authentic Paris Experience
                     </span>
                   </div>
                   <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
-                    <Balancer>
-                      Experience the Magic of Paris Under the Lights
-                    </Balancer>
+                    <Balancer>Canal Saint-Martin Discovery Tour</Balancer>
                   </h2>
                   <div className="flex items-center gap-2">
-                    <span className="text-3xl font-bold text-primary">€45</span>
+                    <span className="text-3xl font-bold text-primary">
+                      From €35
+                    </span>
                     <span className="text-muted-foreground">per person</span>
                   </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
                   <Balancer>
-                    Join us for a nighttime adventure as Paris lights up. See
-                    the Eiffel Tower, Champs-Elysées, and the Seine in all their
-                    illuminated glory.
+                    Get ready to discover my favorite hidden gem in Paris! 🚴‍♂️
+                    This Canal Saint-Martin tour takes you away from the tourist
+                    crowds to explore the bohemian heart of the 10th and 11th
+                    arrondissements. We&apos;ll cruise along the picturesque
+                    canal, pass through its iconic locks, and soak up the
+                    vibrant local atmosphere that makes this neighborhood so
+                    special.
+                  </Balancer>
+                </p>
+
+                <p className="text-lg leading-8 text-muted-foreground">
+                  <Balancer>
+                    I&apos;ll share fascinating stories about the area&apos;s
+                    transformation while we discover hidden cafés and artisan
+                    shops. This is Paris as the locals live it! Perfect for
+                    those seeking an authentic, off-the-beaten-path adventure.
+                    ✨
                   </Balancer>
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h3 className="font-semibold text-lg">
-                      Evening Highlights
-                    </h3>
+                    <h3 className="font-semibold text-lg">Tour Highlights</h3>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Eiffel Tower Sparkle Show
+                        Canal Saint-Martin & Its Locks
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Champs-Élysées at Night
+                        Romantic Iron Footbridges
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Seine River Reflections
+                        Trendy Cafés & Boutiques
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Notre-Dame Illuminated
+                        Place de la République
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Parisian Café Culture
+                        Hidden Courtyards & Street Art
                       </li>
                     </ul>
                   </div>
@@ -250,35 +307,43 @@ export default function ToursPage(): JSX.Element {
                         <div>
                           <div className="font-medium">Starting Point</div>
                           <div className="text-sm text-muted-foreground">
-                            15 avenue Montaigne, 75008 Paris
+                            20 Rue Greneta, 75002 Paris
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="text-xl">⏰</span>
                         <div>
-                          <div className="font-medium">Duration</div>
+                          <div className="font-medium">Duration & Distance</div>
                           <div className="text-sm text-muted-foreground">
-                            2-hour ride through iconic night views
+                            2.5 Hours - 10 kilometers
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
-                        <span className="text-xl">🌙</span>
+                        <span className="text-xl">📅</span>
                         <div>
-                          <div className="font-medium">Best Time</div>
+                          <div className="font-medium">Availability</div>
                           <div className="text-sm text-muted-foreground">
-                            Sunset to 10 PM
+                            Every day - 10:30 am / 2:30 pm departures
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
-                        <span className="text-xl">☕</span>
+                        <span className="text-xl">🚴</span>
                         <div>
-                          <div className="font-medium">Break</div>
+                          <div className="font-medium">Bike Options</div>
                           <div className="text-sm text-muted-foreground">
-                            A stop for hot drinks and conversation under the
-                            stars
+                            Your choice of bike type
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-xl">📝</span>
+                        <div>
+                          <div className="font-medium">Booking</div>
+                          <div className="text-sm text-muted-foreground">
+                            Reserve at least 1 day in advance
                           </div>
                         </div>
                       </div>
@@ -286,15 +351,36 @@ export default function ToursPage(): JSX.Element {
                   </div>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-lg">Pricing</h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div className="p-4 rounded-lg border border-border bg-card">
+                      <div className="text-sm text-muted-foreground mb-1">
+                        Child&apos;s Bike
+                      </div>
+                      <div className="text-2xl font-bold text-primary">€35</div>
+                    </div>
+                    <div className="p-4 rounded-lg border border-primary bg-primary/5">
+                      <div className="text-sm text-muted-foreground mb-1">
+                        Pedal Bike
+                      </div>
+                      <div className="text-2xl font-bold text-primary">€40</div>
+                    </div>
+                    <div className="p-4 rounded-lg border border-border bg-card">
+                      <div className="text-sm text-muted-foreground mb-1">
+                        Electric Bike
+                      </div>
+                      <div className="text-2xl font-bold text-primary">€50</div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground italic">
+                    Optional: Helmet and/or basket available upon request
+                  </p>
+                </div>
+
+                <div className="flex justify-center">
                   <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
                     Book This Tour
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="h-12 px-8 text-lg font-bold tracking-wide"
-                  >
-                    Learn More
                   </Button>
                 </div>
               </div>
@@ -373,15 +459,9 @@ export default function ToursPage(): JSX.Element {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex justify-center">
                   <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
                     Contact Us
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="h-12 px-8 text-lg font-bold tracking-wide"
-                  >
-                    Learn More
                   </Button>
                 </div>
               </div>

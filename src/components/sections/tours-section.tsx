@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
 import {
@@ -9,9 +12,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { tours } from "@/data/tourData";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { Button } from "../ui/button";
 
 export function ToursSection(): JSX.Element {
+  const { createLink } = useLocalizedRoutes();
   return (
     <section id="tour-section" aria-label="Tour section" className="w-full">
       <div className="container grid max-w-6xl justify-center gap-16">
@@ -79,9 +84,18 @@ export function ToursSection(): JSX.Element {
                     </Balancer>
                   </p>
 
-                  <div className="flex justify-center px-4">
-                    <Button className="h-10 w-full border font-bold tracking-wide text-white">
-                      Book Now
+                  <div className="flex flex-col sm:flex-row gap-3 px-4">
+                    <Button
+                      asChild
+                      className="h-10 flex-1 font-bold tracking-wide bg-secondary/80 hover:bg-secondary text-secondary-foreground shadow-md hover:shadow-lg transition-all border-2 border-secondary"
+                    >
+                      <Link href={createLink("tours")}>More Info</Link>
+                    </Button>
+                    <Button
+                      asChild
+                      className="h-10 flex-1 font-bold tracking-wide bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md hover:shadow-lg transition-all"
+                    >
+                      <Link href="#book-tour">Book Now</Link>
                     </Button>
                   </div>
 
@@ -175,9 +189,20 @@ export function ToursSection(): JSX.Element {
                       </div>
                     </div>
 
-                    <div className="flex justify-center">
-                      <Button className="h-10 w-full border font-bold tracking-wide text-white">
-                        Contact
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <Button
+                        asChild
+                        className="h-10 flex-1 font-bold tracking-wide bg-secondary/80 hover:bg-secondary text-secondary-foreground shadow-md hover:shadow-lg transition-all border-2 border-secondary"
+                      >
+                        <Link href={createLink("tours")}>More Info</Link>
+                      </Button>
+                      <Button
+                        asChild
+                        className="h-10 flex-1 font-bold tracking-wide bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md hover:shadow-lg transition-all"
+                      >
+                        <Link href={`${createLink("home")}#contact`}>
+                          Contact Us
+                        </Link>
                       </Button>
                     </div>
                   </div>

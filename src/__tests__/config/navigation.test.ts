@@ -15,6 +15,7 @@ describe("Navigation Configuration", () => {
       const locales: Locale[] = ["en", "fr", "de", "nl", "es"];
 
       locales.forEach((locale) => {
+        expect(navigationConfig[locale]).toHaveProperty("home");
         expect(navigationConfig[locale]).toHaveProperty("tours");
         expect(navigationConfig[locale]).toHaveProperty("rent");
         expect(navigationConfig[locale]).toHaveProperty("blog");
@@ -23,6 +24,7 @@ describe("Navigation Configuration", () => {
     });
 
     it("should have correct English labels", () => {
+      expect(navigationConfig.en.home).toBe("Home");
       expect(navigationConfig.en.tours).toBe("Guided Tours");
       expect(navigationConfig.en.rent).toBe("Bike Rentals");
       expect(navigationConfig.en.blog).toBe("Blog");
@@ -30,6 +32,7 @@ describe("Navigation Configuration", () => {
     });
 
     it("should have correct French labels", () => {
+      expect(navigationConfig.fr.home).toBe("Accueil");
       expect(navigationConfig.fr.tours).toBe("Visites Guidées");
       expect(navigationConfig.fr.rent).toBe("Location de Vélos");
       expect(navigationConfig.fr.blog).toBe("Blog");
@@ -37,6 +40,7 @@ describe("Navigation Configuration", () => {
     });
 
     it("should have correct German labels", () => {
+      expect(navigationConfig.de.home).toBe("Startseite");
       expect(navigationConfig.de.tours).toBe("Geführte Touren");
       expect(navigationConfig.de.rent).toBe("Fahrradverleih");
       expect(navigationConfig.de.blog).toBe("Blog");
@@ -49,20 +53,24 @@ describe("Navigation Configuration", () => {
       it("should return nav items for English", () => {
         const items = getNavItems("en");
 
-        expect(items).toHaveLength(4);
+        expect(items).toHaveLength(5);
         expect(items[0]).toEqual({
+          title: "Home",
+          href: "/",
+        });
+        expect(items[1]).toEqual({
           title: "Guided Tours",
           href: "/guided-bike-tour-paris",
         });
-        expect(items[1]).toEqual({
+        expect(items[2]).toEqual({
           title: "Bike Rentals",
           href: "/bike-rental-paris",
         });
-        expect(items[2]).toEqual({
+        expect(items[3]).toEqual({
           title: "Blog",
           href: "/blog",
         });
-        expect(items[3]).toEqual({
+        expect(items[4]).toEqual({
           title: "About Us",
           href: "/about-us",
         });
@@ -71,20 +79,24 @@ describe("Navigation Configuration", () => {
       it("should return nav items for French", () => {
         const items = getNavItems("fr");
 
-        expect(items).toHaveLength(4);
+        expect(items).toHaveLength(5);
         expect(items[0]).toEqual({
+          title: "Accueil",
+          href: "/",
+        });
+        expect(items[1]).toEqual({
           title: "Visites Guidées",
           href: "/visite-guidee-de-paris-a-velo",
         });
-        expect(items[1]).toEqual({
+        expect(items[2]).toEqual({
           title: "Location de Vélos",
           href: "/location-velo-paris",
         });
-        expect(items[2]).toEqual({
+        expect(items[3]).toEqual({
           title: "Blog",
           href: "/blog",
         });
-        expect(items[3]).toEqual({
+        expect(items[4]).toEqual({
           title: "À Propos",
           href: "/a-propos",
         });
@@ -93,31 +105,37 @@ describe("Navigation Configuration", () => {
       it("should return nav items for German", () => {
         const items = getNavItems("de");
 
-        expect(items).toHaveLength(4);
-        expect(items[0].title).toBe("Geführte Touren");
-        expect(items[1].title).toBe("Fahrradverleih");
-        expect(items[0].href).toBe("/gefuehrte-radtour-paris");
-        expect(items[1].href).toBe("/fahrradverleih-paris");
+        expect(items).toHaveLength(5);
+        expect(items[0].title).toBe("Startseite");
+        expect(items[1].title).toBe("Geführte Touren");
+        expect(items[2].title).toBe("Fahrradverleih");
+        expect(items[0].href).toBe("/");
+        expect(items[1].href).toBe("/gefuehrte-radtour-paris");
+        expect(items[2].href).toBe("/fahrradverleih-paris");
       });
 
       it("should return nav items for Dutch", () => {
         const items = getNavItems("nl");
 
-        expect(items).toHaveLength(4);
-        expect(items[0].title).toBe("Rondleidingen");
-        expect(items[1].title).toBe("Fietsverhuur");
-        expect(items[0].href).toBe("/begeleide-fietstour-parijs");
-        expect(items[1].href).toBe("/fietsverhuur-parijs");
+        expect(items).toHaveLength(5);
+        expect(items[0].title).toBe("Home");
+        expect(items[1].title).toBe("Rondleidingen");
+        expect(items[2].title).toBe("Fietsverhuur");
+        expect(items[0].href).toBe("/");
+        expect(items[1].href).toBe("/begeleide-fietstour-parijs");
+        expect(items[2].href).toBe("/fietsverhuur-parijs");
       });
 
       it("should return nav items for Spanish", () => {
         const items = getNavItems("es");
 
-        expect(items).toHaveLength(4);
-        expect(items[0].title).toBe("Visitas Guiadas");
-        expect(items[1].title).toBe("Alquiler de Bicicletas");
-        expect(items[0].href).toBe("/tour-guiado-bicicleta-paris");
-        expect(items[1].href).toBe("/alquiler-bicicletas-paris");
+        expect(items).toHaveLength(5);
+        expect(items[0].title).toBe("Inicio");
+        expect(items[1].title).toBe("Visitas Guiadas");
+        expect(items[2].title).toBe("Alquiler de Bicicletas");
+        expect(items[0].href).toBe("/");
+        expect(items[1].href).toBe("/tour-guiado-bicicleta-paris");
+        expect(items[2].href).toBe("/alquiler-bicicletas-paris");
       });
     });
 
@@ -126,12 +144,16 @@ describe("Navigation Configuration", () => {
         // @ts-expect-error - Testing invalid locale
         const items = getNavItems("invalid");
 
-        expect(items).toHaveLength(4);
+        expect(items).toHaveLength(5);
         expect(items[0]).toEqual({
+          title: "Accueil",
+          href: "/",
+        });
+        expect(items[1]).toEqual({
           title: "Visites Guidées",
           href: "/visite-guidee-de-paris-a-velo",
         });
-        expect(items[1]).toEqual({
+        expect(items[2]).toEqual({
           title: "Location de Vélos",
           href: "/location-velo-paris",
         });
@@ -141,18 +163,20 @@ describe("Navigation Configuration", () => {
         // @ts-expect-error - Testing undefined locale
         const items = getNavItems(undefined);
 
-        expect(items).toHaveLength(4);
-        expect(items[0].title).toBe("Visites Guidées");
-        expect(items[1].title).toBe("Location de Vélos");
+        expect(items).toHaveLength(5);
+        expect(items[0].title).toBe("Accueil");
+        expect(items[1].title).toBe("Visites Guidées");
+        expect(items[2].title).toBe("Location de Vélos");
       });
 
       it("should fallback to French for null locale", () => {
         // @ts-expect-error - Testing null locale
         const items = getNavItems(null);
 
-        expect(items).toHaveLength(4);
-        expect(items[0].title).toBe("Visites Guidées");
-        expect(items[1].title).toBe("Location de Vélos");
+        expect(items).toHaveLength(5);
+        expect(items[0].title).toBe("Accueil");
+        expect(items[1].title).toBe("Visites Guidées");
+        expect(items[2].title).toBe("Location de Vélos");
       });
 
       it("should not throw error for invalid locale", () => {
