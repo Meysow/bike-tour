@@ -120,49 +120,59 @@ export function ToursSection(): JSX.Element {
                     </div>
 
                     <div className="text-base leading-8 tracking-wide text-muted-foreground">
-                      <Balancer>
-                        <div className="space-y-4">
-                          <p>{tour.details}</p>
-                          <p className="font-semibold text-foreground">
+                      <div className="space-y-4">
+                        <p>
+                          <Balancer>{tour.details}</Balancer>
+                        </p>
+                        <p className="font-semibold text-foreground">
+                          <Balancer>
                             Let&apos;s bring your vision to life
-                          </p>
-                          <ul className="space-y-2">
-                            <li className="flex items-start gap-2">
-                              <span className="text-primary">•</span>
-                              <span>
+                          </Balancer>
+                        </p>
+                        <ul className="space-y-2">
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary">•</span>
+                            <span>
+                              <Balancer>
                                 We welcome inquiries for customizing tours based
                                 on specific interests, durations, and group
                                 sizes. Let&apos;s explore Paris your way through
                                 a personalized itinerary designed just for you.
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="text-primary">•</span>
-                              <span>
+                              </Balancer>
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary">•</span>
+                            <span>
+                              <Balancer>
                                 Additionally, we specialize in curating
                                 exceptional experiences for corporate outings
                                 and team-building activities. Engage your team
                                 in an exciting adventure, combining exploration,
                                 team bonding, and unforgettable memories.
-                              </span>
-                            </li>
-                            <li className="flex items-start gap-2">
-                              <span className="text-primary">•</span>
-                              <span>
+                              </Balancer>
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-primary">•</span>
+                            <span>
+                              <Balancer>
                                 We are here to assist you every step of the way,
                                 from initial planning to seamless execution.
-                              </span>
-                            </li>
-                          </ul>
-                          <p className="italic">
+                              </Balancer>
+                            </span>
+                          </li>
+                        </ul>
+                        <p className="italic">
+                          <Balancer>
                             We value open communication and encourage you to get
                             in touch with us to discuss your ideas, preferences,
                             and any special requirements you may have. We are
                             excited to collaborate and make your vision a
                             reality! 💫🚴🏻‍♂️
-                          </p>
-                        </div>
-                      </Balancer>
+                          </Balancer>
+                        </p>
+                      </div>
                     </div>
 
                     <div className="flex justify-center">

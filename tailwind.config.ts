@@ -3,7 +3,7 @@
 import typography from "@tailwindcss/typography";
 import tailwindcssAnimate from "tailwindcss-animate";
 
-module.exports = {
+export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}", "./src/content/**/*.{md,mdx}"],
   darkMode: ["class"],
   future: {
