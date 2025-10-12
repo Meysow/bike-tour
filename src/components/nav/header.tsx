@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import { siteConfig } from "@/config/site";
 
@@ -13,7 +12,6 @@ import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 
 export function Header(): JSX.Element {
-  const pathname = usePathname();
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">

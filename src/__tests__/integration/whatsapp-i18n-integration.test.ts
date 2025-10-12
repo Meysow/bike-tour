@@ -190,6 +190,7 @@ describe("WhatsApp i18n Integration", () => {
     } as const;
 
     it("should fallback to French for unknown locales", () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const unknownLocale = "unknown" as any;
       const translations =
         whatsappTranslations[unknownLocale] || whatsappTranslations.fr;

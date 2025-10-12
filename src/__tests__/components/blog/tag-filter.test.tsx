@@ -231,7 +231,7 @@ describe("TagFilter Component", () => {
 
   it("should show X icon on selected tags", async () => {
     const user = userEvent.setup();
-    const { container } = render(
+    render(
       <TagFilter posts={mockPosts} onFilteredPosts={mockOnFilteredPosts} />
     );
 

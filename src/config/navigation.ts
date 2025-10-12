@@ -1,4 +1,5 @@
-import { type Locale, routes } from "@/config/routes";
+import { type Locale } from "@/config/i18n";
+import { routes } from "@/config/routes";
 import { type NavItem } from "@/types";
 
 /**

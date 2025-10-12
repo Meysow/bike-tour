@@ -41,6 +41,7 @@ describe("Blog Library", () => {
 
     it("should return all posts sorted by date", async () => {
       mockFs.existsSync.mockReturnValue(true);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       mockFs.readdirSync.mockReturnValue(["post1.md", "post2.md"] as any);
 
       const mockFileContent1 = `---
@@ -79,6 +80,7 @@ Content of post 2`;
         "readme.txt",
         "post2.md",
         ".DS_Store",
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ] as any);
 
       const mockFileContent = `---
@@ -187,6 +189,7 @@ Content`;
         "post1.md",
         "post2.md",
         "post3.md",
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ] as any);
 
       const slugs = getAllPostSlugs();
@@ -202,6 +205,7 @@ Content`;
         "post2.md",
         ".DS_Store",
         "image.png",
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ] as any);
 
       const slugs = getAllPostSlugs();
@@ -214,6 +218,7 @@ Content`;
       mockFs.readdirSync.mockReturnValue([
         "test-post.md",
         "another-post.md",
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
       ] as any);
 
       const slugs = getAllPostSlugs();

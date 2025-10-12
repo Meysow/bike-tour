@@ -1,6 +1,7 @@
 "use client";
 
-import { type Locale, type RouteKey, routes } from "@/config/routes";
+import { type Locale } from "@/config/i18n";
+import { type RouteKey, routes } from "@/config/routes";
 import {
   createLocalizedLink,
   getAlternateLanguageUrl,
@@ -30,7 +31,7 @@ export function useLocale(): Locale {
   }
 
   // 3. Vérifier si le chemin correspond à une route localisée spécifique
-  for (const [key, config] of Object.entries(routes)) {
+  for (const [, config] of Object.entries(routes)) {
     // Vérifier chaque locale
     if (pathname === config.fr || pathname.startsWith(config.fr + "/")) {
       return "fr";

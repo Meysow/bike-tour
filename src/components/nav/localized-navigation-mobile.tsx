@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 
+import { type Locale } from "@/config/i18n";
 import { getNavItems } from "@/config/navigation";
 import { routes } from "@/config/routes";
 import { siteConfig } from "@/config/site";
@@ -64,7 +65,7 @@ export function LocalizedNavigationMobile() {
       >
         <div className="pl-4">
           <Link
-            href={routes.home[locale]}
+            href={routes.home[locale as Locale]}
             className="flex items-center gap-2"
             onClick={() => setIsOpen(false)}
           >

@@ -1,9 +1,5 @@
-import {
-  getLocalizedPath,
-  routes,
-  type Locale,
-  type RouteKey,
-} from "@/config/routes";
+import { type Locale } from "@/config/i18n";
+import { getLocalizedPath, routes, type RouteKey } from "@/config/routes";
 
 /**
  * Générer un lien localisé pour une route donnée
@@ -48,9 +44,7 @@ export function getAlternateLanguageUrl(
   }
 
   // Trouver la clé de route correspondant au chemin actuel
-  for (const [key, config] of Object.entries(routes)) {
-    const routeKey = key as RouteKey;
-
+  for (const [, config] of Object.entries(routes)) {
     // Vérifier si le chemin correspond à cette route dans la langue actuelle
     if (
       config[currentLocale] === currentPath ||

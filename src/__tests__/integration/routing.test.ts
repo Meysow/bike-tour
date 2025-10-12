@@ -124,7 +124,9 @@ describe("Routing Integration Tests", () => {
       testCases.forEach(({ from, fromLocale, toLocale, expected }) => {
         const result = getAlternateLanguageUrl(
           from,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           fromLocale as any,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           toLocale as any
         );
         expect(result).toBe(expected);
@@ -217,7 +219,7 @@ describe("Routing Integration Tests", () => {
 
   describe("Route Consistency", () => {
     it("should have all routes with required properties", () => {
-      Object.entries(routes).forEach(([routeKey, config]) => {
+      Object.entries(routes).forEach(([, config]) => {
         expect(config).toHaveProperty("en");
         expect(config).toHaveProperty("fr");
         expect(config).toHaveProperty("de");

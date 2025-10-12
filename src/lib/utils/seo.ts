@@ -1,4 +1,5 @@
-import { type Locale, type RouteKey, routes } from "@/config/routes";
+import { type Locale } from "@/config/i18n";
+import { type RouteKey, routes } from "@/config/routes";
 import { type Metadata } from "next";
 
 interface LocalizedMetadataProps {

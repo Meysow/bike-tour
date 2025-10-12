@@ -212,6 +212,7 @@ describe("WhatsAppFloatButtonWrapper Component", () => {
 
   describe("Fallback Behavior", () => {
     it("should fallback to French for unknown locale", () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       mockUseLocale.mockReturnValue("unknown" as any);
       render(<WhatsAppFloatButtonWrapper />);
 
@@ -226,6 +227,7 @@ describe("WhatsAppFloatButtonWrapper Component", () => {
     });
 
     it("should fallback to French for undefined locale", () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       mockUseLocale.mockReturnValue(undefined as any);
       render(<WhatsAppFloatButtonWrapper />);
 

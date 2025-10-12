@@ -11,7 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { type Locale } from "@/config/routes";
+import { type Locale } from "@/config/i18n";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 
 const languages = [

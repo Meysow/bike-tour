@@ -190,7 +190,7 @@ describe("WhatsAppFloatButton Component", () => {
 
     it("should scale up on hover", async () => {
       const user = userEvent.setup();
-      const { container } = render(<WhatsAppFloatButton {...defaultProps} />);
+      render(<WhatsAppFloatButton {...defaultProps} />);
 
       const button = screen.getByRole("button", {
         name: defaultProps.ariaLabel,
