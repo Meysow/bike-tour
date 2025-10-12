@@ -30,7 +30,7 @@ export default function ToursPage(): JSX.Element {
                 <Balancer>
                   Discover our{" "}
                   <span className="relative bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text font-extrabold text-transparent">
-                    Guided Tours
+                    Wholesome Tours
                   </span>
                 </Balancer>
               </h1>
@@ -69,9 +69,9 @@ export default function ToursPage(): JSX.Element {
                 <p className="text-lg leading-8 text-muted-foreground">
                   <Balancer>
                     Starting in the heart of Paris 💫 we will take you to our
-                    most beautiful spots around the city 🚴🏻‍♂️ The tour is a
-                    perfect mix between typical Parisian streets and emblematic
-                    monuments of the city.
+                    most beautiful spots around the city 🚴🏻‍♂️ The tour is a good
+                    mix in between our touch, typical Parisian streets, and
+                    emblematic monuments of the city.
                   </Balancer>
                 </p>
 
@@ -110,7 +110,7 @@ export default function ToursPage(): JSX.Element {
                         <div>
                           <div className="font-medium">Starting Point</div>
                           <div className="text-sm text-muted-foreground">
-                            {siteConfig.company.location}
+                            20 rue Greneta, 75002 Paris
                           </div>
                         </div>
                       </div>
@@ -119,16 +119,16 @@ export default function ToursPage(): JSX.Element {
                         <div>
                           <div className="font-medium">Duration</div>
                           <div className="text-sm text-muted-foreground">
-                            3-hour ride around Paris
+                            3-hours ride around Paris
                           </div>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="text-xl">👤</span>
                         <div>
-                          <div className="font-medium">Group Size</div>
+                          <div className="font-medium">Break</div>
                           <div className="text-sm text-muted-foreground">
-                            Max 12 participants
+                            A nice break in between to get to know each other
                           </div>
                         </div>
                       </div>
@@ -259,7 +259,7 @@ export default function ToursPage(): JSX.Element {
                         <div>
                           <div className="font-medium">Duration</div>
                           <div className="text-sm text-muted-foreground">
-                            2-hour evening ride
+                            2-hour ride through iconic night views
                           </div>
                         </div>
                       </div>
@@ -277,7 +277,8 @@ export default function ToursPage(): JSX.Element {
                         <div>
                           <div className="font-medium">Break</div>
                           <div className="text-sm text-muted-foreground">
-                            Hot drinks under the stars
+                            A stop for hot drinks and conversation under the
+                            stars
                           </div>
                         </div>
                       </div>
@@ -301,7 +302,7 @@ export default function ToursPage(): JSX.Element {
           </div>
         </section>
 
-        {/* Tour 3 - Hidden Gems */}
+        {/* Private Tours Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -309,101 +310,72 @@ export default function ToursPage(): JSX.Element {
                 <div className="space-y-4">
                   <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
                     <span className="text-sm font-semibold text-primary">
-                      Hidden Gems of Paris
+                      Private Tours
                     </span>
                   </div>
                   <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
-                    <Balancer>
-                      Discover Parisian Secrets Off the Beaten Path
-                    </Balancer>
+                    <Balancer>Private Tours, Team Buildings, Events</Balancer>
                   </h2>
                   <div className="flex items-center gap-2">
-                    <span className="text-3xl font-bold text-primary">€45</span>
-                    <span className="text-muted-foreground">per person</span>
+                    <span className="text-3xl font-bold text-primary">
+                      Custom Quote
+                    </span>
                   </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
                   <Balancer>
-                    Venture beyond the tourist trails to discover lesser-known
-                    Parisian neighborhoods, hidden alleys, and secret courtyards
-                    with local charm.
+                    At Rentabike Paris, we like to adapt and cater to your
+                    needs! Whether you&apos;re seeking to create a personalized
+                    tour, organize a team-building event, or add a special touch
+                    to your event, we are open to all possibilities and eagerly
+                    await your inquiries!
                   </Balancer>
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <h3 className="font-semibold text-lg">Secret Spots</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Belleville Neighborhood
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Butte-aux-Cailles Village
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Secret Passages & Courtyards
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Local Artists Studios
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Hidden Street Art
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="font-semibold text-lg">Practical Info</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">🌍</span>
-                        <div>
-                          <div className="font-medium">Starting Point</div>
-                          <div className="text-sm text-muted-foreground">
-                            10 rue Oberkampf, 75011 Paris
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">⏰</span>
-                        <div>
-                          <div className="font-medium">Duration</div>
-                          <div className="text-sm text-muted-foreground">
-                            3.5-hour exploration
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">🚶</span>
-                        <div>
-                          <div className="font-medium">Pace</div>
-                          <div className="text-sm text-muted-foreground">
-                            Leisurely with stops
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">☕</span>
-                        <div>
-                          <div className="font-medium">Break</div>
-                          <div className="text-sm text-muted-foreground">
-                            Local café refreshments
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-lg">
+                    Let&apos;s bring your vision to life
+                  </h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>
+                        We welcome inquiries for customizing tours based on
+                        specific interests, durations, and group sizes.
+                        Let&apos;s explore Paris your way through a personalized
+                        itinerary designed just for you.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>
+                        Additionally, we specialize in curating exceptional
+                        experiences for corporate outings and team-building
+                        activities. Engage your team in an exciting adventure,
+                        combining exploration, team bonding, and unforgettable
+                        memories.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-primary mt-1">•</span>
+                      <span>
+                        We are here to assist you every step of the way, from
+                        initial planning to seamless execution.
+                      </span>
+                    </li>
+                  </ul>
+                  <p className="text-muted-foreground italic">
+                    We value open communication and encourage you to get in
+                    touch with us to discuss your ideas, preferences, and any
+                    special requirements you may have. We are excited to
+                    collaborate and make your vision a reality! 💫🚴🏻‍♂️
+                  </p>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
-                    Book This Tour
+                    Contact Us
                   </Button>
                   <Button
                     variant="outline"
@@ -416,138 +388,13 @@ export default function ToursPage(): JSX.Element {
 
               <div className="relative">
                 <Image
-                  alt="Paris hidden gems tour"
-                  src="/images/hero/burren.jpg"
+                  alt="Private tours and team building events"
+                  src="/images/hero/prive.jpg"
                   width={600}
                   height={500}
                   className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Tour 4 - Art and Architecture */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-fuchsia-400/5">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative lg:order-2">
-                <Image
-                  alt="Paris art and architecture tour"
-                  src="/images/hero/leophil.jpg"
-                  width={600}
-                  height={500}
-                  className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-              </div>
-
-              <div className="space-y-6 lg:order-1">
-                <div className="space-y-4">
-                  <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
-                    <span className="text-sm font-semibold text-primary">
-                      Art and Architecture
-                    </span>
-                  </div>
-                  <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
-                    <Balancer>Explore the Artistic Soul of Paris</Balancer>
-                  </h2>
-                  <div className="flex items-center gap-2">
-                    <span className="text-3xl font-bold text-primary">€45</span>
-                    <span className="text-muted-foreground">per person</span>
-                  </div>
-                </div>
-
-                <p className="text-lg leading-8 text-muted-foreground">
-                  <Balancer>
-                    Perfect for art lovers, this tour covers famous art spots,
-                    from the Louvre to local galleries, and architectural
-                    highlights around Paris.
-                  </Balancer>
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <h3 className="font-semibold text-lg">Art & Culture</h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Louvre Museum Exterior
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Orsay Museum & Architecture
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Montmartre Artists Quarter
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Haussmann Architecture
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Local Art Galleries
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="font-semibold text-lg">Practical Info</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">🌍</span>
-                        <div>
-                          <div className="font-medium">Starting Point</div>
-                          <div className="text-sm text-muted-foreground">
-                            40 rue de Richelieu, 75001 Paris
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">⏰</span>
-                        <div>
-                          <div className="font-medium">Duration</div>
-                          <div className="text-sm text-muted-foreground">
-                            4-hour in-depth tour
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">🎨</span>
-                        <div>
-                          <div className="font-medium">Focus</div>
-                          <div className="text-sm text-muted-foreground">
-                            Art history & architecture
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="text-xl">📸</span>
-                        <div>
-                          <div className="font-medium">Break</div>
-                          <div className="text-sm text-muted-foreground">
-                            Photos at Tuileries Garden
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
-                    Book This Tour
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="h-12 px-8 text-lg font-bold tracking-wide"
-                  >
-                    Learn More
-                  </Button>
-                </div>
               </div>
             </div>
           </div>

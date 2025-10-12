@@ -4,7 +4,7 @@ import { FrequentlyAskedQuestion } from "@/types";
 export const frequentlyAskedQuestions: FrequentlyAskedQuestion[] = [
   {
     question: `What is ${siteConfig.name}?`,
-    answer: `${siteConfig.name} is a premium bike rental and tour service, designed to help you explore the city with ease. We offer a selection of high-quality bikes, curated tour routes, and a user-friendly booking experience.`,
+    answer: `${siteConfig.name} is a premium bike rental and tour service, designed to help you explore Paris with ease. We offer a selection of high-quality bikes, curated tour routes, and a user-friendly booking experience.`,
   },
   {
     question: `What’s included in the rental?`,
