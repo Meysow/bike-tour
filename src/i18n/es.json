@@ -15,5 +15,10 @@
     "bookNow": "Reservar Ahora",
     "contact": "Contacto",
     "readMore": "Leer Más"
+  },
+  "whatsapp": {
+    "tooltip": "Contáctanos en WhatsApp",
+    "ariaLabel": "Contactar RentaBikeParis en WhatsApp",
+    "defaultMessage": "¡Hola! Estoy interesado en sus servicios de alquiler de bicicletas y tours guiados en París. ¿Pueden darme más información?"
   }
 }

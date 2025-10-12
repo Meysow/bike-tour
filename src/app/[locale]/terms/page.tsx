@@ -3,7 +3,7 @@ import Balancer from "react-wrap-balancer";
 
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
-import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
+import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
 import { siteConfig } from "@/config/site";
 
 export default function TermsPage(): JSX.Element {
@@ -431,7 +431,7 @@ export default function TermsPage(): JSX.Element {
         </section>
       </div>
       <Footer />
-      <WhatsAppFloatButton />
+      <WhatsAppFloatButtonWrapper />
     </>
   );
 }

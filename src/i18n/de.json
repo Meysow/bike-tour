@@ -15,5 +15,10 @@
     "bookNow": "Jetzt Buchen",
     "contact": "Kontakt",
     "readMore": "Weiterlesen"
+  },
+  "whatsapp": {
+    "tooltip": "Kontaktieren Sie uns auf WhatsApp",
+    "ariaLabel": "Kontaktieren Sie RentaBikeParis auf WhatsApp",
+    "defaultMessage": "Hallo! Ich interessiere mich für Ihre Fahrradverleih- und Führungsdienste in Paris. Könnten Sie mir weitere Informationen geben?"
   }
 }

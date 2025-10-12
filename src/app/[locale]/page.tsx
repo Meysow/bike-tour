@@ -10,7 +10,7 @@ import { PartnersSection } from "@/components/sections/partners-section";
 import { RentPricingSection } from "@/components/sections/rent-pricing-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { ToursSection } from "@/components/sections/tours-section";
-import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
+import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
 import { generatePageMetadata } from "@/lib/utils/metadata";
 
 export const generateMetadata = async ({
@@ -36,7 +36,7 @@ export default function HomePage(): JSX.Element {
         <LocationMapSection />
       </div>
       <Footer />
-      <WhatsAppFloatButton />
+      <WhatsAppFloatButtonWrapper />
     </>
   );
 }

@@ -16,6 +16,11 @@
     "contact": "Contact",
     "readMore": "Lire Plus"
   },
+  "whatsapp": {
+    "tooltip": "Contactez-nous sur WhatsApp",
+    "ariaLabel": "Contacter RentaBikeParis sur WhatsApp",
+    "defaultMessage": "Bonjour ! Je suis intéressé(e) par vos services de location de vélos et tours guidés à Paris. Pouvez-vous me renseigner ?"
+  },
   "tours": {
     "private": {
       "title": "Visites Privées, Team Building, Événements",

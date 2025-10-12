@@ -15,5 +15,10 @@
     "bookNow": "Nu Boeken",
     "contact": "Contact",
     "readMore": "Lees Meer"
+  },
+  "whatsapp": {
+    "tooltip": "Neem contact met ons op via WhatsApp",
+    "ariaLabel": "Neem contact op met RentaBikeParis via WhatsApp",
+    "defaultMessage": "Hallo! Ik ben geïnteresseerd in uw fietsverhuur en rondleidingen in Parijs. Kunt u mij meer informatie geven?"
   }
 }

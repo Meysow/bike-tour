@@ -5,7 +5,7 @@ import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
-import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
+import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { generatePageMetadata } from "@/lib/utils/metadata";
@@ -361,7 +361,7 @@ export default function AboutPage(): JSX.Element {
         </section>
       </div>
       <Footer />
-      <WhatsAppFloatButton />
+      <WhatsAppFloatButtonWrapper />
     </>
   );
 }
