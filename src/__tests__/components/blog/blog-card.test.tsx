@@ -5,6 +5,14 @@ import { BlogPost } from "@/types/blog";
 // Mock next/navigation
 jest.mock("next/navigation", () => ({
   usePathname: () => "/en/blog",
+  useParams: () => ({ locale: "en" }),
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    prefetch: jest.fn(),
+    back: jest.fn(),
+  }),
+  useSearchParams: () => new URLSearchParams(),
 }));
 
 // Mock next/image

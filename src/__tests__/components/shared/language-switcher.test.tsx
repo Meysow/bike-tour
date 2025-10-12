@@ -79,11 +79,12 @@ describe("LanguageSwitcher Component", () => {
     await user.click(button);
 
     await waitFor(() => {
-      expect(screen.getByText("Français")).toBeInTheDocument();
-      expect(screen.getByText("English")).toBeInTheDocument();
-      expect(screen.getByText("Deutsch")).toBeInTheDocument();
-      expect(screen.getByText("Nederlands")).toBeInTheDocument();
-      expect(screen.getByText("Español")).toBeInTheDocument();
+      // Languages appear multiple times (in button and in dropdown)
+      expect(screen.getAllByText("Français").length).toBeGreaterThan(0);
+      expect(screen.getAllByText("English").length).toBeGreaterThan(0);
+      expect(screen.getAllByText("Deutsch").length).toBeGreaterThan(0);
+      expect(screen.getAllByText("Nederlands").length).toBeGreaterThan(0);
+      expect(screen.getAllByText("Español").length).toBeGreaterThan(0);
     });
   });
 

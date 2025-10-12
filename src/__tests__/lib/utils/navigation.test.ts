@@ -54,6 +54,7 @@ describe("Navigation Utilities", () => {
         rent: "/bike-rental-paris",
         blog: "/blog",
         about: "/about-us",
+        privacy: "/privacy-policy",
         terms: "/terms-and-conditions",
       });
     });
@@ -66,6 +67,7 @@ describe("Navigation Utilities", () => {
         rent: "/location-velo-paris",
         blog: "/blog",
         about: "/a-propos",
+        privacy: "/politique-de-confidentialite",
         terms: "/conditions-generales-utilisation",
       });
     });

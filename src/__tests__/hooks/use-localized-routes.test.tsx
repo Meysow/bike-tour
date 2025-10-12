@@ -6,14 +6,25 @@ import { renderHook } from "@testing-library/react";
 const mockUseParams = jest.fn();
 const mockUsePathname = jest.fn();
 
+// Override the global mock from jest.setup.js
 jest.mock("next/navigation", () => ({
   useParams: () => mockUseParams(),
   usePathname: () => mockUsePathname(),
+  useRouter: jest.fn(() => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    prefetch: jest.fn(),
+    back: jest.fn(),
+  })),
+  useSearchParams: jest.fn(() => new URLSearchParams()),
 }));
 
 describe("useLocale Hook", () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    // Reset mocks to default values
+    mockUseParams.mockReturnValue({});
+    mockUsePathname.mockReturnValue("/");
   });
 
   it("should return locale from params", () => {
@@ -48,12 +59,12 @@ describe("useLocale Hook", () => {
     expect(result.current).toBe("fr");
   });
 
-  it("should default to en when no locale found", () => {
+  it("should default to fr when no locale found", () => {
     mockUseParams.mockReturnValue({});
     mockUsePathname.mockReturnValue("/unknown-path");
 
     const { result } = renderHook(() => useLocale());
-    expect(result.current).toBe("en");
+    expect(result.current).toBe("fr"); // Default locale is 'fr'
   });
 
   it("should handle root path", () => {
@@ -61,7 +72,7 @@ describe("useLocale Hook", () => {
     mockUsePathname.mockReturnValue("/");
 
     const { result } = renderHook(() => useLocale());
-    expect(result.current).toBe("en");
+    expect(result.current).toBe("fr"); // Root path defaults to 'fr'
   });
 
   it("should handle paths starting with French route", () => {
@@ -77,7 +88,7 @@ describe("useLocale Hook", () => {
     mockUsePathname.mockReturnValue("/gefuehrte-radtour-paris");
 
     const { result } = renderHook(() => useLocale());
-    expect(result.current).toBe("en"); // Will default to 'en' as German detection happens via params
+    expect(result.current).toBe("de"); // German route is detected from pathname
   });
 });
 

@@ -124,10 +124,13 @@ describe("WhatsApp i18n Integration", () => {
       const message = "Hello! I'm interested & ready.";
       const encoded = encodeURIComponent(message);
 
-      expect(encoded).not.toContain("!");
-      expect(encoded).not.toContain("&");
-      expect(encoded).not.toContain(" ");
-      expect(encoded).toContain("%");
+      // Note: encodeURIComponent does NOT encode ! ' ( ) * by design (RFC 3986)
+      // It DOES encode spaces and special chars like &
+      expect(encoded).not.toContain("&"); // & gets encoded to %26
+      expect(encoded).not.toContain(" "); // space gets encoded to %20
+      expect(encoded).toContain("%"); // Encoded chars contain %
+      expect(encoded).toContain("%20"); // Space encoded
+      expect(encoded).toContain("%26"); // & encoded
     });
 
     it("should generate different URLs for different locales", () => {
@@ -285,7 +288,14 @@ describe("WhatsApp i18n Integration", () => {
 
     it("should mention Paris in all messages", () => {
       Object.values(whatsappTranslations).forEach((translations) => {
-        expect(translations.defaultMessage.toLowerCase()).toContain("paris");
+        const normalized = translations.defaultMessage
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, ""); // Remove accents
+        // Check for "paris" or "parijs" (Dutch spelling)
+        const mentionsParis =
+          normalized.includes("paris") || normalized.includes("parijs");
+        expect(mentionsParis).toBe(true);
       });
     });
   });

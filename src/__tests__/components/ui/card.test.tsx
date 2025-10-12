@@ -16,14 +16,18 @@ describe("Card Components", () => {
     });
 
     it("should apply custom className", () => {
-      render(<Card className="custom-card">Content</Card>);
-      const card = screen.getByText("Content").parentElement;
+      render(
+        <Card className="custom-card" data-testid="card">
+          Content
+        </Card>
+      );
+      const card = screen.getByTestId("card");
       expect(card).toHaveClass("custom-card");
     });
 
     it("should have default card styles", () => {
-      render(<Card>Content</Card>);
-      const card = screen.getByText("Content");
+      render(<Card data-testid="card">Content</Card>);
+      const card = screen.getByTestId("card");
       expect(card).toHaveClass("rounded-xl");
       expect(card).toHaveClass("border");
     });

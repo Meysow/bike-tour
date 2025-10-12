@@ -9,16 +9,16 @@ jest.mock("next/navigation", () => ({
       replace: jest.fn(),
       prefetch: jest.fn(),
       back: jest.fn(),
-      pathname: "/",
+      pathname: "/fr",
       query: {},
-      asPath: "/",
+      asPath: "/fr",
     };
   },
   usePathname() {
-    return "/";
+    return "/fr";
   },
   useParams() {
-    return {};
+    return { locale: "en" };
   },
   useSearchParams() {
     return new URLSearchParams();

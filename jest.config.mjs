@@ -25,6 +25,10 @@ const config = {
     "/.cursor/",
     "/Documents/WebDev/product-trial/",
     "/Documents/WebDev/tailortune/",
+    "/src/__tests__/utils/test-utils.tsx",
+  ],
+  transformIgnorePatterns: [
+    "node_modules/(?!(remark|remark-html|unified|bail|is-plain-obj|trough|vfile|vfile-message|unist-.*|mdast-.*|micromark.*|decode-named-character-reference|character-entities|hast-.*)/)",
   ],
   collectCoverageFrom: [
     "src/**/*.{js,jsx,ts,tsx}",
