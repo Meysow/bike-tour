@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
+import { SafeHtmlRenderer } from "@/components/shared/safe-html-renderer";
 import { frequentlyAskedQuestions } from "@/data/frequently-asked-questions";
 
 import {
@@ -46,7 +47,7 @@ export function FAQSection() {
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground sm:text-lg sm:leading-8">
-                  <Balancer>{item.answer}</Balancer>
+                  <SafeHtmlRenderer content={item.answer} />
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
