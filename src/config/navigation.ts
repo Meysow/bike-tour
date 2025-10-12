@@ -7,30 +7,35 @@ import { type NavItem } from "@/types";
  */
 export const navigationConfig = {
   en: {
+    home: "Home",
     tours: "Guided Tours",
     rent: "Bike Rentals",
     blog: "Blog",
     about: "About Us",
   },
   fr: {
+    home: "Accueil",
     tours: "Visites Guidées",
     rent: "Location de Vélos",
     blog: "Blog",
     about: "À Propos",
   },
   de: {
+    home: "Startseite",
     tours: "Geführte Touren",
     rent: "Fahrradverleih",
     blog: "Blog",
     about: "Über Uns",
   },
   nl: {
+    home: "Home",
     tours: "Rondleidingen",
     rent: "Fietsverhuur",
     blog: "Blog",
     about: "Over Ons",
   },
   es: {
+    home: "Inicio",
     tours: "Visitas Guiadas",
     rent: "Alquiler de Bicicletas",
     blog: "Blog",
@@ -47,6 +52,10 @@ export function getNavItems(locale: Locale): NavItem[] {
   const labels = navigationConfig[safeLocale];
 
   return [
+    {
+      title: labels.home,
+      href: routes.home[safeLocale],
+    },
     {
       title: labels.tours,
       href: routes.tours[safeLocale],
