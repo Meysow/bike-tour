@@ -33,6 +33,7 @@ export interface PricingPlan {
     yearly?: string;
   };
   image: StaticImageData;
+  highlighted?: boolean;
 }
 
 export interface UserSubscriptionPlan extends SubscriptionPlan {
@@ -125,7 +126,7 @@ export enum Difficulty {
 
 export interface InstagramPost {
   id: string;
-  media_type: 'IMAGE' | 'VIDEO' | 'CAROUSEL_ALBUM';
+  media_type: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
   media_url: string;
   thumbnail_url?: string;
   caption?: string;
