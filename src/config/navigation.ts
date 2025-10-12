@@ -42,24 +42,26 @@ export const navigationConfig = {
  * Générer les items de navigation pour une locale donnée
  */
 export function getNavItems(locale: Locale): NavItem[] {
-  const labels = navigationConfig[locale];
+  // Fallback to 'fr' if locale is invalid
+  const safeLocale = (locale in navigationConfig ? locale : "fr") as Locale;
+  const labels = navigationConfig[safeLocale];
 
   return [
     {
       title: labels.tours,
-      href: routes.tours[locale],
+      href: routes.tours[safeLocale],
     },
     {
       title: labels.rent,
-      href: routes.rent[locale],
+      href: routes.rent[safeLocale],
     },
     {
       title: labels.blog,
-      href: routes.blog[locale],
+      href: routes.blog[safeLocale],
     },
     {
       title: labels.about,
-      href: routes.about[locale],
+      href: routes.about[safeLocale],
     },
   ];
 }
