@@ -1,0 +1,105 @@
+---
+description: pnpm package manager standards and best practices for this project
+globs: package.json, pnpm-lock.yaml, pnpm-workspace.yaml
+---
+
+# pnpm Package Manager
+
+## Project Configuration
+
+This project uses **pnpm** as the package manager, not npm or yarn.
+
+## Commands
+
+### Installation
+
+- Use `pnpm install` or `pnpm i` to install dependencies
+- Never use `npm install` or `yarn install`
+
+### Running Scripts
+
+- Use `pnpm run <script>` or `pnpm <script>` for package.json scripts
+- Examples:
+  - `pnpm dev` - Start development server
+  - `pnpm build` - Build for production
+  - `pnpm test` - Run tests
+  - `pnpm lint` - Run linter
+
+### Adding Dependencies
+
+- Use `pnpm add <package>` to add a dependency
+- Use `pnpm add -D <package>` to add a dev dependency
+- Use `pnpm add -g <package>` to add globally
+
+### Removing Dependencies
+
+- Use `pnpm remove <package>` or `pnpm rm <package>`
+
+### Updating Dependencies
+
+- Use `pnpm update` or `pnpm up` to update packages
+- Use `pnpm up --latest` to update to latest versions
+- Use `pnpm outdated` to check for outdated packages
+
+## Best Practices
+
+### Workspace
+
+- pnpm uses a content-addressable filesystem to save disk space
+- All dependencies are stored in a global store and symlinked
+- This makes installations faster and more efficient
+
+### Lock File
+
+- Always commit `pnpm-lock.yaml` to version control
+- Never commit `package-lock.json` or `yarn.lock`
+- Run `pnpm install` after pulling changes
+
+### Node Modules
+
+- pnpm creates a non-flat node_modules structure
+- Uses symlinks to maintain package isolation
+- This prevents phantom dependencies
+
+### Scripts
+
+- Use `pnpm` prefix for all package manager operations
+- Configure IDE/terminal to use pnpm by default
+- Set up pnpm in CI/CD pipelines
+
+## Terminal Commands
+
+When proposing terminal commands:
+
+- Always use `pnpm` instead of `npm`
+- Use `pnpm dlx` instead of `npx` for one-off commands
+- Example: `pnpm dlx create-next-app` instead of `npx create-next-app`
+
+## Performance Tips
+
+- Use `pnpm store prune` to remove unreferenced packages from the store
+- Use `pnpm store status` to check store information
+- Use `--frozen-lockfile` in CI for consistent installs
+
+## Common Issues
+
+### If pnpm is not installed
+
+```bash
+npm install -g pnpm
+# or
+corepack enable
+corepack prepare pnpm@latest --activate
+```
+
+### Clear cache if needed
+
+```bash
+pnpm store prune
+```
+
+### Verify installation
+
+```bash
+pnpm --version
+```

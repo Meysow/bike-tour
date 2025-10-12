@@ -1,0 +1,339 @@
+---
+description: Next-intl implementation guide and important warnings for this project
+globs: src/app/[locale]/**/*.tsx, src/i18n/**/*.json, src/components/**/*.tsx, next.config.mjs, src/middleware.ts
+---
+
+# Next-intl Implementation - CRITICAL GUIDELINES
+
+## ⚠️ IMPORTANT: DO NOT activate the next-intl plugin
+
+This project uses a **custom middleware** for SEO-friendly localized routes. The next-intl plugin MUST remain **disabled** to avoid conflicts.
+
+### ❌ NEVER DO THIS in next.config.mjs:
+
+```javascript
+import createNextIntlPlugin from "next-intl/plugin";
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
+export default withNextIntl(nextConfig);
+```
+
+### ✅ ALWAYS keep next.config.mjs like this:
+
+```javascript
+/**
+ * Note: Le plugin next-intl est désactivé car nous utilisons un middleware personnalisé
+ * pour gérer les routes localisées (ex: /visite-guidee-de-paris-a-velo vs /guided-bike-tour-paris).
+ */
+const nextConfig = {};
+export default nextConfig;
+```
+
+## 🏗️ Architecture Overview
+
+This project uses a **hybrid approach**:
+
+- ✅ Custom middleware (`src/middleware.ts`) for URL routing
+- ✅ next-intl for translations (JSON files only)
+- ✅ Client-side locale detection via custom hooks
+- ❌ NO next-intl plugin (causes 404 errors)
+- ❌ NO NextIntlClientProvider
+- ❌ NO getTranslations() in Server Components
+
+## 📝 How to Use Translations
+
+### For Client Components (Recommended)
+
+Use the custom `useLocale()` hook with static translations:
+
+```typescript
+"use client";
+
+import { useLocale } from "@/hooks/use-localized-routes";
+
+const translations = {
+  fr: { message: "Bonjour" },
+  en: { message: "Hello" },
+  de: { message: "Hallo" },
+  es: { message: "Hola" },
+  nl: { message: "Hallo" },
+} as const;
+
+export function MyComponent() {
+  const locale = useLocale();
+  const t = translations[locale] || translations.fr;
+
+  return <div>{t.message}</div>;
+}
+```
+
+### For Server Components
+
+Pass the locale as a prop from the page params:
+
+```typescript
+// app/[locale]/page.tsx
+export default function Page({ params }: { params: { locale: string } }) {
+  return <MyServerComponent locale={params.locale} />;
+}
+
+// components/my-server-component.tsx
+import { Locale } from "@/config/i18n";
+
+const translations = {
+  fr: { title: "Titre" },
+  en: { title: "Title" },
+  // ...
+} as const;
+
+export function MyServerComponent({ locale }: { locale: Locale }) {
+  const t = translations[locale] || translations.fr;
+  return <h1>{t.title}</h1>;
+}
+```
+
+### Translation Files (JSON)
+
+Translation files in `src/i18n/*.json` are used by:
+
+- The custom middleware
+- The i18n configuration in `src/i18n/request.ts`
+- Utilities that manually load translations
+
+**Do NOT** try to use `useTranslations()` or `getTranslations()` from next-intl as they require the plugin.
+
+## 🚨 Common Mistakes to Avoid
+
+### ❌ Using next-intl hooks in Client Components
+
+```typescript
+// DON'T DO THIS - Will cause "context not found" errors
+import { useTranslations } from "next-intl";
+
+export function MyComponent() {
+  const t = useTranslations("namespace"); // ❌ ERROR
+}
+```
+
+### ❌ Using getTranslations in Server Components
+
+```typescript
+// DON'T DO THIS - Will cause "config file not found" errors
+import { getTranslations } from "next-intl/server";
+
+export default async function Page() {
+  const t = await getTranslations("namespace"); // ❌ ERROR
+}
+```
+
+### ❌ Creating NextIntlClientProvider wrappers
+
+```typescript
+// DON'T DO THIS - Conflicts with custom middleware
+import { NextIntlClientProvider } from "next-intl";
+
+export function Provider({ children }) {
+  return (
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      {children}
+    </NextIntlClientProvider>
+  );
+}
+```
+
+## ✅ Correct Patterns
+
+### Pattern 1: Static Translations in Component
+
+Best for components with few translations:
+
+```typescript
+"use client";
+
+import { useLocale } from "@/hooks/use-localized-routes";
+
+const TRANSLATIONS = {
+  fr: { button: "Cliquez ici", tooltip: "Aide" },
+  en: { button: "Click here", tooltip: "Help" },
+  de: { button: "Klicken Sie hier", tooltip: "Hilfe" },
+  es: { button: "Haga clic aquí", tooltip: "Ayuda" },
+  nl: { button: "Klik hier", tooltip: "Helpen" },
+} as const;
+
+export function MyButton() {
+  const locale = useLocale();
+  const t = TRANSLATIONS[locale] || TRANSLATIONS.fr;
+
+  return <button title={t.tooltip}>{t.button}</button>;
+}
+```
+
+### Pattern 2: Wrapper Component
+
+Best for complex components needing translations:
+
+```typescript
+// wrapper.tsx (Client Component)
+"use client";
+
+import { useLocale } from "@/hooks/use-localized-routes";
+import { MyComplexComponent } from "./my-complex-component";
+
+const TRANSLATIONS = {
+  fr: {
+    /* ... */
+  },
+  en: {
+    /* ... */
+  },
+  // ...
+};
+
+export function MyComplexComponentWrapper() {
+  const locale = useLocale();
+  const translations = TRANSLATIONS[locale] || TRANSLATIONS.fr;
+
+  return <MyComplexComponent translations={translations} />;
+}
+
+// my-complex-component.tsx (Can be Server or Client)
+interface Props {
+  translations: {
+    title: string;
+    description: string;
+    // ...
+  };
+}
+
+export function MyComplexComponent({ translations }: Props) {
+  return <div>{translations.title}</div>;
+}
+```
+
+### Pattern 3: Shared Translation Files
+
+For large translation sets, create shared files:
+
+```typescript
+// lib/translations/common.ts
+import { Locale } from "@/config/i18n";
+
+export const commonTranslations = {
+  fr: {
+    buttons: {
+      submit: "Envoyer",
+      cancel: "Annuler",
+    },
+  },
+  en: {
+    buttons: {
+      submit: "Submit",
+      cancel: "Cancel",
+    },
+  },
+  // ...
+} as const;
+
+export function getCommonTranslations(locale: Locale) {
+  return commonTranslations[locale] || commonTranslations.fr;
+}
+
+// Usage in component
+import { useLocale } from "@/hooks/use-localized-routes";
+import { getCommonTranslations } from "@/lib/translations/common";
+
+export function MyForm() {
+  const locale = useLocale();
+  const t = getCommonTranslations(locale);
+
+  return <button>{t.buttons.submit}</button>;
+}
+```
+
+## 🔧 Custom Hooks Available
+
+### useLocale()
+
+Returns the current locale based on URL params or pathname.
+
+```typescript
+import { useLocale } from "@/hooks/use-localized-routes";
+
+const locale = useLocale(); // "fr" | "en" | "de" | "es" | "nl"
+```
+
+### useLocalizedRoutes()
+
+Provides utilities for creating localized links and language switching.
+
+```typescript
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+
+const { locale, createLink, getLanguageSwitchUrl } = useLocalizedRoutes();
+
+// Create localized link
+const toursLink = createLink("tours"); // "/visite-guidee-de-paris-a-velo" (if FR)
+
+// Get URL to switch language
+const switchToEN = getLanguageSwitchUrl("en"); // "/guided-bike-tour-paris"
+```
+
+## 📚 SEO-Friendly Routes
+
+This project uses custom route configurations for each language:
+
+```typescript
+// config/routes.ts
+export const routes = {
+  tours: {
+    fr: "/visite-guidee-de-paris-a-velo",
+    en: "/guided-bike-tour-paris",
+    de: "/gefuehrte-radtour-paris",
+    es: "/tour-en-bicicleta-paris",
+    nl: "/fietstour-parijs",
+  },
+  // ...
+};
+```
+
+The custom middleware (`src/middleware.ts`) handles rewriting these SEO-friendly URLs to Next.js dynamic routes.
+
+## 🐛 Troubleshooting
+
+### Error: "Couldn't find next-intl config file"
+
+**Cause**: Someone activated the next-intl plugin in `next.config.mjs`
+
+**Solution**: Remove the plugin, restart the dev server
+
+### Error: "Failed to call useTranslations because context was not found"
+
+**Cause**: Trying to use next-intl hooks without NextIntlClientProvider
+
+**Solution**: Use the `useLocale()` hook with static translations instead
+
+### Getting 404 on root path `/`
+
+**Cause**: Conflict between middleware and next-intl plugin
+
+**Solution**: Ensure next.config.mjs does NOT use the next-intl plugin
+
+## 📖 Documentation
+
+For more details, see:
+
+- `documentation/I18N_COMPREHENSIVE_GUIDE.md` - Full architecture explanation
+- `documentation/I18N_IMPROVEMENTS.md` - Why we disabled the plugin
+- `documentation/LOCALIZED_ROUTES.md` - Route configuration details
+- `src/middleware.ts` - Custom middleware implementation
+
+## 🎯 Summary
+
+- ✅ Use custom `useLocale()` hook for client components
+- ✅ Pass locale as props for server components
+- ✅ Define translations as static objects in components
+- ✅ Keep next-intl plugin DISABLED in next.config.mjs
+- ❌ Never use `useTranslations()` or `getTranslations()` from next-intl
+- ❌ Never activate NextIntlClientProvider
+- ❌ Never enable the next-intl plugin
+
+**When in doubt, check existing components like `WhatsAppFloatButtonWrapper` for the correct pattern.**

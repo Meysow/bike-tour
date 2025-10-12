@@ -1,7 +1,7 @@
 import { BlogList } from "@/components/blog/blog-list";
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
-import { WhatsAppFloatButton } from "@/components/shared/whatsapp-float-button";
+import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
 import { getAllPosts } from "@/lib/blog";
 import { generatePageMetadata } from "@/lib/utils/metadata";
 import Balancer from "react-wrap-balancer";
@@ -52,7 +52,7 @@ export default async function BlogPage() {
         </section>
       </div>
       <Footer />
-      <WhatsAppFloatButton />
+      <WhatsAppFloatButtonWrapper />
     </>
   );
 }

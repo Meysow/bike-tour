@@ -15,5 +15,10 @@
     "bookNow": "Book Now",
     "contact": "Contact",
     "readMore": "Read More"
+  },
+  "whatsapp": {
+    "tooltip": "Contact us on WhatsApp",
+    "ariaLabel": "Contact RentaBikeParis on WhatsApp",
+    "defaultMessage": "Hello! I'm interested in your bike rental and guided tour services in Paris. Could you provide me with more information?"
   }
 }
