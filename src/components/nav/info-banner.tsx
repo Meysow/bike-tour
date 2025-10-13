@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 
 export function InfoBanner(): JSX.Element {
   return (
-    <div className="hidden banner:block w-full bg-primary text-primary-foreground py-2 px-4 text-xs md:text-sm">
+    <div className="hidden lg:block w-full bg-primary text-primary-foreground py-2 px-4 text-xs md:text-sm">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4">
         {/* Contact Information */}
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-6">

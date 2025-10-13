@@ -38,7 +38,7 @@ export default function RentPage(): JSX.Element {
     <>
       <Header />
 
-      <div className="min-h-screen bg-background mt-20 banner:mt-28">
+      <div className="min-h-screen bg-background mt-20 lg:mt-28">
         {/* Hero Section */}
 
         <section className="relative py-20 md:py-32">

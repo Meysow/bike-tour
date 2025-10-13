@@ -10,7 +10,7 @@ export default function TermsPage(): JSX.Element {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-background mt-20 banner:mt-28">
+      <div className="min-h-screen bg-background mt-20 lg:mt-28">
         {/* Hero Section with Banner */}
         <section className="relative py-20 md:py-32 min-h-[400px] flex items-center">
           <div className="absolute inset-0 z-0">

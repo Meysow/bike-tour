@@ -95,7 +95,7 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      <div className="container flex min-h-[calc(100vh-200px)] flex-col items-center justify-center py-12 md:py-20 mt-20 banner:mt-28">
+      <div className="container flex min-h-[calc(100vh-200px)] flex-col items-center justify-center py-12 md:py-20 mt-20 lg:mt-28">
         {/* Background gradient effect */}
         <div className="absolute inset-0 z-[-1] bg-gradient-to-t from-primary/10 to-transparent opacity-30 rounded-full blur-3xl h-[50%] w-[60%] mx-auto" />
 

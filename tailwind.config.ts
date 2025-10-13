@@ -3,7 +3,7 @@
 import typography from "@tailwindcss/typography";
 import tailwindcssAnimate from "tailwindcss-animate";
 
-export default {
+const config = {
   content: ["./src/**/*.{js,ts,jsx,tsx}", "./src/content/**/*.{md,mdx}"],
   darkMode: ["class"],
   future: {
@@ -20,7 +20,7 @@ export default {
     screens: {
       sm: "640px",
       md: "768px",
-      banner: "920px",
+      banner: "960px",
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
@@ -141,3 +141,5 @@ export default {
   },
   plugins: [tailwindcssAnimate, typography],
 };
+
+export default config;

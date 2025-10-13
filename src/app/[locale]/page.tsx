@@ -23,7 +23,7 @@ export default function HomePage(): JSX.Element {
   return (
     <>
       <Header />
-      <div className="grid w-full grid-cols-1 items-center justify-center gap-16 md:gap-32 mt-20 banner:mt-28">
+      <div className="grid w-full grid-cols-1 items-center justify-center gap-16 md:gap-32 mt-20 lg:mt-28">
         <HeroSection />
         <ToursSection />
         <RentPricingSection />
