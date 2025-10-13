@@ -1,5 +1,3 @@
-import { type NavItem, type NavItemFooter } from "@/types";
-
 //TODO : reprendre complétement ce component
 
 const links = {
@@ -57,45 +55,4 @@ export const siteConfig = {
     "Sightseeing by Bike",
     "Paris Bike Routes",
   ],
-  navItems: [
-    {
-      title: "Guided Tours",
-      href: "/tours",
-    },
-    {
-      title: "Bike Rentals",
-      href: "/rent",
-    },
-    {
-      title: "Blog",
-      href: "/blog",
-    },
-    {
-      title: "About Us",
-      href: "/about",
-    },
-  ] satisfies NavItem[],
-  navItemsMobile: [],
-  navItemsFooter: [
-    {
-      title: "Company",
-      items: [
-        {
-          title: "About",
-          href: "/about",
-          external: false,
-        },
-        {
-          title: "Privacy",
-          href: "/privacy",
-          external: false,
-        },
-        {
-          title: "Terms",
-          href: "/terms",
-          external: false,
-        },
-      ],
-    },
-  ] satisfies NavItemFooter[],
 };
