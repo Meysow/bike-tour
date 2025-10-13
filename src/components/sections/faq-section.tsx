@@ -39,14 +39,14 @@ export function FAQSection() {
           </h3>
         </div>
 
-        <div className="grid gap-4 sm:gap-6 md:gap-8">
+        <div className="grid gap-0 sm:gap-2 md:gap-4">
           {frequentlyAskedQuestions.map((item) => (
             <Accordion key={item.question} type="single" collapsible>
               <AccordionItem value={item.question}>
-                <AccordionTrigger className="sm:text-xl sm:leading-8">
+                <AccordionTrigger className="sm:text-xl sm:leading-6">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground sm:text-lg sm:leading-8">
+                <AccordionContent className="text-muted-foreground sm:text-lg sm:leading-6">
                   <SafeHtmlRenderer content={item.answer} />
                 </AccordionContent>
               </AccordionItem>
