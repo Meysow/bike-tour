@@ -11,6 +11,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { siteConfig } from "@/config/site";
 import { tours } from "@/data/tourData";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { Button } from "../ui/button";
@@ -95,7 +96,13 @@ export function ToursSection(): JSX.Element {
                       asChild
                       className="h-10 flex-1 font-bold tracking-wide bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md hover:shadow-lg transition-all"
                     >
-                      <Link href="#book-tour">Book Now</Link>
+                      <Link
+                        href={siteConfig.links.tourBooking}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Book Now
+                      </Link>
                     </Button>
                   </div>
 
@@ -200,7 +207,7 @@ export function ToursSection(): JSX.Element {
                         asChild
                         className="h-10 flex-1 font-bold tracking-wide bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md hover:shadow-lg transition-all"
                       >
-                        <Link href={`${createLink("home")}#contact`}>
+                        <Link href={`${createLink("home")}#contact-section`}>
                           Contact Us
                         </Link>
                       </Button>

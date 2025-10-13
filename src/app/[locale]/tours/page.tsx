@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 
 import { Footer } from "@/components/nav/footer";
@@ -197,8 +198,17 @@ export default function ToursPage(): JSX.Element {
                 </div>
 
                 <div className="flex justify-center">
-                  <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
-                    Book This Tour
+                  <Button
+                    className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90"
+                    asChild
+                  >
+                    <Link
+                      href={siteConfig.links.tourBooking}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Book This Tour
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -379,8 +389,17 @@ export default function ToursPage(): JSX.Element {
                 </div>
 
                 <div className="flex justify-center">
-                  <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
-                    Book This Tour
+                  <Button
+                    className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90"
+                    asChild
+                  >
+                    <Link
+                      href={siteConfig.links.tourBooking}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Book This Tour
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -460,8 +479,11 @@ export default function ToursPage(): JSX.Element {
                 </div>
 
                 <div className="flex justify-center">
-                  <Button className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90">
-                    Contact Us
+                  <Button
+                    className="h-12 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90"
+                    asChild
+                  >
+                    <Link href="#contact-section">Contact Us</Link>
                   </Button>
                 </div>
               </div>
@@ -496,15 +518,23 @@ export default function ToursPage(): JSX.Element {
               <Button
                 size="lg"
                 className="h-14 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90"
+                asChild
               >
-                Book a Tour Now
+                <Link
+                  href={siteConfig.links.tourBooking}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a Tour Now
+                </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="h-14 px-8 text-lg font-bold tracking-wide"
+                asChild
               >
-                Contact Us
+                <Link href="#contact-section">Contact Us</Link>
               </Button>
             </div>
           </div>

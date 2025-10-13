@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import * as React from "react";
 import Balancer from "react-wrap-balancer";
 
@@ -14,6 +15,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
+import { siteConfig } from "@/config/site";
 import { pricingPlans } from "@/data/pricing-plans";
 import { cn } from "@/lib/utils";
 
@@ -131,8 +133,15 @@ export function RentPricingSection(): JSX.Element {
                 <Button
                   variant="outline"
                   className="h-10 w-full border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide"
+                  asChild
                 >
-                  Rent Now
+                  <Link
+                    href={siteConfig.links.rentalBooking}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Rent Now
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
