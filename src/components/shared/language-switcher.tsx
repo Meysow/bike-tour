@@ -61,7 +61,7 @@ export function LanguageSwitcher() {
           aria-label="Changer de langue"
         >
           <span className="text-lg">{currentLanguage.flag}</span>
-          <span className="hidden sm:inline text-sm font-medium">
+          <span className="hidden lg:inline text-sm font-medium">
             {currentLanguage.name}
           </span>
           <svg
