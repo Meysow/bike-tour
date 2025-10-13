@@ -6,9 +6,63 @@
     "about": "Sobre Nosotros"
   },
   "hero": {
-    "title": "Experimenta París Como Nunca Antes",
-    "subtitle": "Descubre la Ciudad de la Luz sobre dos ruedas con nuestros tours en bicicleta y servicios de alquiler premium",
-    "cta": "Comienza Tu Aventura"
+    "title": "Descubre <highlight>París</highlight> Como un Verdader Parisino",
+    "subtitle": "¡Prepárate para una <highlight>aventura inolvidable</highlight> por la Ciudad de la Luz! Explora monumentos icónicos y joyas ocultas mientras experimentas la libertad de pedalear como un local. Ya sea que estés aquí por unas horas o una semana completa, ¡tenemos la experiencia perfecta para ti!",
+    "ctaTours": "¡Reserva Tu Tour!",
+    "ctaRent": "¡Alquila Tu Bicicleta!"
+  },
+  "tours": {
+    "title": "Descubre Nuestros <highlight>Increíbles Tours en Bicicleta</highlight>",
+    "subtitle": "¡Prepárate para una aventura increíble por las calles de París! Con mi experiencia local y pasión por el ciclismo, crearemos juntos recuerdos inolvidables. ¡Cada tour está cuidadosamente diseñado para darte la mezcla perfecta de diversión, descubrimiento y experiencias parisinas auténticas!",
+    "1": {
+      "title": "Tour Guiado de París en Bicicleta",
+      "subtitle": "Todo alrededor de París en Bicicleta",
+      "description": "¡Con nuestro Tour Guiado de París en Bicicleta, descubrir la capital se convierte en un juego de niños! Este itinerario ciclista es accesible para todos los niveles. Te ofrecemos una mezcla única de nuestros mejores spots, calles típicamente parisinas y los monumentos más emblemáticos de la ciudad. Ideal para aquellos que quieren descubrir el corazón de París y sus grandes monumentos. ¡El programa incluye descubrir ambas orillas del Sena! Tu guía te contará historias fascinantes y a menudo divertidas sobre la historia de París. El ambiente es perfecto. Solo tienes que dejarte guiar y disfrutar de este magnífico paseo en bicicleta para descubrir París. ¡Prepárate para esta emocionante aventura!",
+      "price": "Desde €40",
+      "details": {
+        "location": "🌍 - Punto de partida: 20 Rue Greneta, 75002 París",
+        "duration": "⏰ - 3 Horas - 12 kilómetros",
+        "schedule": "👤 - Disponible todos los días - Salidas a las 10:30 / 14:30"
+      },
+      "ctaMoreInfo": "Más Información",
+      "ctaBookNow": "Reservar Ahora"
+    },
+    "2": {
+      "title": "Tour de Descubrimiento del Canal Saint-Martin",
+      "subtitle": "Experiencia Auténtica de París",
+      "description": "¡Prepárate para descubrir mi joya oculta favorita en París! 🚴‍♂️ Este tour del Canal Saint-Martin te lleva lejos de las multitudes turísticas para explorar el corazón bohemio de los distritos 10 y 11. Navegaremos a lo largo del pintoresco canal, pasaremos por sus icónicas esclusas y nos empaparemos de la vibrante atmósfera local que hace que este barrio sea tan especial. Compartiré historias fascinantes sobre la transformación del área mientras descubrimos cafés ocultos y tiendas de artesanía. ¡Esto es París como los locales lo viven! Perfecto para aquellos que buscan una aventura auténtica y fuera de los caminos trillados. ✨",
+      "price": "Desde €40",
+      "details": {
+        "location": "🌍 - Punto de partida: 20 Rue Greneta, 75002 París",
+        "duration": "⏰ - 2,5 Horas - 10 kilómetros",
+        "schedule": "👤 - Disponible todos los días - Salidas a las 10:30 / 14:30"
+      },
+      "ctaMoreInfo": "Más Información",
+      "ctaBookNow": "Reservar Ahora"
+    },
+    "3": {
+      "title": "Tours Privados, Team Building, Eventos",
+      "subtitle": "Tours Privados",
+      "description": "¡En Rentabike París nos gusta adaptarnos y atender tus necesidades! Ya sea que busques crear un tour personalizado, organizar un evento de team building, o agregar un toque especial a tu evento, ¡estamos abiertos a todas las posibilidades y esperamos ansiosamente tus consultas!",
+      "price": "Cotización Personalizada",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Demos vida a tu visión",
+        "bulletPoints": [
+          "Recibimos consultas para personalizar tours basados en intereses específicos, duraciones y tamaños de grupo. ¡Exploremos París a tu manera con un itinerario personalizado diseñado especialmente para ti!",
+          "Además, nos especializamos en crear experiencias excepcionales para salidas corporativas y actividades de team building. Involucra a tu equipo en una aventura emocionante, combinando exploración, trabajo en equipo y recuerdos inolvidables.",
+          "Estamos aquí para asistirte en cada paso del camino, desde la planificación inicial hasta la ejecución sin problemas."
+        ],
+        "closingNote": "Valoramos la comunicación abierta y te alentamos a ponerte en contacto con nosotros para discutir tus ideas, preferencias y cualquier requisito especial que puedas tener. ¡Estamos emocionados de colaborar y hacer realidad tu visión! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "Más Información",
+      "ctaBookNow": "Reservar Ahora",
+      "ctaContact": "Contáctanos"
+    }
   },
   "common": {
     "learnMore": "Saber Más",

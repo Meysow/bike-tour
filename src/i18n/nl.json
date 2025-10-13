@@ -6,9 +6,63 @@
     "about": "Over Ons"
   },
   "hero": {
-    "title": "Beleef Parijs Als Nooit Tevoren",
-    "subtitle": "Ontdek de Lichtstad op twee wielen met onze premium fietstours en verhuurservices",
-    "cta": "Begin Uw Avontuur"
+    "title": "Ontdek <highlight>Parijs</highlight> Als een Echte Parijzenaar",
+    "subtitle": "Maak je klaar voor een <highlight>onvergetelijk avontuur</highlight> door de Lichtstad! Verken iconische bezienswaardigheden en verborgen pareltjes terwijl je de vrijheid ervaart om te fietsen als een local. Of je nu hier bent voor een paar uur of een hele week, we hebben de perfecte ervaring voor je!",
+    "ctaTours": "Boek Je Tour!",
+    "ctaRent": "Huur Je Fiets!"
+  },
+  "tours": {
+    "title": "Ontdek Onze <highlight>Geweldige Fietstours</highlight>",
+    "subtitle": "Maak je klaar voor een ongelooflijk avontuur door de straten van Parijs! Met mijn lokale expertise en passie voor fietsen zullen we samen onvergetelijke herinneringen creëren. Elke tour is zorgvuldig samengesteld om je de perfecte mix van plezier, ontdekking en authentieke Parijse ervaringen te bieden!",
+    "1": {
+      "title": "Begeleide Fietstour door Parijs",
+      "subtitle": "Rondom Parijs op de Fiets",
+      "description": "Met onze begeleide fietstour door Parijs wordt het ontdekken van de hoofdstad kinderspel! Deze fietsroute is toegankelijk voor alle niveaus. We bieden je een unieke mix van onze top spots, typische Parijse straten en de meest emblematische monumenten van de stad. Ideaal voor degenen die het hart van Parijs en zijn grote monumenten willen ontdekken. Het programma omvat het ontdekken van beide oevers van de Seine! Je gids zal je fascinerende en vaak amusante verhalen vertellen over de geschiedenis van Parijs. De sfeer is perfect. Je hoeft je alleen maar te laten leiden en te genieten van deze prachtige fietstocht om Parijs te ontdekken. Maak je klaar voor dit spannende avontuur.",
+      "price": "Vanaf €40",
+      "details": {
+        "location": "🌍 - Startpunt: 20 Rue Greneta, 75002 Parijs",
+        "duration": "⏰ - 3 Uren - 12 kilometer",
+        "schedule": "👤 - Dagelijks beschikbaar - Vertrekken om 10:30 / 14:30 uur"
+      },
+      "ctaMoreInfo": "Meer Informatie",
+      "ctaBookNow": "Nu Boeken"
+    },
+    "2": {
+      "title": "Canal Saint-Martin Ontdekkingstour",
+      "subtitle": "Authentieke Parijse Ervaring",
+      "description": "Maak je klaar om mijn favoriete verborgen parel in Parijs te ontdekken! 🚴‍♂️ Deze Canal Saint-Martin tour brengt je weg van de toeristische drukte om het bohemische hart van de 10e en 11e arrondissementen te verkennen. We rijden langs het schilderachtige kanaal, passeren zijn iconische sluizen en zuigen de levendige lokale sfeer op die deze buurt zo bijzonder maakt. Ik zal fascinerende verhalen delen over de transformatie van het gebied terwijl we verborgen cafés en ambachtelijke winkels ontdekken. Dit is Parijs zoals de locals het beleven! Perfect voor degenen die een authentiek avontuur buiten de gebaande paden zoeken. ✨",
+      "price": "Vanaf €40",
+      "details": {
+        "location": "🌍 - Startpunt: 20 Rue Greneta, 75002 Parijs",
+        "duration": "⏰ - 2,5 Uren - 10 kilometer",
+        "schedule": "👤 - Dagelijks beschikbaar - Vertrekken om 10:30 / 14:30 uur"
+      },
+      "ctaMoreInfo": "Meer Informatie",
+      "ctaBookNow": "Nu Boeken"
+    },
+    "3": {
+      "title": "Privétours, Teambuilding, Evenementen",
+      "subtitle": "Privétours",
+      "description": "Bij Rentabike Parijs passen we ons graag aan aan jouw behoeften! Of je nu een gepersonaliseerde tour wilt creëren, een teambuilding evenement wilt organiseren, of een speciale touch aan je evenement wilt toevoegen, we staan open voor alle mogelijkheden en kijken uit naar je vragen!",
+      "price": "Aangepaste Offerte",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Laten we jouw visie tot leven brengen",
+        "bulletPoints": [
+          "We verwelkomen vragen voor het aanpassen van tours gebaseerd op specifieke interesses, duur en groepsgroottes. Laten we Parijs op jouw manier verkennen met een gepersonaliseerd reisschema speciaal voor jou ontworpen.",
+          "Daarnaast specialiseren we ons in het samenstellen van buitengewone ervaringen voor bedrijfsuitjes en teambuilding activiteiten. Betrek je team in een spannend avontuur, dat verkenning, teambinding en onvergetelijke herinneringen combineert.",
+          "We zijn er om je bij elke stap te helpen, van de eerste planning tot naadloze uitvoering."
+        ],
+        "closingNote": "We waarderen open communicatie en moedigen je aan om contact met ons op te nemen om je ideeën, voorkeuren en eventuele speciale vereisten te bespreken. We kijken ernaar uit om samen te werken en jouw visie werkelijkheid te maken! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "Meer Informatie",
+      "ctaBookNow": "Nu Boeken",
+      "ctaContact": "Neem Contact Op"
+    }
   },
   "common": {
     "learnMore": "Meer Informatie",

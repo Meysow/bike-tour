@@ -6,9 +6,63 @@
     "about": "About Us"
   },
   "hero": {
-    "title": "Experience Paris Like Never Before",
-    "subtitle": "Discover the City of Light on two wheels with our premium bike tours and rental services",
-    "cta": "Start Your Adventure"
+    "title": "Discover <highlight>Paris</highlight> Like a True Parisian",
+    "subtitle": "Get ready for an <highlight>unforgettable adventure</highlight> through the City of Light! Explore iconic landmarks and hidden gems while experiencing the freedom of cycling like a local. Whether you're here for a few hours or a whole week, we've got the perfect experience for you!",
+    "ctaTours": "Book Your Tour!",
+    "ctaRent": "Rent Your Bike!"
+  },
+  "tours": {
+    "title": "Discover Our <highlight>Amazing Bike Tours</highlight>",
+    "subtitle": "Get ready for an <highlight>incredible adventure</highlight> through the streets of Paris! With my local expertise and passion for cycling, we'll create unforgettable memories together. Each tour is carefully crafted to give you the perfect blend of fun, discovery, and authentic Parisian experiences!",
+    "1": {
+      "title": "Paris Guided Bike Tour",
+      "subtitle": "All around Paris by Bike",
+      "description": "With our Paris Guided Bike Tour, discovering the capital becomes child's play! This cycling itinerary is accessible to all levels. We offer a unique mix of our top spots, typical Parisian streets and the city's most emblematic landmarks. Ideal for those who want to discover the heart of Paris and its great monuments. The programme includes discovering both banks of the Seine! Your guide will tell you fascinating and often amusing stories about the history of Paris. The atmosphere is just right. All you have to do is let yourself be guided and enjoy this magnificent bike ride to discover Paris. Get ready for this exciting adventure.",
+      "price": "From €40",
+      "details": {
+        "location": "🌍 - Starting spot: 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 3 Hours - 12 kilometers",
+        "schedule": "👤 - Available every day - 10:30 am / 2:30 pm departures"
+      },
+      "ctaMoreInfo": "More Info",
+      "ctaBookNow": "Book Now"
+    },
+    "2": {
+      "title": "Canal Saint-Martin Discovery Tour",
+      "subtitle": "Authentic Paris Experience",
+      "description": "Get ready to discover my favorite hidden gem in Paris! 🚴‍♂️ This Canal Saint-Martin tour takes you away from the tourist crowds to explore the bohemian heart of the 10th and 11th arrondissements. We'll cruise along the picturesque canal, pass through its iconic locks, and soak up the vibrant local atmosphere that makes this neighborhood so special. I'll share fascinating stories about the area's transformation while we discover hidden cafés and artisan shops. This is Paris as the locals live it! Perfect for those seeking an authentic, off-the-beaten-path adventure. ✨",
+      "price": "From €40",
+      "details": {
+        "location": "🌍 - Starting spot: 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 2.5 Hours - 10 kilometers",
+        "schedule": "👤 - Available every day - 10:30 am / 2:30 pm departures"
+      },
+      "ctaMoreInfo": "More Info",
+      "ctaBookNow": "Book Now"
+    },
+    "3": {
+      "title": "Private Tours, Team Buildings, Events",
+      "subtitle": "Private Tours",
+      "description": "At Rentabike Paris, we like to adapt and cater to your needs! Whether you're seeking to create a personalized tour, organize a team-building event, or add a special touch to your event, we are open to all possibilities and eagerly await your inquiries!",
+      "price": "Custom Quote",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Let's bring your vision to life",
+        "bulletPoints": [
+          "We welcome inquiries for customizing tours based on specific interests, durations, and group sizes. Let's explore Paris your way through a personalized itinerary designed just for you.",
+          "Additionally, we specialize in curating exceptional experiences for corporate outings and team-building activities. Engage your team in an exciting adventure, combining exploration, team bonding, and unforgettable memories.",
+          "We are here to assist you every step of the way, from initial planning to seamless execution."
+        ],
+        "closingNote": "We value open communication and encourage you to get in touch with us to discuss your ideas, preferences, and any special requirements you may have. We are excited to collaborate and make your vision a reality! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "More Info",
+      "ctaBookNow": "Book Now",
+      "ctaContact": "Contact Us"
+    }
   },
   "common": {
     "learnMore": "Learn More",

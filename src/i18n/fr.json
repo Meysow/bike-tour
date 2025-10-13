@@ -6,9 +6,63 @@
     "about": "À Propos"
   },
   "hero": {
-    "title": "Découvrez Paris Comme Jamais Auparavant",
-    "subtitle": "Explorez la Ville Lumière sur deux roues avec nos visites et services de location de vélos premium",
-    "cta": "Commencez Votre Aventure"
+    "title": "Découvrez <highlight>Paris</highlight> Comme un Vrai Parisien",
+    "subtitle": "Préparez-vous pour une <highlight>aventure inoubliable</highlight> à travers la Ville Lumière ! Explorez les monuments emblématiques et les trésors cachés tout en découvrant la liberté de rouler comme un local. Que vous soyez là pour quelques heures ou toute une semaine, nous avons l'expérience parfaite pour vous !",
+    "ctaTours": "Réservez Votre Tour !",
+    "ctaRent": "Louez Votre Vélo !"
+  },
+  "tours": {
+    "title": "Découvrez Nos <highlight>Visites à Vélo Incroyables</highlight>",
+    "subtitle": "Préparez-vous pour une <highlight>aventure incroyable</highlight> dans les rues de Paris ! Avec mon expertise locale et ma passion pour le vélo, nous créerons ensemble des souvenirs inoubliables. Chaque visite est soigneusement conçue pour vous offrir le mélange parfait entre amusement, découverte et expériences parisiennes authentiques !",
+    "1": {
+      "title": "Visite Guidée de Paris à Vélo",
+      "subtitle": "Tout autour de Paris en Vélo",
+      "description": "Avec notre Visite Guidée de Paris à Vélo, découvrir la capitale devient un jeu d'enfant ! Cet itinéraire cyclable est accessible à tous les niveaux. Nous vous proposons un mélange unique de nos meilleurs spots, des rues typiquement parisiennes et des monuments les plus emblématiques de la ville. Idéal pour ceux qui veulent découvrir le cœur de Paris et ses grands monuments. Le programme inclut la découverte des deux rives de la Seine ! Votre guide vous racontera des histoires fascinantes et souvent amusantes sur l'histoire de Paris. L'ambiance est au rendez-vous. Il ne vous reste plus qu'à vous laisser guider et profiter de cette magnifique balade à vélo pour découvrir Paris. Préparez-vous pour cette aventure passionnante.",
+      "price": "À partir de 40€",
+      "details": {
+        "location": "🌍 - Point de départ : 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 3 Heures - 12 kilomètres",
+        "schedule": "👤 - Disponible tous les jours - Départs à 10h30 / 14h30"
+      },
+      "ctaMoreInfo": "Plus d'Infos",
+      "ctaBookNow": "Réserver Maintenant"
+    },
+    "2": {
+      "title": "Tour Découverte du Canal Saint-Martin",
+      "subtitle": "Expérience Parisienne Authentique",
+      "description": "Préparez-vous à découvrir ma perle cachée préférée à Paris ! 🚴‍♂️ Cette visite du Canal Saint-Martin vous emmène loin des foules touristiques pour explorer le cœur bohème des 10e et 11e arrondissements. Nous longerons le canal pittoresque, passerons ses écluses emblématiques et nous imprégnerons de l'atmosphère locale vibrante qui rend ce quartier si spécial. Je partagerai des histoires fascinantes sur la transformation du quartier pendant que nous découvrirons des cafés cachés et des boutiques d'artisans. C'est Paris comme les locaux le vivent ! Parfait pour ceux qui cherchent une aventure authentique et hors des sentiers battus. ✨",
+      "price": "À partir de 40€",
+      "details": {
+        "location": "🌍 - Point de départ : 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 2h30 - 10 kilomètres",
+        "schedule": "👤 - Disponible tous les jours - Départs à 10h30 / 14h30"
+      },
+      "ctaMoreInfo": "Plus d'Infos",
+      "ctaBookNow": "Réserver Maintenant"
+    },
+    "3": {
+      "title": "Visites Privées, Team Building, Événements",
+      "subtitle": "Visites Privées",
+      "description": "Chez Rentabike Paris, nous aimons nous adapter et répondre à vos besoins ! Que vous souhaitiez créer une visite personnalisée, organiser un événement de team building, ou ajouter une touche spéciale à votre événement, nous sommes ouverts à toutes les possibilités et attendons avec impatience vos demandes !",
+      "price": "Devis Personnalisé",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Donnons vie à votre vision",
+        "bulletPoints": [
+          "Nous accueillons les demandes pour personnaliser les visites selon vos intérêts spécifiques, durées et tailles de groupe. Explorons Paris à votre façon avec un itinéraire personnalisé conçu spécialement pour vous.",
+          "De plus, nous nous spécialisons dans la création d'expériences exceptionnelles pour les sorties d'entreprise et les activités de team building. Engagez votre équipe dans une aventure passionnante, combinant exploration, cohésion d'équipe et souvenirs inoubliables.",
+          "Nous sommes là pour vous assister à chaque étape, de la planification initiale à l'exécution sans faille."
+        ],
+        "closingNote": "Nous valorisons une communication ouverte et vous encourageons à nous contacter pour discuter de vos idées, préférences et de toute exigence spéciale que vous pourriez avoir. Nous sommes ravis de collaborer et de concrétiser votre vision ! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "Plus d'Infos",
+      "ctaBookNow": "Réserver Maintenant",
+      "ctaContact": "Nous Contacter"
+    }
   },
   "common": {
     "learnMore": "En Savoir Plus",
@@ -21,7 +75,7 @@
     "ariaLabel": "Contacter RentaBikeParis sur WhatsApp",
     "defaultMessage": "Bonjour ! Je suis intéressé(e) par vos services de location de vélos et tours guidés à Paris. Pouvez-vous me renseigner ?"
   },
-  "tours": {
+  "privateTours": {
     "private": {
       "title": "Visites Privées, Team Building, Événements",
       "description": "Tours Privés",
