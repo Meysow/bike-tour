@@ -1,15 +1,78 @@
 "use client";
 
 import { Icons } from "@/components/shared/icons";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { testimonials } from "@/data/testimonials";
+import { Testimonial } from "@/types";
 import Image from "next/image";
+import { useState } from "react";
 import Balancer from "react-wrap-balancer";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// TestimonialCard component with read more functionality
+function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const maxLength = 210; // Character limit
+  const shouldTruncate = testimonial.body.length > maxLength;
+  const displayText =
+    isExpanded || !shouldTruncate
+      ? testimonial.body
+      : testimonial.body.substring(0, maxLength) + "...";
+
+  return (
+    <Card className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out hover:opacity-90 md:hover:-translate-y-2 rounded-xl overflow-hidden h-full flex flex-col">
+      <CardContent className="p-6 flex flex-col h-full">
+        {/* Customer Info - Top */}
+        <div className="flex items-start mb-4">
+          <Image
+            src={testimonial.avatar}
+            alt={testimonial.name}
+            width={48}
+            height={48}
+            className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+          />
+          <div className="ml-8 flex-1">
+            <p className="font-semibold text-foreground text-sm text-left">
+              {testimonial.name}
+            </p>
+            <p className="text-muted-foreground text-xs text-left">
+              {testimonial.role}
+            </p>
+          </div>
+        </div>
+
+        {/* Star Rating */}
+        <div className="flex items-center justify-center mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Icons.star
+              key={i}
+              className="w-4 h-4 text-yellow-400 fill-current"
+            />
+          ))}
+        </div>
+
+        {/* Testimonial Body with Read More */}
+        <div className="flex-grow">
+          <p className="text-muted-foreground leading-6 text-sm">
+            <Balancer>&quot;{displayText}&quot;</Balancer>
+          </p>
+          {shouldTruncate && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-primary hover:text-primary/80 text-xs font-medium mt-2 transition-colors"
+            >
+              {isExpanded ? "Read less" : "Read more"}
+            </button>
+          )}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
 
 export function TestimonialsSection() {
   return (
@@ -72,50 +135,7 @@ export function TestimonialsSection() {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.name} className="py-8 rounded-xl">
-              <Card className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out hover:opacity-90 md:hover:-translate-y-2 rounded-xl overflow-hidden h-full flex flex-col">
-                <CardHeader className="pb-4">
-                  {/* Quote Icon */}
-                  <div className="flex justify-center mb-4">
-                    <div className="p-3 rounded-full bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
-                      <Icons.heart className="w-6 h-6 text-primary" />
-                    </div>
-                  </div>
-
-                  {/* Testimonial Title */}
-                  <h3 className="font-urbanist text-lg font-semibold tracking-wider text-center">
-                    <Balancer>{testimonial.title}</Balancer>
-                  </h3>
-                </CardHeader>
-
-                <CardContent className="pt-0 flex flex-col flex-1">
-                  {/* Testimonial Body */}
-                  <p className="text-muted-foreground leading-6 text-sm md:text-base mb-6 flex-grow">
-                    <Balancer>&quot;{testimonial.body}&quot;</Balancer>
-                  </p>
-
-                  {/* Customer Info */}
-                  <div className="flex items-center justify-center space-x-4 mt-auto bg-primary/5 p-4 rounded-lg">
-                    <div className="relative">
-                      <Image
-                        src={testimonial.avatar}
-                        alt={testimonial.name}
-                        width={48}
-                        height={48}
-                        className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
-                      />
-                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-gradient-to-r from-primary to-fuchsia-400 rounded-full border-2 border-background"></div>
-                    </div>
-                    <div className="text-left">
-                      <p className="font-semibold text-foreground text-sm">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-muted-foreground text-xs">
-                        {testimonial.role}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <TestimonialCard testimonial={testimonial} />
             </SwiperSlide>
           ))}
         </Swiper>
