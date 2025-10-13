@@ -1,3 +1,5 @@
+import { env } from "@/env.mjs";
+
 //TODO : reprendre complétement ce component
 
 const links = {
@@ -9,7 +11,7 @@ const links = {
   tourBooking: "https://rentabikeparis.lokki.rent/en/events",
   authorsWebsite: "https://tdportfolio-self.vercel.app/",
   authorsGitHub: "https://github.com/meysow",
-  openGraphImage: "https://rentabikeparis.fr/images/ogImage/og_image2.png",
+  openGraphImage: `${env.NEXT_PUBLIC_APP_URL}/images/ogImage/og_image2.png`,
 };
 
 export const siteConfig = {
@@ -17,7 +19,7 @@ export const siteConfig = {
   description:
     "Experience Paris like never before with our tailored bike tours and rental services. We provide everything you need for a memorable ride through the city's iconic landmarks and hidden gems, ensuring a smooth, hassle-free adventure. Whether you're planning a leisurely tour or just need a bike for the day, we've got you covered.",
   links,
-  url: "https://rentabikeparis.fr",
+  url: env.NEXT_PUBLIC_APP_URL,
   ogImage: links.openGraphImage,
   author: "Meyso",
   hostingRegion: "fra1",
