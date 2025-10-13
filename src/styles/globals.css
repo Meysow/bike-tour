@@ -100,12 +100,7 @@
 
   .swiper-carousel .swiper-pagination-bullet {
     @apply w-2.5 h-2.5 opacity-30 transition-all duration-300 ease-in-out mx-1 static left-auto;
-    background: linear-gradient(
-      to right,
-      hsl(var(--primary)),
-      hsl(var(--primary)) 50%,
-      #a855f7
-    ) !important;
+    background: hsl(var(--primary)) !important;
   }
 
   .swiper-carousel .swiper-pagination-bullet-active {
