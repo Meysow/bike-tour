@@ -9,7 +9,7 @@ const links = {
   tourBooking: "https://rentabikeparis.lokki.rent/en/events",
   authorsWebsite: "https://tdportfolio-self.vercel.app/",
   authorsGitHub: "https://github.com/meysow",
-  openGraphImage: "https://saasyland.com/images/opengraph-image.png",
+  openGraphImage: "https://rentabikeparis.fr/images/ogImage/og_image2.png",
 };
 
 export const siteConfig = {
