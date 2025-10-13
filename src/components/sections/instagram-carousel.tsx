@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import Balancer from "react-wrap-balancer";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { siteConfig } from "@/config/site";
 
 // Import Swiper styles
 import "swiper/css";
@@ -244,7 +245,7 @@ export function InstagramCarousel({
               className="h-12 px-8 font-bold tracking-wide text-white bg-gradient-to-r from-primary to-fuchsia-400 hover:opacity-90 transition-opacity"
             >
               <Link
-                href="https://instagram.com/votre_compte_instagram"
+                href={siteConfig.links.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"

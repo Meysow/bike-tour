@@ -5,7 +5,10 @@ import { type NavItem, type NavItemFooter } from "@/types";
 const links = {
   facebook: "https://www.facebook.com/rentabikeparis",
   instagram: "https://www.instagram.com/rentabikeparis",
-  tripadvisor: "https://www.tripadvisor.com/rentabikeparis",
+  tripadvisor:
+    "https://www.tripadvisor.com/Attraction_Review-g187147-d26877237-Reviews-Rentabike_Paris_Locations_de_velos_et_tours_guides_a_Paris-Paris_Ile_de_France.html",
+  rentalBooking: "https://rentabikeparis.lokki.rent/",
+  tourBooking: "https://rentabikeparis.lokki.rent/en/events",
   authorsWebsite: "https://tdportfolio-self.vercel.app/",
   authorsGitHub: "https://github.com/meysow",
   openGraphImage: "https://saasyland.com/images/opengraph-image.png",
@@ -89,38 +92,8 @@ export const siteConfig = {
         },
         {
           title: "Terms",
-          href: "/tos",
+          href: "/terms",
           external: false,
-        },
-      ],
-    },
-    {
-      title: "Support",
-      items: [
-        {
-          title: "FAQ",
-          href: "/faq",
-          external: false,
-        },
-        {
-          title: "Contact",
-          href: "/contact",
-          external: false,
-        },
-      ],
-    },
-    {
-      title: "Inspiration",
-      items: [
-        {
-          title: "Shadcn",
-          href: "https://ui.shadcn.com/",
-          external: true,
-        },
-        {
-          title: "Taxonomy",
-          href: "https://tx.shadcn.com/",
-          external: true,
         },
       ],
     },

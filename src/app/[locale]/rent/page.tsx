@@ -6,6 +6,7 @@ import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import * as React from "react";
 import Balancer from "react-wrap-balancer";
 
@@ -167,8 +168,15 @@ export default function RentPage(): JSX.Element {
                     <Button
                       variant="outline"
                       className="h-10 w-full border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide"
+                      asChild
                     >
-                      Rent Now
+                      <Link
+                        href={siteConfig.links.rentalBooking}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Rent Now
+                      </Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -364,16 +372,24 @@ export default function RentPage(): JSX.Element {
               <Button
                 size="lg"
                 className="h-14 px-8 text-lg font-bold tracking-wide bg-gradient-to-r from-primary to-fuchsia-400 hover:from-primary/90 hover:to-fuchsia-400/90"
+                asChild
               >
-                Book a Bike Now
+                <Link
+                  href={siteConfig.links.rentalBooking}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book a Bike Now
+                </Link>
               </Button>
 
               <Button
                 size="lg"
                 variant="outline"
                 className="h-14 px-8 text-lg font-bold tracking-wide"
+                asChild
               >
-                Contact Us
+                <Link href="#contact-section">Contact Us</Link>
               </Button>
             </div>
           </div>

@@ -35,7 +35,7 @@ export function PartnersSection(): JSX.Element {
                 key={partner.title}
                 href={partner.href}
                 target="_blank"
-                rel="noreferer"
+                rel="noreferrer"
                 className="transition-all duration-200 ease-out hover:opacity-70"
               >
                 <Icon />
