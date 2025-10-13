@@ -29,7 +29,8 @@ const config = {
   ],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1",
-    "^@t3-oss/env-nextjs$": "<rootDir>/node_modules/@t3-oss/env-nextjs/dist/index.js",
+    "^@t3-oss/env-nextjs$":
+      "<rootDir>/node_modules/@t3-oss/env-nextjs/dist/index.js",
   },
   collectCoverageFrom: [
     "src/**/*.{js,jsx,ts,tsx}",
