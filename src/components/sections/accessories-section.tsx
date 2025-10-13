@@ -63,7 +63,7 @@ export function AccessoriesSection() {
             },
           }}
           style={{ "--swiper-theme-color": "#e2651d" } as React.CSSProperties}
-          className="accessories-carousel w-full"
+          className="swiper-carousel accessories-carousel w-full"
         >
           {accessoriesFeatures.map((feature) => (
             <SwiperSlide key={feature.title} className="py-8 rounded-xl">
@@ -88,41 +88,6 @@ export function AccessoriesSection() {
           ))}
         </Swiper>
       </div>
-
-      <style jsx global>{`
-        .accessories-carousel .swiper-pagination {
-          position: static !important;
-          margin-top: 1.5rem;
-          justify-content: center !important;
-          align-items: center !important;
-          width: 100% !important;
-          left: 50% !important;
-          right: auto !important;
-          text-align: center;
-        }
-
-        .accessories-carousel .swiper-pagination-bullet {
-          width: 10px !important;
-          height: 10px !important;
-          background: linear-gradient(
-            to right,
-            hsl(var(--primary)),
-            hsl(var(--primary)) 50%,
-            #a855f7
-          ) !important;
-          opacity: 0.3 !important;
-          transition: all 0.3s ease;
-          margin: 0 4px !important;
-          position: static !important;
-          left: auto !important;
-        }
-
-        .accessories-carousel .swiper-pagination-bullet-active {
-          opacity: 1 !important;
-          width: 24px !important;
-          border-radius: 5px !important;
-        }
-      `}</style>
     </section>
   );
 }

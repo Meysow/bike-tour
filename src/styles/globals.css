@@ -59,3 +59,56 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+@layer components {
+  /* Swiper Carousel Styles */
+  .swiper-carousel {
+    @apply w-full max-w-full;
+  }
+
+  .swiper-carousel .swiper-wrapper {
+    @apply flex items-stretch;
+  }
+
+  .swiper-carousel .swiper-slide {
+    @apply w-full h-auto flex-shrink-0;
+  }
+
+  /* Responsive slide widths for Instagram carousel */
+  @media (min-width: 640px) {
+    .instagram-carousel .swiper-slide {
+      width: calc(50% - 8px) !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .instagram-carousel .swiper-slide {
+      width: calc(33.333% - 13.333px) !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .instagram-carousel .swiper-slide {
+      width: calc(25% - 18px) !important;
+    }
+  }
+
+  /* Swiper Pagination Styles */
+  .swiper-carousel .swiper-pagination {
+    @apply static mt-6 justify-center items-center w-full left-1/2 right-auto text-center;
+  }
+
+  .swiper-carousel .swiper-pagination-bullet {
+    @apply w-2.5 h-2.5 opacity-30 transition-all duration-300 ease-in-out mx-1 static left-auto;
+    background: linear-gradient(
+      to right,
+      hsl(var(--primary)),
+      hsl(var(--primary)) 50%,
+      #a855f7
+    ) !important;
+  }
+
+  .swiper-carousel .swiper-pagination-bullet-active {
+    @apply opacity-100 w-6 rounded-md;
+  }
+}

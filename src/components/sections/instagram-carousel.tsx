@@ -3,6 +3,7 @@
 import { Icons } from "@/components/shared/icons";
 import { LoadingSpinner } from "@/components/shared/loading-spinner";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
 import { env } from "@/env.mjs";
 import { InstagramPost } from "@/types";
 import Image from "next/image";
@@ -11,7 +12,6 @@ import { useEffect, useState } from "react";
 import Balancer from "react-wrap-balancer";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { siteConfig } from "@/config/site";
 
 // Import Swiper styles
 import "swiper/css";
@@ -183,7 +183,7 @@ export function InstagramCarousel({
               observer={true}
               observeParents={true}
               watchSlidesProgress={true}
-              className="instagram-carousel w-full"
+              className="swiper-carousel instagram-carousel w-full"
             >
               {posts.map((post) => (
                 <SwiperSlide key={post.id}>
@@ -257,75 +257,6 @@ export function InstagramCarousel({
           </div>
         </div>
       </div>
-
-      <style jsx global>{`
-        .instagram-carousel {
-          width: 100%;
-          max-width: 100%;
-        }
-
-        .instagram-carousel .swiper-wrapper {
-          display: flex;
-          align-items: stretch;
-        }
-
-        .instagram-carousel .swiper-slide {
-          width: 100% !important;
-          height: auto;
-          flex-shrink: 0;
-        }
-
-        @media (min-width: 640px) {
-          .instagram-carousel .swiper-slide {
-            width: calc(50% - 8px) !important;
-          }
-        }
-
-        @media (min-width: 768px) {
-          .instagram-carousel .swiper-slide {
-            width: calc(33.333% - 13.333px) !important;
-          }
-        }
-
-        @media (min-width: 1024px) {
-          .instagram-carousel .swiper-slide {
-            width: calc(25% - 18px) !important;
-          }
-        }
-
-        .instagram-carousel .swiper-pagination {
-          position: static !important;
-          margin-top: 1.5rem;
-          justify-content: center !important;
-          align-items: center !important;
-          width: 100% !important;
-          left: 50% !important;
-          right: auto !important;
-          text-align: center;
-        }
-
-        .instagram-carousel .swiper-pagination-bullet {
-          width: 10px !important;
-          height: 10px !important;
-          background: linear-gradient(
-            to right,
-            hsl(var(--primary)),
-            hsl(var(--primary)) 50%,
-            #a855f7
-          ) !important;
-          opacity: 0.3 !important;
-          transition: all 0.3s ease;
-          margin: 0 4px !important;
-          position: static !important;
-          left: auto !important;
-        }
-
-        .instagram-carousel .swiper-pagination-bullet-active {
-          opacity: 1 !important;
-          width: 24px !important;
-          border-radius: 5px !important;
-        }
-      `}</style>
     </section>
   );
 }
