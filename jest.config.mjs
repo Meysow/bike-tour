@@ -11,9 +11,6 @@ const config = {
   // Add more setup options before each test is run
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   testEnvironment: "jest-environment-jsdom",
-  moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/src/$1",
-  },
   testMatch: [
     "**/src/__tests__/**/*.[jt]s?(x)",
     "**/src/**/?(*.)+(spec|test).[jt]s?(x)",
@@ -30,6 +27,10 @@ const config = {
   transformIgnorePatterns: [
     "node_modules/(?!(remark|remark-html|unified|bail|is-plain-obj|trough|vfile|vfile-message|unist-.*|mdast-.*|micromark.*|decode-named-character-reference|character-entities|hast-.*)/)",
   ],
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "^@t3-oss/env-nextjs$": "<rootDir>/node_modules/@t3-oss/env-nextjs/dist/index.js",
+  },
   collectCoverageFrom: [
     "src/**/*.{js,jsx,ts,tsx}",
     "!src/**/*.d.ts",

@@ -3,7 +3,7 @@ import { Testimonial } from "@/types";
 export const testimonials: Testimonial[] = [
   {
     title: "Effortlessly Enhanced Our Paris Experience",
-    body: "This bike rental service made our trip unforgettable! We could focus on exploring Paris without worrying about logistics. The bikes were reliable, and the routes were so well thought out.",
+    body: "This bike rental service made our trip unforgettable! We could focus on exploring Paris without worrying about logistics. The bikes were reliable, and the routes were so well thought out. ",
     name: "Derrick Bowman",
     role: "CEO at PixelCraft Studios",
     avatar: "/images/avatars/derrickbowman.jpeg",

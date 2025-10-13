@@ -1,6 +1,15 @@
 // Learn more: https://github.com/testing-library/jest-dom
 import "@testing-library/jest-dom";
 
+// Mock env.mjs
+jest.mock("@/env.mjs", () => ({
+  env: {
+    NEXT_PUBLIC_APP_URL: "http://localhost:3000",
+    NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN: "test-token",
+    NODE_ENV: "test",
+  },
+}));
+
 // Mock Next.js router
 jest.mock("next/navigation", () => ({
   useRouter() {
