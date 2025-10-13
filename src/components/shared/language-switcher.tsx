@@ -16,7 +16,7 @@ import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 
 const languages = [
   { code: "fr", name: "Français", flag: "🇫🇷" },
-  { code: "en", name: "English", flag: "🇺🇸" },
+  { code: "en", name: "English", flag: "🇬🇧" },
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
   { code: "nl", name: "Nederlands", flag: "🇳🇱" },
   { code: "es", name: "Español", flag: "🇪🇸" },

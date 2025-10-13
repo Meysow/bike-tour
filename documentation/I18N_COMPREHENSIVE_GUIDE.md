@@ -25,7 +25,7 @@ This project uses a **hybrid custom i18n implementation** that combines:
 ### Supported Languages
 
 - 🇫🇷 French (fr) - Default
-- 🇺🇸 English (en)
+- 🇬🇧 English (en)
 - 🇩🇪 German (de)
 - 🇳🇱 Dutch (nl)
 - 🇪🇸 Spanish (es)

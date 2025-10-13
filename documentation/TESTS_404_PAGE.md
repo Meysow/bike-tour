@@ -177,7 +177,7 @@ The `getNavItems()` function includes a safety check that prevents errors when a
 
 All content is fully translated across 5 languages:
 
-- 🇺🇸 English
+- 🇬🇧 English
 - 🇫🇷 French
 - 🇩🇪 German
 - 🇳🇱 Dutch

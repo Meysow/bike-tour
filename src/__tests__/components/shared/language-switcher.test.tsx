@@ -48,7 +48,7 @@ describe("LanguageSwitcher Component", () => {
 
   it("should display current language flag", () => {
     render(<LanguageSwitcher />);
-    expect(screen.getByText("🇺🇸")).toBeInTheDocument();
+    expect(screen.getByText("🇬🇧")).toBeInTheDocument();
   });
 
   it("should display current language name on larger screens", () => {
@@ -130,7 +130,7 @@ describe("LanguageSwitcher Component", () => {
 
     await waitFor(() => {
       expect(screen.getAllByText("🇫🇷")).toBeTruthy();
-      expect(screen.getAllByText("🇺🇸")).toBeTruthy();
+      expect(screen.getAllByText("🇬🇧")).toBeTruthy();
       expect(screen.getByText("🇩🇪")).toBeInTheDocument();
       expect(screen.getByText("🇳🇱")).toBeInTheDocument();
       expect(screen.getByText("🇪🇸")).toBeInTheDocument();

@@ -61,7 +61,7 @@
 
 1. Visitez `/location-velo-paris` (FR)
 2. Ouvrez le sélecteur de langue (drapeau 🇫🇷)
-3. Cliquez sur "English" (🇺🇸)
+3. Cliquez sur "English" (🇬🇧)
 4. **Résultat attendu :** Redirection vers `/bike-rental-paris`
 
 ### 2. Test de la navigation
