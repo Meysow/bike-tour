@@ -96,6 +96,26 @@
   "rent": {
     "title": "Erleben Sie Paris mit <highlight>Qualitätsrädern</highlight>",
     "subtitle": "Wählen Sie aus unserer sorgfältig ausgewählten Flotte von <highlight>Qualitätsrädern</highlight>, jedes bereit, Ihnen das perfekte Radfahrerlebnis zu bieten!",
+    "page": {
+      "heroTitle": "Mieten Sie unsere <highlight>Fantastischen Fahrräder</highlight>",
+      "heroSubtitle": "Wählen Sie aus unserer großen Auswahl an Fahrrädern, perfekt für die Erkundung von Paris in Ihrem eigenen Tempo. Wählen Sie das Fahrrad, das zu Ihrem Stil passt, und machen Sie sich mit Komfort und Leichtigkeit auf den Weg.",
+      "perDay": "/ Tag",
+      "discountNote": "10% Rabatt für Mieten von 4 oder mehr Tagen!",
+      "accessoriesTitle": "Vervollständigen Sie Ihre Fahrt mit <highlight>Zubehör</highlight>",
+      "accessoriesSubtitle": "Verbessern Sie Ihre Fahrraderfahrung mit unserer Auswahl an wesentlichen Zubehörteilen. Alle verfügbar zur Miete mit Ihrem Fahrrad.",
+      "howItWorksTitle": "Wie es <highlight>funktioniert</highlight>",
+      "step1Title": "Wählen & Buchen",
+      "step1Description": "Wählen Sie Ihr perfektes Fahrrad und Zubehör online. Wählen Sie Ihre Mietdaten und Abholort.",
+      "step2Title": "Abholen & Fahren",
+      "step2Description": "Holen Sie Ihr Fahrrad in unserem Geschäft ab. Wir bieten eine Sicherheitseinweisung und Helmanpassung.",
+      "step3Title": "Zurückgeben & Genießen",
+      "step3Description": "Geben Sie Ihr Fahrrad am Ende Ihrer Miete zurück. Teilen Sie Ihr Paris-Abenteuer mit uns!",
+      "readyExplore": "Bereit, Paris auf zwei Rädern zu erkunden?",
+      "readyDescription": "Buchen Sie heute Ihre Fahrradmiete und entdecken Sie Paris in Ihrem eigenen Tempo. Qualitätsfahrräder, großartige Preise und unvergessliche Erinnerungen warten!",
+      "bookBikeNow": "Jetzt ein Fahrrad Buchen",
+      "contactUs": "Kontaktieren Sie uns",
+      "pickupLocationTitle": "Abhol<highlight>ort</highlight>"
+    },
     "rentalToggle": {
       "shortTerm": "1 bis 3 Tage Miete",
       "longTerm": "4 Tage und mehr (10% sparen)"
@@ -165,6 +185,11 @@
       "title": "Fahrradschloss",
       "description": "Halten Sie Ihr Fahrrad mit einem robusten Fahrradschloss sicher. Unverzichtbar für sichere Stopps während Ihrer Stadterkundung oder beim Genießen einer Kaffeepause.",
       "image": "lock"
+    },
+    "rain-jacket": {
+      "title": "Regenjacke",
+      "description": "Bleiben Sie bei jedem Wetter trocken und komfortabel. Unsere leichten und atmungsaktiven Regenjacken sorgen dafür, dass Sie Ihr Paris-Abenteuer auch bei Regen fortsetzen können.",
+      "image": "rain-jacket"
     }
   },
   "testimonials": {

@@ -96,6 +96,26 @@
   "rent": {
     "title": "Experimenta París con <highlight>Bicicletas de Calidad</highlight>",
     "subtitle": "¡Elige de nuestra flota cuidadosamente seleccionada de <highlight>bicicletas de calidad</highlight>, cada una lista para brindarte la experiencia ciclista perfecta!",
+    "page": {
+      "heroTitle": "Alquila nuestras <highlight>Increíbles Bicicletas</highlight>",
+      "heroSubtitle": "Elige de nuestra amplia gama de bicicletas, perfectas para explorar París a tu propio ritmo. Selecciona la bicicleta que se adapte a tu estilo y sal a la carretera con comodidad y facilidad.",
+      "perDay": "/ día",
+      "discountNote": "¡10% de descuento aplicado para alquileres de 4 días o más!",
+      "accessoriesTitle": "Completa tu paseo con <highlight>accesorios</highlight>",
+      "accessoriesSubtitle": "Mejora tu experiencia ciclista con nuestra selección de accesorios esenciales. Todos disponibles para alquilar con tu bicicleta.",
+      "howItWorksTitle": "Cómo <highlight>funciona</highlight>",
+      "step1Title": "Elegir y Reservar",
+      "step1Description": "Selecciona tu bicicleta y accesorios perfectos en línea. Elige tus fechas de alquiler y lugar de recogida.",
+      "step2Title": "Recoger y Montar",
+      "step2Description": "Recoge tu bicicleta en nuestra tienda. Te proporcionaremos un briefing de seguridad y ajuste del casco.",
+      "step3Title": "Devolver y Disfrutar",
+      "step3Description": "Devuelve tu bicicleta al final de tu alquiler. ¡Comparte tu aventura parisina con nosotros!",
+      "readyExplore": "¿Listo para explorar París sobre dos ruedas?",
+      "readyDescription": "Reserva tu alquiler de bicicleta hoy y descubre París a tu propio ritmo. ¡Bicicletas de calidad, precios excelentes y recuerdos inolvidables te esperan!",
+      "bookBikeNow": "Reservar una Bicicleta Ahora",
+      "contactUs": "Contáctanos",
+      "pickupLocationTitle": "Lugar de <highlight>Recogida</highlight>"
+    },
     "rentalToggle": {
       "shortTerm": "Alquiler de 1 a 3 días",
       "longTerm": "4 días y más (ahorra 10%)"
@@ -165,6 +185,11 @@
       "title": "Candado para Bicicleta",
       "description": "Mantén tu bicicleta segura con un candado para bicicleta de alta resistencia. Esencial para paradas seguras durante tu exploración de la ciudad o mientras disfrutas de una pausa para el café.",
       "image": "lock"
+    },
+    "rain-jacket": {
+      "title": "Chaqueta de Lluvia",
+      "description": "Mantente seco y cómodo en cualquier clima. Nuestras chaquetas de lluvia ligeras y transpirables te permiten continuar tu aventura parisina incluso cuando llueve.",
+      "image": "rain-jacket"
     }
   },
   "testimonials": {

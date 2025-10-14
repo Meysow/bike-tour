@@ -96,6 +96,26 @@
   "rent": {
     "title": "Ervaar Parijs met <highlight>Kwaliteitsfietsen</highlight>",
     "subtitle": "Kies uit onze zorgvuldig geselecteerde vloot van <highlight>kwaliteitsfietsen</highlight>, elk klaar om je de perfecte fietservaring te bieden!",
+    "page": {
+      "heroTitle": "Huur onze <highlight>Geweldige Fietsen</highlight>",
+      "heroSubtitle": "Kies uit ons brede assortiment fietsen, perfect voor het verkennen van Parijs in je eigen tempo. Selecteer de fiets die bij je stijl past en ga de weg op met comfort en gemak.",
+      "perDay": "/ dag",
+      "discountNote": "10% korting toegepast voor verhuren van 4 of meer dagen!",
+      "accessoriesTitle": "Voltooi je rit met <highlight>accessoires</highlight>",
+      "accessoriesSubtitle": "Verbeter je fietservaring met onze selectie van essentiële accessoires. Alle beschikbaar voor verhuur met je fiets.",
+      "howItWorksTitle": "Hoe het <highlight>werkt</highlight>",
+      "step1Title": "Kiezen & Boeken",
+      "step1Description": "Selecteer je perfecte fiets en accessoires online. Kies je huurdata en ophaallocatie.",
+      "step2Title": "Ophalen & Rijden",
+      "step2Description": "Haal je fiets op bij onze winkel. We geven een veiligheidsbriefing en helmfitting.",
+      "step3Title": "Terugbrengen & Genieten",
+      "step3Description": "Breng je fiets terug aan het einde van je verhuur. Deel je Parijse avontuur met ons!",
+      "readyExplore": "Klaar om Parijs op twee wielen te verkennen?",
+      "readyDescription": "Boek vandaag je fietsverhuur en ontdek Parijs in je eigen tempo. Kwaliteitsfietsen, geweldige prijzen en onvergetelijke herinneringen wachten!",
+      "bookBikeNow": "Nu een Fiets Boeken",
+      "contactUs": "Neem Contact Op",
+      "pickupLocationTitle": "Ophaal<highlight>locatie</highlight>"
+    },
     "rentalToggle": {
       "shortTerm": "1 tot 3 dagen huur",
       "longTerm": "4 dagen en meer (bespaar 10%)"
@@ -165,6 +185,11 @@
       "title": "Fietsslot",
       "description": "Houd je fiets veilig met een zwaar fietsslot. Essentieel voor veilige stops tijdens je stadsverkenning of tijdens het genieten van een koffiepauze.",
       "image": "lock"
+    },
+    "rain-jacket": {
+      "title": "Regenjas",
+      "description": "Blijf droog en comfortabel in elk weer. Onze lichtgewicht en ademende regenjassen zorgen ervoor dat je je Parijse avontuur kunt voortzetten, zelfs wanneer het regent.",
+      "image": "rain-jacket"
     }
   },
   "testimonials": {
