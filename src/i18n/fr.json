@@ -96,6 +96,26 @@
   "rent": {
     "title": "Découvrez Paris avec nos <highlight>Vélos de Qualité</highlight>",
     "subtitle": "Choisissez parmi notre flotte soigneusement sélectionnée de <highlight>vélos de qualité</highlight>, chacun prêt à vous offrir l'expérience cycliste parfaite !",
+    "page": {
+      "heroTitle": "Louez nos <highlight>Super Vélos</highlight>",
+      "heroSubtitle": "Choisissez parmi notre large gamme de vélos, parfaits pour explorer Paris à votre rythme. Sélectionnez le vélo qui correspond à votre style et prenez la route avec confort et facilité.",
+      "perDay": "/ jour",
+      "discountNote": "10% de réduction appliquée pour les locations de 4 jours ou plus !",
+      "accessoriesTitle": "Complétez votre balade avec des <highlight>accessoires</highlight>",
+      "accessoriesSubtitle": "Améliorez votre expérience cycliste avec notre sélection d'accessoires essentiels. Tous disponibles à la location avec votre vélo.",
+      "howItWorksTitle": "Comment ça <highlight>fonctionne</highlight>",
+      "step1Title": "Choisir & Réserver",
+      "step1Description": "Sélectionnez votre vélo et accessoires parfaits en ligne. Choisissez vos dates de location et lieu de retrait.",
+      "step2Title": "Récupérer & Rouler",
+      "step2Description": "Récupérez votre vélo dans notre boutique. Nous vous fournirons un briefing de sécurité et l'ajustement du casque.",
+      "step3Title": "Rendre & Profiter",
+      "step3Description": "Rendez votre vélo à la fin de votre location. Partagez votre aventure parisienne avec nous !",
+      "readyExplore": "Prêt à explorer Paris sur deux roues ?",
+      "readyDescription": "Réservez votre location de vélo dès aujourd'hui et découvrez Paris à votre rythme. Vélos de qualité, prix imbattables et souvenirs inoubliables vous attendent !",
+      "bookBikeNow": "Réserver un Vélo Maintenant",
+      "contactUs": "Nous Contacter",
+      "pickupLocationTitle": "Lieu de <highlight>Retrait</highlight>"
+    },
     "rentalToggle": {
       "shortTerm": "Location 1 à 3 jours",
       "longTerm": "4 jours et plus (économisez 10%)"
@@ -165,6 +185,11 @@
       "title": "Antivol Vélo",
       "description": "Gardez votre vélo en sécurité avec un antivol vélo haute sécurité. Essentiel pour des arrêts sûrs pendant votre exploration de la ville ou en profitant d'une pause café.",
       "image": "lock"
+    },
+    "rain-jacket": {
+      "title": "Veste de Pluie",
+      "description": "Restez au sec et confortable par tous les temps. Nos vestes de pluie légères et respirantes vous permettent de continuer votre aventure parisienne même sous la pluie.",
+      "image": "rain-jacket"
     }
   },
   "testimonials": {

@@ -96,6 +96,26 @@
   "rent": {
     "title": "Experience Paris with <highlight>Quality Bikes</highlight>",
     "subtitle": "Choose from our carefully selected fleet of <highlight>quality bikes</highlight>, each one ready to provide you with the perfect cycling experience!",
+    "page": {
+      "heroTitle": "Rent our <highlight>Awesome Bikes</highlight>",
+      "heroSubtitle": "Choose from our wide range of bikes, perfect for exploring Paris at your own pace. Select the bike that suits your style and hit the road with comfort and ease.",
+      "perDay": "/ day",
+      "discountNote": "10% discount applied for rentals of 4 or more days!",
+      "accessoriesTitle": "Complete your ride with <highlight>accessories</highlight>",
+      "accessoriesSubtitle": "Enhance your cycling experience with our selection of essential accessories. All available for rent with your bike.",
+      "howItWorksTitle": "How it <highlight>works</highlight>",
+      "step1Title": "Choose & Book",
+      "step1Description": "Select your perfect bike and accessories online. Choose your rental dates and pickup location.",
+      "step2Title": "Pickup & Ride",
+      "step2Description": "Collect your bike from our shop. We'll provide a safety briefing and helmet fitting.",
+      "step3Title": "Return & Enjoy",
+      "step3Description": "Return your bike at the end of your rental. Share your Paris adventure with us!",
+      "readyExplore": "Ready to explore Paris on two wheels?",
+      "readyDescription": "Book your bike rental today and discover Paris at your own pace. Quality bikes, great prices, and unforgettable memories await!",
+      "bookBikeNow": "Book a Bike Now",
+      "contactUs": "Contact Us",
+      "pickupLocationTitle": "Pickup <highlight>Location</highlight>"
+    },
     "rentalToggle": {
       "shortTerm": "1 to 3 Days Rental",
       "longTerm": "4 Days and more (save 10%)"
@@ -165,6 +185,11 @@
       "title": "Bike Lock",
       "description": "Keep your bike secure with a heavy-duty bike lock. Essential for safe stops during your city exploration or while enjoying a coffee break.",
       "image": "lock"
+    },
+    "rain-jacket": {
+      "title": "Rain Jacket",
+      "description": "Stay dry and comfortable in any weather. Our lightweight and breathable rain jackets ensure you can continue your Paris adventure even when it rains.",
+      "image": "rain-jacket"
     }
   },
   "testimonials": {
