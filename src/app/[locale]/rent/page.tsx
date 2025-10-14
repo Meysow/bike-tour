@@ -209,9 +209,17 @@ export default function RentPage(): JSX.Element {
                 "child-seat",
                 "rain-jacket",
               ].map((accessoryId) => {
-                const accessory = getSectionTranslations(locale, "accessories")[
-                  accessoryId
-                ];
+                const accessoriesData = getSectionTranslations(
+                  locale,
+                  "accessories"
+                );
+                const accessory = accessoriesData[
+                  accessoryId as keyof typeof accessoriesData
+                ] as {
+                  title: string;
+                  description: string;
+                  image: string;
+                };
                 const icons = {
                   helmet: "🪖",
                   lock: "🔒",
