@@ -112,6 +112,35 @@
     },
     "ctaRentNow": "Nu Huren"
   },
+  "accessories": {
+    "title": "Verbeter je rit met <highlight>Accessoires</highlight>",
+    "subtitle": "Ontdek onze selectie accessoires ontworpen om je reis comfortabeler, <highlight>veiliger</highlight> en plezieriger te maken. Of je nu helmen, manden, kinderzitjes of telefoonhouders nodig hebt, we hebben de extras die je nodig hebt voor je perfecte rit door Parijs.",
+    "helmet": {
+      "title": "Helm",
+      "description": "Veiligheid eerst! Onze comfortabele en duurzame helmen zijn verkrijgbaar in verschillende maten en designs om een perfecte pasvorm en optimale bescherming tijdens je rit te garanderen.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Manden",
+      "description": "Perfect voor het dragen van kleine spullen of een picknick onderweg. Onze stevige manden worden veilig aan de voorkant van je fiets bevestigd, waardoor je essentiële spullen binnen handbereik blijven.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Telefoonhouder",
+      "description": "Blijf op het juiste pad en volg gemakkelijk je navigatie met een veilige telefoonhouder. Perfect voor het verkennen van nieuwe routes terwijl je je handen vrij en veilig houdt.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Kinderzitje",
+      "description": "Neem de kleintjes mee met onze comfortabele en veilige kinderzitjes, ontworpen voor veilige montage aan de achterkant van je fiets.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Fietsslot",
+      "description": "Houd je fiets veilig met een zwaar fietsslot. Essentieel voor veilige stops tijdens je stadsverkenning of tijdens het genieten van een koffiepauze.",
+      "image": "lock"
+    }
+  },
   "common": {
     "learnMore": "Meer Informatie",
     "bookNow": "Nu Boeken",

@@ -126,6 +126,12 @@ export interface BikeContent {
   limitations: string[];
 }
 
+export interface AccessoriesContent {
+  title: string;
+  description: string;
+  image: string; // Image key (e.g., "helmet", "basket", "phone-mount", "child-seat", "lock")
+}
+
 export interface TourData {
   id: string;
   title: string;

@@ -112,6 +112,35 @@
     },
     "ctaRentNow": "Alquilar Ahora"
   },
+  "accessories": {
+    "title": "Mejora tu paseo con <highlight>Accesorios</highlight>",
+    "subtitle": "Descubre nuestra selección de accesorios diseñados para hacer tu viaje más cómodo, <highlight>seguro</highlight> y agradable. Ya necesites cascos, cestas, asientos para niños o soportes para teléfono, tenemos los extras que necesitas para completar tu paseo perfecto por París.",
+    "helmet": {
+      "title": "Casco",
+      "description": "¡La seguridad primero! Nuestros cascos cómodos y duraderos vienen en varios tamaños y diseños para asegurar un ajuste perfecto y una protección óptima durante tu paseo.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Cesta",
+      "description": "Perfecto para llevar objetos pequeños o un picnic sobre la marcha, nuestras cestas resistentes se adhieren de forma segura al frente de tu bicicleta, manteniendo tus esenciales al alcance.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Soporte para Teléfono",
+      "description": "Mantente en el camino correcto y sigue fácilmente tu navegación con un soporte para teléfono seguro. Perfecto para explorar nuevas rutas mientras mantienes tus manos libres y seguras.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Asiento para Niño",
+      "description": "Trae a los pequeños con nuestros asientos para niños cómodos y seguros, diseñados para montaje seguro en la parte trasera de tu bicicleta.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Candado para Bicicleta",
+      "description": "Mantén tu bicicleta segura con un candado para bicicleta de alta resistencia. Esencial para paradas seguras durante tu exploración de la ciudad o mientras disfrutas de una pausa para el café.",
+      "image": "lock"
+    }
+  },
   "common": {
     "learnMore": "Saber Más",
     "bookNow": "Reservar Ahora",

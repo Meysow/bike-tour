@@ -112,6 +112,35 @@
     },
     "ctaRentNow": "Jetzt Mieten"
   },
+  "accessories": {
+    "title": "Verbessern Sie Ihre Fahrt mit <highlight>Zubehör</highlight>",
+    "subtitle": "Entdecken Sie unsere Auswahl an Zubehör, das entwickelt wurde, um Ihre Reise bequemer, <highlight>sicherer</highlight> und angenehmer zu gestalten. Ob Sie Helme, Körbe, Kindersitze oder Handy-Halterungen benötigen, wir haben die Extras, die Sie für Ihre perfekte Fahrt durch Paris benötigen.",
+    "helmet": {
+      "title": "Helm",
+      "description": "Sicherheit geht vor! Unsere bequemen und langlebigen Helme gibt es in verschiedenen Größen und Designs, um eine perfekte Passform und optimalen Schutz während Ihrer Fahrt zu gewährleisten.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Korb",
+      "description": "Perfekt für den Transport kleiner Gegenstände oder eines Picknicks unterwegs. Unsere robusten Körbe werden sicher am Vorderteil Ihres Fahrrads befestigt und halten Ihre wichtigsten Dinge in Reichweite.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Handy-Halterung",
+      "description": "Bleiben Sie auf dem richtigen Weg und folgen Sie einfach Ihrer Navigation mit einer sicheren Handy-Halterung. Perfekt für die Erkundung neuer Routen, während Sie Ihre Hände frei und sicher halten.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Kindersitz",
+      "description": "Bringen Sie die Kleinen mit unseren bequemen und sicheren Kindersitzen mit, die für eine sichere Montage am Heck Ihres Fahrrads konzipiert sind.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Fahrradschloss",
+      "description": "Halten Sie Ihr Fahrrad mit einem robusten Fahrradschloss sicher. Unverzichtbar für sichere Stopps während Ihrer Stadterkundung oder beim Genießen einer Kaffeepause.",
+      "image": "lock"
+    }
+  },
   "common": {
     "learnMore": "Mehr Erfahren",
     "bookNow": "Jetzt Buchen",

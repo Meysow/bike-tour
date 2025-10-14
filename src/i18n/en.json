@@ -112,6 +112,35 @@
     },
     "ctaRentNow": "Rent Now"
   },
+  "accessories": {
+    "title": "Enhance your ride with <highlight>Accessories</highlight>",
+    "subtitle": "Discover our selection of accessories designed to make your journey more comfortable, <highlight>safe</highlight> and enjoyable. Whether you need helmets, baskets, child seats, or phone mounts, we have the extras you need to complete your perfect ride through Paris.",
+    "helmet": {
+      "title": "Helmet",
+      "description": "Safety first! Our comfortable and durable helmets come in various sizes and designs to ensure a snug fit and optimal protection during your ride.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Basket",
+      "description": "Perfect for carrying small items or a picnic on the go, our sturdy baskets attach securely to the front of your bike, keeping your essentials within reach.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Phone Mount",
+      "description": "Stay on track and easily follow your navigation with a secure phone mount. Perfect for exploring new routes while keeping your hands free and safe.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Child Seat",
+      "description": "Bring the little ones along with our comfortable and safe child seats, designed for secure mounting on the back of your bike.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Bike Lock",
+      "description": "Keep your bike secure with a heavy-duty bike lock. Essential for safe stops during your city exploration or while enjoying a coffee break.",
+      "image": "lock"
+    }
+  },
   "common": {
     "learnMore": "Learn More",
     "bookNow": "Book Now",

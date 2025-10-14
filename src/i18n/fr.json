@@ -112,6 +112,35 @@
     },
     "ctaRentNow": "Louer Maintenant"
   },
+  "accessories": {
+    "title": "Améliorez votre balade avec nos <highlight>Accessoires</highlight>",
+    "subtitle": "Découvrez notre sélection d'accessoires conçus pour rendre votre voyage plus confortable, <highlight>sûr</highlight> et agréable. Que vous ayez besoin de casques, paniers, sièges enfants ou supports téléphone, nous avons les extras dont vous avez besoin pour compléter votre balade parfaite à travers Paris.",
+    "helmet": {
+      "title": "Casque",
+      "description": "La sécurité avant tout ! Nos casques confortables et durables sont disponibles en différentes tailles et designs pour assurer un ajustement parfait et une protection optimale pendant votre balade.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Paniers",
+      "description": "Parfait pour transporter de petits objets ou un pique-nique en route, nos paniers robustes s'attachent solidement à l'avant de votre vélo, gardant vos essentiels à portée de main.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Support Téléphone",
+      "description": "Restez sur la bonne voie et suivez facilement votre navigation avec un support téléphone sécurisé. Parfait pour explorer de nouveaux itinéraires tout en gardant vos mains libres et en sécurité.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Siège Enfant",
+      "description": "Emmenez les petits avec nos sièges enfants confortables et sûrs, conçus pour un montage sécurisé à l'arrière de votre vélo.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Antivol Vélo",
+      "description": "Gardez votre vélo en sécurité avec un antivol vélo haute sécurité. Essentiel pour des arrêts sûrs pendant votre exploration de la ville ou en profitant d'une pause café.",
+      "image": "lock"
+    }
+  },
   "common": {
     "learnMore": "En Savoir Plus",
     "bookNow": "Réserver Maintenant",
