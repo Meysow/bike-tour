@@ -16,27 +16,8 @@ import { TourData, tours } from "@/data/tourData";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
+import { TourContent } from "@/types";
 import { Button } from "../ui/button";
-
-type TourContent = {
-  title: string;
-  subtitle: string;
-  description: string;
-  price: string;
-  details: {
-    location: string;
-    duration: string;
-    schedule: string;
-  };
-  additionalContent?: {
-    visionTitle: string;
-    bulletPoints: string[];
-    closingNote: string;
-  };
-  ctaMoreInfo: string;
-  ctaBookNow: string;
-  ctaContact: string;
-};
 
 export function ToursSection(): JSX.Element {
   const { createLink, locale } = useLocalizedRoutes();

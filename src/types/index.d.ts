@@ -96,6 +96,26 @@ export interface Tour {
   maxPeople: number;
 }
 
+export interface TourContent {
+  title: string;
+  subtitle: string;
+  description: string;
+  price: string;
+  details: {
+    location: string;
+    duration: string;
+    schedule: string;
+  };
+  additionalContent?: {
+    visionTitle: string;
+    bulletPoints: string[];
+    closingNote: string;
+  };
+  ctaMoreInfo: string;
+  ctaBookNow: string;
+  ctaContact: string;
+}
+
 export enum BikeType {
   KIDS_20 = "KIDS_20",
   KIDS_24 = "KIDS_24",
