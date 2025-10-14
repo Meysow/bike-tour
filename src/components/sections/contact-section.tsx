@@ -15,7 +15,7 @@ export function ContactSection(): JSX.Element {
     <section
       id="contact-section"
       aria-label="contact section"
-      className="w-full pb-8 sm:pb-16 md:pb-32"
+      className="w-full pb-4 sm:pb-8 md:pb-12"
     >
       <div className="container grid max-w-4xl grid-cols-1 justify-center gap-8 md:gap-16">
         <div className="flex flex-col items-center gap-6 text-center">
