@@ -3,6 +3,9 @@
 import { Icons } from "@/components/shared/icons";
 import { Card, CardContent } from "@/components/ui/card";
 import { testimonials } from "@/data/testimonials";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { HighlightText } from "@/lib/utils/highlight";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { Testimonial } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
@@ -14,7 +17,15 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // TestimonialCard component with read more functionality
-function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+function TestimonialCard({
+  testimonial,
+  readMoreText,
+  readLessText,
+}: {
+  testimonial: Testimonial;
+  readMoreText: string;
+  readLessText: string;
+}) {
   const [isExpanded, setIsExpanded] = useState(false);
   const maxLength = 210; // Character limit
   const shouldTruncate = testimonial.body.length > maxLength;
@@ -65,7 +76,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
               onClick={() => setIsExpanded(!isExpanded)}
               className="text-primary hover:text-primary/80 text-xs font-medium mt-2 transition-colors"
             >
-              {isExpanded ? "Read less" : "Read more"}
+              {isExpanded ? readLessText : readMoreText}
             </button>
           )}
         </div>
@@ -75,6 +86,9 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 }
 
 export function TestimonialsSection() {
+  const { locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "testimonials");
+
   return (
     <section
       id="testimonials-carousel"
@@ -86,16 +100,15 @@ export function TestimonialsSection() {
         <div className="flex flex-col items-center gap-4 mb-8">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              Join our thriving community of{" "}
-              <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
-                Satisfied Riders
-              </span>{" "}
+              <HighlightText gradient={true}>{t.title}</HighlightText>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            Discover how our customers have made their rides{" "}
-            <span className="font-semibold text-foreground">memorable</span>{" "}
-            with us.
+            <Balancer>
+              <HighlightText gradient={false} className="text-foreground">
+                {t.subtitle}
+              </HighlightText>
+            </Balancer>
           </h3>
         </div>
 
@@ -135,7 +148,11 @@ export function TestimonialsSection() {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.name} className="py-8 rounded-xl">
-              <TestimonialCard testimonial={testimonial} />
+              <TestimonialCard
+                testimonial={testimonial}
+                readMoreText={t.readMore}
+                readLessText={t.readLess}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

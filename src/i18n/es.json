@@ -6,9 +6,257 @@
     "about": "Sobre Nosotros"
   },
   "hero": {
-    "title": "Experimenta París Como Nunca Antes",
-    "subtitle": "Descubre la Ciudad de la Luz sobre dos ruedas con nuestros tours en bicicleta y servicios de alquiler premium",
-    "cta": "Comienza Tu Aventura"
+    "title": "Descubre <highlight>París</highlight> Como un Verdader Parisino",
+    "subtitle": "¡Prepárate para una <highlight>aventura inolvidable</highlight> por la Ciudad de la Luz! Explora monumentos icónicos y joyas ocultas mientras experimentas la libertad de pedalear como un local. Ya sea que estés aquí por unas horas o una semana completa, ¡tenemos la experiencia perfecta para ti!",
+    "ctaTours": "¡Reserva Tu Tour!",
+    "ctaRent": "¡Alquila Tu Bicicleta!"
+  },
+  "tours": {
+    "title": "Descubre Nuestros <highlight>Increíbles Tours en Bicicleta</highlight>",
+    "subtitle": "¡Prepárate para una aventura increíble por las calles de París! Con mi experiencia local y pasión por el ciclismo, crearemos juntos recuerdos inolvidables. ¡Cada tour está cuidadosamente diseñado para darte la mezcla perfecta de diversión, descubrimiento y experiencias parisinas auténticas!",
+    "1": {
+      "title": "Tour Guiado de París en Bicicleta",
+      "subtitle": "Todo alrededor de París en Bicicleta",
+      "description": "¡Con nuestro Tour Guiado de París en Bicicleta, descubrir la capital se convierte en un juego de niños! Este itinerario ciclista es accesible para todos los niveles. Te ofrecemos una mezcla única de nuestros mejores spots, calles típicamente parisinas y los monumentos más emblemáticos de la ciudad. Ideal para aquellos que quieren descubrir el corazón de París y sus grandes monumentos. ¡El programa incluye descubrir ambas orillas del Sena! Tu guía te contará historias fascinantes y a menudo divertidas sobre la historia de París. El ambiente es perfecto. Solo tienes que dejarte guiar y disfrutar de este magnífico paseo en bicicleta para descubrir París. ¡Prepárate para esta emocionante aventura!",
+      "price": "Desde €40",
+      "image": "louvre",
+      "details": {
+        "location": "🌍 - Punto de partida: 20 Rue Greneta, 75002 París",
+        "duration": "⏰ - 3 Horas - 12 kilómetros",
+        "schedule": "👤 - Disponible todos los días - Salidas a las 10:30 / 14:30"
+      },
+      "ctaMoreInfo": "Más Información",
+      "ctaBookNow": "Reservar Ahora"
+    },
+    "2": {
+      "title": "Tour de Descubrimiento del Canal Saint-Martin",
+      "subtitle": "Experiencia Auténtica de París",
+      "description": "¡Prepárate para descubrir mi joya oculta favorita en París! 🚴‍♂️ Este tour del Canal Saint-Martin te lleva lejos de las multitudes turísticas para explorar el corazón bohemio de los distritos 10 y 11. Navegaremos a lo largo del pintoresco canal, pasaremos por sus icónicas esclusas y nos empaparemos de la vibrante atmósfera local que hace que este barrio sea tan especial. Compartiré historias fascinantes sobre la transformación del área mientras descubrimos cafés ocultos y tiendas de artesanía. ¡Esto es París como los locales lo viven! Perfecto para aquellos que buscan una aventura auténtica y fuera de los caminos trillados. ✨",
+      "price": "Desde €40",
+      "image": "palais",
+      "details": {
+        "location": "🌍 - Punto de partida: 20 Rue Greneta, 75002 París",
+        "duration": "⏰ - 2,5 Horas - 10 kilómetros",
+        "schedule": "👤 - Disponible todos los días - Salidas a las 10:30 / 14:30"
+      },
+      "ctaMoreInfo": "Más Información",
+      "ctaBookNow": "Reservar Ahora"
+    },
+    "3": {
+      "title": "Tours Privados, Team Building, Eventos",
+      "subtitle": "Tours Privados",
+      "description": "¡En Rentabike París nos gusta adaptarnos y atender tus necesidades! Ya sea que busques crear un tour personalizado, organizar un evento de team building, o agregar un toque especial a tu evento, ¡estamos abiertos a todas las posibilidades y esperamos ansiosamente tus consultas!",
+      "price": "Cotización Personalizada",
+      "image": "prive",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Demos vida a tu visión",
+        "bulletPoints": [
+          "Recibimos consultas para personalizar tours basados en intereses específicos, duraciones y tamaños de grupo. ¡Exploremos París a tu manera con un itinerario personalizado diseñado especialmente para ti!",
+          "Además, nos especializamos en crear experiencias excepcionales para salidas corporativas y actividades de team building. Involucra a tu equipo en una aventura emocionante, combinando exploración, trabajo en equipo y recuerdos inolvidables.",
+          "Estamos aquí para asistirte en cada paso del camino, desde la planificación inicial hasta la ejecución sin problemas."
+        ],
+        "closingNote": "Valoramos la comunicación abierta y te alentamos a ponerte en contacto con nosotros para discutir tus ideas, preferencias y cualquier requisito especial que puedas tener. ¡Estamos emocionados de colaborar y hacer realidad tu visión! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "Más Información",
+      "ctaBookNow": "Reservar Ahora",
+      "ctaContact": "Contáctanos"
+    }
+  },
+  "rent": {
+    "title": "Experimenta París con <highlight>Bicicletas de Calidad</highlight>",
+    "subtitle": "¡Elige de nuestra flota cuidadosamente seleccionada de <highlight>bicicletas de calidad</highlight>, cada una lista para brindarte la experiencia ciclista perfecta!",
+    "rentalToggle": {
+      "shortTerm": "Alquiler de 1 a 3 días",
+      "longTerm": "4 días y más (ahorra 10%)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Bicicleta Normal",
+      "description": "Una bicicleta urbana cómoda y confiable, ideal para explorar París a tu propio ritmo con siete marchas suaves.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "Sistema de cambios de 7 velocidades",
+        "Sillín cómodo para paseos largos",
+        "Diseño robusto apto para la ciudad"
+      ],
+      "limitations": ["Sin asistencia eléctrica"]
+    },
+    "ebike": {
+      "name": "Bicicleta Eléctrica - Power 1",
+      "description": "Descubre París sin esfuerzo con tecnología de asistencia al pedaleo. Perfecta para distancias largas y rutas montañosas.",
+      "dailyRate": 30,
+      "image": "ebike",
+      "features": [
+        "Asistencia eléctrica al pedaleo",
+        "Autonomía de batería hasta 80 km",
+        "Control de puño fácil de usar"
+      ],
+      "limitations": ["Mayor peso debido a la batería"]
+    },
+    "children": {
+      "name": "Bicicleta Infantil 20\" o 24\"",
+      "description": "Segura y resistente, ideal para ciclistas jóvenes de 6 a 9 años. Perfecta para salidas familiares y paseos por parques urbanos. Tamaño 20\" o 24\"",
+      "dailyRate": 15,
+      "image": "children",
+      "features": [
+        "Ruedas de 20 pulgadas para pedalear estable",
+        "Manillares fáciles de agarrar",
+        "Marco ligero"
+      ],
+      "limitations": ["No apta para niños menores de 6 años"]
+    },
+    "ctaRentNow": "Alquilar Ahora"
+  },
+  "accessories": {
+    "title": "Mejora tu paseo con <highlight>Accesorios</highlight>",
+    "subtitle": "Descubre nuestra selección de accesorios diseñados para hacer tu viaje más cómodo, <highlight>seguro</highlight> y agradable. Ya necesites cascos, cestas, asientos para niños o soportes para teléfono, tenemos los extras que necesitas para completar tu paseo perfecto por París.",
+    "helmet": {
+      "title": "Casco",
+      "description": "¡La seguridad primero! Nuestros cascos cómodos y duraderos vienen en varios tamaños y diseños para asegurar un ajuste perfecto y una protección óptima durante tu paseo.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Cesta",
+      "description": "Perfecto para llevar objetos pequeños o un picnic sobre la marcha, nuestras cestas resistentes se adhieren de forma segura al frente de tu bicicleta, manteniendo tus esenciales al alcance.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Soporte para Teléfono",
+      "description": "Mantente en el camino correcto y sigue fácilmente tu navegación con un soporte para teléfono seguro. Perfecto para explorar nuevas rutas mientras mantienes tus manos libres y seguras.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Asiento para Niño",
+      "description": "Trae a los pequeños con nuestros asientos para niños cómodos y seguros, diseñados para montaje seguro en la parte trasera de tu bicicleta.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Candado para Bicicleta",
+      "description": "Mantén tu bicicleta segura con un candado para bicicleta de alta resistencia. Esencial para paradas seguras durante tu exploración de la ciudad o mientras disfrutas de una pausa para el café.",
+      "image": "lock"
+    }
+  },
+  "testimonials": {
+    "title": "Únete a nuestra próspera comunidad de <highlight>Ciclistas Satisfechos</highlight>",
+    "subtitle": "Descubre cómo nuestros clientes han hecho sus paseos <highlight>memorables</highlight> con nosotros.",
+    "readMore": "Leer más",
+    "readLess": "Leer menos"
+  },
+  "instagram": {
+    "title": "Sigue nuestras <highlight>Aventuras</highlight>",
+    "subtitle": "Descubre los momentos más hermosos de nuestros tours en bicicleta por París y únete a nuestra comunidad de <highlight>ciclistas</highlight>."
+  },
+  "partners": {
+    "title": "Conoce a nuestros <highlight>Sorprendentes Socios</highlight>",
+    "subtitle": "Desde plataformas de reservas de confianza hasta empresas que han experimentado nuestros tours, descubre las organizaciones increíbles que nos ayudan a compartir la magia de París con <highlight>ciclistas de todo el mundo</highlight>."
+  },
+  "faq": {
+    "title": "¿Tienes <highlight>Preguntas</highlight>? ¡Tenemos las Respuestas!",
+    "subtitle": "Todo lo que necesitas saber sobre nuestros tours en bicicleta y alquileres. ¿No encuentras lo que buscas? Solo <highlight>contáctanos</highlight> - ¡estamos aquí para ayudar!",
+    "questions": [
+      {
+        "question": "📍 ¿Dónde está tu alquiler de bicicletas en París?",
+        "answer": "Nuestro punto de partida se encuentra en la 20 Rue Greneta en el segundo distrito de París. Puedes llegar fácilmente a nosotros a través de la estación de metro Réaumur Sebastopol, líneas 3 y 4, a 2 minutos a pie."
+      },
+      {
+        "question": "⏰ ¿Cuáles son nuestros horarios de apertura?",
+        "answer": "Estamos abiertos de 10am a 7pm todos los días de lunes a domingo."
+      },
+      {
+        "question": "💰 ¿Qué precios para un alquiler de bicicleta?",
+        "answer": "Consulta nuestros <a href=\"/rent\">precios de alquiler de bicicletas</a> para encontrar la mejor oferta para tu viaje."
+      },
+      {
+        "question": "⏱️ ¿Cuál es el período mínimo de alquiler?",
+        "answer": "Alquilamos bicicletas por al menos 1 día, pero si quieres disfrutar de un paseo corto por unas horas, aún puedes hacerlo 😉"
+      },
+      {
+        "question": "🚴‍♂️ ¿Cuándo tienen lugar los Tours?",
+        "answer": "Todos los días de 10am a 1pm 😉 Si está lloviendo, esperaremos hasta que mejore y encontraremos la mejor solución para ti."
+      },
+      {
+        "question": "🔧 ¿Qué pasa si tengo un problema con mi bicicleta?",
+        "answer": "Probablemente no lo tendrás. Pero si lo tienes, deja de pedalear y llámanos 😉 No te preocupes, iremos a verte lo antes posible y lo haremos funcionar de nuevo."
+      },
+      {
+        "question": "🚚 ¿Entregáis o recogéis bicicletas?",
+        "answer": "Sí, pero por favor llama con anticipación para verificar nuestra disponibilidad. Podemos entregar o recoger en París Intramuros por una tarifa adicional de 40€ por trayecto."
+      },
+      {
+        "question": "🎁 ¿Dáis descuento para Tours y Alquiler?",
+        "answer": "Sí, ofrecemos un 20% de descuento en tu alquiler si también haces un tour 😉 También para períodos más largos que 1 semana ofrecemos tarifas especiales. Por favor consulta la sección de Reservas."
+      },
+      {
+        "question": "👥 ¿Dáis descuento para grupos grandes o alquileres a largo plazo?",
+        "answer": "Sí, lo hacemos. Los grupos de 10 personas obtienen un 20% de descuento cuando pagan todos juntos. Para períodos más largos que 1 semana ofrecemos tarifas especiales. Por favor consulta la sección de Reservas."
+      },
+      {
+        "question": "💳 ¿Tengo que dejar un depósito para alquilar una bicicleta?",
+        "answer": "Sí, es necesario dejar un depósito por sistema de impresión bancaria al momento de la reserva. Esto varía de 200€ a 500€ dependiendo de la bicicleta. Puedes encontrar los detalles para cada uno durante el proceso de reserva."
+      },
+      {
+        "question": "🔒 ¿Mi bicicleta tiene las características de seguridad necesarias?",
+        "answer": "Sí, en primer lugar nuestras bicicletas provienen del socio Swapfiets, bien establecido y son mantenidas adecuadamente por nosotros 😉 Todas nuestras bicicletas están equipadas con luces delanteras y traseras alimentadas por una dinamo. Bueno saber: ¡No tienes que pedalear más para alimentar las luces! También obtienes una cerradura con tu bicicleta."
+      },
+      {
+        "question": "📏 ¿Qué tamaños ofrecéis?",
+        "answer": "Cubrimos todos los tamaños para personas de 1,50 hasta 2 metros de altura."
+      },
+      {
+        "question": "⚠️ ¿Quién es responsable si la bicicleta es robada o dañada?",
+        "answer": "Tú lo eres. Te proporcionaremos las herramientas y conocimientos necesarios para mantener la bicicleta segura, pero depende de ti devolver todo lo que te damos. Para evitar el robo, ¡asegúrate siempre de asegurar tu bicicleta! Todas nuestras bicicletas están equipadas con dos cerraduras integradas, nuestras bicicletas eléctricas también tienen una cerradura adicional para la batería. Siempre asegura tu bicicleta con ambas cerraduras. Si tu bicicleta es robada (o perdida) mientras estaba bloqueada y asegurada adecuadamente, se te cobrará un deducible. El monto del deducible varía dependiendo del tipo de bicicleta que tengas."
+      },
+      {
+        "question": "🛡️ ¿Ofrecéis seguro?",
+        "answer": "Sí, se puede contratar una garantía adicional por el arrendatario para cubrir rotura/robo. En este caso, estás protegido contra rotura parcial o total, robo por asalto, robo con allanamiento o cuando la bicicleta está atada a un punto fijo. Se pagará un deducible del 10% de la factura de reparación, con un mínimo de 10€, en caso de rotura, y un deducible del 10% del valor del ciclo en caso de rotura irreparable o robo. Ten en cuenta que la garantía no exime en ningún caso al cliente de tomar los pasos necesarios, como presentar una denuncia, hacer una declaración jurada o proporcionar cualquier evidencia que pueda ser solicitada por el asegurador como parte de la gestión y resolución del siniestro. En caso de robo, el arrendatario debe declarar cualquier accidente tanto a Rentabike Paris como a las autoridades policiales antes del final del período de alquiler, y en todos los casos dentro de 24 horas - bajo pena de perder el beneficio del seguro."
+      },
+      {
+        "question": "📧 ¿Necesitas más información?",
+        "answer": "<a href=\"#contact-section\">Contáctanos</a> a través de nuestro email."
+      },
+      {
+        "question": "ℹ️ Office du tourisme de Paris",
+        "answer": "Descubre más sobre el ciclismo en París en <a href=\"https://parisjetaime.com/eng/\" target=\"_blank\" rel=\"noopener noreferrer\">Paris Info</a>."
+      },
+      {
+        "question": "🗺️ Optimiza tus rutas en bicicleta",
+        "answer": "Encuentra las mejores rutas en <a href=\"https://geovelo.app/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Geovelo</a>."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Pongámonos en <highlight>Contacto</highlight>",
+    "subtitle": "¿Tienes preguntas sobre nuestros tours o alquileres? ¡Estamos aquí para ayudarte! Ya sea que estés listo para reservar, necesites más información, o simplemente quieras compartir tus pensamientos, nos encantaría saber de ti.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tu@email.com",
+      "subjectPlaceholder": "¿De qué se trata?",
+      "messagePlaceholder": "Cuéntanos más sobre tu consulta...",
+      "sendButton": "Enviar Mensaje",
+      "successMessage": "¡Gracias por tu mensaje! Te responderemos pronto.",
+      "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo."
+    }
+  },
+  "findUs": {
+    "title": "Ven a <highlight>Encontrarnos</highlight>",
+    "location": {
+      "metro": "Metro: Réaumur Sebastopol (Líneas 3 y 4)",
+      "walkingTime": "2 minutos caminando desde la estación de metro",
+      "hours": "Abierto todos los días: 10am - 7pm"
+    },
+    "map": {
+      "title": "Nuestra Ubicación",
+      "description": "Perfectamente ubicados en el 2º distrito, cerca del barrio del Marais y todas las principales atracciones de París."
+    }
   },
   "common": {
     "learnMore": "Saber Más",

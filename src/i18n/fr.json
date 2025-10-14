@@ -6,9 +6,257 @@
     "about": "À Propos"
   },
   "hero": {
-    "title": "Découvrez Paris Comme Jamais Auparavant",
-    "subtitle": "Explorez la Ville Lumière sur deux roues avec nos visites et services de location de vélos premium",
-    "cta": "Commencez Votre Aventure"
+    "title": "Découvrez <highlight>Paris</highlight> Comme un Vrai Parisien",
+    "subtitle": "Préparez-vous pour une <highlight>aventure inoubliable</highlight> à travers la Ville Lumière ! Explorez les monuments emblématiques et les trésors cachés tout en découvrant la liberté de rouler comme un local. Que vous soyez là pour quelques heures ou toute une semaine, nous avons l'expérience parfaite pour vous !",
+    "ctaTours": "Réservez Votre Tour !",
+    "ctaRent": "Louez Votre Vélo !"
+  },
+  "tours": {
+    "title": "Découvrez Nos <highlight>Visites à Vélo Incroyables</highlight>",
+    "subtitle": "Préparez-vous pour une <highlight>aventure incroyable</highlight> dans les rues de Paris ! Avec mon expertise locale et ma passion pour le vélo, nous créerons ensemble des souvenirs inoubliables. Chaque visite est soigneusement conçue pour vous offrir le mélange parfait entre amusement, découverte et expériences parisiennes authentiques !",
+    "1": {
+      "title": "Visite Guidée de Paris à Vélo",
+      "subtitle": "Tout autour de Paris en Vélo",
+      "description": "Avec notre Visite Guidée de Paris à Vélo, découvrir la capitale devient un jeu d'enfant ! Cet itinéraire cyclable est accessible à tous les niveaux. Nous vous proposons un mélange unique de nos meilleurs spots, des rues typiquement parisiennes et des monuments les plus emblématiques de la ville. Idéal pour ceux qui veulent découvrir le cœur de Paris et ses grands monuments. Le programme inclut la découverte des deux rives de la Seine ! Votre guide vous racontera des histoires fascinantes et souvent amusantes sur l'histoire de Paris. L'ambiance est au rendez-vous. Il ne vous reste plus qu'à vous laisser guider et profiter de cette magnifique balade à vélo pour découvrir Paris. Préparez-vous pour cette aventure passionnante.",
+      "price": "À partir de 40€",
+      "image": "louvre",
+      "details": {
+        "location": "🌍 - Point de départ : 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 3 Heures - 12 kilomètres",
+        "schedule": "👤 - Disponible tous les jours - Départs à 10h30 / 14h30"
+      },
+      "ctaMoreInfo": "Plus d'Infos",
+      "ctaBookNow": "Réserver Maintenant"
+    },
+    "2": {
+      "title": "Tour Découverte du Canal Saint-Martin",
+      "subtitle": "Expérience Parisienne Authentique",
+      "description": "Préparez-vous à découvrir ma perle cachée préférée à Paris ! 🚴‍♂️ Cette visite du Canal Saint-Martin vous emmène loin des foules touristiques pour explorer le cœur bohème des 10e et 11e arrondissements. Nous longerons le canal pittoresque, passerons ses écluses emblématiques et nous imprégnerons de l'atmosphère locale vibrante qui rend ce quartier si spécial. Je partagerai des histoires fascinantes sur la transformation du quartier pendant que nous découvrirons des cafés cachés et des boutiques d'artisans. C'est Paris comme les locaux le vivent ! Parfait pour ceux qui cherchent une aventure authentique et hors des sentiers battus. ✨",
+      "price": "À partir de 40€",
+      "image": "palais",
+      "details": {
+        "location": "🌍 - Point de départ : 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 2h30 - 10 kilomètres",
+        "schedule": "👤 - Disponible tous les jours - Départs à 10h30 / 14h30"
+      },
+      "ctaMoreInfo": "Plus d'Infos",
+      "ctaBookNow": "Réserver Maintenant"
+    },
+    "3": {
+      "title": "Visites Privées, Team Building, Événements",
+      "subtitle": "Visites Privées",
+      "description": "Chez Rentabike Paris, nous aimons nous adapter et répondre à vos besoins ! Que vous souhaitiez créer une visite personnalisée, organiser un événement de team building, ou ajouter une touche spéciale à votre événement, nous sommes ouverts à toutes les possibilités et attendons avec impatience vos demandes !",
+      "price": "Devis Personnalisé",
+      "image": "prive",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Donnons vie à votre vision",
+        "bulletPoints": [
+          "Nous accueillons les demandes pour personnaliser les visites selon vos intérêts spécifiques, durées et tailles de groupe. Explorons Paris à votre façon avec un itinéraire personnalisé conçu spécialement pour vous.",
+          "De plus, nous nous spécialisons dans la création d'expériences exceptionnelles pour les sorties d'entreprise et les activités de team building. Engagez votre équipe dans une aventure passionnante, combinant exploration, cohésion d'équipe et souvenirs inoubliables.",
+          "Nous sommes là pour vous assister à chaque étape, de la planification initiale à l'exécution sans faille."
+        ],
+        "closingNote": "Nous valorisons une communication ouverte et vous encourageons à nous contacter pour discuter de vos idées, préférences et de toute exigence spéciale que vous pourriez avoir. Nous sommes ravis de collaborer et de concrétiser votre vision ! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "Plus d'Infos",
+      "ctaBookNow": "Réserver Maintenant",
+      "ctaContact": "Nous Contacter"
+    }
+  },
+  "rent": {
+    "title": "Découvrez Paris avec nos <highlight>Vélos de Qualité</highlight>",
+    "subtitle": "Choisissez parmi notre flotte soigneusement sélectionnée de <highlight>vélos de qualité</highlight>, chacun prêt à vous offrir l'expérience cycliste parfaite !",
+    "rentalToggle": {
+      "shortTerm": "Location 1 à 3 jours",
+      "longTerm": "4 jours et plus (économisez 10%)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Vélo Normal",
+      "description": "Un vélo de ville confortable et fiable, idéal pour explorer Paris à votre rythme avec sept vitesses fluides.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "Système de vitesses à 7 rapports",
+        "Selle confortable pour les longues balades",
+        "Design robuste adapté à la ville"
+      ],
+      "limitations": ["Pas d'assistance électrique"]
+    },
+    "ebike": {
+      "name": "Vélo Électrique - Power 1",
+      "description": "Découvrez Paris sans effort grâce à la technologie d'assistance au pédalage. Parfait pour les longues distances et les routes vallonnées.",
+      "dailyRate": 30,
+      "image": "ebike",
+      "features": [
+        "Assistance électrique au pédalage",
+        "Autonomie de batterie jusqu'à 80 km",
+        "Contrôle de poignée facile à utiliser"
+      ],
+      "limitations": ["Poids plus élevé dû à la batterie"]
+    },
+    "children": {
+      "name": "Vélo Enfant 20\" ou 24\"",
+      "description": "Sûr et robuste, idéal pour les jeunes cyclistes de 6 à 9 ans. Parfait pour les sorties en famille et les balades dans les parcs de la ville. Taille 20\" ou 24\"",
+      "dailyRate": 15,
+      "image": "children",
+      "features": [
+        "Roues de 20 pouces pour une conduite stable",
+        "Guidon facile à saisir",
+        "Cadre léger"
+      ],
+      "limitations": ["Ne convient pas aux enfants de moins de 6 ans"]
+    },
+    "ctaRentNow": "Louer Maintenant"
+  },
+  "accessories": {
+    "title": "Améliorez votre balade avec nos <highlight>Accessoires</highlight>",
+    "subtitle": "Découvrez notre sélection d'accessoires conçus pour rendre votre voyage plus confortable, <highlight>sûr</highlight> et agréable. Que vous ayez besoin de casques, paniers, sièges enfants ou supports téléphone, nous avons les extras dont vous avez besoin pour compléter votre balade parfaite à travers Paris.",
+    "helmet": {
+      "title": "Casque",
+      "description": "La sécurité avant tout ! Nos casques confortables et durables sont disponibles en différentes tailles et designs pour assurer un ajustement parfait et une protection optimale pendant votre balade.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Paniers",
+      "description": "Parfait pour transporter de petits objets ou un pique-nique en route, nos paniers robustes s'attachent solidement à l'avant de votre vélo, gardant vos essentiels à portée de main.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Support Téléphone",
+      "description": "Restez sur la bonne voie et suivez facilement votre navigation avec un support téléphone sécurisé. Parfait pour explorer de nouveaux itinéraires tout en gardant vos mains libres et en sécurité.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Siège Enfant",
+      "description": "Emmenez les petits avec nos sièges enfants confortables et sûrs, conçus pour un montage sécurisé à l'arrière de votre vélo.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Antivol Vélo",
+      "description": "Gardez votre vélo en sécurité avec un antivol vélo haute sécurité. Essentiel pour des arrêts sûrs pendant votre exploration de la ville ou en profitant d'une pause café.",
+      "image": "lock"
+    }
+  },
+  "testimonials": {
+    "title": "Rejoignez notre communauté florissante de <highlight>Cyclistes Satisfaits</highlight>",
+    "subtitle": "Découvrez comment nos clients ont rendu leurs balades <highlight>mémorables</highlight> avec nous.",
+    "readMore": "Lire plus",
+    "readLess": "Lire moins"
+  },
+  "instagram": {
+    "title": "Suivez nos <highlight>Aventures</highlight>",
+    "subtitle": "Découvrez les plus beaux moments de nos visites à vélo à travers Paris et rejoignez notre communauté de <highlight>cyclistes</highlight>."
+  },
+  "partners": {
+    "title": "Rencontrez nos <highlight>Partenaires Extraordinaires</highlight>",
+    "subtitle": "Des plateformes de réservation de confiance aux entreprises qui ont vécu nos visites, découvrez les organisations incroyables qui nous aident à partager la magie de Paris avec les <highlight>cyclistes du monde entier</highlight>."
+  },
+  "faq": {
+    "title": "Vous avez des <highlight>Questions</highlight> ? Nous avons les Réponses !",
+    "subtitle": "Tout ce que vous devez savoir sur nos visites à vélo et locations. Vous ne trouvez pas ce que vous cherchez ? N'hésitez pas à nous <highlight>contacter</highlight> - nous sommes là pour vous aider !",
+    "questions": [
+      {
+        "question": "📍 Où se trouve votre location de vélos à Paris ?",
+        "answer": "Notre point de départ se trouve au 20 Rue Greneta dans le 2ème arrondissement de Paris. Vous pouvez facilement nous rejoindre via la station de métro Réaumur Sebastopol, lignes 3 et 4 à 2 minutes de marche."
+      },
+      {
+        "question": "⏰ Quels sont nos horaires d'ouverture ?",
+        "answer": "Nous sommes ouverts de 10h à 19h tous les jours du lundi au dimanche."
+      },
+      {
+        "question": "💰 Quels sont les prix pour une location de vélo ?",
+        "answer": "Consultez nos <a href=\"/rent\">tarifs de location de vélos</a> pour trouver la meilleure offre pour votre voyage."
+      },
+      {
+        "question": "⏱️ Quelle est la durée minimum de location ?",
+        "answer": "Nous louons des vélos pour au moins 1 jour mais si vous voulez profiter d'une courte balade de quelques heures, c'est toujours possible 😉"
+      },
+      {
+        "question": "🚴‍♂️ Quand ont lieu les visites ?",
+        "answer": "Tous les jours de 10h à 13h 😉 S'il pleut, nous attendrons que ça s'améliore et trouverons la meilleure solution pour vous."
+      },
+      {
+        "question": "🔧 Que se passe-t-il si j'ai un problème avec mon vélo ?",
+        "answer": "Vous n'en aurez probablement pas. Mais si c'est le cas, arrêtez de pédaler et appelez-nous 😉 Pas de souci, nous viendrons vous voir dès que possible et le remettrons en état !"
+      },
+      {
+        "question": "🚚 Livrez-vous ou récupérez-vous les vélos ?",
+        "answer": "Oui, mais veuillez appeler à l'avance pour vérifier notre disponibilité ! Nous pouvons livrer ou récupérer dans Paris intramuros pour un supplément de 40€ par trajet."
+      },
+      {
+        "question": "🎁 Offrez-vous une réduction pour les visites et locations ?",
+        "answer": "Oui, nous offrons une réduction de 20% sur votre location si vous faites aussi une visite 😉 Également pour des périodes plus longues qu'une semaine, nous proposons des tarifs spéciaux. Veuillez consulter la section Réservations."
+      },
+      {
+        "question": "👥 Offrez-vous une réduction pour les grands groupes ou locations long terme ?",
+        "answer": "Oui. Les groupes de 10 personnes bénéficient d'une réduction de 20% quand ils paient tous ensemble. Pour des périodes plus longues qu'une semaine, nous proposons des tarifs spéciaux. Veuillez consulter la section Réservations."
+      },
+      {
+        "question": "💳 Dois-je laisser une caution pour louer un vélo ?",
+        "answer": "Oui, il est nécessaire de laisser une caution par empreinte bancaire au moment de la réservation. Cela varie de 200€ à 500€ selon le vélo. Vous trouverez les détails pour chacun lors du processus de réservation."
+      },
+      {
+        "question": "🔒 Mon vélo a-t-il les équipements de sécurité nécessaires ?",
+        "answer": "Oui, d'abord nos vélos proviennent du partenaire Swapfiets, bien établi et sont entretenus correctement par nous 😉 Tous nos vélos sont équipés de feux avant et arrière alimentés par une dynamo. Bon à savoir : Vous n'avez pas besoin de pédaler plus pour alimenter les lumières ! Vous obtenez aussi un antivol avec votre vélo."
+      },
+      {
+        "question": "📏 Quelles tailles proposez-vous ?",
+        "answer": "Nous couvrons toutes les tailles pour les personnes de 1,50 à 2 mètres de haut."
+      },
+      {
+        "question": "⚠️ Qui est responsable si le vélo est volé ou endommagé ?",
+        "answer": "Vous l'êtes. Nous vous fournirons les outils et connaissances nécessaires pour garder le vélo en sécurité mais c'est à vous de rendre tout ce que nous vous donnons. Pour éviter le vol, assurez-vous toujours de sécuriser votre vélo ! Tous nos vélos sont équipés de deux antivols intégrés, nos vélos électriques ont aussi un antivol supplémentaire pour la batterie. Sécurisez toujours votre vélo avec les deux antivols. Si votre vélo est volé (ou perdu) alors qu'il était verrouillé et sécurisé correctement, une franchise vous sera facturée. Le montant de la franchise varie selon le type de vélo que vous avez."
+      },
+      {
+        "question": "🛡️ Proposez-vous une assurance ?",
+        "answer": "Oui, une garantie supplémentaire peut être souscrite par le locataire pour couvrir la casse/vol. Dans ce cas, vous êtes protégé contre la casse partielle ou totale, le vol par agression, cambriolage ou quand le vélo est attaché à un point fixe. Une franchise de 10% de la facture de réparation, avec un minimum de 10€, sera payable en cas de casse, et une franchise de 10% de la valeur du cycle en cas de casse irréparable ou vol. Veuillez noter que la garantie n'exonère en aucun cas le client de prendre les mesures nécessaires, comme déposer une plainte, faire une déclaration sur l'honneur ou fournir toute preuve qui pourrait être demandée par l'assureur dans le cadre de la gestion et résolution du sinistre. En cas de vol, le locataire doit déclarer tout accident à Rentabike Paris ainsi qu'aux autorités de police avant la fin de la période de location, et dans tous les cas dans les 24 heures - sous peine de perdre le bénéfice de l'assurance."
+      },
+      {
+        "question": "📧 Besoin de plus d'informations ?",
+        "answer": "<a href=\"#contact-section\">Contactez-nous</a> par email."
+      },
+      {
+        "question": "ℹ️ Office du tourisme de Paris",
+        "answer": "Découvrez plus sur le cyclisme à Paris sur <a href=\"https://parisjetaime.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Paris Info</a>."
+      },
+      {
+        "question": "🗺️ Optimisez vos itinéraires cyclables",
+        "answer": "Trouvez les meilleurs itinéraires sur <a href=\"https://geovelo.app/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Geovelo</a>."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Restons en <highlight>Contact</highlight>",
+    "subtitle": "Des questions sur nos visites ou locations ? Nous sommes là pour vous aider ! Que vous soyez prêt à réserver, que vous ayez besoin de plus d'informations, ou que vous souhaitiez simplement partager vos impressions, nous serions ravis d'avoir de vos nouvelles.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "votre@email.com",
+      "subjectPlaceholder": "De quoi s'agit-il ?",
+      "messagePlaceholder": "Parlez-nous davantage de votre demande...",
+      "sendButton": "Envoyer le Message",
+      "successMessage": "Merci pour votre message ! Nous vous répondrons bientôt.",
+      "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer."
+    }
+  },
+  "findUs": {
+    "title": "Venez nous <highlight>Trouver</highlight>",
+    "location": {
+      "metro": "Métro : Réaumur Sebastopol (Lignes 3 & 4)",
+      "walkingTime": "2 minutes à pied de la station de métro",
+      "hours": "Ouvert tous les jours : 10h - 19h"
+    },
+    "map": {
+      "title": "Notre Localisation",
+      "description": "Parfaitement situé dans le 2ème arrondissement, à proximité du quartier du Marais et de toutes les attractions principales de Paris."
+    }
   },
   "common": {
     "learnMore": "En Savoir Plus",
@@ -21,7 +269,7 @@
     "ariaLabel": "Contacter RentaBikeParis sur WhatsApp",
     "defaultMessage": "Bonjour ! Je suis intéressé(e) par vos services de location de vélos et tours guidés à Paris. Pouvez-vous me renseigner ?"
   },
-  "tours": {
+  "privateTours": {
     "private": {
       "title": "Visites Privées, Team Building, Événements",
       "description": "Tours Privés",

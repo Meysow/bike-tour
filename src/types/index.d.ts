@@ -61,7 +61,7 @@ export interface Testimonial {
   body: string;
   name: string;
   role: string;
-  avatar: string;
+  avatar: string; // Image key (e.g., "derrick-bowman", "troy-castillo", etc.)
 }
 
 export interface Bike {
@@ -94,6 +94,55 @@ export interface Tour {
   price: number;
   imageUrl: string;
   maxPeople: number;
+}
+
+export interface TourContent {
+  title: string;
+  subtitle: string;
+  description: string;
+  price: string;
+  image: string; // Image key (e.g., "couple-riding", "riding", "ebike")
+  details: {
+    location: string;
+    duration: string;
+    schedule: string;
+  };
+  additionalContent?: {
+    visionTitle: string;
+    bulletPoints: string[];
+    closingNote: string;
+  };
+  ctaMoreInfo: string;
+  ctaBookNow: string;
+  ctaContact: string;
+}
+
+export interface BikeContent {
+  name: string;
+  description: string;
+  dailyRate: number;
+  image: string; // Image key (e.g., "deluxe7", "ebike", "children")
+  features: string[];
+  limitations: string[];
+}
+
+export interface AccessoriesContent {
+  title: string;
+  description: string;
+  image: string; // Image key (e.g., "helmet", "basket", "phone-mount", "child-seat", "lock")
+}
+
+export interface TourData {
+  id: string;
+  title: string;
+  description: string;
+  details: string;
+  startingSpot?: string;
+  duration?: string;
+  break?: string;
+  price: string;
+  image: StaticImageData;
+  isPrivate?: boolean;
 }
 
 export enum BikeType {

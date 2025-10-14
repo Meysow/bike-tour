@@ -4,6 +4,8 @@ import Link from "next/link";
 
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { cn } from "@/lib/utils";
+import { HighlightText } from "@/lib/utils/highlight";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
@@ -12,7 +14,8 @@ import Balancer from "react-wrap-balancer";
 import PalaisRoyal from "../../../public/images/hero/palais-royal(1).jpg";
 
 export function HeroSection() {
-  const { createLink } = useLocalizedRoutes();
+  const { createLink, locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "hero");
   return (
     <section
       id="hero-section"
@@ -22,23 +25,18 @@ export function HeroSection() {
       <div className="absolute inset-0 z-[-1] bg-gradient-to-t from-primary/25 to-transparent opacity-30 rounded-full blur-lg h-[85%] w-[75%] mx-auto" />
       <div className="container flex flex-col items-center gap-6 text-center ">
         <h1
-          className="animate-fade-up font-urbanist text-4xl font-extrabold tracking-tight leading-tight sm:text-5xl md:text-6xl lg:text-7xl"
-          aria-label="Explore Paris like never before with our guided bike tours"
+          className="animate-fade-up font-urbanist text-4xl font-extrabold tracking-tight leading-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl"
+          aria-label={t.title.replace(/<highlight>.*?<\/highlight>/g, "")}
         >
           <Balancer>
-            Explore{" "}
-            <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent font-extrabold  ">
-              Paris{" "}
-            </span>
-            like never before
+            <HighlightText gradient={true}>{t.title}</HighlightText>
           </Balancer>
         </h1>
 
         <p className="col-start-1 row-start-3 max-w-xl text-muted-foreground md:mt-2 md:text-lg leading-relaxed">
-          Discover the beauty and history of Paris on our{" "}
-          <span className="font-semibold text-foreground">guided</span> bike
-          tours. Experience the city, pedal through iconic landmarks, and enjoy
-          unique perspectives on every ride.
+          <HighlightText gradient={false} className="text-foreground">
+            {t.subtitle}
+          </HighlightText>
         </p>
 
         <div className="z-10 flex animate-fade-up justify-center gap-4 flex-wrap md:mt-2">
@@ -46,21 +44,21 @@ export function HeroSection() {
             href={createLink("tours")}
             className={cn(
               buttonVariants(),
-              "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
+              "transition-all duration-1000 ease-out md:hover:-translate-y-2 min-w-40 px-6"
             )}
-            aria-label="Explore our tours"
+            aria-label={t.ctaTours}
           >
-            Explore Tours
+            {t.ctaTours}
           </Link>
           <Link
             href={createLink("rent")}
             className={cn(
               buttonVariants({ variant: "outline" }),
-              "transition-all duration-1000 ease-out md:hover:-translate-y-2 w-32"
+              "transition-all duration-1000 ease-out md:hover:-translate-y-2 min-w-40 px-6"
             )}
-            aria-label="Rent our Bikes"
+            aria-label={t.ctaRent}
           >
-            Bike Rental
+            {t.ctaRent}
           </Link>
         </div>
 

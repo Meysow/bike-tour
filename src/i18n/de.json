@@ -6,9 +6,257 @@
     "about": "Über Uns"
   },
   "hero": {
-    "title": "Erleben Sie Paris Wie Nie Zuvor",
-    "subtitle": "Entdecken Sie die Stadt der Lichter auf zwei Rädern mit unseren Premium-Fahrradtouren und Verleihservices",
-    "cta": "Starten Sie Ihr Abenteuer"
+    "title": "Entdecken Sie <highlight>Paris</highlight> Wie ein echter Pariser",
+    "subtitle": "Machen Sie sich bereit für ein <highlight>unvergessliches Abenteuer</highlight> durch die Stadt der Lichter! Erkunden Sie ikonische Wahrzeichen und versteckte Schätze und erleben Sie die Freiheit, wie ein Einheimischer zu radeln. Ob Sie für ein paar Stunden oder eine ganze Woche hier sind, wir haben die perfekte Erfahrung für Sie!",
+    "ctaTours": "Buchen Sie Ihre Tour!",
+    "ctaRent": "Mieten Sie Ihr Fahrrad!"
+  },
+  "tours": {
+    "title": "Entdecken Sie Unsere <highlight>Fantastischen Fahrradtouren</highlight>",
+    "subtitle": "Machen Sie sich bereit für ein unglaubliches Abenteuer durch die Straßen von Paris! Mit meiner lokalen Expertise und Leidenschaft fürs Radfahren werden wir gemeinsam unvergessliche Erinnerungen schaffen. Jede Tour ist sorgfältig gestaltet, um Ihnen die perfekte Mischung aus Spaß, Entdeckung und authentischen Pariser Erfahrungen zu bieten!",
+    "1": {
+      "title": "Geführte Fahrradtour durch Paris",
+      "subtitle": "Rund um Paris mit dem Fahrrad",
+      "description": "Mit unserer geführten Fahrradtour durch Paris wird die Entdeckung der Hauptstadt zum Kinderspiel! Diese Fahrradroute ist für alle Levels zugänglich. Wir bieten Ihnen eine einzigartige Mischung aus unseren Top-Spots, typischen Pariser Straßen und den emblematischsten Wahrzeichen der Stadt. Ideal für alle, die das Herz von Paris und seine großen Denkmäler entdecken möchten. Das Programm beinhaltet die Entdeckung beider Seine-Ufer! Ihr Guide wird Ihnen faszinierende und oft amüsante Geschichten über die Geschichte von Paris erzählen. Die Atmosphäre ist perfekt. Sie müssen sich nur führen lassen und diese wunderschöne Fahrradtour genießen, um Paris zu entdecken. Machen Sie sich bereit für dieses aufregende Abenteuer.",
+      "price": "Ab €40",
+      "image": "louvre",
+      "details": {
+        "location": "🌍 - Startpunkt: 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 3 Stunden - 12 Kilometer",
+        "schedule": "👤 - Täglich verfügbar - Abfahrten um 10:30 / 14:30 Uhr"
+      },
+      "ctaMoreInfo": "Mehr Infos",
+      "ctaBookNow": "Jetzt Buchen"
+    },
+    "2": {
+      "title": "Canal Saint-Martin Entdeckungstour",
+      "subtitle": "Authentisches Pariser Erlebnis",
+      "description": "Machen Sie sich bereit, meinen Lieblings-Geheimtipp in Paris zu entdecken! 🚴‍♂️ Diese Canal Saint-Martin Tour führt Sie weg von den Touristenscharen, um das bohemische Herz der 10. und 11. Arrondissements zu erkunden. Wir werden entlang des malerischen Kanals fahren, seine ikonischen Schleusen passieren und die lebendige lokale Atmosphäre aufsaugen, die diese Nachbarschaft so besonders macht. Ich werde faszinierende Geschichten über die Transformation des Gebiets teilen, während wir versteckte Cafés und Kunsthandwerksläden entdecken. Das ist Paris, wie die Einheimischen es leben! Perfekt für alle, die ein authentisches Abenteuer abseits der ausgetretenen Pfade suchen. ✨",
+      "price": "Ab €40",
+      "image": "palais",
+      "details": {
+        "location": "🌍 - Startpunkt: 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 2,5 Stunden - 10 Kilometer",
+        "schedule": "👤 - Täglich verfügbar - Abfahrten um 10:30 / 14:30 Uhr"
+      },
+      "ctaMoreInfo": "Mehr Infos",
+      "ctaBookNow": "Jetzt Buchen"
+    },
+    "3": {
+      "title": "Private Touren, Team Building, Events",
+      "subtitle": "Private Touren",
+      "description": "Bei Rentabike Paris passen wir uns gerne an Ihre Bedürfnisse an! Ob Sie eine personalisierte Tour erstellen, ein Team-Building-Event organisieren oder Ihrem Event eine besondere Note verleihen möchten, wir sind offen für alle Möglichkeiten und freuen uns auf Ihre Anfragen!",
+      "price": "Individuelles Angebot",
+      "image": "prive",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Lassen Sie uns Ihre Vision zum Leben erwecken",
+        "bulletPoints": [
+          "Wir begrüßen Anfragen zur Anpassung von Touren basierend auf spezifischen Interessen, Dauer und Gruppengrößen. Erkunden Sie Paris auf Ihre Weise mit einem personalisierten Reiseplan, der speziell für Sie entworfen wurde.",
+          "Darüber hinaus spezialisieren wir uns auf die Gestaltung außergewöhnlicher Erlebnisse für Firmenausflüge und Team-Building-Aktivitäten. Beziehen Sie Ihr Team in ein aufregendes Abenteuer ein, das Erkundung, Teambindung und unvergessliche Erinnerungen kombiniert.",
+          "Wir sind hier, um Ihnen bei jedem Schritt zu helfen, von der ersten Planung bis zur nahtlosen Ausführung."
+        ],
+        "closingNote": "Wir schätzen offene Kommunikation und ermutigen Sie, sich mit uns in Verbindung zu setzen, um Ihre Ideen, Präferenzen und besondere Anforderungen zu besprechen. Wir freuen uns darauf, zusammenzuarbeiten und Ihre Vision Wirklichkeit werden zu lassen! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "Mehr Infos",
+      "ctaBookNow": "Jetzt Buchen",
+      "ctaContact": "Kontaktieren Sie uns"
+    }
+  },
+  "rent": {
+    "title": "Erleben Sie Paris mit <highlight>Qualitätsrädern</highlight>",
+    "subtitle": "Wählen Sie aus unserer sorgfältig ausgewählten Flotte von <highlight>Qualitätsrädern</highlight>, jedes bereit, Ihnen das perfekte Radfahrerlebnis zu bieten!",
+    "rentalToggle": {
+      "shortTerm": "1 bis 3 Tage Miete",
+      "longTerm": "4 Tage und mehr (10% sparen)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Normales Fahrrad",
+      "description": "Ein komfortables und zuverlässiges Stadtfahrrad, ideal zum Erkunden von Paris in Ihrem eigenen Tempo mit sieben sanften Gängen.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "7-Gang-Schaltgetriebe",
+        "Komfortabler Sattel für lange Fahrten",
+        "Robustes stadtfreundliches Design"
+      ],
+      "limitations": ["Keine elektrische Unterstützung"]
+    },
+    "ebike": {
+      "name": "E-Bike - Power 1",
+      "description": "Entdecken Sie Paris mühelos mit Pedalassistenz-Technologie. Perfekt für längere Strecken und hügelige Routen.",
+      "dailyRate": 30,
+      "image": "ebike",
+      "features": [
+        "Elektrische Pedalassistenz",
+        "Batteriereichweite bis zu 80 km",
+        "Einfach zu bedienende Griffsteuerung"
+      ],
+      "limitations": ["Höheres Gewicht durch Batterie"]
+    },
+    "children": {
+      "name": "Kinderfahrrad 20\" oder 24\"",
+      "description": "Sicher und stabil, ideal für junge Fahrer im Alter von 6-9 Jahren. Perfekt für Familienausflüge und Stadtparkfahrten. Größe 20\" oder 24\"",
+      "dailyRate": 15,
+      "image": "children",
+      "features": [
+        "20-Zoll-Räder für stabiles Fahren",
+        "Griffe mit gutem Griff",
+        "Leichter Rahmen"
+      ],
+      "limitations": ["Nicht geeignet für Kinder unter 6 Jahren"]
+    },
+    "ctaRentNow": "Jetzt Mieten"
+  },
+  "accessories": {
+    "title": "Verbessern Sie Ihre Fahrt mit <highlight>Zubehör</highlight>",
+    "subtitle": "Entdecken Sie unsere Auswahl an Zubehör, das entwickelt wurde, um Ihre Reise bequemer, <highlight>sicherer</highlight> und angenehmer zu gestalten. Ob Sie Helme, Körbe, Kindersitze oder Handy-Halterungen benötigen, wir haben die Extras, die Sie für Ihre perfekte Fahrt durch Paris benötigen.",
+    "helmet": {
+      "title": "Helm",
+      "description": "Sicherheit geht vor! Unsere bequemen und langlebigen Helme gibt es in verschiedenen Größen und Designs, um eine perfekte Passform und optimalen Schutz während Ihrer Fahrt zu gewährleisten.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Korb",
+      "description": "Perfekt für den Transport kleiner Gegenstände oder eines Picknicks unterwegs. Unsere robusten Körbe werden sicher am Vorderteil Ihres Fahrrads befestigt und halten Ihre wichtigsten Dinge in Reichweite.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Handy-Halterung",
+      "description": "Bleiben Sie auf dem richtigen Weg und folgen Sie einfach Ihrer Navigation mit einer sicheren Handy-Halterung. Perfekt für die Erkundung neuer Routen, während Sie Ihre Hände frei und sicher halten.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Kindersitz",
+      "description": "Bringen Sie die Kleinen mit unseren bequemen und sicheren Kindersitzen mit, die für eine sichere Montage am Heck Ihres Fahrrads konzipiert sind.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Fahrradschloss",
+      "description": "Halten Sie Ihr Fahrrad mit einem robusten Fahrradschloss sicher. Unverzichtbar für sichere Stopps während Ihrer Stadterkundung oder beim Genießen einer Kaffeepause.",
+      "image": "lock"
+    }
+  },
+  "testimonials": {
+    "title": "Treten Sie unserer florierenden Gemeinschaft von <highlight>Zufriedenen Fahrern</highlight> bei",
+    "subtitle": "Entdecken Sie, wie unsere Kunden ihre Fahrten <highlight>unvergesslich</highlight> mit uns gemacht haben.",
+    "readMore": "Mehr lesen",
+    "readLess": "Weniger lesen"
+  },
+  "instagram": {
+    "title": "Folgen Sie unseren <highlight>Abenteuern</highlight>",
+    "subtitle": "Entdecken Sie die schönsten Momente unserer Fahrradtouren durch Paris und treten Sie unserer Gemeinschaft von <highlight>Radfahrern</highlight> bei."
+  },
+  "partners": {
+    "title": "Lernen Sie unsere <highlight>Erstaunlichen Partner</highlight> kennen",
+    "subtitle": "Von vertrauenswürdigen Buchungsplattformen bis hin zu Unternehmen, die unsere Touren erlebt haben, entdecken Sie die unglaublichen Organisationen, die uns helfen, die Magie von Paris mit <highlight>Radfahrern weltweit</highlight> zu teilen."
+  },
+  "faq": {
+    "title": "Haben Sie <highlight>Fragen</highlight>? Wir haben die Antworten!",
+    "subtitle": "Alles, was Sie über unsere Fahrradtouren und -vermietungen wissen müssen. Finden Sie nicht, wonach Sie suchen? <highlight>Kontaktieren Sie uns</highlight> einfach - wir sind da, um zu helfen!",
+    "questions": [
+      {
+        "question": "📍 Wo befindet sich Ihre Fahrradvermietung in Paris?",
+        "answer": "Unser Startpunkt befindet sich in der 20 Rue Greneta im 2. Arrondissement von Paris. Sie können uns leicht über die Métro-Station Réaumur Sebastopol, Linien 3 und 4, innerhalb von 2 Minuten Fußweg erreichen."
+      },
+      {
+        "question": "⏰ Wie sind unsere Öffnungszeiten?",
+        "answer": "Wir sind täglich von Montag bis Sonntag von 10 bis 19 Uhr geöffnet."
+      },
+      {
+        "question": "💰 Welche Preise für eine Fahrradvermietung?",
+        "answer": "Schauen Sie sich unsere <a href=\"/rent\">Fahrradvermietungspreise</a> an, um das beste Angebot für Ihre Reise zu finden."
+      },
+      {
+        "question": "⏱️ Wie ist die Mindestmietzeit?",
+        "answer": "Wir vermieten Fahrräder für mindestens 1 Tag, aber wenn Sie eine kurze Fahrt für ein paar Stunden genießen möchten, können Sie das trotzdem machen 😉"
+      },
+      {
+        "question": "🚴‍♂️ Wann finden die Touren statt?",
+        "answer": "Täglich von 10 bis 13 Uhr 😉 Wenn es regnet, warten wir einfach, bis es besser wird und finden die beste Lösung für Sie."
+      },
+      {
+        "question": "🔧 Was passiert, wenn ich ein Problem mit meinem Fahrrad habe?",
+        "answer": "Das werden Sie wahrscheinlich nicht. Aber wenn doch, hören Sie auf zu fahren und rufen Sie uns an 😉 Keine Sorge, wir kommen so schnell wie möglich zu Ihnen und machen es wieder funktionsfähig!"
+      },
+      {
+        "question": "🚚 Liefern oder holen Sie Fahrräder ab?",
+        "answer": "Ja, aber rufen Sie bitte vorher an, um unsere Verfügbarkeit zu überprüfen! Wir können innerhalb von Paris Intramuros für eine zusätzliche Gebühr von 40€ pro Strecke liefern oder abholen."
+      },
+      {
+        "question": "🎁 Geben Sie eine Ermäßigung für Touren & Vermietung?",
+        "answer": "Ja, wir bieten einen 20% Rabatt auf Ihre Vermietung, wenn Sie auch eine Tour machen 😉 Auch für längere Perioden als 1 Woche bieten wir Sondertarife. Bitte schauen Sie in den Reservierungsbereich."
+      },
+      {
+        "question": "👥 Geben Sie eine Ermäßigung für große Gruppen oder Langzeitmiete?",
+        "answer": "Ja, das tun wir. Gruppen von 10 Personen erhalten einen 20% Rabatt, wenn sie alle zusammen bezahlen. Für längere Perioden als 1 Woche bieten wir Sondertarife. Bitte schauen Sie in den Reservierungsbereich."
+      },
+      {
+        "question": "💳 Muss ich eine Kaution hinterlegen, um ein Fahrrad zu mieten?",
+        "answer": "Ja, es ist notwendig, eine Kaution durch Bankimprint-System zum Zeitpunkt der Reservierung zu hinterlegen. Dies variiert von 200€ bis 500€ je nach Fahrrad. Sie finden die Details für jedes während des Buchungsprozesses."
+      },
+      {
+        "question": "🔒 Hat mein Fahrrad die notwendigen Sicherheitsmerkmale?",
+        "answer": "Ja, zunächst kommen unsere Fahrräder vom Swapfiets-Partner, gut etabliert und werden ordnungsgemäß von uns gewartet 😉 Alle unsere Fahrräder sind mit Front- und Rücklichtern ausgestattet, die von einem Dynamo angetrieben werden. Gut zu wissen: Sie müssen nicht mehr treten, um die Lichter zu betreiben! Sie bekommen auch ein Schloss mit Ihrem Fahrrad."
+      },
+      {
+        "question": "📏 Welche Größen bieten Sie an?",
+        "answer": "Wir decken alle Größen für Menschen von 1,50 bis 2 Meter Größe ab."
+      },
+      {
+        "question": "⚠️ Wer ist verantwortlich, wenn das Fahrrad gestohlen oder beschädigt wird?",
+        "answer": "Sie sind es. Wir werden Ihnen die Werkzeuge und das Wissen zur Verfügung stellen, die nötig sind, um das Fahrrad sicher zu halten, aber es liegt an Ihnen, alles zurückzugeben, was wir Ihnen geben. Um Diebstahl zu vermeiden, stellen Sie immer sicher, dass Sie Ihr Fahrrad sichern! Alle unsere Fahrräder sind mit zwei integrierten Schlössern ausgestattet, unsere E-Bikes haben auch ein zusätzliches Schloss für den Akku. Sichern Sie Ihr Fahrrad immer mit beiden Schlössern. Wenn Ihr Fahrrad gestohlen (oder verloren) wird, während es ordnungsgemäß verriegelt und gesichert war, wird Ihnen eine Selbstbeteiligung berechnet. Die Höhe der Selbstbeteiligung variiert je nach Fahrradtyp."
+      },
+      {
+        "question": "🛡️ Bieten Sie eine Versicherung an?",
+        "answer": "Ja, eine zusätzliche Garantie kann vom Mieter abgeschlossen werden, um Bruch/Diebstahl abzudecken. In diesem Fall sind Sie vor teilweisem oder totalem Bruch, Diebstahl durch Raubüberfall, Einbruch oder wenn das Fahrrad an einem festen Punkt befestigt ist, geschützt. Eine Selbstbeteiligung von 10% der Reparaturrechnung, mit einem Minimum von 10€, wird bei Bruch fällig, und eine Selbstbeteiligung von 10% des Fahrradwerts bei irreparablem Bruch oder Diebstahl. Bitte beachten Sie, dass die Garantie den Kunden in keiner Weise von den notwendigen Schritten wie Strafanzeige, eidesstattlicher Erklärung oder Vorlage aller Beweise befreit, die vom Versicherer im Rahmen der Bearbeitung und Abwicklung des Schadens angefordert werden können. Im Falle eines Diebstahls muss der Mieter jeden Unfall sowohl bei Rentabike Paris als auch bei den Polizeibehörden vor Ende der Mietzeit melden, und in allen Fällen innerhalb von 24 Stunden - bei Verlust des Versicherungsschutzes."
+      },
+      {
+        "question": "📧 Brauchen Sie mehr Informationen?",
+        "answer": "<a href=\"#contact-section\">Kontaktieren Sie uns</a> per E-Mail."
+      },
+      {
+        "question": "ℹ️ Office du tourisme de Paris",
+        "answer": "Entdecken Sie mehr über Radfahren in Paris auf <a href=\"https://parisjetaime.com/eng/\" target=\"_blank\" rel=\"noopener noreferrer\">Paris Info</a>."
+      },
+      {
+        "question": "🗺️ Optimieren Sie Ihre Fahrradrouten",
+        "answer": "Finden Sie die besten Routen auf <a href=\"https://geovelo.app/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Geovelo</a>."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Lassen Sie uns in <highlight>Kontakt</highlight> bleiben",
+    "subtitle": "Haben Sie Fragen zu unseren Touren oder Vermietungen? Wir sind hier, um zu helfen! Ob Sie bereit zum Buchen sind, mehr Informationen benötigen oder einfach Ihre Gedanken teilen möchten - wir würden uns freuen, von Ihnen zu hören.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "ihre@email.com",
+      "subjectPlaceholder": "Worum geht es?",
+      "messagePlaceholder": "Erzählen Sie uns mehr über Ihre Anfrage...",
+      "sendButton": "Nachricht Senden",
+      "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+      "errorMessage": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "findUs": {
+    "title": "Kommen Sie uns <highlight>Besuchen</highlight>",
+    "location": {
+      "metro": "Metro: Réaumur Sebastopol (Linien 3 & 4)",
+      "walkingTime": "2 Minuten zu Fuß von der U-Bahn-Station",
+      "hours": "Täglich geöffnet: 10 - 19 Uhr"
+    },
+    "map": {
+      "title": "Unser Standort",
+      "description": "Perfekt im 2. Arrondissement gelegen, in der Nähe des Marais-Viertels und aller wichtigen Pariser Sehenswürdigkeiten."
+    }
   },
   "common": {
     "learnMore": "Mehr Erfahren",

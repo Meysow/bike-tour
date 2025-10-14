@@ -1,4 +1,9 @@
-import { frequentlyAskedQuestions } from "@/data/frequently-asked-questions";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
+import { Locale } from "@/config/i18n";
+
+// Get FAQ data from i18n for testing (using English as default)
+const faqData = getSectionTranslations("en" as Locale, "faq");
+const frequentlyAskedQuestions = faqData.questions || [];
 
 describe("Frequently Asked Questions Data", () => {
   it("should have FAQ items", () => {

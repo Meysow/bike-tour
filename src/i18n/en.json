@@ -6,9 +6,257 @@
     "about": "About Us"
   },
   "hero": {
-    "title": "Experience Paris Like Never Before",
-    "subtitle": "Discover the City of Light on two wheels with our premium bike tours and rental services",
-    "cta": "Start Your Adventure"
+    "title": "Discover <highlight>Paris</highlight> Like a True Parisian",
+    "subtitle": "Get ready for an <highlight>unforgettable adventure</highlight> through the City of Light! Explore iconic landmarks and hidden gems while experiencing the freedom of cycling like a local. Whether you're here for a few hours or a whole week, we've got the perfect experience for you!",
+    "ctaTours": "Book Your Tour!",
+    "ctaRent": "Rent Your Bike!"
+  },
+  "tours": {
+    "title": "Discover Our <highlight>Amazing Bike Tours</highlight>",
+    "subtitle": "Get ready for an <highlight>incredible adventure</highlight> through the streets of Paris! With my local expertise and passion for cycling, we'll create unforgettable memories together. Each tour is carefully crafted to give you the perfect blend of fun, discovery, and authentic Parisian experiences!",
+    "1": {
+      "title": "Paris Guided Bike Tour",
+      "subtitle": "All around Paris by Bike",
+      "description": "With our Paris Guided Bike Tour, discovering the capital becomes child's play! This cycling itinerary is accessible to all levels. We offer a unique mix of our top spots, typical Parisian streets and the city's most emblematic landmarks. Ideal for those who want to discover the heart of Paris and its great monuments. The programme includes discovering both banks of the Seine! Your guide will tell you fascinating and often amusing stories about the history of Paris. The atmosphere is just right. All you have to do is let yourself be guided and enjoy this magnificent bike ride to discover Paris. Get ready for this exciting adventure.",
+      "price": "From €40",
+      "image": "louvre",
+      "details": {
+        "location": "🌍 - Starting spot: 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 3 Hours - 12 kilometers",
+        "schedule": "👤 - Available every day - 10:30 am / 2:30 pm departures"
+      },
+      "ctaMoreInfo": "More Info",
+      "ctaBookNow": "Book Now"
+    },
+    "2": {
+      "title": "Canal Saint-Martin Discovery Tour",
+      "subtitle": "Authentic Paris Experience",
+      "description": "Get ready to discover my favorite hidden gem in Paris! 🚴‍♂️ This Canal Saint-Martin tour takes you away from the tourist crowds to explore the bohemian heart of the 10th and 11th arrondissements. We'll cruise along the picturesque canal, pass through its iconic locks, and soak up the vibrant local atmosphere that makes this neighborhood so special. I'll share fascinating stories about the area's transformation while we discover hidden cafés and artisan shops. This is Paris as the locals live it! Perfect for those seeking an authentic, off-the-beaten-path adventure. ✨",
+      "price": "From €40",
+      "image": "palais",
+      "details": {
+        "location": "🌍 - Starting spot: 20 Rue Greneta, 75002 Paris",
+        "duration": "⏰ - 2.5 Hours - 10 kilometers",
+        "schedule": "👤 - Available every day - 10:30 am / 2:30 pm departures"
+      },
+      "ctaMoreInfo": "More Info",
+      "ctaBookNow": "Book Now"
+    },
+    "3": {
+      "title": "Private Tours, Team Buildings, Events",
+      "subtitle": "Private Tours",
+      "description": "At Rentabike Paris, we like to adapt and cater to your needs! Whether you're seeking to create a personalized tour, organize a team-building event, or add a special touch to your event, we are open to all possibilities and eagerly await your inquiries!",
+      "price": "Custom Quote",
+      "image": "prive",
+      "details": {
+        "location": "",
+        "duration": "",
+        "schedule": ""
+      },
+      "additionalContent": {
+        "visionTitle": "Let's bring your vision to life",
+        "bulletPoints": [
+          "We welcome inquiries for customizing tours based on specific interests, durations, and group sizes. Let's explore Paris your way through a personalized itinerary designed just for you.",
+          "Additionally, we specialize in curating exceptional experiences for corporate outings and team-building activities. Engage your team in an exciting adventure, combining exploration, team bonding, and unforgettable memories.",
+          "We are here to assist you every step of the way, from initial planning to seamless execution."
+        ],
+        "closingNote": "We value open communication and encourage you to get in touch with us to discuss your ideas, preferences, and any special requirements you may have. We are excited to collaborate and make your vision a reality! 💫🚴🏻‍♂️"
+      },
+      "ctaMoreInfo": "More Info",
+      "ctaBookNow": "Book Now",
+      "ctaContact": "Contact Us"
+    }
+  },
+  "rent": {
+    "title": "Experience Paris with <highlight>Quality Bikes</highlight>",
+    "subtitle": "Choose from our carefully selected fleet of <highlight>quality bikes</highlight>, each one ready to provide you with the perfect cycling experience!",
+    "rentalToggle": {
+      "shortTerm": "1 to 3 Days Rental",
+      "longTerm": "4 Days and more (save 10%)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Normal Bike",
+      "description": "A comfortable and reliable city bike, ideal for exploring Paris at your own pace with seven smooth gears.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "7-speed gear system",
+        "Comfortable saddle for long rides",
+        "Robust city-friendly design"
+      ],
+      "limitations": ["No electric assistance"]
+    },
+    "ebike": {
+      "name": "Electric Bike - Power 1",
+      "description": "Discover Paris effortlessly with pedal-assist technology. Perfect for longer distances and hilly routes.",
+      "dailyRate": 30,
+      "image": "ebike",
+      "features": [
+        "Electric pedal-assist",
+        "Battery range of up to 50 miles",
+        "Easy-to-use throttle control"
+      ],
+      "limitations": ["Higher weight due to battery"]
+    },
+    "children": {
+      "name": "Children's Bike 20\" or 24\"",
+      "description": "Safe and sturdy, ideal for young riders aged 6-9. Perfect for family outings and city park rides. Size 20\" or 24\"",
+      "dailyRate": 15,
+      "image": "children",
+      "features": [
+        "20-inch wheels for stable riding",
+        "Easy-grip handlebars",
+        "Lightweight frame"
+      ],
+      "limitations": ["Not suitable for children under 6"]
+    },
+    "ctaRentNow": "Rent Now"
+  },
+  "accessories": {
+    "title": "Enhance your ride with <highlight>Accessories</highlight>",
+    "subtitle": "Discover our selection of accessories designed to make your journey more comfortable, <highlight>safe</highlight> and enjoyable. Whether you need helmets, baskets, child seats, or phone mounts, we have the extras you need to complete your perfect ride through Paris.",
+    "helmet": {
+      "title": "Helmet",
+      "description": "Safety first! Our comfortable and durable helmets come in various sizes and designs to ensure a snug fit and optimal protection during your ride.",
+      "image": "helmet"
+    },
+    "basket": {
+      "title": "Basket",
+      "description": "Perfect for carrying small items or a picnic on the go, our sturdy baskets attach securely to the front of your bike, keeping your essentials within reach.",
+      "image": "basket"
+    },
+    "phone-mount": {
+      "title": "Phone Mount",
+      "description": "Stay on track and easily follow your navigation with a secure phone mount. Perfect for exploring new routes while keeping your hands free and safe.",
+      "image": "phone-mount"
+    },
+    "child-seat": {
+      "title": "Child Seat",
+      "description": "Bring the little ones along with our comfortable and safe child seats, designed for secure mounting on the back of your bike.",
+      "image": "child-seat"
+    },
+    "lock": {
+      "title": "Bike Lock",
+      "description": "Keep your bike secure with a heavy-duty bike lock. Essential for safe stops during your city exploration or while enjoying a coffee break.",
+      "image": "lock"
+    }
+  },
+  "testimonials": {
+    "title": "Join our thriving community of <highlight>Satisfied Riders</highlight>",
+    "subtitle": "Discover how our customers have made their rides <highlight>memorable</highlight> with us.",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "instagram": {
+    "title": "Follow our <highlight>Adventures</highlight>",
+    "subtitle": "Discover the most beautiful moments from our bike tours through Paris and join our community of <highlight>riders</highlight>."
+  },
+  "partners": {
+    "title": "Meet Our <highlight>Amazing Partners</highlight>",
+    "subtitle": "From trusted booking platforms to companies who've experienced our tours, discover the incredible organizations that help us share the magic of Paris with <highlight>riders worldwide</highlight>."
+  },
+  "faq": {
+    "title": "Got <highlight>Questions</highlight>? We've Got Answers!",
+    "subtitle": "Everything you need to know about our bike tours and rentals. Can't find what you're looking for? Just <highlight>reach out</highlight> - we're here to help!",
+    "questions": [
+      {
+        "question": "📍 Where is your bike rental in Paris?",
+        "answer": "Our starting point is located at 20 Rue Greneta in the second arrondissement of Paris. You can easily reach us through the métro station Réaumur Sebastopol, lines 3 and 4 within a 2 minutes walk."
+      },
+      {
+        "question": "⏰ What are our opening hours?",
+        "answer": "We are open from 10am - 7pm everyday from Monday to Sunday."
+      },
+      {
+        "question": "💰 What prices for a bike rental?",
+        "answer": "Check out our <a href=\"/rent\">bike rental prices</a> to find the best deal for your trip."
+      },
+      {
+        "question": "⏱️ What is the minimum rental period?",
+        "answer": "We rent bikes for at least 1 day but if you want to enjoy a short ride for few hours you can still make it 😉"
+      },
+      {
+        "question": "🚴‍♂️ When do Tours take place?",
+        "answer": "Everyday from 10am - 1pm 😉 If it's raining we will just wait until it goes better and find the best solution for you."
+      },
+      {
+        "question": "🔧 What happens if I get an issue with my bike?",
+        "answer": "You probably won't. But if you do, stop riding and give us a call 😉 No worries, we will come to you asap and make it work again!"
+      },
+      {
+        "question": "🚚 Do you deliver or pick up bikes?",
+        "answer": "Yes, but please call ahead of time to verify our availability! We can deliver or pick up in Paris Intramuros for an additional fee of 40€ each way."
+      },
+      {
+        "question": "🎁 Do you give a reduction for Tours & Rental?",
+        "answer": "Yes we do offer a 20% discount on your rental if you ride a tour as well 😉 Also for longer periods than 1 week we offer special rates. Please check the Reservations section."
+      },
+      {
+        "question": "👥 Do you give a reduction on large groups or for longterm rentals?",
+        "answer": "Yes we do. Groups of 10 persons get a 20% reduction when they pay all together. For longer periods than 1 week we offer special rates. Please check the Reservations section."
+      },
+      {
+        "question": "💳 Do I have to leave a deposit to rent a bike?",
+        "answer": "Yes, it is necessary to leave a deposit by bank imprint system at the time of reservation. This varies from 200€ to 500€ depending on the bike. You can find the details for each one during booking process."
+      },
+      {
+        "question": "🔒 Does my bike have the necessary safety features?",
+        "answer": "Yes firstly our bikes come from Swapfiets Partner, well established and are maintained properly by us 😉 All our bikes are equipped with front and rear lights powered by a dynamo. Good to know: You don't have to pedal more to power the lights! You also get a lock with your bike."
+      },
+      {
+        "question": "📏 What sizes do you offer?",
+        "answer": "We cover all sizes for people from 1,50 up to 2 meters high."
+      },
+      {
+        "question": "⚠️ Who is responsible if the bike is stolen or damaged?",
+        "answer": "You are. We'll provide you the tools and knowledge needed to keep the bike safe but it's up to you to return everything we give you. To avoid theft, always make sure to secure your bike! All our bikes are equipped with two integrated locks, our electric bikes also have an additional lock for the battery. Always secure your bike with both locks. If your bike is stolen (or lost) while it was locked and secured properly, you will be charged a deductible. The amount of the deductible varies depending on the type of bike you have."
+      },
+      {
+        "question": "🛡️ Do you offer insurance?",
+        "answer": "Yes an additional guarantee can be taken out by the hirer to cover breakage/theft. In this case, you are protected against partial or total breakage, theft by mugging, burglary or when the bike is attached to a fixed point. A deductible of 10% of the repair bill, with a minimum of €10, will be payable in the event of breakage, and a deductible of 10% of the value of the cycle in the event of irreparable breakage or theft. Please note that the guarantee does not in any way exempt the customer from taking the necessary steps, such as filing a complaint, making a sworn statement or providing any evidence that may be requested by the insurer as part of the management and resolution of the claim. In case of theft the renter must declare any accident to Rentabike Paris as well as the police authorities before the end of the rental period, and in all cases within 24 hours - under penalty of losing the benefit of the insurance."
+      },
+      {
+        "question": "📧 Need more info?",
+        "answer": "<a href=\"#contact-section\">Contact us</a> through our email."
+      },
+      {
+        "question": "ℹ️ Office du tourisme de Paris",
+        "answer": "Discover more about cycling in Paris on <a href=\"https://parisjetaime.com/eng/\" target=\"_blank\" rel=\"noopener noreferrer\">Paris Info</a>."
+      },
+      {
+        "question": "🗺️ Optimize your cycle routes",
+        "answer": "Find the best routes on <a href=\"https://geovelo.app/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Geovelo</a>."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Get in <highlight>Touch</highlight>",
+    "subtitle": "Got questions about our tours or rentals? We're here to help! Whether you're ready to book, need more information, or just want to share your thoughts, we'd love to hear from you.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your@email.com",
+      "subjectPlaceholder": "What's this about?",
+      "messagePlaceholder": "Tell us more about your inquiry...",
+      "sendButton": "Send Message",
+      "successMessage": "Thank you for your message! We'll get back to you soon.",
+      "errorMessage": "Something went wrong. Please try again."
+    }
+  },
+  "findUs": {
+    "title": "Come <highlight>Find Us</highlight>",
+    "location": {
+      "metro": "Metro: Réaumur Sebastopol (Lines 3 & 4)",
+      "walkingTime": "2 minutes walk from metro station",
+      "hours": "Open daily: 10am - 7pm"
+    },
+    "map": {
+      "title": "Our Location",
+      "description": "Perfectly positioned in the 2nd arrondissement, close to the Marais district and all major Paris attractions."
+    }
   },
   "common": {
     "learnMore": "Learn More",

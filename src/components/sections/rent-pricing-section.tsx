@@ -16,11 +16,20 @@ import {
 } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { siteConfig } from "@/config/site";
-import { pricingPlans } from "@/data/pricing-plans";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { rentImages } from "@/lib/images/rent-images";
 import { cn } from "@/lib/utils";
+import { HighlightText } from "@/lib/utils/highlight";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
+import { BikeContent } from "@/types";
 
 export function RentPricingSection(): JSX.Element {
+  const { locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "rent");
   const [isMultiDay, setIsMultiDay] = React.useState(false); // toggle for single or multi-day view
+
+  // Simple array of bike IDs
+  const bikeIds = ["deluxe7", "ebike", "children"] as const;
 
   const calculatePrice = (dailyRate: number, isFourDaysOrMore: boolean) => {
     return isFourDaysOrMore ? dailyRate * 0.9 : dailyRate; // Apply a 10% discount for 4-day rentals
@@ -34,118 +43,127 @@ export function RentPricingSection(): JSX.Element {
     >
       <div className="container grid max-w-6xl gap-4 md:gap-8">
         <div className="flex flex-col items-center gap-6 text-center">
-          <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl">
             <Balancer>
-              Rent our{" "}
-              <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
-                Awesome Bikes
-              </span>
+              <HighlightText gradient={true}>{t.title}</HighlightText>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
-            Choose from our wide range of bikes, perfect for{" "}
-            <span className="font-semibold text-foreground">
-              exploring Paris
-            </span>{" "}
-            at your own pace. Select the bike that suits your style and hit the
-            road with comfort and ease.
+            <Balancer>
+              <HighlightText gradient={false} className="text-foreground">
+                {t.subtitle}
+              </HighlightText>
+            </Balancer>
           </h3>
         </div>
 
         <div className="my-4 flex items-center justify-center gap-4 text-lg">
-          <span>1 to 3 Days Rental</span>
+          <span>{t.rentalToggle.shortTerm}</span>
           <Switch
             checked={isMultiDay}
             onCheckedChange={() => setIsMultiDay((prev) => !prev)}
             role="switch"
             aria-label="switch-to-multi-day"
           />
-          <span>4 Days and more (save 10%)</span>
+          <span>{t.rentalToggle.longTerm}</span>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3 lg:gap-6">
-          {pricingPlans.map((plan) => (
-            <Card
-              key={plan.name}
-              className={cn(
-                "flex flex-col transition-all duration-1000 ease-out hover:opacity-80 md:hover:-translate-y-3",
-                plan.name === "Electric Bike - Power 1" &&
-                  "border-fuchsia-300/30 bg-gradient-to-r from-primary/10 to-fuchsia-400/10"
-              )}
-            >
-              <Image
-                src={plan.image}
-                alt={`${plan.name} image`}
-                className="w-full h-48 object-cover rounded-t-lg"
-              />
-              <CardHeader className="overflow-hidden rounded-t-lg bg-gradient-to-r from-primary/10 to-fuchsia-400/10">
-                <CardTitle className="font-urbanist text-2xl tracking-wide mt-4">
-                  <Balancer>{plan.name}</Balancer>
-                </CardTitle>
+          {bikeIds.map((bikeId) => {
+            const bike = t[bikeId] as BikeContent;
 
-                <CardDescription className="text-sm">
-                  <Balancer>{plan.description}</Balancer>
-                </CardDescription>
+            // Fallback dailyRate if not in translations yet
+            const dailyRate =
+              bike.dailyRate ||
+              (bikeId === "deluxe7" ? 15 : bikeId === "ebike" ? 25 : 13);
 
-                <div className="flex flex-col gap-4 py-2">
-                  <div className="flex gap-2 text-3xl font-semibold md:gap-1 md:text-2xl lg:gap-2 lg:text-3xl">
-                    <span className="text-primary">
-                      €{calculatePrice(plan.dailyRate, isMultiDay).toFixed(2)}
-                    </span>
-                    <span className="flex items-center text-base font-normal text-muted-foreground">
-                      / day
-                    </span>
+            return (
+              <Card
+                key={bikeId}
+                className={cn(
+                  "flex flex-col transition-all duration-1000 ease-out hover:opacity-80 md:hover:-translate-y-3",
+                  bikeId === "ebike" &&
+                    "border-fuchsia-300/30 bg-gradient-to-r from-primary/10 to-fuchsia-400/10"
+                )}
+              >
+                <div className="relative h-48 w-full">
+                  <Image
+                    alt={bike.name}
+                    src={rentImages[bike.image as keyof typeof rentImages]}
+                    fill
+                    className="object-cover rounded-t-lg"
+                  />
+                </div>
+
+                <CardHeader className="overflow-hidden bg-gradient-to-r from-primary/10 to-fuchsia-400/10">
+                  <CardTitle className="font-urbanist text-2xl tracking-wide mt-4">
+                    <Balancer>{bike.name}</Balancer>
+                  </CardTitle>
+
+                  <CardDescription className="text-sm">
+                    <Balancer>{bike.description}</Balancer>
+                  </CardDescription>
+
+                  <div className="flex flex-col gap-4 py-2">
+                    <div className="flex gap-2 text-3xl font-semibold md:gap-1 md:text-2xl lg:gap-2 lg:text-3xl">
+                      <span className="text-primary">
+                        €{calculatePrice(dailyRate, isMultiDay).toFixed(2)}
+                      </span>
+                      <span className="flex items-center text-base font-normal text-muted-foreground">
+                        / day
+                      </span>
+                    </div>
+
+                    {isMultiDay && (
+                      <p className="text-xs font-bold text-muted-foreground">
+                        <Balancer>
+                          10% discount applied for rentals of 4 or more days!
+                        </Balancer>
+                      </p>
+                    )}
                   </div>
+                </CardHeader>
 
-                  {isMultiDay && (
-                    <p className="text-xs font-bold text-muted-foreground">
-                      <Balancer>
-                        10% discount applied for rentals of 4 or more days!
-                      </Balancer>
-                    </p>
-                  )}
-                </div>
-              </CardHeader>
+                <CardContent className="flex flex-1 flex-col justify-between text-sm lg:text-base">
+                  <div className="grid gap-3 py-8">
+                    <ul className="flex flex-col gap-3">
+                      {bike.features.map((bike, index) => (
+                        <li className="flex items-center gap-2" key={index}>
+                          <Icons.check className="size-4" />
+                          <Balancer>{bike}</Balancer>
+                        </li>
+                      ))}
+                    </ul>
 
-              <CardContent className="flex flex-1 flex-col justify-between text-sm lg:text-base">
-                <div className="grid gap-3 py-8">
-                  <ul className="flex flex-col gap-3">
-                    {plan.features.map((item) => (
-                      <li className="flex items-center gap-2" key={item}>
-                        <Icons.check className="size-4" />
-                        <Balancer>{item}</Balancer>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <ul className="flex flex-col gap-2">
-                    {plan.limitations.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-center gap-3 text-muted-foreground"
-                      >
-                        <Icons.close className="size-4" />
-                        <Balancer>{item}</Balancer>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <Button
-                  variant="outline"
-                  className="h-10 w-full border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide"
-                  asChild
-                >
-                  <Link
-                    href={siteConfig.links.rentalBooking}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    <ul className="flex flex-col gap-2">
+                      {bike.limitations.map((limit, index) => (
+                        <li
+                          key={index}
+                          className="flex items-center gap-3 text-muted-foreground"
+                        >
+                          <Icons.close className="size-4" />
+                          <Balancer>{limit}</Balancer>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <Button
+                    variant="outline"
+                    className="h-10 w-full border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide"
+                    asChild
                   >
-                    Rent Now
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+                    <Link
+                      href={siteConfig.links.rentalBooking}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t.ctaRentNow}
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
