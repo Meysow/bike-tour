@@ -29,9 +29,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
           <div className="container mx-auto px-4">
             <div className="text-center space-y-4">
               <h1 className="font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-                <Balancer>
-                  <HighlightText>{t.page.heroTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.heroTitle}</HighlightText>
               </h1>
               <p className="max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl sm:leading-8">
                 <Balancer>{t.page.heroSubtitle}</Balancer>

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
-import Balancer from "react-wrap-balancer";
 
 import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
@@ -22,6 +21,7 @@ import { cn } from "@/lib/utils";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { BikeContent } from "@/types";
+import Balancer from "react-wrap-balancer";
 
 export function RentPricingSection(): JSX.Element {
   const { locale } = useLocalizedRoutes();
@@ -44,16 +44,12 @@ export function RentPricingSection(): JSX.Element {
       <div className="container grid max-w-6xl gap-4 md:gap-8">
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl">
-            <Balancer>
-              <HighlightText gradient={true}>{t.title}</HighlightText>
-            </Balancer>
+            <HighlightText gradient={true}>{t.title}</HighlightText>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
-            <Balancer>
-              <HighlightText gradient={false} className="text-foreground">
-                {t.subtitle}
-              </HighlightText>
-            </Balancer>
+            <HighlightText gradient={false} className="text-foreground">
+              {t.subtitle}
+            </HighlightText>
           </h3>
         </div>
 

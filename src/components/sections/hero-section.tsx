@@ -9,7 +9,6 @@ import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-import Balancer from "react-wrap-balancer";
 
 import PalaisRoyal from "../../../public/images/hero/palais-royal(1).jpg";
 
@@ -28,9 +27,7 @@ export function HeroSection() {
           className="animate-fade-up font-urbanist text-4xl font-extrabold tracking-tight leading-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl"
           aria-label={t.title.replace(/<highlight>.*?<\/highlight>/g, "")}
         >
-          <Balancer>
-            <HighlightText gradient={true}>{t.title}</HighlightText>
-          </Balancer>
+          <HighlightText gradient={true}>{t.title}</HighlightText>
         </h1>
 
         <p className="col-start-1 row-start-3 max-w-xl text-muted-foreground md:mt-2 md:text-lg leading-relaxed">

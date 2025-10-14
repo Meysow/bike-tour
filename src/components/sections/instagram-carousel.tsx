@@ -12,7 +12,6 @@ import { InstagramPost } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Balancer from "react-wrap-balancer";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -137,16 +136,12 @@ export function InstagramCarousel({
       <div className="container grid max-w-6xl gap-16">
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            <Balancer>
-              <HighlightText gradient={true}>{t.title}</HighlightText>
-            </Balancer>
+            <HighlightText gradient={true}>{t.title}</HighlightText>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
-            <Balancer>
-              <HighlightText gradient={false} className="text-foreground">
-                {t.subtitle}
-              </HighlightText>
-            </Balancer>
+            <HighlightText gradient={false} className="text-foreground">
+              {t.subtitle}
+            </HighlightText>
           </h3>
         </div>
 

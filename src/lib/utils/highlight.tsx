@@ -1,3 +1,5 @@
+import Balancer from "react-wrap-balancer";
+
 interface HighlightProps {
   children: string;
   className?: string;
@@ -7,6 +9,7 @@ interface HighlightProps {
 /**
  * Parses text with <highlight> tags and renders them with styling
  * Example: "Discover <highlight>Paris</highlight> Like a True Parisian!"
+ * Automatically includes Balancer for text wrapping optimization
  */
 export function HighlightText({
   children,
@@ -16,7 +19,7 @@ export function HighlightText({
   const parts = children.split(/(<highlight>.*?<\/highlight>)/g);
 
   return (
-    <>
+    <Balancer>
       {parts.map((part, index) => {
         if (part.startsWith("<highlight>") && part.endsWith("</highlight>")) {
           const content = part.replace(/<\/?highlight>/g, "");
@@ -32,6 +35,6 @@ export function HighlightText({
         }
         return part;
       })}
-    </>
+    </Balancer>
   );
 }

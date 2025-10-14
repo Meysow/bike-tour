@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Balancer from "react-wrap-balancer";
 
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
@@ -13,6 +12,7 @@ import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
+import Balancer from "react-wrap-balancer";
 
 export default function AboutPage(): JSX.Element {
   const { locale } = useLocalizedRoutes();
@@ -27,9 +27,7 @@ export default function AboutPage(): JSX.Element {
           <div className="container mx-auto px-4">
             <div className="text-center space-y-6">
               <h1 className="font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-                <Balancer>
-                  <HighlightText>{t.page.heroTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.heroTitle}</HighlightText>
               </h1>
               <p className="max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl sm:leading-8">
                 <Balancer>{t.page.heroSubtitle}</Balancer>
@@ -86,9 +84,7 @@ export default function AboutPage(): JSX.Element {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-                <Balancer>
-                  <HighlightText>{t.page.guidesTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.guidesTitle}</HighlightText>
               </h2>
               <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
                 <Balancer>{t.page.guidesSubtitle}</Balancer>
@@ -161,9 +157,7 @@ export default function AboutPage(): JSX.Element {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-                <Balancer>
-                  <HighlightText>{t.page.valuesTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.valuesTitle}</HighlightText>
               </h2>
               <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
                 <Balancer>{t.page.valuesSubtitle}</Balancer>
@@ -251,9 +245,7 @@ export default function AboutPage(): JSX.Element {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-                <Balancer>
-                  <HighlightText>{t.page.partnershipTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.partnershipTitle}</HighlightText>
               </h2>
               <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
                 <Balancer>{t.page.partnershipSubtitle}</Balancer>
@@ -344,9 +336,7 @@ export default function AboutPage(): JSX.Element {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-                <Balancer>
-                  <HighlightText>{t.page.findUsTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.findUsTitle}</HighlightText>
               </h2>
             </div>
             <GoogleMap address={siteConfig.company.location} />

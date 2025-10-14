@@ -1,7 +1,5 @@
 "use client";
 
-import Balancer from "react-wrap-balancer";
-
 import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
 import { siteConfig } from "@/config/site";
@@ -18,9 +16,7 @@ export function LocationMapSection(): JSX.Element {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-            <Balancer>
-              <HighlightText>{t.title}</HighlightText>
-            </Balancer>
+            <HighlightText>{t.title}</HighlightText>
           </h2>
 
           <div className="flex flex-col items-center gap-2 text-muted-foreground">

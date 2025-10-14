@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
-import Balancer from "react-wrap-balancer";
 
 import {
   Card,
@@ -26,6 +25,7 @@ import { rentImages } from "@/lib/images/rent-images";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { BikeContent } from "@/types";
+import Balancer from "react-wrap-balancer";
 
 import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
 import { cn } from "@/lib/utils";
@@ -54,9 +54,7 @@ export default function RentPage(): JSX.Element {
           <div className="container mx-auto px-4">
             <div className="text-center space-y-6">
               <h1 className="font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-                <Balancer>
-                  <HighlightText>{t.page.heroTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.heroTitle}</HighlightText>
               </h1>
 
               <p className="max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl sm:leading-8">
@@ -190,9 +188,7 @@ export default function RentPage(): JSX.Element {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-                <Balancer>
-                  <HighlightText>{t.page.accessoriesTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.accessoriesTitle}</HighlightText>
               </h2>
 
               <p className="max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -267,9 +263,7 @@ export default function RentPage(): JSX.Element {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-                <Balancer>
-                  <HighlightText>{t.page.howItWorksTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.howItWorksTitle}</HighlightText>
               </h2>
             </div>
 
@@ -358,9 +352,7 @@ export default function RentPage(): JSX.Element {
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="font-urbanist text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-6">
-                <Balancer>
-                  <HighlightText>{t.page.pickupLocationTitle}</HighlightText>
-                </Balancer>
+                <HighlightText>{t.page.pickupLocationTitle}</HighlightText>
               </h2>
 
               <div className="flex flex-col items-center gap-2 text-muted-foreground">

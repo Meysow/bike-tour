@@ -99,16 +99,12 @@ export function TestimonialsSection() {
         {/* Title and Subtitle */}
         <div className="flex flex-col items-center gap-4 mb-8">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            <Balancer>
-              <HighlightText gradient={true}>{t.title}</HighlightText>
-            </Balancer>
+            <HighlightText gradient={true}>{t.title}</HighlightText>
           </h2>
           <h3 className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            <Balancer>
-              <HighlightText gradient={false} className="text-foreground">
-                {t.subtitle}
-              </HighlightText>
-            </Balancer>
+            <HighlightText gradient={false} className="text-foreground">
+              {t.subtitle}
+            </HighlightText>
           </h3>
         </div>
 
