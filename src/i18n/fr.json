@@ -229,6 +229,35 @@
       }
     ]
   },
+  "contact": {
+    "title": "Restons en <highlight>Contact</highlight>",
+    "subtitle": "Des questions sur nos visites ou locations ? Nous sommes là pour vous aider ! Que vous soyez prêt à réserver, que vous ayez besoin de plus d'informations, ou que vous souhaitiez simplement partager vos impressions, nous serions ravis d'avoir de vos nouvelles.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "namePlaceholder": "Votre nom",
+      "emailPlaceholder": "votre@email.com",
+      "subjectPlaceholder": "De quoi s'agit-il ?",
+      "messagePlaceholder": "Parlez-nous davantage de votre demande...",
+      "sendButton": "Envoyer le Message",
+      "successMessage": "Merci pour votre message ! Nous vous répondrons bientôt.",
+      "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer."
+    }
+  },
+  "findUs": {
+    "title": "Venez nous <highlight>Trouver</highlight>",
+    "location": {
+      "metro": "Métro : Réaumur Sebastopol (Lignes 3 & 4)",
+      "walkingTime": "2 minutes à pied de la station de métro",
+      "hours": "Ouvert tous les jours : 10h - 19h"
+    },
+    "map": {
+      "title": "Notre Localisation",
+      "description": "Parfaitement situé dans le 2ème arrondissement, à proximité du quartier du Marais et de toutes les attractions principales de Paris."
+    }
+  },
   "common": {
     "learnMore": "En Savoir Plus",
     "bookNow": "Réserver Maintenant",

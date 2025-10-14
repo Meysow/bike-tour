@@ -229,6 +229,35 @@
       }
     ]
   },
+  "contact": {
+    "title": "Laten we <highlight>Contact</highlight> opnemen",
+    "subtitle": "Vragen over onze tours of verhuur? We zijn er om te helpen! Of je nu klaar bent om te boeken, meer informatie nodig hebt, of gewoon je gedachten wilt delen - we horen graag van je.",
+    "form": {
+      "name": "Naam",
+      "email": "Email",
+      "subject": "Onderwerp",
+      "message": "Bericht",
+      "namePlaceholder": "Je naam",
+      "emailPlaceholder": "je@email.com",
+      "subjectPlaceholder": "Waar gaat het over?",
+      "messagePlaceholder": "Vertel ons meer over je vraag...",
+      "sendButton": "Bericht Versturen",
+      "successMessage": "Bedankt voor je bericht! We nemen snel contact met je op.",
+      "errorMessage": "Er ging iets mis. Probeer het opnieuw."
+    }
+  },
+  "findUs": {
+    "title": "Kom ons <highlight>Bezoeken</highlight>",
+    "location": {
+      "metro": "Metro: Réaumur Sebastopol (Lijnen 3 & 4)",
+      "walkingTime": "2 minuten lopen vanaf het metrostation",
+      "hours": "Dagelijks open: 10:00 - 19:00"
+    },
+    "map": {
+      "title": "Onze Locatie",
+      "description": "Perfect gelegen in het 2e arrondissement, dicht bij de Marais-wijk en alle belangrijke Parijse bezienswaardigheden."
+    }
+  },
   "common": {
     "learnMore": "Meer Informatie",
     "bookNow": "Nu Boeken",

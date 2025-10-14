@@ -229,6 +229,35 @@
       }
     ]
   },
+  "contact": {
+    "title": "Lassen Sie uns in <highlight>Kontakt</highlight> bleiben",
+    "subtitle": "Haben Sie Fragen zu unseren Touren oder Vermietungen? Wir sind hier, um zu helfen! Ob Sie bereit zum Buchen sind, mehr Informationen benötigen oder einfach Ihre Gedanken teilen möchten - wir würden uns freuen, von Ihnen zu hören.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "ihre@email.com",
+      "subjectPlaceholder": "Worum geht es?",
+      "messagePlaceholder": "Erzählen Sie uns mehr über Ihre Anfrage...",
+      "sendButton": "Nachricht Senden",
+      "successMessage": "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+      "errorMessage": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+    }
+  },
+  "findUs": {
+    "title": "Kommen Sie uns <highlight>Besuchen</highlight>",
+    "location": {
+      "metro": "Metro: Réaumur Sebastopol (Linien 3 & 4)",
+      "walkingTime": "2 Minuten zu Fuß von der U-Bahn-Station",
+      "hours": "Täglich geöffnet: 10 - 19 Uhr"
+    },
+    "map": {
+      "title": "Unser Standort",
+      "description": "Perfekt im 2. Arrondissement gelegen, in der Nähe des Marais-Viertels und aller wichtigen Pariser Sehenswürdigkeiten."
+    }
+  },
   "common": {
     "learnMore": "Mehr Erfahren",
     "bookNow": "Jetzt Buchen",

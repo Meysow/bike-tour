@@ -1,8 +1,16 @@
+"use client";
+
 import Balancer from "react-wrap-balancer";
 
 import { ContactForm } from "@/components/sections/contact-form";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { HighlightText } from "@/lib/utils/highlight";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 
 export function ContactSection(): JSX.Element {
+  const { locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "contact");
+
   return (
     <section
       id="contact-section"
@@ -13,18 +21,11 @@ export function ContactSection(): JSX.Element {
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              Let&apos;s{" "}
-              <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
-                Get in Touch
-              </span>
+              <HighlightText>{t.title}</HighlightText>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
-            <Balancer>
-              Got questions about our tours or rentals? We&apos;re here to help!
-              Whether you&apos;re ready to book, need more information, or just
-              want to share your thoughts, we&apos;d love to hear from you.
-            </Balancer>
+            <Balancer>{t.subtitle}</Balancer>
           </h3>
         </div>
 

@@ -229,6 +229,35 @@
       }
     ]
   },
+  "contact": {
+    "title": "Pongámonos en <highlight>Contacto</highlight>",
+    "subtitle": "¿Tienes preguntas sobre nuestros tours o alquileres? ¡Estamos aquí para ayudarte! Ya sea que estés listo para reservar, necesites más información, o simplemente quieras compartir tus pensamientos, nos encantaría saber de ti.",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "tu@email.com",
+      "subjectPlaceholder": "¿De qué se trata?",
+      "messagePlaceholder": "Cuéntanos más sobre tu consulta...",
+      "sendButton": "Enviar Mensaje",
+      "successMessage": "¡Gracias por tu mensaje! Te responderemos pronto.",
+      "errorMessage": "Algo salió mal. Por favor, inténtalo de nuevo."
+    }
+  },
+  "findUs": {
+    "title": "Ven a <highlight>Encontrarnos</highlight>",
+    "location": {
+      "metro": "Metro: Réaumur Sebastopol (Líneas 3 y 4)",
+      "walkingTime": "2 minutos caminando desde la estación de metro",
+      "hours": "Abierto todos los días: 10am - 7pm"
+    },
+    "map": {
+      "title": "Nuestra Ubicación",
+      "description": "Perfectamente ubicados en el 2º distrito, cerca del barrio del Marais y todas las principales atracciones de París."
+    }
+  },
   "common": {
     "learnMore": "Saber Más",
     "bookNow": "Reservar Ahora",
