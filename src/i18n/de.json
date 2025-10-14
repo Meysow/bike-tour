@@ -319,5 +319,72 @@
     "tooltip": "Kontaktieren Sie uns auf WhatsApp",
     "ariaLabel": "Kontaktieren Sie RentaBikeParis auf WhatsApp",
     "defaultMessage": "Hallo! Ich interessiere mich für Ihre Fahrradverleih- und Führungsdienste in Paris. Könnten Sie mir weitere Informationen geben?"
+  },
+  "about": {
+    "page": {
+      "heroTitle": "Willkommen bei <highlight>RentaBikeParis</highlight>",
+      "heroSubtitle": "Entdecken Sie die Freiheit, Paris wie ein Pariser zu erkunden! 🚴‍♂️ Begleiten Sie mich, Léo, während ich meine Leidenschaft für das Radfahren und die versteckten Juwelen meiner schönen Stadt mit Reisenden aus aller Welt teile.",
+      "myStoryTitle": "Meine Geschichte 🇫🇷",
+      "storyParagraph1": "Mein Name ist Léo und ich bin in Paris geboren und aufgewachsen, wo ich immer noch gerne Rad fahre! Von klein auf liebte ich es, herumzufahren, neue Leute kennenzulernen und neue Orte zu entdecken.",
+      "storyParagraph2": "Nach dem Abschluss meines Studiums in Bremen in Deutschland wollte ich den \"Berlin-Traum\" leben, wo ich einige wunderbare Jahre verbrachte! Diese dynamische Stadt gab mir die Chance, mein Englisch und Deutsch zu perfektionieren, zwei Sprachen, die ich gerne spreche, wenn ich die Gelegenheit dazu habe.",
+      "storyParagraph3": "Zurück in meinem schönen Paris trat ich dem Team bei Swapfiets bei, einem innovativen Unternehmen, das sich auf Fahrradverleih mit einem inklusiven Wartungsservice spezialisiert hat. Dank dieser Erfahrung sah ich eine wachsende Nachfrage nach kurzfristigen Vermietungen, besonders von Touristen.",
+      "storyParagraph4": "Da beschloss ich, RentaBikeParis zu gründen, mein eigenes Fahrradverleih- und geführten Touren-Unternehmen, mit der Idee, die Schönheit meiner Stadt auf meine eigene Weise zu teilen. Dank RentaBikeParis habe ich die Möglichkeit, meine Leidenschaft für das Radfahren, bereichernde Begegnungen und die Entdeckung von Paris mit Reisenden aus aller Welt zu teilen! ✨",
+      "guidesTitle": "Lernen Sie unsere <highlight>Guides</highlight> kennen",
+      "guidesSubtitle": "Leidenschaftliche Einheimische, die gerne ihre Stadt mit Besuchern aus aller Welt teilen.",
+      "pierre": {
+        "name": "Pierre",
+        "role": "Hauptführer & Mitgründer",
+        "description": "In Paris geboren und aufgewachsen, kennt Pierre jeden Winkel der Stadt. Seine Leidenschaft für das Radfahren und die lokale Geschichte macht jede Tour unvergesslich."
+      },
+      "marie": {
+        "name": "Marie",
+        "role": "Kunst- & Kulturspezialistin",
+        "description": "Absolventin der Kunstgeschichte, spezialisiert sich Marie auf unsere künstlerischen Touren. Sie wird Ihnen Paris durch die Augen der großen Meister zeigen."
+      },
+      "jean": {
+        "name": "Jean",
+        "role": "Fahrradtechniker",
+        "description": "Unser Fahrradflüsterer! Jean sorgt dafür, dass jedes Fahrrad in perfektem Zustand ist und kann alles vor Ort reparieren. Sicherheit ist sein zweiter Vorname."
+      },
+      "valuesTitle": "Unsere <highlight>Werte</highlight>",
+      "valuesSubtitle": "Die Prinzipien, die alles leiten, was wir bei RentaBikeParis tun.",
+      "safetyFirst": {
+        "title": "Sicherheit zuerst",
+        "description": "Ihre Sicherheit hat höchste Priorität. Alle unsere Fahrräder werden regelmäßig gewartet und wir bieten Helme und Sicherheitsbriefings bei jeder Vermietung."
+      },
+      "ecoFriendly": {
+        "title": "Umweltfreundlich",
+        "description": "Wir glauben an nachhaltigen Tourismus. Radfahren ist der umweltfreundlichste Weg, Paris zu erkunden und dabei Ihren CO2-Fußabdruck zu reduzieren."
+      },
+      "localLove": {
+        "title": "Lokale Liebe",
+        "description": "Als Einheimische sind wir leidenschaftlich daran interessiert, Ihnen das echte Paris zu zeigen. Wir unterstützen lokale Unternehmen und versteckte Juwelen abseits der ausgetretenen Pfade."
+      },
+      "qualityService": {
+        "title": "Qualitätsservice",
+        "description": "Wir halten hohe Standards in allem ein, was wir tun, von der Fahrradwartung bis zum Kundenservice. Ihre Zufriedenheit ist unsere Garantie."
+      },
+      "personalized": {
+        "title": "Personalisierte",
+        "description": "Jede Tour und Vermietung wird auf Ihre Bedürfnisse zugeschnitten. Wir passen unsere Routen und Empfehlungen an Ihre Interessen und Fitnesslevel an."
+      },
+      "community": {
+        "title": "Gemeinschaft",
+        "description": "Wir bauen eine Gemeinschaft von Radsport-Enthusiasten auf, die unsere Liebe zu Paris und nachhaltiger Mobilität teilen."
+      },
+      "partnershipTitle": "Unsere <highlight>Partnerschaft</highlight>",
+      "partnershipSubtitle": "Qualität und Zuverlässigkeit durch vertrauensvolle Zusammenarbeit 🤝",
+      "swapfietsTitle": "Swapfiets Partnerschaft",
+      "swapfietsDescription1": "Ich bin dankbar, Swapfiets als Partner zu haben, damit jeder ihre Fahrräder genießen kann, auch nur für kurze Zeit! Ihre Unterstützung war wichtig für die Entwicklung von RentaBikeParis, und ich bin stolz, mit einem so dynamischen und engagierten Unternehmen zusammenzuarbeiten.",
+      "swapfietsDescription2": "Dank dieser Partnerschaft kann ich Ihnen hochwertige, stilvolle Fahrräder mit den charakteristischen blauen Reifen und der Zuverlässigkeit professioneller Wartung anbieten. Sicherheit, Komfort und Qualität sind immer unsere obersten Prioritäten!",
+      "contactTitle": "Bereit, gemeinsam auf die Straße zu gehen?",
+      "contactSubtitle": "Ob Sie ein Tourist sind, der die Stadt entdecken möchte, oder ein Pariser, der nach einem städtischen Abenteuer sucht, ich würde mich mehr als freuen, Sie auf Ihrer nächsten Radtour durch Paris mitzunehmen! Wir freuen uns darauf, gemeinsam auf die Straße zu gehen! 💫",
+      "emailUs": "E-Mail schreiben",
+      "callUs": "Anrufen",
+      "findUs": "Finden Sie uns",
+      "bookTour": "Tour buchen",
+      "rentBike": "Fahrrad mieten",
+      "findUsTitle": "Finden Sie <highlight>uns</highlight>"
+    }
   }
 }
