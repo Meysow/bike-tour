@@ -19,6 +19,7 @@
       "subtitle": "Rondom Parijs op de Fiets",
       "description": "Met onze begeleide fietstour door Parijs wordt het ontdekken van de hoofdstad kinderspel! Deze fietsroute is toegankelijk voor alle niveaus. We bieden je een unieke mix van onze top spots, typische Parijse straten en de meest emblematische monumenten van de stad. Ideaal voor degenen die het hart van Parijs en zijn grote monumenten willen ontdekken. Het programma omvat het ontdekken van beide oevers van de Seine! Je gids zal je fascinerende en vaak amusante verhalen vertellen over de geschiedenis van Parijs. De sfeer is perfect. Je hoeft je alleen maar te laten leiden en te genieten van deze prachtige fietstocht om Parijs te ontdekken. Maak je klaar voor dit spannende avontuur.",
       "price": "Vanaf €40",
+      "image": "louvre",
       "details": {
         "location": "🌍 - Startpunt: 20 Rue Greneta, 75002 Parijs",
         "duration": "⏰ - 3 Uren - 12 kilometer",
@@ -32,6 +33,7 @@
       "subtitle": "Authentieke Parijse Ervaring",
       "description": "Maak je klaar om mijn favoriete verborgen parel in Parijs te ontdekken! 🚴‍♂️ Deze Canal Saint-Martin tour brengt je weg van de toeristische drukte om het bohemische hart van de 10e en 11e arrondissementen te verkennen. We rijden langs het schilderachtige kanaal, passeren zijn iconische sluizen en zuigen de levendige lokale sfeer op die deze buurt zo bijzonder maakt. Ik zal fascinerende verhalen delen over de transformatie van het gebied terwijl we verborgen cafés en ambachtelijke winkels ontdekken. Dit is Parijs zoals de locals het beleven! Perfect voor degenen die een authentiek avontuur buiten de gebaande paden zoeken. ✨",
       "price": "Vanaf €40",
+      "image": "palais",
       "details": {
         "location": "🌍 - Startpunt: 20 Rue Greneta, 75002 Parijs",
         "duration": "⏰ - 2,5 Uren - 10 kilometer",
@@ -45,6 +47,7 @@
       "subtitle": "Privétours",
       "description": "Bij Rentabike Parijs passen we ons graag aan aan jouw behoeften! Of je nu een gepersonaliseerde tour wilt creëren, een teambuilding evenement wilt organiseren, of een speciale touch aan je evenement wilt toevoegen, we staan open voor alle mogelijkheden en kijken uit naar je vragen!",
       "price": "Aangepaste Offerte",
+      "image": "prive",
       "details": {
         "location": "",
         "duration": "",
@@ -62,6 +65,50 @@
       "ctaMoreInfo": "Meer Informatie",
       "ctaBookNow": "Nu Boeken",
       "ctaContact": "Neem Contact Op"
+    }
+  },
+  "rent": {
+    "title": "Ervaar Parijs met <highlight>Kwaliteitsfietsen</highlight>",
+    "subtitle": "Kies uit onze zorgvuldig geselecteerde vloot van <highlight>kwaliteitsfietsen</highlight>, elk klaar om je de perfecte fietservaring te bieden!",
+    "rentalToggle": {
+      "shortTerm": "1 tot 3 dagen huur",
+      "longTerm": "4 dagen en meer (bespaar 10%)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Normale Fiets",
+      "description": "Een comfortabele en betrouwbare stadsfiets, ideaal voor het verkennen van Parijs in je eigen tempo met zeven soepele versnellingen.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "7-versnellings systeem",
+        "Comfortabel zadel voor lange ritten",
+        "Robuust stadsvriendelijk ontwerp"
+      ],
+      "limitations": ["Geen elektrische ondersteuning"]
+    },
+    "ebike": {
+      "name": "Elektrische Fiets - Power 1",
+      "description": "Ontdek Parijs moeiteloos met trapondersteuning technologie. Perfect voor langere afstanden en heuvelachtige routes.",
+      "dailyRate": 25,
+      "image": "ebike",
+      "features": [
+        "Elektrische trapondersteuning",
+        "Batterijbereik tot 80 km",
+        "Gemakkelijk te gebruiken handgreepcontrole"
+      ],
+      "limitations": ["Hogere gewicht door batterij"]
+    },
+    "children": {
+      "name": "Kinderfiets 20\" of 24\"",
+      "description": "Veilig en stevig, ideaal voor jonge rijders van 6-9 jaar. Perfect voor familie-uitstapjes en stadsparkritten. Maat 20\" of 24\"",
+      "dailyRate": 13,
+      "image": "children",
+      "features": [
+        "20-inch wielen voor stabiel rijden",
+        "Gemakkelijk vast te pakken stuur",
+        "Lichtgewicht frame"
+      ],
+      "limitations": ["Niet geschikt voor kinderen onder 6 jaar"]
     }
   },
   "common": {

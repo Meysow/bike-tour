@@ -12,8 +12,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { siteConfig } from "@/config/site";
-import { TourData, tours } from "@/data/tourData";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { tourImages } from "@/lib/images/tour-images";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { TourContent } from "@/types";
@@ -23,37 +23,8 @@ export function ToursSection(): JSX.Element {
   const { createLink, locale } = useLocalizedRoutes();
   const t = getSectionTranslations(locale, "tours");
 
-  // Helper function to get translated content for a tour
-  const getTourContent = (tour: TourData): TourContent => {
-    // Try to get translation from i18n, fallback to tourData for missing translations
-    const translatedTour = t[tour.id as keyof typeof t];
-
-    if (
-      translatedTour &&
-      typeof translatedTour === "object" &&
-      "title" in translatedTour
-    ) {
-      return translatedTour as TourContent;
-    }
-
-    // Fallback for tours without translations (like private tours)
-    return {
-      title: tour.description,
-      subtitle: tour.title,
-      description: tour.details,
-      price: tour.price,
-      details: {
-        location: tour.startingSpot
-          ? `🌍 - Starting spot: ${tour.startingSpot}`
-          : "",
-        duration: tour.duration ? `⏰ - ${tour.duration}` : "",
-        schedule: tour.break ? `👤 - ${tour.break}` : "",
-      },
-      ctaMoreInfo: "More Info",
-      ctaBookNow: "Book Now",
-      ctaContact: "Contact Us",
-    };
-  };
+  // Simple array of tour IDs
+  const tourIds = ["1", "2", "3"] as const;
   return (
     <section id="tour-section" aria-label="Tour section" className="w-full">
       <div className="container grid max-w-6xl justify-center gap-16">
@@ -73,15 +44,15 @@ export function ToursSection(): JSX.Element {
         </div>
 
         <div className="grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-          {/* Tours publics côte à côte */}
-          {tours
-            .filter((tour) => !tour.isPrivate)
-            .map((tour) => {
-              const content = getTourContent(tour);
+          {/* Public tours side by side */}
+          {tourIds
+            .filter((tourId) => tourId !== "3") // Exclude private tour (ID "3")
+            .map((tourId) => {
+              const content = t[tourId] as TourContent;
 
               return (
                 <Card
-                  key={tour.id}
+                  key={tourId}
                   className="h-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative flex flex-col"
                 >
                   <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
@@ -145,8 +116,8 @@ export function ToursSection(): JSX.Element {
 
                     <Image
                       alt={content.title}
-                      src={tour.image}
-                      className="overflow-hidden rounded-b-xl"
+                      src={tourImages[content.image as keyof typeof tourImages]}
+                      className="overflow-hidden rounded-b-xl object-cover"
                     />
                   </CardContent>
                 </Card>
@@ -154,16 +125,16 @@ export function ToursSection(): JSX.Element {
             })}
         </div>
 
-        {/* Tour privé en dessous, toute la largeur */}
+        {/* Private tour below, full width */}
         <div className="grid max-w-6xl grid-cols-1 gap-4 md:gap-6">
-          {tours
-            .filter((tour) => tour.isPrivate)
-            .map((tour) => {
-              const content = getTourContent(tour);
+          {tourIds
+            .filter((tourId) => tourId === "3") // Only private tour (ID "3")
+            .map((tourId) => {
+              const content = t[tourId] as TourContent;
 
               return (
                 <Card
-                  key={tour.id}
+                  key={tourId}
                   className="h-fit w-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
                 >
                   <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md z-10">
@@ -242,7 +213,9 @@ export function ToursSection(): JSX.Element {
                     <div className="relative">
                       <Image
                         alt={content.title}
-                        src={tour.image}
+                        src={
+                          tourImages[content.image as keyof typeof tourImages]
+                        }
                         className="w-full h-full object-cover rounded-xl"
                       />
                     </div>

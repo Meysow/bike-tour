@@ -19,6 +19,7 @@
       "subtitle": "Rund um Paris mit dem Fahrrad",
       "description": "Mit unserer geführten Fahrradtour durch Paris wird die Entdeckung der Hauptstadt zum Kinderspiel! Diese Fahrradroute ist für alle Levels zugänglich. Wir bieten Ihnen eine einzigartige Mischung aus unseren Top-Spots, typischen Pariser Straßen und den emblematischsten Wahrzeichen der Stadt. Ideal für alle, die das Herz von Paris und seine großen Denkmäler entdecken möchten. Das Programm beinhaltet die Entdeckung beider Seine-Ufer! Ihr Guide wird Ihnen faszinierende und oft amüsante Geschichten über die Geschichte von Paris erzählen. Die Atmosphäre ist perfekt. Sie müssen sich nur führen lassen und diese wunderschöne Fahrradtour genießen, um Paris zu entdecken. Machen Sie sich bereit für dieses aufregende Abenteuer.",
       "price": "Ab €40",
+      "image": "louvre",
       "details": {
         "location": "🌍 - Startpunkt: 20 Rue Greneta, 75002 Paris",
         "duration": "⏰ - 3 Stunden - 12 Kilometer",
@@ -32,6 +33,7 @@
       "subtitle": "Authentisches Pariser Erlebnis",
       "description": "Machen Sie sich bereit, meinen Lieblings-Geheimtipp in Paris zu entdecken! 🚴‍♂️ Diese Canal Saint-Martin Tour führt Sie weg von den Touristenscharen, um das bohemische Herz der 10. und 11. Arrondissements zu erkunden. Wir werden entlang des malerischen Kanals fahren, seine ikonischen Schleusen passieren und die lebendige lokale Atmosphäre aufsaugen, die diese Nachbarschaft so besonders macht. Ich werde faszinierende Geschichten über die Transformation des Gebiets teilen, während wir versteckte Cafés und Kunsthandwerksläden entdecken. Das ist Paris, wie die Einheimischen es leben! Perfekt für alle, die ein authentisches Abenteuer abseits der ausgetretenen Pfade suchen. ✨",
       "price": "Ab €40",
+      "image": "palais",
       "details": {
         "location": "🌍 - Startpunkt: 20 Rue Greneta, 75002 Paris",
         "duration": "⏰ - 2,5 Stunden - 10 Kilometer",
@@ -45,6 +47,7 @@
       "subtitle": "Private Touren",
       "description": "Bei Rentabike Paris passen wir uns gerne an Ihre Bedürfnisse an! Ob Sie eine personalisierte Tour erstellen, ein Team-Building-Event organisieren oder Ihrem Event eine besondere Note verleihen möchten, wir sind offen für alle Möglichkeiten und freuen uns auf Ihre Anfragen!",
       "price": "Individuelles Angebot",
+      "image": "prive",
       "details": {
         "location": "",
         "duration": "",
@@ -62,6 +65,50 @@
       "ctaMoreInfo": "Mehr Infos",
       "ctaBookNow": "Jetzt Buchen",
       "ctaContact": "Kontaktieren Sie uns"
+    }
+  },
+  "rent": {
+    "title": "Erleben Sie Paris mit <highlight>Qualitätsrädern</highlight>",
+    "subtitle": "Wählen Sie aus unserer sorgfältig ausgewählten Flotte von <highlight>Qualitätsrädern</highlight>, jedes bereit, Ihnen das perfekte Radfahrerlebnis zu bieten!",
+    "rentalToggle": {
+      "shortTerm": "1 bis 3 Tage Miete",
+      "longTerm": "4 Tage und mehr (10% sparen)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Normales Fahrrad",
+      "description": "Ein komfortables und zuverlässiges Stadtfahrrad, ideal zum Erkunden von Paris in Ihrem eigenen Tempo mit sieben sanften Gängen.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "7-Gang-Schaltgetriebe",
+        "Komfortabler Sattel für lange Fahrten",
+        "Robustes stadtfreundliches Design"
+      ],
+      "limitations": ["Keine elektrische Unterstützung"]
+    },
+    "ebike": {
+      "name": "E-Bike - Power 1",
+      "description": "Entdecken Sie Paris mühelos mit Pedalassistenz-Technologie. Perfekt für längere Strecken und hügelige Routen.",
+      "dailyRate": 25,
+      "image": "ebike",
+      "features": [
+        "Elektrische Pedalassistenz",
+        "Batteriereichweite bis zu 80 km",
+        "Einfach zu bedienende Griffsteuerung"
+      ],
+      "limitations": ["Höheres Gewicht durch Batterie"]
+    },
+    "children": {
+      "name": "Kinderfahrrad 20\" oder 24\"",
+      "description": "Sicher und stabil, ideal für junge Fahrer im Alter von 6-9 Jahren. Perfekt für Familienausflüge und Stadtparkfahrten. Größe 20\" oder 24\"",
+      "dailyRate": 13,
+      "image": "children",
+      "features": [
+        "20-Zoll-Räder für stabiles Fahren",
+        "Griffe mit gutem Griff",
+        "Leichter Rahmen"
+      ],
+      "limitations": ["Nicht geeignet für Kinder unter 6 Jahren"]
     }
   },
   "common": {

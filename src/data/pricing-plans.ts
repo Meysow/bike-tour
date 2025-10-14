@@ -16,7 +16,7 @@ export const pricingPlans: PricingPlan[] = [
       "Comfortable saddle for long rides",
       "Robust city-friendly design",
     ],
-    limitations: ["No electric assistance", "Not suitable for off-road"],
+    limitations: ["No electric assistance"],
     stripePriceId: "",
     stripeIds: {
       monthly: undefined,
@@ -35,7 +35,7 @@ export const pricingPlans: PricingPlan[] = [
       "Battery range of up to 50 miles",
       "Easy-to-use throttle control",
     ],
-    limitations: ["Higher weight due to battery", "Limited battery duration"],
+    limitations: ["Higher weight due to battery"],
     stripePriceId: "",
     stripeIds: {
       monthly: undefined,
@@ -54,7 +54,7 @@ export const pricingPlans: PricingPlan[] = [
       "Easy-grip handlebars",
       "Lightweight frame",
     ],
-    limitations: ["Not suitable for children under 6", "Single-speed gear"],
+    limitations: ["Not suitable for children under 6"],
     stripePriceId: "",
     stripeIds: {
       monthly: undefined,

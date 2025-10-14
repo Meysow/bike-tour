@@ -101,6 +101,7 @@ export interface TourContent {
   subtitle: string;
   description: string;
   price: string;
+  image: string; // Image key (e.g., "couple-riding", "riding", "ebike")
   details: {
     location: string;
     duration: string;
@@ -114,6 +115,28 @@ export interface TourContent {
   ctaMoreInfo: string;
   ctaBookNow: string;
   ctaContact: string;
+}
+
+export interface BikeContent {
+  name: string;
+  description: string;
+  dailyRate: number;
+  image: string; // Image key (e.g., "deluxe7", "ebike", "children")
+  features: string[];
+  limitations: string[];
+}
+
+export interface TourData {
+  id: string;
+  title: string;
+  description: string;
+  details: string;
+  startingSpot?: string;
+  duration?: string;
+  break?: string;
+  price: string;
+  image: StaticImageData;
+  isPrivate?: boolean;
 }
 
 export enum BikeType {

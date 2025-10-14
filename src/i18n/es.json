@@ -19,6 +19,7 @@
       "subtitle": "Todo alrededor de París en Bicicleta",
       "description": "¡Con nuestro Tour Guiado de París en Bicicleta, descubrir la capital se convierte en un juego de niños! Este itinerario ciclista es accesible para todos los niveles. Te ofrecemos una mezcla única de nuestros mejores spots, calles típicamente parisinas y los monumentos más emblemáticos de la ciudad. Ideal para aquellos que quieren descubrir el corazón de París y sus grandes monumentos. ¡El programa incluye descubrir ambas orillas del Sena! Tu guía te contará historias fascinantes y a menudo divertidas sobre la historia de París. El ambiente es perfecto. Solo tienes que dejarte guiar y disfrutar de este magnífico paseo en bicicleta para descubrir París. ¡Prepárate para esta emocionante aventura!",
       "price": "Desde €40",
+      "image": "louvre",
       "details": {
         "location": "🌍 - Punto de partida: 20 Rue Greneta, 75002 París",
         "duration": "⏰ - 3 Horas - 12 kilómetros",
@@ -32,6 +33,7 @@
       "subtitle": "Experiencia Auténtica de París",
       "description": "¡Prepárate para descubrir mi joya oculta favorita en París! 🚴‍♂️ Este tour del Canal Saint-Martin te lleva lejos de las multitudes turísticas para explorar el corazón bohemio de los distritos 10 y 11. Navegaremos a lo largo del pintoresco canal, pasaremos por sus icónicas esclusas y nos empaparemos de la vibrante atmósfera local que hace que este barrio sea tan especial. Compartiré historias fascinantes sobre la transformación del área mientras descubrimos cafés ocultos y tiendas de artesanía. ¡Esto es París como los locales lo viven! Perfecto para aquellos que buscan una aventura auténtica y fuera de los caminos trillados. ✨",
       "price": "Desde €40",
+      "image": "palais",
       "details": {
         "location": "🌍 - Punto de partida: 20 Rue Greneta, 75002 París",
         "duration": "⏰ - 2,5 Horas - 10 kilómetros",
@@ -45,6 +47,7 @@
       "subtitle": "Tours Privados",
       "description": "¡En Rentabike París nos gusta adaptarnos y atender tus necesidades! Ya sea que busques crear un tour personalizado, organizar un evento de team building, o agregar un toque especial a tu evento, ¡estamos abiertos a todas las posibilidades y esperamos ansiosamente tus consultas!",
       "price": "Cotización Personalizada",
+      "image": "prive",
       "details": {
         "location": "",
         "duration": "",
@@ -62,6 +65,50 @@
       "ctaMoreInfo": "Más Información",
       "ctaBookNow": "Reservar Ahora",
       "ctaContact": "Contáctanos"
+    }
+  },
+  "rent": {
+    "title": "Experimenta París con <highlight>Bicicletas de Calidad</highlight>",
+    "subtitle": "¡Elige de nuestra flota cuidadosamente seleccionada de <highlight>bicicletas de calidad</highlight>, cada una lista para brindarte la experiencia ciclista perfecta!",
+    "rentalToggle": {
+      "shortTerm": "Alquiler de 1 a 3 días",
+      "longTerm": "4 días y más (ahorra 10%)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Bicicleta Normal",
+      "description": "Una bicicleta urbana cómoda y confiable, ideal para explorar París a tu propio ritmo con siete marchas suaves.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "Sistema de cambios de 7 velocidades",
+        "Sillín cómodo para paseos largos",
+        "Diseño robusto apto para la ciudad"
+      ],
+      "limitations": ["Sin asistencia eléctrica"]
+    },
+    "ebike": {
+      "name": "Bicicleta Eléctrica - Power 1",
+      "description": "Descubre París sin esfuerzo con tecnología de asistencia al pedaleo. Perfecta para distancias largas y rutas montañosas.",
+      "dailyRate": 25,
+      "image": "ebike",
+      "features": [
+        "Asistencia eléctrica al pedaleo",
+        "Autonomía de batería hasta 80 km",
+        "Control de puño fácil de usar"
+      ],
+      "limitations": ["Mayor peso debido a la batería"]
+    },
+    "children": {
+      "name": "Bicicleta Infantil 20\" o 24\"",
+      "description": "Segura y resistente, ideal para ciclistas jóvenes de 6 a 9 años. Perfecta para salidas familiares y paseos por parques urbanos. Tamaño 20\" o 24\"",
+      "dailyRate": 13,
+      "image": "children",
+      "features": [
+        "Ruedas de 20 pulgadas para pedalear estable",
+        "Manillares fáciles de agarrar",
+        "Marco ligero"
+      ],
+      "limitations": ["No apta para niños menores de 6 años"]
     }
   },
   "common": {

@@ -19,6 +19,7 @@
       "subtitle": "Tout autour de Paris en Vélo",
       "description": "Avec notre Visite Guidée de Paris à Vélo, découvrir la capitale devient un jeu d'enfant ! Cet itinéraire cyclable est accessible à tous les niveaux. Nous vous proposons un mélange unique de nos meilleurs spots, des rues typiquement parisiennes et des monuments les plus emblématiques de la ville. Idéal pour ceux qui veulent découvrir le cœur de Paris et ses grands monuments. Le programme inclut la découverte des deux rives de la Seine ! Votre guide vous racontera des histoires fascinantes et souvent amusantes sur l'histoire de Paris. L'ambiance est au rendez-vous. Il ne vous reste plus qu'à vous laisser guider et profiter de cette magnifique balade à vélo pour découvrir Paris. Préparez-vous pour cette aventure passionnante.",
       "price": "À partir de 40€",
+      "image": "louvre",
       "details": {
         "location": "🌍 - Point de départ : 20 Rue Greneta, 75002 Paris",
         "duration": "⏰ - 3 Heures - 12 kilomètres",
@@ -32,6 +33,7 @@
       "subtitle": "Expérience Parisienne Authentique",
       "description": "Préparez-vous à découvrir ma perle cachée préférée à Paris ! 🚴‍♂️ Cette visite du Canal Saint-Martin vous emmène loin des foules touristiques pour explorer le cœur bohème des 10e et 11e arrondissements. Nous longerons le canal pittoresque, passerons ses écluses emblématiques et nous imprégnerons de l'atmosphère locale vibrante qui rend ce quartier si spécial. Je partagerai des histoires fascinantes sur la transformation du quartier pendant que nous découvrirons des cafés cachés et des boutiques d'artisans. C'est Paris comme les locaux le vivent ! Parfait pour ceux qui cherchent une aventure authentique et hors des sentiers battus. ✨",
       "price": "À partir de 40€",
+      "image": "palais",
       "details": {
         "location": "🌍 - Point de départ : 20 Rue Greneta, 75002 Paris",
         "duration": "⏰ - 2h30 - 10 kilomètres",
@@ -45,6 +47,7 @@
       "subtitle": "Visites Privées",
       "description": "Chez Rentabike Paris, nous aimons nous adapter et répondre à vos besoins ! Que vous souhaitiez créer une visite personnalisée, organiser un événement de team building, ou ajouter une touche spéciale à votre événement, nous sommes ouverts à toutes les possibilités et attendons avec impatience vos demandes !",
       "price": "Devis Personnalisé",
+      "image": "prive",
       "details": {
         "location": "",
         "duration": "",
@@ -62,6 +65,50 @@
       "ctaMoreInfo": "Plus d'Infos",
       "ctaBookNow": "Réserver Maintenant",
       "ctaContact": "Nous Contacter"
+    }
+  },
+  "rent": {
+    "title": "Découvrez Paris avec nos <highlight>Vélos de Qualité</highlight>",
+    "subtitle": "Choisissez parmi notre flotte soigneusement sélectionnée de <highlight>vélos de qualité</highlight>, chacun prêt à vous offrir l'expérience cycliste parfaite !",
+    "rentalToggle": {
+      "shortTerm": "Location 1 à 3 jours",
+      "longTerm": "4 jours et plus (économisez 10%)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Vélo Normal",
+      "description": "Un vélo de ville confortable et fiable, idéal pour explorer Paris à votre rythme avec sept vitesses fluides.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "Système de vitesses à 7 rapports",
+        "Selle confortable pour les longues balades",
+        "Design robuste adapté à la ville"
+      ],
+      "limitations": ["Pas d'assistance électrique"]
+    },
+    "ebike": {
+      "name": "Vélo Électrique - Power 1",
+      "description": "Découvrez Paris sans effort grâce à la technologie d'assistance au pédalage. Parfait pour les longues distances et les routes vallonnées.",
+      "dailyRate": 25,
+      "image": "ebike",
+      "features": [
+        "Assistance électrique au pédalage",
+        "Autonomie de batterie jusqu'à 80 km",
+        "Contrôle de poignée facile à utiliser"
+      ],
+      "limitations": ["Poids plus élevé dû à la batterie"]
+    },
+    "children": {
+      "name": "Vélo Enfant 20\" ou 24\"",
+      "description": "Sûr et robuste, idéal pour les jeunes cyclistes de 6 à 9 ans. Parfait pour les sorties en famille et les balades dans les parcs de la ville. Taille 20\" ou 24\"",
+      "dailyRate": 13,
+      "image": "children",
+      "features": [
+        "Roues de 20 pouces pour une conduite stable",
+        "Guidon facile à saisir",
+        "Cadre léger"
+      ],
+      "limitations": ["Ne convient pas aux enfants de moins de 6 ans"]
     }
   },
   "common": {

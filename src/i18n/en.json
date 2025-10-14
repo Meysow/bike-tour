@@ -19,6 +19,7 @@
       "subtitle": "All around Paris by Bike",
       "description": "With our Paris Guided Bike Tour, discovering the capital becomes child's play! This cycling itinerary is accessible to all levels. We offer a unique mix of our top spots, typical Parisian streets and the city's most emblematic landmarks. Ideal for those who want to discover the heart of Paris and its great monuments. The programme includes discovering both banks of the Seine! Your guide will tell you fascinating and often amusing stories about the history of Paris. The atmosphere is just right. All you have to do is let yourself be guided and enjoy this magnificent bike ride to discover Paris. Get ready for this exciting adventure.",
       "price": "From €40",
+      "image": "louvre",
       "details": {
         "location": "🌍 - Starting spot: 20 Rue Greneta, 75002 Paris",
         "duration": "⏰ - 3 Hours - 12 kilometers",
@@ -32,6 +33,7 @@
       "subtitle": "Authentic Paris Experience",
       "description": "Get ready to discover my favorite hidden gem in Paris! 🚴‍♂️ This Canal Saint-Martin tour takes you away from the tourist crowds to explore the bohemian heart of the 10th and 11th arrondissements. We'll cruise along the picturesque canal, pass through its iconic locks, and soak up the vibrant local atmosphere that makes this neighborhood so special. I'll share fascinating stories about the area's transformation while we discover hidden cafés and artisan shops. This is Paris as the locals live it! Perfect for those seeking an authentic, off-the-beaten-path adventure. ✨",
       "price": "From €40",
+      "image": "palais",
       "details": {
         "location": "🌍 - Starting spot: 20 Rue Greneta, 75002 Paris",
         "duration": "⏰ - 2.5 Hours - 10 kilometers",
@@ -45,6 +47,7 @@
       "subtitle": "Private Tours",
       "description": "At Rentabike Paris, we like to adapt and cater to your needs! Whether you're seeking to create a personalized tour, organize a team-building event, or add a special touch to your event, we are open to all possibilities and eagerly await your inquiries!",
       "price": "Custom Quote",
+      "image": "prive",
       "details": {
         "location": "",
         "duration": "",
@@ -62,6 +65,50 @@
       "ctaMoreInfo": "More Info",
       "ctaBookNow": "Book Now",
       "ctaContact": "Contact Us"
+    }
+  },
+  "rent": {
+    "title": "Experience Paris with <highlight>Quality Bikes</highlight>",
+    "subtitle": "Choose from our carefully selected fleet of <highlight>quality bikes</highlight>, each one ready to provide you with the perfect cycling experience!",
+    "rentalToggle": {
+      "shortTerm": "1 to 3 Days Rental",
+      "longTerm": "4 Days and more (save 10%)"
+    },
+    "deluxe7": {
+      "name": "Deluxe 7 - Normal Bike",
+      "description": "A comfortable and reliable city bike, ideal for exploring Paris at your own pace with seven smooth gears.",
+      "dailyRate": 15,
+      "image": "deluxe7",
+      "features": [
+        "7-speed gear system",
+        "Comfortable saddle for long rides",
+        "Robust city-friendly design"
+      ],
+      "limitations": ["No electric assistance"]
+    },
+    "ebike": {
+      "name": "Electric Bike - Power 1",
+      "description": "Discover Paris effortlessly with pedal-assist technology. Perfect for longer distances and hilly routes.",
+      "dailyRate": 25,
+      "image": "ebike",
+      "features": [
+        "Electric pedal-assist",
+        "Battery range of up to 50 miles",
+        "Easy-to-use throttle control"
+      ],
+      "limitations": ["Higher weight due to battery"]
+    },
+    "children": {
+      "name": "Children's Bike 20\" or 24\"",
+      "description": "Safe and sturdy, ideal for young riders aged 6-9. Perfect for family outings and city park rides. Size 20\" or 24\"",
+      "dailyRate": 13,
+      "image": "children",
+      "features": [
+        "20-inch wheels for stable riding",
+        "Easy-grip handlebars",
+        "Lightweight frame"
+      ],
+      "limitations": ["Not suitable for children under 6"]
     }
   },
   "common": {
