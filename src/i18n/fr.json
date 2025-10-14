@@ -401,5 +401,22 @@
       "rentBike": "Louer un Vélo",
       "findUsTitle": "Nous <highlight>Trouver</highlight>"
     }
+  },
+  "blog": {
+    "page": {
+      "heroTitle": "Notre <highlight>Blog</highlight>",
+      "heroSubtitle": "Découvrez nos conseils, histoires et insights sur le cyclisme à Paris. Des joyaux cachés aux conseils de sécurité, notre blog a tout ce dont vous avez besoin pour profiter au maximum de votre aventure vélo dans la Ville Lumière."
+    },
+    "list": {
+      "latestArticles": "Derniers articles",
+      "subtitle": "Découvrez nos conseils et histoires sur le cyclisme à Paris",
+      "noArticlesTitle": "Aucun article pour le moment",
+      "noArticlesDescription": "Les premiers articles arrivent bientôt ! Revenez plus tard pour découvrir nos conseils et histoires sur le cyclisme à Paris.",
+      "filterByTags": "Filtrer par tags :",
+      "clearAll": "Effacer tout",
+      "articlesFound": "article trouvé",
+      "articlesFoundPlural": "articles trouvés",
+      "containingAllSelectedTags": "(contenant tous les tags sélectionnés)"
+    }
   }
 }

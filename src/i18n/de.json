@@ -386,5 +386,22 @@
       "rentBike": "Fahrrad mieten",
       "findUsTitle": "Finden Sie <highlight>uns</highlight>"
     }
+  },
+  "blog": {
+    "page": {
+      "heroTitle": "Unser <highlight>Blog</highlight>",
+      "heroSubtitle": "Entdecken Sie Tipps, Geschichten und Einblicke über das Radfahren in Paris. Von versteckten Juwelen bis hin zu Sicherheitstipps - unser Blog hat alles, was Sie für Ihr perfektes Radabenteuer in der Stadt des Lichts benötigen."
+    },
+    "list": {
+      "latestArticles": "Neueste Artikel",
+      "subtitle": "Entdecken Sie unsere Tipps und Geschichten über das Radfahren in Paris",
+      "noArticlesTitle": "Noch keine Artikel",
+      "noArticlesDescription": "Die ersten Artikel kommen bald! Schauen Sie später vorbei, um unsere Tipps und Geschichten über das Radfahren in Paris zu entdecken.",
+      "filterByTags": "Nach Tags filtern:",
+      "clearAll": "Alle löschen",
+      "articlesFound": "Artikel gefunden",
+      "articlesFoundPlural": "Artikel gefunden",
+      "containingAllSelectedTags": "(enthält alle ausgewählten Tags)"
+    }
   }
 }
