@@ -14,6 +14,11 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+interface FAQQuestion {
+  question: string;
+  answer: string;
+}
+
 export function FAQSection() {
   const { locale } = useLocalizedRoutes();
   const t = getSectionTranslations(locale, "faq");
@@ -37,7 +42,7 @@ export function FAQSection() {
         </div>
 
         <div className="grid gap-0 sm:gap-2 md:gap-4">
-          {t.questions.map((item: any) => (
+          {t.questions.map((item: FAQQuestion) => (
             <Accordion key={item.question} type="single" collapsible>
               <AccordionItem value={item.question}>
                 <AccordionTrigger className="sm:text-xl sm:leading-6">
