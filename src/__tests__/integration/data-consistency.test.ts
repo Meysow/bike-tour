@@ -1,7 +1,12 @@
 import { routes } from "@/config/routes";
-import { frequentlyAskedQuestions } from "@/data/frequently-asked-questions";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { pricingPlans } from "@/data/pricing-plans";
 import { testimonials } from "@/data/testimonials";
+import { Locale } from "@/config/i18n";
+
+// Get FAQ data from i18n for testing (using English as default)
+const faqData = getSectionTranslations("en" as Locale, "faq");
+const frequentlyAskedQuestions = faqData.questions || [];
 
 describe("Data Consistency Integration Tests", () => {
   describe("Cross-Data Validation", () => {
