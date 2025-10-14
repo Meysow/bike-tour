@@ -109,7 +109,8 @@
         "Lightweight frame"
       ],
       "limitations": ["Not suitable for children under 6"]
-    }
+    },
+    "ctaRentNow": "Rent Now"
   },
   "common": {
     "learnMore": "Learn More",

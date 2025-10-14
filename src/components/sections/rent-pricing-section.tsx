@@ -157,7 +157,7 @@ export function RentPricingSection(): JSX.Element {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Rent Now
+                      {t.ctaRentNow}
                     </Link>
                   </Button>
                 </CardContent>

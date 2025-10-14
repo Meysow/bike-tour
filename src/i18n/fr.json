@@ -109,7 +109,8 @@
         "Cadre léger"
       ],
       "limitations": ["Ne convient pas aux enfants de moins de 6 ans"]
-    }
+    },
+    "ctaRentNow": "Louer Maintenant"
   },
   "common": {
     "learnMore": "En Savoir Plus",
