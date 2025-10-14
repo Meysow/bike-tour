@@ -386,5 +386,22 @@
       "rentBike": "Huur een Fiets",
       "findUsTitle": "Vind <highlight>ons</highlight>"
     }
+  },
+  "blog": {
+    "page": {
+      "heroTitle": "Onze <highlight>Blog</highlight>",
+      "heroSubtitle": "Ontdek tips, verhalen en inzichten over fietsen in Parijs. Van verborgen juwelen tot veiligheidstips, onze blog heeft alles wat je nodig hebt om het meeste uit je fietsavontuur in de Lichtstad te halen."
+    },
+    "list": {
+      "latestArticles": "Laatste Artikelen",
+      "subtitle": "Ontdek onze tips en verhalen over fietsen in Parijs",
+      "noArticlesTitle": "Nog geen artikelen",
+      "noArticlesDescription": "De eerste artikelen komen binnenkort! Kom later terug om onze tips en verhalen over fietsen in Parijs te ontdekken.",
+      "filterByTags": "Filter op tags:",
+      "clearAll": "Alles wissen",
+      "articlesFound": "artikel gevonden",
+      "articlesFoundPlural": "artikelen gevonden",
+      "containingAllSelectedTags": "(bevat alle geselecteerde tags)"
+    }
   }
 }

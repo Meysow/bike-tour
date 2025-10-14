@@ -2,6 +2,13 @@ import { render, screen, waitFor } from "@/__tests__/utils/test-utils";
 import { TagFilter } from "@/components/blog/tag-filter";
 import { BlogPost } from "@/types/blog";
 import userEvent from "@testing-library/user-event";
+import { useParams, usePathname } from "next/navigation";
+
+// Mock Next.js navigation hooks
+jest.mock("next/navigation", () => ({
+  useParams: jest.fn(),
+  usePathname: jest.fn(),
+}));
 
 const mockPosts: BlogPost[] = [
   {
@@ -41,9 +48,17 @@ const mockPosts: BlogPost[] = [
 
 describe("TagFilter Component", () => {
   const mockOnFilteredPosts = jest.fn();
+  const mockUseParams = useParams as jest.MockedFunction<typeof useParams>;
+  const mockUsePathname = usePathname as jest.MockedFunction<
+    typeof usePathname
+  >;
 
   beforeEach(() => {
     jest.clearAllMocks();
+    // Mock useParams to return French locale
+    mockUseParams.mockReturnValue({ locale: "fr" });
+    // Mock usePathname to return a French path
+    mockUsePathname.mockReturnValue("/fr/blog");
   });
 
   it("should render filter label", () => {

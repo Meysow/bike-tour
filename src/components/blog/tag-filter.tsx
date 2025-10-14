@@ -2,6 +2,8 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { BlogPost } from "@/types/blog";
 import { X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
@@ -12,6 +14,8 @@ interface TagFilterProps {
 }
 
 export function TagFilter({ posts, onFilteredPosts }: TagFilterProps) {
+  const { locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "blog");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   // Extraire tous les tags uniques des posts
@@ -49,7 +53,7 @@ export function TagFilter({ posts, onFilteredPosts }: TagFilterProps) {
     <div className="space-y-4">
       <div className="flex flex-wrap items-center gap-2">
         <span className="text-sm font-medium text-muted-foreground">
-          Filtrer par tags :
+          {t.list.filterByTags}
         </span>
         {selectedTags.length > 0 && (
           <Button
@@ -59,7 +63,7 @@ export function TagFilter({ posts, onFilteredPosts }: TagFilterProps) {
             className="h-6 px-2 text-xs text-muted-foreground hover:text-foreground"
           >
             <X className="h-3 w-3 mr-1" />
-            Effacer tout
+            {t.list.clearAll}
           </Button>
         )}
       </div>
@@ -87,10 +91,12 @@ export function TagFilter({ posts, onFilteredPosts }: TagFilterProps) {
 
       {selectedTags.length > 0 && (
         <div className="text-sm text-muted-foreground">
-          {filteredPosts.length} article{filteredPosts.length !== 1 ? "s" : ""}{" "}
-          trouvé{filteredPosts.length !== 1 ? "s" : ""}
+          {filteredPosts.length}{" "}
+          {filteredPosts.length === 1
+            ? t.list.articlesFound
+            : t.list.articlesFoundPlural}
           {selectedTags.length > 1 && (
-            <span className="ml-1">(contenant tous les tags sélectionnés)</span>
+            <span className="ml-1">{t.list.containingAllSelectedTags}</span>
           )}
         </div>
       )}

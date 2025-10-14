@@ -386,5 +386,22 @@
       "rentBike": "Alquilar una Bicicleta",
       "findUsTitle": "Encuéntranos <highlight>aquí</highlight>"
     }
+  },
+  "blog": {
+    "page": {
+      "heroTitle": "Nuestro <highlight>Blog</highlight>",
+      "heroSubtitle": "Descubre consejos, historias e insights sobre el ciclismo en París. Desde joyas ocultas hasta consejos de seguridad, nuestro blog tiene todo lo que necesitas para aprovechar al máximo tu aventura en bicicleta en la Ciudad de la Luz."
+    },
+    "list": {
+      "latestArticles": "Últimos Artículos",
+      "subtitle": "Descubre nuestros consejos e historias sobre el ciclismo en París",
+      "noArticlesTitle": "No hay artículos por ahora",
+      "noArticlesDescription": "¡Los primeros artículos llegarán pronto! Vuelve más tarde para descubrir nuestros consejos e historias sobre el ciclismo en París.",
+      "filterByTags": "Filtrar por etiquetas:",
+      "clearAll": "Limpiar todo",
+      "articlesFound": "artículo encontrado",
+      "articlesFoundPlural": "artículos encontrados",
+      "containingAllSelectedTags": "(contiene todas las etiquetas seleccionadas)"
+    }
   }
 }

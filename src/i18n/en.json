@@ -386,5 +386,22 @@
       "rentBike": "Rent a Bike",
       "findUsTitle": "Find <highlight>Us</highlight>"
     }
+  },
+  "blog": {
+    "page": {
+      "heroTitle": "Our <highlight>Blog</highlight>",
+      "heroSubtitle": "Discover tips, stories, and insights about cycling in Paris. From hidden gems to safety tips, our blog has everything you need to make the most of your bike adventure in the City of Light."
+    },
+    "list": {
+      "latestArticles": "Latest Articles",
+      "subtitle": "Discover our tips and stories about cycling in Paris",
+      "noArticlesTitle": "No articles for now",
+      "noArticlesDescription": "The first articles are coming soon! Come back later to discover our tips and stories about cycling in Paris.",
+      "filterByTags": "Filter by tags:",
+      "clearAll": "Clear all",
+      "articlesFound": "article found",
+      "articlesFoundPlural": "articles found",
+      "containingAllSelectedTags": "(containing all selected tags)"
+    }
   }
 }

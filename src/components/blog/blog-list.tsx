@@ -1,5 +1,7 @@
 "use client";
 
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { BlogPost } from "@/types/blog";
 import { useState } from "react";
 import { BlogCard } from "./blog-card";
@@ -10,6 +12,8 @@ interface BlogListProps {
 }
 
 export function BlogList({ posts }: BlogListProps) {
+  const { locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "blog");
   const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>(posts);
   if (posts.length === 0) {
     return (
@@ -19,11 +23,10 @@ export function BlogList({ posts }: BlogListProps) {
             <span className="text-2xl">📝</span>
           </div>
           <h3 className="text-xl font-semibold text-foreground mb-2">
-            Aucun article pour le moment
+            {t.list.noArticlesTitle}
           </h3>
           <p className="text-muted-foreground">
-            Les premiers articles arrivent bientôt ! Revenez plus tard pour
-            découvrir nos conseils et histoires sur le cyclisme à Paris.
+            {t.list.noArticlesDescription}
           </p>
         </div>
       </div>
@@ -34,11 +37,9 @@ export function BlogList({ posts }: BlogListProps) {
     <div className="space-y-8">
       <div className="text-center">
         <h2 className="text-2xl font-bold text-foreground mb-2">
-          Derniers articles
+          {t.list.latestArticles}
         </h2>
-        <p className="text-muted-foreground">
-          Découvrez nos conseils et histoires sur le cyclisme à Paris
-        </p>
+        <p className="text-muted-foreground">{t.list.subtitle}</p>
       </div>
 
       {/* Filtre par tags */}
