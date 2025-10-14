@@ -9,13 +9,13 @@ import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import Balancer from "react-wrap-balancer";
 
 interface BlogPageProps {
-  params: {
+  params: Promise<{
     locale: Locale;
-  };
+  }>;
 }
 
 export default async function BlogPage({ params }: BlogPageProps) {
-  const { locale } = params;
+  const { locale } = await params;
   const t = getSectionTranslations(locale, "blog");
   const posts = await getAllPosts();
 
