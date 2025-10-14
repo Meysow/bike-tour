@@ -89,7 +89,7 @@
     "ebike": {
       "name": "Elektrische Fiets - Power 1",
       "description": "Ontdek Parijs moeiteloos met trapondersteuning technologie. Perfect voor langere afstanden en heuvelachtige routes.",
-      "dailyRate": 25,
+      "dailyRate": 30,
       "image": "ebike",
       "features": [
         "Elektrische trapondersteuning",
@@ -101,7 +101,7 @@
     "children": {
       "name": "Kinderfiets 20\" of 24\"",
       "description": "Veilig en stevig, ideaal voor jonge rijders van 6-9 jaar. Perfect voor familie-uitstapjes en stadsparkritten. Maat 20\" of 24\"",
-      "dailyRate": 13,
+      "dailyRate": 15,
       "image": "children",
       "features": [
         "20-inch wielen voor stabiel rijden",
@@ -140,6 +140,20 @@
       "description": "Houd je fiets veilig met een zwaar fietsslot. Essentieel voor veilige stops tijdens je stadsverkenning of tijdens het genieten van een koffiepauze.",
       "image": "lock"
     }
+  },
+  "testimonials": {
+    "title": "Sluit je aan bij onze bloeiende gemeenschap van <highlight>Tevreden Rijders</highlight>",
+    "subtitle": "Ontdek hoe onze klanten hun ritten <highlight>memorabel</highlight> hebben gemaakt met ons.",
+    "readMore": "Lees meer",
+    "readLess": "Lees minder"
+  },
+  "instagram": {
+    "title": "Volg onze <highlight>Avonturen</highlight>",
+    "subtitle": "Ontdek de mooiste momenten van onze fietstochten door Parijs en sluit je aan bij onze gemeenschap van <highlight>rijders</highlight>."
+  },
+  "partners": {
+    "title": "Ontmoet onze <highlight>Geweldige Partners</highlight>",
+    "subtitle": "Van vertrouwde boekingsplatforms tot bedrijven die onze tours hebben ervaren, ontdek de ongelooflijke organisaties die ons helpen de magie van Parijs te delen met <highlight>rijders wereldwijd</highlight>."
   },
   "common": {
     "learnMore": "Meer Informatie",

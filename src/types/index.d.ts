@@ -61,7 +61,7 @@ export interface Testimonial {
   body: string;
   name: string;
   role: string;
-  avatar: string;
+  avatar: string; // Image key (e.g., "derrick-bowman", "troy-castillo", etc.)
 }
 
 export interface Bike {

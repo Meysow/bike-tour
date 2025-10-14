@@ -89,7 +89,7 @@
     "ebike": {
       "name": "Vélo Électrique - Power 1",
       "description": "Découvrez Paris sans effort grâce à la technologie d'assistance au pédalage. Parfait pour les longues distances et les routes vallonnées.",
-      "dailyRate": 25,
+      "dailyRate": 30,
       "image": "ebike",
       "features": [
         "Assistance électrique au pédalage",
@@ -101,7 +101,7 @@
     "children": {
       "name": "Vélo Enfant 20\" ou 24\"",
       "description": "Sûr et robuste, idéal pour les jeunes cyclistes de 6 à 9 ans. Parfait pour les sorties en famille et les balades dans les parcs de la ville. Taille 20\" ou 24\"",
-      "dailyRate": 13,
+      "dailyRate": 15,
       "image": "children",
       "features": [
         "Roues de 20 pouces pour une conduite stable",
@@ -140,6 +140,20 @@
       "description": "Gardez votre vélo en sécurité avec un antivol vélo haute sécurité. Essentiel pour des arrêts sûrs pendant votre exploration de la ville ou en profitant d'une pause café.",
       "image": "lock"
     }
+  },
+  "testimonials": {
+    "title": "Rejoignez notre communauté florissante de <highlight>Cyclistes Satisfaits</highlight>",
+    "subtitle": "Découvrez comment nos clients ont rendu leurs balades <highlight>mémorables</highlight> avec nous.",
+    "readMore": "Lire plus",
+    "readLess": "Lire moins"
+  },
+  "instagram": {
+    "title": "Suivez nos <highlight>Aventures</highlight>",
+    "subtitle": "Découvrez les plus beaux moments de nos visites à vélo à travers Paris et rejoignez notre communauté de <highlight>cyclistes</highlight>."
+  },
+  "partners": {
+    "title": "Rencontrez nos <highlight>Partenaires Extraordinaires</highlight>",
+    "subtitle": "Des plateformes de réservation de confiance aux entreprises qui ont vécu nos visites, découvrez les organisations incroyables qui nous aident à partager la magie de Paris avec les <highlight>cyclistes du monde entier</highlight>."
   },
   "common": {
     "learnMore": "En Savoir Plus",

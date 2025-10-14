@@ -5,6 +5,9 @@ import { LoadingSpinner } from "@/components/shared/loading-spinner";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { env } from "@/env.mjs";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { HighlightText } from "@/lib/utils/highlight";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { InstagramPost } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,6 +32,8 @@ export function InstagramCarousel({
   limit = 8,
   className = "",
 }: InstagramCarouselProps) {
+  const { locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "instagram");
   const [posts, setPosts] = useState<InstagramPost[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -133,17 +138,14 @@ export function InstagramCarousel({
         <div className="flex flex-col items-center gap-6 text-center">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <Balancer>
-              Follow our{" "}
-              <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
-                Adventures
-              </span>
+              <HighlightText gradient={true}>{t.title}</HighlightText>
             </Balancer>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
             <Balancer>
-              Discover the most beautiful moments from our bike tours through{" "}
-              <span className="font-semibold text-foreground">Paris</span> and
-              join our community of riders.
+              <HighlightText gradient={false} className="text-foreground">
+                {t.subtitle}
+              </HighlightText>
             </Balancer>
           </h3>
         </div>

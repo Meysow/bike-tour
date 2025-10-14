@@ -1,27 +1,32 @@
+"use client";
+
 import Link from "next/link";
 
 import { PartnersStack } from "@/data/partners-stack";
 
 import { Icons } from "@/components/shared/icons";
+import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { HighlightText } from "@/lib/utils/highlight";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import Balancer from "react-wrap-balancer";
 
 export function PartnersSection(): JSX.Element {
+  const { locale } = useLocalizedRoutes();
+  const t = getSectionTranslations(locale, "partners");
+
   return (
     <section id="partners-section" aria-label="partners section">
       <div className="flex flex-col items-center gap-6 text-center">
         <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           <Balancer>
-            Riding the city{" "}
-            <span className="bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent">
-              Together
-            </span>
+            <HighlightText gradient={true}>{t.title}</HighlightText>
           </Balancer>
         </h2>
         <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
           <Balancer>
-            Explore the journeys of our{" "}
-            <span className="font-semibold text-foreground">trusted</span>{" "}
-            partners who help us bring the best cycling experiences to you.
+            <HighlightText gradient={false} className="text-foreground">
+              {t.subtitle}
+            </HighlightText>
           </Balancer>
         </h3>
       </div>

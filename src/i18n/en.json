@@ -89,7 +89,7 @@
     "ebike": {
       "name": "Electric Bike - Power 1",
       "description": "Discover Paris effortlessly with pedal-assist technology. Perfect for longer distances and hilly routes.",
-      "dailyRate": 25,
+      "dailyRate": 30,
       "image": "ebike",
       "features": [
         "Electric pedal-assist",
@@ -101,7 +101,7 @@
     "children": {
       "name": "Children's Bike 20\" or 24\"",
       "description": "Safe and sturdy, ideal for young riders aged 6-9. Perfect for family outings and city park rides. Size 20\" or 24\"",
-      "dailyRate": 13,
+      "dailyRate": 15,
       "image": "children",
       "features": [
         "20-inch wheels for stable riding",
@@ -140,6 +140,20 @@
       "description": "Keep your bike secure with a heavy-duty bike lock. Essential for safe stops during your city exploration or while enjoying a coffee break.",
       "image": "lock"
     }
+  },
+  "testimonials": {
+    "title": "Join our thriving community of <highlight>Satisfied Riders</highlight>",
+    "subtitle": "Discover how our customers have made their rides <highlight>memorable</highlight> with us.",
+    "readMore": "Read more",
+    "readLess": "Read less"
+  },
+  "instagram": {
+    "title": "Follow our <highlight>Adventures</highlight>",
+    "subtitle": "Discover the most beautiful moments from our bike tours through Paris and join our community of <highlight>riders</highlight>."
+  },
+  "partners": {
+    "title": "Meet Our <highlight>Amazing Partners</highlight>",
+    "subtitle": "From trusted booking platforms to companies who've experienced our tours, discover the incredible organizations that help us share the magic of Paris with <highlight>riders worldwide</highlight>."
   },
   "common": {
     "learnMore": "Learn More",

@@ -89,7 +89,7 @@
     "ebike": {
       "name": "Bicicleta Eléctrica - Power 1",
       "description": "Descubre París sin esfuerzo con tecnología de asistencia al pedaleo. Perfecta para distancias largas y rutas montañosas.",
-      "dailyRate": 25,
+      "dailyRate": 30,
       "image": "ebike",
       "features": [
         "Asistencia eléctrica al pedaleo",
@@ -101,7 +101,7 @@
     "children": {
       "name": "Bicicleta Infantil 20\" o 24\"",
       "description": "Segura y resistente, ideal para ciclistas jóvenes de 6 a 9 años. Perfecta para salidas familiares y paseos por parques urbanos. Tamaño 20\" o 24\"",
-      "dailyRate": 13,
+      "dailyRate": 15,
       "image": "children",
       "features": [
         "Ruedas de 20 pulgadas para pedalear estable",
@@ -140,6 +140,20 @@
       "description": "Mantén tu bicicleta segura con un candado para bicicleta de alta resistencia. Esencial para paradas seguras durante tu exploración de la ciudad o mientras disfrutas de una pausa para el café.",
       "image": "lock"
     }
+  },
+  "testimonials": {
+    "title": "Únete a nuestra próspera comunidad de <highlight>Ciclistas Satisfechos</highlight>",
+    "subtitle": "Descubre cómo nuestros clientes han hecho sus paseos <highlight>memorables</highlight> con nosotros.",
+    "readMore": "Leer más",
+    "readLess": "Leer menos"
+  },
+  "instagram": {
+    "title": "Sigue nuestras <highlight>Aventuras</highlight>",
+    "subtitle": "Descubre los momentos más hermosos de nuestros tours en bicicleta por París y únete a nuestra comunidad de <highlight>ciclistas</highlight>."
+  },
+  "partners": {
+    "title": "Conoce a nuestros <highlight>Sorprendentes Socios</highlight>",
+    "subtitle": "Desde plataformas de reservas de confianza hasta empresas que han experimentado nuestros tours, descubre las organizaciones increíbles que nos ayudan a compartir la magia de París con <highlight>ciclistas de todo el mundo</highlight>."
   },
   "common": {
     "learnMore": "Saber Más",

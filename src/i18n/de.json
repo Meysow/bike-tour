@@ -89,7 +89,7 @@
     "ebike": {
       "name": "E-Bike - Power 1",
       "description": "Entdecken Sie Paris mühelos mit Pedalassistenz-Technologie. Perfekt für längere Strecken und hügelige Routen.",
-      "dailyRate": 25,
+      "dailyRate": 30,
       "image": "ebike",
       "features": [
         "Elektrische Pedalassistenz",
@@ -101,7 +101,7 @@
     "children": {
       "name": "Kinderfahrrad 20\" oder 24\"",
       "description": "Sicher und stabil, ideal für junge Fahrer im Alter von 6-9 Jahren. Perfekt für Familienausflüge und Stadtparkfahrten. Größe 20\" oder 24\"",
-      "dailyRate": 13,
+      "dailyRate": 15,
       "image": "children",
       "features": [
         "20-Zoll-Räder für stabiles Fahren",
@@ -140,6 +140,20 @@
       "description": "Halten Sie Ihr Fahrrad mit einem robusten Fahrradschloss sicher. Unverzichtbar für sichere Stopps während Ihrer Stadterkundung oder beim Genießen einer Kaffeepause.",
       "image": "lock"
     }
+  },
+  "testimonials": {
+    "title": "Treten Sie unserer florierenden Gemeinschaft von <highlight>Zufriedenen Fahrern</highlight> bei",
+    "subtitle": "Entdecken Sie, wie unsere Kunden ihre Fahrten <highlight>unvergesslich</highlight> mit uns gemacht haben.",
+    "readMore": "Mehr lesen",
+    "readLess": "Weniger lesen"
+  },
+  "instagram": {
+    "title": "Folgen Sie unseren <highlight>Abenteuern</highlight>",
+    "subtitle": "Entdecken Sie die schönsten Momente unserer Fahrradtouren durch Paris und treten Sie unserer Gemeinschaft von <highlight>Radfahrern</highlight> bei."
+  },
+  "partners": {
+    "title": "Lernen Sie unsere <highlight>Erstaunlichen Partner</highlight> kennen",
+    "subtitle": "Von vertrauenswürdigen Buchungsplattformen bis hin zu Unternehmen, die unsere Touren erlebt haben, entdecken Sie die unglaublichen Organisationen, die uns helfen, die Magie von Paris mit <highlight>Radfahrern weltweit</highlight> zu teilen."
   },
   "common": {
     "learnMore": "Mehr Erfahren",
