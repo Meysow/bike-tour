@@ -155,6 +155,80 @@
     "title": "Lernen Sie unsere <highlight>Erstaunlichen Partner</highlight> kennen",
     "subtitle": "Von vertrauenswürdigen Buchungsplattformen bis hin zu Unternehmen, die unsere Touren erlebt haben, entdecken Sie die unglaublichen Organisationen, die uns helfen, die Magie von Paris mit <highlight>Radfahrern weltweit</highlight> zu teilen."
   },
+  "faq": {
+    "title": "Haben Sie <highlight>Fragen</highlight>? Wir haben die Antworten!",
+    "subtitle": "Alles, was Sie über unsere Fahrradtouren und -vermietungen wissen müssen. Finden Sie nicht, wonach Sie suchen? <highlight>Kontaktieren Sie uns</highlight> einfach - wir sind da, um zu helfen!",
+    "questions": [
+      {
+        "question": "📍 Wo befindet sich Ihre Fahrradvermietung in Paris?",
+        "answer": "Unser Startpunkt befindet sich in der 20 Rue Greneta im 2. Arrondissement von Paris. Sie können uns leicht über die Métro-Station Réaumur Sebastopol, Linien 3 und 4, innerhalb von 2 Minuten Fußweg erreichen."
+      },
+      {
+        "question": "⏰ Wie sind unsere Öffnungszeiten?",
+        "answer": "Wir sind täglich von Montag bis Sonntag von 10 bis 19 Uhr geöffnet."
+      },
+      {
+        "question": "💰 Welche Preise für eine Fahrradvermietung?",
+        "answer": "Schauen Sie sich unsere <a href=\"/rent\">Fahrradvermietungspreise</a> an, um das beste Angebot für Ihre Reise zu finden."
+      },
+      {
+        "question": "⏱️ Wie ist die Mindestmietzeit?",
+        "answer": "Wir vermieten Fahrräder für mindestens 1 Tag, aber wenn Sie eine kurze Fahrt für ein paar Stunden genießen möchten, können Sie das trotzdem machen 😉"
+      },
+      {
+        "question": "🚴‍♂️ Wann finden die Touren statt?",
+        "answer": "Täglich von 10 bis 13 Uhr 😉 Wenn es regnet, warten wir einfach, bis es besser wird und finden die beste Lösung für Sie."
+      },
+      {
+        "question": "🔧 Was passiert, wenn ich ein Problem mit meinem Fahrrad habe?",
+        "answer": "Das werden Sie wahrscheinlich nicht. Aber wenn doch, hören Sie auf zu fahren und rufen Sie uns an 😉 Keine Sorge, wir kommen so schnell wie möglich zu Ihnen und machen es wieder funktionsfähig!"
+      },
+      {
+        "question": "🚚 Liefern oder holen Sie Fahrräder ab?",
+        "answer": "Ja, aber rufen Sie bitte vorher an, um unsere Verfügbarkeit zu überprüfen! Wir können innerhalb von Paris Intramuros für eine zusätzliche Gebühr von 40€ pro Strecke liefern oder abholen."
+      },
+      {
+        "question": "🎁 Geben Sie eine Ermäßigung für Touren & Vermietung?",
+        "answer": "Ja, wir bieten einen 20% Rabatt auf Ihre Vermietung, wenn Sie auch eine Tour machen 😉 Auch für längere Perioden als 1 Woche bieten wir Sondertarife. Bitte schauen Sie in den Reservierungsbereich."
+      },
+      {
+        "question": "👥 Geben Sie eine Ermäßigung für große Gruppen oder Langzeitmiete?",
+        "answer": "Ja, das tun wir. Gruppen von 10 Personen erhalten einen 20% Rabatt, wenn sie alle zusammen bezahlen. Für längere Perioden als 1 Woche bieten wir Sondertarife. Bitte schauen Sie in den Reservierungsbereich."
+      },
+      {
+        "question": "💳 Muss ich eine Kaution hinterlegen, um ein Fahrrad zu mieten?",
+        "answer": "Ja, es ist notwendig, eine Kaution durch Bankimprint-System zum Zeitpunkt der Reservierung zu hinterlegen. Dies variiert von 200€ bis 500€ je nach Fahrrad. Sie finden die Details für jedes während des Buchungsprozesses."
+      },
+      {
+        "question": "🔒 Hat mein Fahrrad die notwendigen Sicherheitsmerkmale?",
+        "answer": "Ja, zunächst kommen unsere Fahrräder vom Swapfiets-Partner, gut etabliert und werden ordnungsgemäß von uns gewartet 😉 Alle unsere Fahrräder sind mit Front- und Rücklichtern ausgestattet, die von einem Dynamo angetrieben werden. Gut zu wissen: Sie müssen nicht mehr treten, um die Lichter zu betreiben! Sie bekommen auch ein Schloss mit Ihrem Fahrrad."
+      },
+      {
+        "question": "📏 Welche Größen bieten Sie an?",
+        "answer": "Wir decken alle Größen für Menschen von 1,50 bis 2 Meter Größe ab."
+      },
+      {
+        "question": "⚠️ Wer ist verantwortlich, wenn das Fahrrad gestohlen oder beschädigt wird?",
+        "answer": "Sie sind es. Wir werden Ihnen die Werkzeuge und das Wissen zur Verfügung stellen, die nötig sind, um das Fahrrad sicher zu halten, aber es liegt an Ihnen, alles zurückzugeben, was wir Ihnen geben. Um Diebstahl zu vermeiden, stellen Sie immer sicher, dass Sie Ihr Fahrrad sichern! Alle unsere Fahrräder sind mit zwei integrierten Schlössern ausgestattet, unsere E-Bikes haben auch ein zusätzliches Schloss für den Akku. Sichern Sie Ihr Fahrrad immer mit beiden Schlössern. Wenn Ihr Fahrrad gestohlen (oder verloren) wird, während es ordnungsgemäß verriegelt und gesichert war, wird Ihnen eine Selbstbeteiligung berechnet. Die Höhe der Selbstbeteiligung variiert je nach Fahrradtyp."
+      },
+      {
+        "question": "🛡️ Bieten Sie eine Versicherung an?",
+        "answer": "Ja, eine zusätzliche Garantie kann vom Mieter abgeschlossen werden, um Bruch/Diebstahl abzudecken. In diesem Fall sind Sie vor teilweisem oder totalem Bruch, Diebstahl durch Raubüberfall, Einbruch oder wenn das Fahrrad an einem festen Punkt befestigt ist, geschützt. Eine Selbstbeteiligung von 10% der Reparaturrechnung, mit einem Minimum von 10€, wird bei Bruch fällig, und eine Selbstbeteiligung von 10% des Fahrradwerts bei irreparablem Bruch oder Diebstahl. Bitte beachten Sie, dass die Garantie den Kunden in keiner Weise von den notwendigen Schritten wie Strafanzeige, eidesstattlicher Erklärung oder Vorlage aller Beweise befreit, die vom Versicherer im Rahmen der Bearbeitung und Abwicklung des Schadens angefordert werden können. Im Falle eines Diebstahls muss der Mieter jeden Unfall sowohl bei Rentabike Paris als auch bei den Polizeibehörden vor Ende der Mietzeit melden, und in allen Fällen innerhalb von 24 Stunden - bei Verlust des Versicherungsschutzes."
+      },
+      {
+        "question": "📧 Brauchen Sie mehr Informationen?",
+        "answer": "<a href=\"#contact-section\">Kontaktieren Sie uns</a> per E-Mail."
+      },
+      {
+        "question": "ℹ️ Office du tourisme de Paris",
+        "answer": "Entdecken Sie mehr über Radfahren in Paris auf <a href=\"https://parisjetaime.com/eng/\" target=\"_blank\" rel=\"noopener noreferrer\">Paris Info</a>."
+      },
+      {
+        "question": "🗺️ Optimieren Sie Ihre Fahrradrouten",
+        "answer": "Finden Sie die besten Routen auf <a href=\"https://geovelo.app/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Geovelo</a>."
+      }
+    ]
+  },
   "common": {
     "learnMore": "Mehr Erfahren",
     "bookNow": "Jetzt Buchen",

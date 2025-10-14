@@ -155,6 +155,80 @@
     "title": "Ontmoet onze <highlight>Geweldige Partners</highlight>",
     "subtitle": "Van vertrouwde boekingsplatforms tot bedrijven die onze tours hebben ervaren, ontdek de ongelooflijke organisaties die ons helpen de magie van Parijs te delen met <highlight>rijders wereldwijd</highlight>."
   },
+  "faq": {
+    "title": "Heb je <highlight>Vragen</highlight>? We hebben de Antwoorden!",
+    "subtitle": "Alles wat je moet weten over onze fietstochten en verhuur. Kun je niet vinden wat je zoekt? <highlight>Neem contact op</highlight> - we zijn er om te helpen!",
+    "questions": [
+      {
+        "question": "📍 Waar is je fietsverhuur in Parijs?",
+        "answer": "Ons startpunt bevindt zich op 20 Rue Greneta in het tweede arrondissement van Parijs. Je kunt ons gemakkelijk bereiken via het metrostation Réaumur Sebastopol, lijnen 3 en 4, op 2 minuten loopafstand."
+      },
+      {
+        "question": "⏰ Wat zijn onze openingstijden?",
+        "answer": "We zijn dagelijks open van maandag tot zondag van 10.00 tot 19.00 uur."
+      },
+      {
+        "question": "💰 Wat kosten de fietsverhuur?",
+        "answer": "Bekijk onze <a href=\"/rent\">fietsverhuurprijzen</a> om de beste deal voor je reis te vinden."
+      },
+      {
+        "question": "⏱️ Wat is de minimum huurperiode?",
+        "answer": "We verhuren fietsen voor minstens 1 dag, maar als je een korte rit voor een paar uur wilt genieten, kan dat nog steeds 😉"
+      },
+      {
+        "question": "🚴‍♂️ Wanneer vinden de tours plaats?",
+        "answer": "Dagelijks van 10.00 tot 13.00 uur 😉 Als het regent, wachten we gewoon tot het beter wordt en vinden we de beste oplossing voor je."
+      },
+      {
+        "question": "🔧 Wat gebeurt er als ik een probleem heb met mijn fiets?",
+        "answer": "Dat zul je waarschijnlijk niet hebben. Maar als je dat wel hebt, stop met fietsen en bel ons 😉 Geen zorgen, we komen zo snel mogelijk naar je toe en maken het weer werkend!"
+      },
+      {
+        "question": "🚚 Leveren of halen jullie fietsen op?",
+        "answer": "Ja, maar bel alsjeblieft van tevoren om onze beschikbaarheid te controleren! We kunnen bezorgen of ophalen in Parijs Intramuros voor een extra vergoeding van 40€ per rit."
+      },
+      {
+        "question": "🎁 Geven jullie korting voor Tours & Verhuur?",
+        "answer": "Ja, we bieden 20% korting op je verhuur als je ook een tour doet 😉 Ook voor langere periodes dan 1 week bieden we speciale tarieven. Bekijk de sectie Reserveringen."
+      },
+      {
+        "question": "👥 Geven jullie korting voor grote groepen of langetermijnverhuur?",
+        "answer": "Ja, dat doen we. Groepen van 10 personen krijgen 20% korting wanneer ze allemaal samen betalen. Voor langere periodes dan 1 week bieden we speciale tarieven. Bekijk de sectie Reserveringen."
+      },
+      {
+        "question": "💳 Moet ik een borg achterlaten om een fiets te huren?",
+        "answer": "Ja, het is noodzakelijk om een borg achter te laten via banksysteem op het moment van reservering. Dit varieert van 200€ tot 500€ afhankelijk van de fiets. Je vindt de details voor elke fiets tijdens het boekingsproces."
+      },
+      {
+        "question": "🔒 Heeft mijn fiets de noodzakelijke veiligheidskenmerken?",
+        "answer": "Ja, ten eerste komen onze fietsen van de Swapfiets-partner, goed gevestigd en worden correct onderhouden door ons 😉 Alle onze fietsen zijn uitgerust met voor- en achterlichten aangedreven door een dynamo. Goed om te weten: Je hoeft niet meer te trappen om de lichten aan te drijven! Je krijgt ook een slot met je fiets."
+      },
+      {
+        "question": "📏 Welke maten bieden jullie aan?",
+        "answer": "We dekken alle maten voor mensen van 1,50 tot 2 meter hoog."
+      },
+      {
+        "question": "⚠️ Wie is verantwoordelijk als de fiets wordt gestolen of beschadigd?",
+        "answer": "Jij bent het. We zullen je de tools en kennis geven die nodig zijn om de fiets veilig te houden, maar het is aan jou om alles terug te geven wat we je geven. Om diefstal te voorkomen, zorg er altijd voor dat je je fiets beveiligt! Alle onze fietsen zijn uitgerust met twee geïntegreerde sloten, onze elektrische fietsen hebben ook een extra slot voor de batterij. Beveilig je fiets altijd met beide sloten. Als je fiets wordt gestolen (of verloren) terwijl deze correct was vergrendeld en beveiligd, wordt er een eigen risico in rekening gebracht. Het bedrag van het eigen risico varieert afhankelijk van het type fiets dat je hebt."
+      },
+      {
+        "question": "🛡️ Bieden jullie verzekering aan?",
+        "answer": "Ja, een aanvullende garantie kan worden afgesloten door de huurder om breuk/diefstal te dekken. In dit geval ben je beschermd tegen gedeeltelijke of totale breuk, diefstal door overval, inbraak of wanneer de fiets aan een vast punt is bevestigd. Een eigen risico van 10% van de reparatierekening, met een minimum van 10€, zal verschuldigd zijn in geval van breuk, en een eigen risico van 10% van de waarde van de fiets in geval van onherstelbare breuk of diefstal. Houd er rekening mee dat de garantie de klant op geen enkele manier vrijstelt van het nemen van de nodige stappen, zoals het indienen van een klacht, het afleggen van een verklaring op erewoord of het verstrekken van enig bewijs dat door de verzekeraar kan worden gevraagd als onderdeel van het beheer en de afwikkeling van de claim. In geval van diefstal moet de huurder elk ongeval melden aan Rentabike Paris evenals de politieautoriteiten vóór het einde van de huurperiode, en in alle gevallen binnen 24 uur - op straffe van het verlies van het voordeel van de verzekering."
+      },
+      {
+        "question": "📧 Meer informatie nodig?",
+        "answer": "<a href=\"#contact-section\">Neem contact met ons op</a> via onze email."
+      },
+      {
+        "question": "ℹ️ Office du tourisme de Paris",
+        "answer": "Ontdek meer over fietsen in Parijs op <a href=\"https://parisjetaime.com/eng/\" target=\"_blank\" rel=\"noopener noreferrer\">Paris Info</a>."
+      },
+      {
+        "question": "🗺️ Optimaliseer je fietsroutes",
+        "answer": "Vind de beste routes op <a href=\"https://geovelo.app/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Geovelo</a>."
+      }
+    ]
+  },
   "common": {
     "learnMore": "Meer Informatie",
     "bookNow": "Nu Boeken",

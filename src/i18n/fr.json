@@ -155,6 +155,80 @@
     "title": "Rencontrez nos <highlight>Partenaires Extraordinaires</highlight>",
     "subtitle": "Des plateformes de réservation de confiance aux entreprises qui ont vécu nos visites, découvrez les organisations incroyables qui nous aident à partager la magie de Paris avec les <highlight>cyclistes du monde entier</highlight>."
   },
+  "faq": {
+    "title": "Vous avez des <highlight>Questions</highlight> ? Nous avons les Réponses !",
+    "subtitle": "Tout ce que vous devez savoir sur nos visites à vélo et locations. Vous ne trouvez pas ce que vous cherchez ? N'hésitez pas à nous <highlight>contacter</highlight> - nous sommes là pour vous aider !",
+    "questions": [
+      {
+        "question": "📍 Où se trouve votre location de vélos à Paris ?",
+        "answer": "Notre point de départ se trouve au 20 Rue Greneta dans le 2ème arrondissement de Paris. Vous pouvez facilement nous rejoindre via la station de métro Réaumur Sebastopol, lignes 3 et 4 à 2 minutes de marche."
+      },
+      {
+        "question": "⏰ Quels sont nos horaires d'ouverture ?",
+        "answer": "Nous sommes ouverts de 10h à 19h tous les jours du lundi au dimanche."
+      },
+      {
+        "question": "💰 Quels sont les prix pour une location de vélo ?",
+        "answer": "Consultez nos <a href=\"/rent\">tarifs de location de vélos</a> pour trouver la meilleure offre pour votre voyage."
+      },
+      {
+        "question": "⏱️ Quelle est la durée minimum de location ?",
+        "answer": "Nous louons des vélos pour au moins 1 jour mais si vous voulez profiter d'une courte balade de quelques heures, c'est toujours possible 😉"
+      },
+      {
+        "question": "🚴‍♂️ Quand ont lieu les visites ?",
+        "answer": "Tous les jours de 10h à 13h 😉 S'il pleut, nous attendrons que ça s'améliore et trouverons la meilleure solution pour vous."
+      },
+      {
+        "question": "🔧 Que se passe-t-il si j'ai un problème avec mon vélo ?",
+        "answer": "Vous n'en aurez probablement pas. Mais si c'est le cas, arrêtez de pédaler et appelez-nous 😉 Pas de souci, nous viendrons vous voir dès que possible et le remettrons en état !"
+      },
+      {
+        "question": "🚚 Livrez-vous ou récupérez-vous les vélos ?",
+        "answer": "Oui, mais veuillez appeler à l'avance pour vérifier notre disponibilité ! Nous pouvons livrer ou récupérer dans Paris intramuros pour un supplément de 40€ par trajet."
+      },
+      {
+        "question": "🎁 Offrez-vous une réduction pour les visites et locations ?",
+        "answer": "Oui, nous offrons une réduction de 20% sur votre location si vous faites aussi une visite 😉 Également pour des périodes plus longues qu'une semaine, nous proposons des tarifs spéciaux. Veuillez consulter la section Réservations."
+      },
+      {
+        "question": "👥 Offrez-vous une réduction pour les grands groupes ou locations long terme ?",
+        "answer": "Oui. Les groupes de 10 personnes bénéficient d'une réduction de 20% quand ils paient tous ensemble. Pour des périodes plus longues qu'une semaine, nous proposons des tarifs spéciaux. Veuillez consulter la section Réservations."
+      },
+      {
+        "question": "💳 Dois-je laisser une caution pour louer un vélo ?",
+        "answer": "Oui, il est nécessaire de laisser une caution par empreinte bancaire au moment de la réservation. Cela varie de 200€ à 500€ selon le vélo. Vous trouverez les détails pour chacun lors du processus de réservation."
+      },
+      {
+        "question": "🔒 Mon vélo a-t-il les équipements de sécurité nécessaires ?",
+        "answer": "Oui, d'abord nos vélos proviennent du partenaire Swapfiets, bien établi et sont entretenus correctement par nous 😉 Tous nos vélos sont équipés de feux avant et arrière alimentés par une dynamo. Bon à savoir : Vous n'avez pas besoin de pédaler plus pour alimenter les lumières ! Vous obtenez aussi un antivol avec votre vélo."
+      },
+      {
+        "question": "📏 Quelles tailles proposez-vous ?",
+        "answer": "Nous couvrons toutes les tailles pour les personnes de 1,50 à 2 mètres de haut."
+      },
+      {
+        "question": "⚠️ Qui est responsable si le vélo est volé ou endommagé ?",
+        "answer": "Vous l'êtes. Nous vous fournirons les outils et connaissances nécessaires pour garder le vélo en sécurité mais c'est à vous de rendre tout ce que nous vous donnons. Pour éviter le vol, assurez-vous toujours de sécuriser votre vélo ! Tous nos vélos sont équipés de deux antivols intégrés, nos vélos électriques ont aussi un antivol supplémentaire pour la batterie. Sécurisez toujours votre vélo avec les deux antivols. Si votre vélo est volé (ou perdu) alors qu'il était verrouillé et sécurisé correctement, une franchise vous sera facturée. Le montant de la franchise varie selon le type de vélo que vous avez."
+      },
+      {
+        "question": "🛡️ Proposez-vous une assurance ?",
+        "answer": "Oui, une garantie supplémentaire peut être souscrite par le locataire pour couvrir la casse/vol. Dans ce cas, vous êtes protégé contre la casse partielle ou totale, le vol par agression, cambriolage ou quand le vélo est attaché à un point fixe. Une franchise de 10% de la facture de réparation, avec un minimum de 10€, sera payable en cas de casse, et une franchise de 10% de la valeur du cycle en cas de casse irréparable ou vol. Veuillez noter que la garantie n'exonère en aucun cas le client de prendre les mesures nécessaires, comme déposer une plainte, faire une déclaration sur l'honneur ou fournir toute preuve qui pourrait être demandée par l'assureur dans le cadre de la gestion et résolution du sinistre. En cas de vol, le locataire doit déclarer tout accident à Rentabike Paris ainsi qu'aux autorités de police avant la fin de la période de location, et dans tous les cas dans les 24 heures - sous peine de perdre le bénéfice de l'assurance."
+      },
+      {
+        "question": "📧 Besoin de plus d'informations ?",
+        "answer": "<a href=\"#contact-section\">Contactez-nous</a> par email."
+      },
+      {
+        "question": "ℹ️ Office du tourisme de Paris",
+        "answer": "Découvrez plus sur le cyclisme à Paris sur <a href=\"https://parisjetaime.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Paris Info</a>."
+      },
+      {
+        "question": "🗺️ Optimisez vos itinéraires cyclables",
+        "answer": "Trouvez les meilleurs itinéraires sur <a href=\"https://geovelo.app/fr/\" target=\"_blank\" rel=\"noopener noreferrer\">Geovelo</a>."
+      }
+    ]
+  },
   "common": {
     "learnMore": "En Savoir Plus",
     "bookNow": "Réserver Maintenant",
