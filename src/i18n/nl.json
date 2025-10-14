@@ -319,5 +319,72 @@
     "tooltip": "Neem contact met ons op via WhatsApp",
     "ariaLabel": "Neem contact op met RentaBikeParis via WhatsApp",
     "defaultMessage": "Hallo! Ik ben geïnteresseerd in uw fietsverhuur en rondleidingen in Parijs. Kunt u mij meer informatie geven?"
+  },
+  "about": {
+    "page": {
+      "heroTitle": "Welkom bij <highlight>RentaBikeParis</highlight>",
+      "heroSubtitle": "Ontdek de vrijheid van het verkennen van Parijs als een Parijzenaar! 🚴‍♂️ Sluit je aan bij mij, Léo, terwijl ik mijn passie voor fietsen en de verborgen juwelen van mijn prachtige stad deel met reizigers van over de hele wereld.",
+      "myStoryTitle": "Mijn Verhaal 🇫🇷",
+      "storyParagraph1": "Mijn naam is Léo en ik ben geboren en getogen in Parijs, waar ik nog steeds graag fiets! Van jongs af aan hield ik van rondrijden, nieuwe mensen ontmoeten en nieuwe plekken ontdekken.",
+      "storyParagraph2": "Na het afronden van mijn studies in Bremen, Duitsland, wilde ik de \"Berlijnse droom\" leven, waar ik een aantal geweldige jaren doorbracht! Deze dynamische stad gaf me de kans om mijn Engels en Duits te perfectioneren, twee talen die ik graag spreek wanneer ik de kans krijg.",
+      "storyParagraph3": "Terug in mijn prachtige Parijs sloot ik me aan bij het team van Swapfiets, een innovatief bedrijf gespecialiseerd in fietsverhuur met een onderhoudsservice inbegrepen. Dankzij deze ervaring zag ik een groeiende vraag naar kortetermijnverhuur, met name van toeristen.",
+      "storyParagraph4": "Toen besloot ik RentaBikeParis op te richten, mijn eigen fietsverhuur en rondleidingen bedrijf, met het idee om de schoonheid van mijn stad op mijn eigen manier te delen. Dankzij RentaBikeParis heb ik de mogelijkheid om mijn passie voor fietsen, verrijkende ontmoetingen en het ontdekken van Parijs te delen met reizigers van over de hele wereld! ✨",
+      "guidesTitle": "Ontmoet onze <highlight>Gidsen</highlight>",
+      "guidesSubtitle": "Gepassioneerde locals die graag hun stad delen met bezoekers van over de hele wereld.",
+      "pierre": {
+        "name": "Pierre",
+        "role": "Hoofdgids & Mede-oprichter",
+        "description": "Geboren en getogen in Parijs, kent Pierre elke hoek van de stad. Zijn passie voor fietsen en lokale geschiedenis maakt elke tour onvergetelijk."
+      },
+      "marie": {
+        "name": "Marie",
+        "role": "Kunst- & Cultuurspecialist",
+        "description": "Afgestudeerd in kunstgeschiedenis, specialiseert Marie zich in onze artistieke tours. Ze zal je Parijs laten zien door de ogen van de grote meesters."
+      },
+      "jean": {
+        "name": "Jean",
+        "role": "Fietstechnicus",
+        "description": "Onze fietsfluisteraar! Jean zorgt ervoor dat elke fiets in perfecte staat is en kan alles ter plaatse repareren. Veiligheid is zijn tweede naam."
+      },
+      "valuesTitle": "Onze <highlight>Waarden</highlight>",
+      "valuesSubtitle": "De principes die alles leiden wat we doen bij RentaBikeParis.",
+      "safetyFirst": {
+        "title": "Veiligheid Eerst",
+        "description": "Uw veiligheid is onze hoogste prioriteit. Al onze fietsen worden regelmatig onderhouden en we bieden helmen en veiligheidsbriefings bij elke verhuur."
+      },
+      "ecoFriendly": {
+        "title": "Milieuvriendelijk",
+        "description": "We geloven in duurzaam toerisme. Fietsen is de groenste manier om Parijs te verkennen terwijl je je ecologische voetafdruk verkleint."
+      },
+      "localLove": {
+        "title": "Lokale Liefde",
+        "description": "Als locals zijn we gepassioneerd over het delen van het echte Parijs met jou. We steunen lokale bedrijven en verborgen juwelen buiten de gebaande paden."
+      },
+      "qualityService": {
+        "title": "Kwaliteitsservice",
+        "description": "We handhaven hoge standaarden in alles wat we doen, van fietsonderhoud tot klantenservice. Uw tevredenheid is onze garantie."
+      },
+      "personalized": {
+        "title": "Gepersonaliseerd",
+        "description": "Elke tour en verhuur is afgestemd op uw behoeften. We passen onze routes en aanbevelingen aan aan uw interesses en fitnessniveau."
+      },
+      "community": {
+        "title": "Gemeenschap",
+        "description": "We bouwen een gemeenschap van fietsenthusiasten die onze liefde voor Parijs en duurzaam transport delen."
+      },
+      "partnershipTitle": "Ons <highlight>Partnerschap</highlight>",
+      "partnershipSubtitle": "Kwaliteit en betrouwbaarheid door vertrouwde samenwerking 🤝",
+      "swapfietsTitle": "Swapfiets Partnerschap",
+      "swapfietsDescription1": "Ik ben dankbaar om Swapfiets als partner te hebben zodat iedereen van hun fietsen kan genieten, zelfs voor korte tijd! Hun steun is belangrijk geweest in de ontwikkeling van RentaBikeParis, en ik ben trots om samen te werken met zo'n dynamisch en toegewijd bedrijf.",
+      "swapfietsDescription2": "Dankzij dit partnerschap kan ik u hoogwaardige, stijlvolle fietsen aanbieden met de karakteristieke blauwe banden en de betrouwbaarheid van professioneel onderhoud. Veiligheid, comfort en kwaliteit zijn altijd onze hoogste prioriteiten!",
+      "contactTitle": "Klaar om samen de weg op te gaan?",
+      "contactSubtitle": "Of je nu een toerist bent die de stad wil ontdekken of een Parijzenaar op zoek naar een stedelijk avontuur, ik zou je graag meenemen op je volgende fietsexcursie door Parijs! We kijken ernaar uit om samen de weg op te gaan! 💫",
+      "emailUs": "E-mail ons",
+      "callUs": "Bel ons",
+      "findUs": "Vind ons",
+      "bookTour": "Boek een Tour",
+      "rentBike": "Huur een Fiets",
+      "findUsTitle": "Vind <highlight>ons</highlight>"
+    }
   }
 }

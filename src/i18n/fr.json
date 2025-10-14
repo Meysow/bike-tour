@@ -334,5 +334,72 @@
       "conclusion": "Nous valorisons une communication ouverte et vous encourageons à nous contacter pour discuter de vos idées, préférences et exigences spéciales que vous pourriez avoir. Nous sommes ravis de collaborer et de donner vie à votre vision ! 💫🚴🏻‍♂️",
       "price": "Sur devis"
     }
+  },
+  "about": {
+    "page": {
+      "heroTitle": "Bienvenue chez <highlight>RentaBikeParis</highlight>",
+      "heroSubtitle": "Découvrez la liberté d'explorer Paris comme un Parisien ! 🚴‍♂️ Rejoignez-moi, Léo, alors que je partage ma passion pour le vélo et les joyaux cachés de ma belle ville avec des voyageurs du monde entier.",
+      "myStoryTitle": "Mon Histoire 🇫🇷",
+      "storyParagraph1": "Je m'appelle Léo et je suis né et j'ai grandi à Paris où j'aime toujours faire du vélo ! Depuis mon plus jeune âge, j'aimais me balader, rencontrer de nouvelles personnes et découvrir de nouveaux endroits.",
+      "storyParagraph2": "Après avoir terminé mes études à Brême en Allemagne, je voulais vivre le \"rêve berlinois\", où j'ai passé de merveilleuses années ! Cette ville dynamique m'a donné la chance de perfectionner mon anglais et mon allemand, deux langues que je suis heureux de parler quand j'en ai l'occasion.",
+      "storyParagraph3": "De retour dans ma belle Paris, j'ai rejoint l'équipe de Swapfiets, une entreprise innovante spécialisée dans la location de vélos avec un service de maintenance inclus. Grâce à cette expérience, j'ai vu une demande croissante pour les locations à court terme, particulièrement de la part des touristes.",
+      "storyParagraph4": "C'est alors que j'ai décidé de créer RentaBikeParis, ma propre entreprise de location de vélos et de visites guidées, avec l'idée de partager la beauté de ma ville à ma façon. Grâce à RentaBikeParis, j'ai l'opportunité de partager ma passion pour le vélo, des rencontres enrichissantes et découvrir Paris avec des voyageurs du monde entier ! ✨",
+      "guidesTitle": "Rencontrez nos <highlight>Guides</highlight>",
+      "guidesSubtitle": "Des locaux passionnés qui aiment partager leur ville avec les visiteurs du monde entier.",
+      "pierre": {
+        "name": "Pierre",
+        "role": "Guide Principal & Co-fondateur",
+        "description": "Né et élevé à Paris, Pierre connaît chaque coin de la ville. Sa passion pour le vélo et l'histoire locale rend chaque visite inoubliable."
+      },
+      "marie": {
+        "name": "Marie",
+        "role": "Spécialiste Art & Culture",
+        "description": "Diplômée en histoire de l'art, Marie se spécialise dans nos visites artistiques. Elle vous montrera Paris à travers les yeux des grands maîtres."
+      },
+      "jean": {
+        "name": "Jean",
+        "role": "Technicien Vélo",
+        "description": "Notre chuchoteur de vélos ! Jean s'assure que chaque vélo est en parfait état et peut tout réparer sur place. La sécurité est son deuxième prénom."
+      },
+      "valuesTitle": "Nos <highlight>Valeurs</highlight>",
+      "valuesSubtitle": "Les principes qui guident tout ce que nous faisons chez RentaBikeParis.",
+      "safetyFirst": {
+        "title": "Sécurité Avant Tout",
+        "description": "Votre sécurité est notre priorité absolue. Tous nos vélos sont régulièrement entretenus et nous fournissons des casques et des briefings de sécurité avec chaque location."
+      },
+      "ecoFriendly": {
+        "title": "Écologique",
+        "description": "Nous croyons au tourisme durable. Le vélo est la façon la plus verte d'explorer Paris tout en réduisant votre empreinte carbone."
+      },
+      "localLove": {
+        "title": "Amour Local",
+        "description": "En tant que locaux, nous sommes passionnés par le partage du vrai Paris avec vous. Nous soutenons les entreprises locales et les joyaux cachés hors des sentiers battus."
+      },
+      "qualityService": {
+        "title": "Service de Qualité",
+        "description": "Nous maintenons des standards élevés dans tout ce que nous faisons, de l'entretien des vélos au service client. Votre satisfaction est notre garantie."
+      },
+      "personalized": {
+        "title": "Personnalisé",
+        "description": "Chaque visite et location est adaptée à vos besoins. Nous adaptons nos itinéraires et recommandations pour correspondre à vos intérêts et niveau de forme physique."
+      },
+      "community": {
+        "title": "Communauté",
+        "description": "Nous construisons une communauté d'enthousiastes du vélo qui partagent notre amour pour Paris et les transports durables."
+      },
+      "partnershipTitle": "Notre <highlight>Partenariat</highlight>",
+      "partnershipSubtitle": "Qualité et fiabilité grâce à une collaboration de confiance 🤝",
+      "swapfietsTitle": "Partenariat Swapfiets",
+      "swapfietsDescription1": "Je suis reconnaissant d'avoir Swapfiets comme partenaire pour que tout le monde puisse profiter de leurs vélos, même pour un court moment ! Leur soutien a été important dans le développement de RentaBikeParis, et je suis fier de travailler avec une entreprise si dynamique et engagée.",
+      "swapfietsDescription2": "Grâce à ce partenariat, je peux vous offrir des vélos de haute qualité et élégants avec les pneus bleus distinctifs et la fiabilité d'un entretien professionnel. La sécurité, le confort et la qualité sont toujours nos priorités absolues !",
+      "contactTitle": "Prêt à prendre la route ensemble ?",
+      "contactSubtitle": "Que vous soyez un touriste avide de découvrir la ville ou un Parisien à la recherche d'une aventure urbaine, je serais plus qu'heureux de vous emmener lors de votre prochaine excursion cycliste dans la ville de Paris ! Nous avons hâte de prendre la route ensemble ! 💫",
+      "emailUs": "Nous Écrire",
+      "callUs": "Nous Appeler",
+      "findUs": "Nous Trouver",
+      "bookTour": "Réserver une Visite",
+      "rentBike": "Louer un Vélo",
+      "findUsTitle": "Nous <highlight>Trouver</highlight>"
+    }
   }
 }
