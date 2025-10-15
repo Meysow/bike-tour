@@ -54,7 +54,7 @@ export function ToursSection(): JSX.Element {
                   <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
                     {content.price}
                   </div>
-                  <CardHeader>
+                  <CardHeader className="max-[470px]:pt-12">
                     <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
                       {content.title}
                     </CardDescription>
@@ -139,7 +139,7 @@ export function ToursSection(): JSX.Element {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {/* Contenu texte à gauche */}
                     <div className="p-6 space-y-6">
-                      <div>
+                      <div className="max-[500px]:pt-8">
                         <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
                           {content.title}
                         </CardDescription>
