@@ -103,23 +103,12 @@ src/app/[locale]/contact/page.tsx
 
 ```typescript
 // src/app/[locale]/contact/page.tsx
-import { generateLocalizedMetadata } from "@/lib/utils/seo";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
 
-  return generateLocalizedMetadata({
-    routeKey: "contact",
-    locale,
-    title: {
-      en: "Contact Us | RentaTour Paris",
-      fr: "Nous Contacter | RentaTour Paris",
-    },
-    description: {
-      en: "Get in touch with RentaTour...",
-      fr: "Contactez RentaTour...",
-    },
-  });
+  return generatePageMetadata(params, "contact");
 }
 ```
 

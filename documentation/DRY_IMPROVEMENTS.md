@@ -19,7 +19,7 @@ Avant l'amélioration, **le même code était dupliqué dans 5 fichiers différe
 ```typescript
 import { isValidLocale } from "@/config/i18n";
 import { siteConfig } from "@/config/site";
-import { generateAlternateLanguages } from "@/lib/utils/hreflang";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({
@@ -36,7 +36,7 @@ export async function generateMetadata({
   return {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/some-path`,
-      languages: generateAlternateLanguages("some-route"),
+      // Using generatePageMetadata helper instead
     },
   };
 }
@@ -70,7 +70,7 @@ export async function generatePageMetadata(
   return {
     alternates: {
       canonical: `${siteConfig.url}/${locale}${finalPath}`,
-      languages: generateAlternateLanguages(routeKey),
+      // Using generatePageMetadata helper instead
     },
   };
 }
@@ -98,7 +98,7 @@ export async function validateLocaleParams(
 ```typescript
 import { isValidLocale } from "@/config/i18n";
 import { siteConfig } from "@/config/site";
-import { generateAlternateLanguages } from "@/lib/utils/hreflang";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({
@@ -115,7 +115,7 @@ export async function generateMetadata({
   return {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/tours`,
-      languages: generateAlternateLanguages("tours"),
+      // Using generatePageMetadata helper instead
     },
   };
 }
@@ -245,7 +245,7 @@ export async function generatePageMetadata(/*...*/) {
   return {
     alternates: {
       canonical: `${siteConfig.url}/${locale}${finalPath}`,
-      languages: generateAlternateLanguages(routeKey),
+      // Using generatePageMetadata helper instead
     },
     // Nouvelles metadata ici
     openGraph: {

@@ -120,23 +120,13 @@ Le middleware intercepte les requêtes et :
 
 ## 📄 Métadonnées SEO
 
-Pour chaque page, utilisez le helper `generateLocalizedMetadata` pour créer les balises `hreflang` :
+Pour chaque page, utilisez le helper `generatePageMetadata` pour créer les balises `hreflang` :
 
 ```tsx
-import { generateLocalizedMetadata } from "@/lib/utils/seo";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 
-export function generateMetadata() {
-  return generateLocalizedMetadata({
-    routeKey: "rent",
-    title: {
-      en: "Bike Rental in Paris | RentaTour",
-      fr: "Location de Vélo à Paris | RentaTour",
-    },
-    description: {
-      en: "Rent quality bikes in Paris...",
-      fr: "Louez des vélos de qualité à Paris...",
-    },
-  });
+export async function generateMetadata({ params }) {
+  return generatePageMetadata(params, "rent");
 }
 ```
 
@@ -152,7 +142,7 @@ export function generateMetadata() {
 
 ## 🔍 SEO Best Practices
 
-1. **Balises hreflang** : Utilisez `generateLocalizedMetadata` pour les générer automatiquement
+1. **Balises hreflang** : Utilisez `generatePageMetadata` pour les générer automatiquement
 2. **Sitemap** : Incluez toutes les URLs traduites dans votre sitemap
 3. **Canonical URLs** : Chaque version linguistique a sa propre URL canonique
 4. **Structured Data** : Incluez la langue dans vos données structurées

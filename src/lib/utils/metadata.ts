@@ -3,11 +3,10 @@
  * Centralise la logique de génération des metadata pour éviter la duplication
  */
 
-import { isValidLocale } from "@/config/i18n";
-import { type RouteKey } from "@/config/routes";
+import { isValidLocale, locales } from "@/config/i18n";
+import { type RouteKey, routes } from "@/config/routes";
 import { siteConfig } from "@/config/site";
 import { notFound } from "next/navigation";
-import { generateAlternateLanguages } from "./hreflang";
 
 /**
  * Type pour les paramètres de page Next.js
@@ -45,10 +44,20 @@ export async function generatePageMetadata(
   // Déterminer le path final
   const finalPath = path || (routeKey === "home" ? "" : `/${routeKey}`);
 
+  // Generate hreflang URLs for all locales
+  const languages: Record<string, string> = {};
+  locales.forEach((loc) => {
+    const localizedPath = routes[routeKey][loc];
+    languages[loc] = `${siteConfig.url}/${loc}${localizedPath}`;
+  });
+
+  // Add x-default for SEO
+  languages["x-default"] = siteConfig.url;
+
   return {
     alternates: {
       canonical: `${siteConfig.url}/${locale}${finalPath}`,
-      languages: generateAlternateLanguages(routeKey),
+      languages,
     },
   };
 }

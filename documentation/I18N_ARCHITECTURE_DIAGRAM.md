@@ -293,7 +293,7 @@ src/
 │   │   getAlternateLanguageUrl()    ┃
 │   │                                 ┃
 │   ├── hreflang.ts                  ┃
-│   │   generateAlternateLanguages() ┃
+│   │   generatePageMetadata() ┃
 │   │                                 ┃
 │   └── metadata.ts                  ┃
 │       generatePageMetadata()       ┃

@@ -86,11 +86,10 @@ pnpm test:watch
 # Run tests with coverage
 pnpm test:coverage
 
-# Run specific test file
-pnpx jest src/__tests__/lib/utils/format.test.ts
+# Note: format.test.ts has been removed as the functions are no longer used
 
 # Run tests matching a pattern
-pnpx jest --testNamePattern="formatCurrency"
+# Note: formatCurrency tests have been removed as the function is no longer used
 ```
 
 ### Test Options

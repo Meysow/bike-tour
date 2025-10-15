@@ -46,19 +46,19 @@ import { locales, defaultLocale, isValidLocale } from "@/config/i18n";
 
 **Fonctions** :
 
-- `generateAlternateLanguages(routeKey)` : Génère les URLs alternatives pour une route donnée
-- `generateCustomAlternateLanguages(locale, path)` : Pour les pages personnalisées (ex: articles de blog)
+- `generatePageMetadata(params, routeKey)` : Génère les métadonnées avec hreflang pour une route donnée
+- Note: Les fonctions hreflang ont été consolidées dans metadata.ts
 
 **Exemple d'utilisation** :
 
 ```typescript
-import { generateAlternateLanguages } from "@/lib/utils/hreflang";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 
 export async function generateMetadata({ params }) {
   return {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/tours`,
-      languages: generateAlternateLanguages("tours"),
+      // Using generatePageMetadata helper instead
     },
   };
 }
@@ -200,7 +200,7 @@ Le plugin next-intl entrerait en conflit avec ce middleware personnalisé, d'où
 ```typescript
 import { isValidLocale, type Locale } from "@/config/i18n";
 import { siteConfig } from "@/config/site";
-import { generateAlternateLanguages } from "@/lib/utils/hreflang";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -213,7 +213,7 @@ export async function generateMetadata({ params }) {
   return {
     alternates: {
       canonical: `${siteConfig.url}/${locale}`,
-      languages: generateAlternateLanguages("home"),
+      // Using generatePageMetadata helper instead
     },
   };
 }
@@ -328,13 +328,13 @@ Créer `src/app/[locale]/rent/metadata.ts` :
 
 ```typescript
 import { Metadata } from "next";
-import { generateAlternateLanguages } from "@/lib/utils/hreflang";
+import { generatePageMetadata } from "@/lib/utils/metadata";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/rent`,
-    languages: generateAlternateLanguages("rent"),
+    // Using generatePageMetadata helper instead
   },
 };
 ```
