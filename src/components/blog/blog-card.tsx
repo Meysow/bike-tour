@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
-import { BlogPost } from "@/types/blog";
+import { BlogPost } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 

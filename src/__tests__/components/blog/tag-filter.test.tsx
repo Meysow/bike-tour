@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@/__tests__/utils/test-utils";
 import { TagFilter } from "@/components/blog/tag-filter";
-import { BlogPost } from "@/types/blog";
+import { BlogPost } from "@/types";
 import userEvent from "@testing-library/user-event";
 import { useParams, usePathname } from "next/navigation";
 

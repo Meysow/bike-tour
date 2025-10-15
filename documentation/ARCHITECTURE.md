@@ -82,40 +82,43 @@ src/
 ### Types Principaux
 
 ```typescript
-// Types pour les vélos
-interface Bike {
-  id: string;
+// Types pour le contenu des vélos
+interface BikeContent {
   name: string;
-  type: BikeType;
-  size: BikeSize;
-  price: number;
-  quantity: number;
   description: string;
-  imageUrl: string;
+  dailyRate: number;
+  image: string;
+  features: string[];
+  limitations: string[];
 }
 
-// Types pour les tours
-interface Tour {
-  id: string;
-  name: string;
+// Types pour le contenu des tours
+interface TourContent {
+  title: string;
+  subtitle: string;
   description: string;
-  duration: number;
-  distance: number;
-  difficulty: Difficulty;
-  price: number;
-  imageUrl: string;
-  maxPeople: number;
+  price: string;
+  image: string;
+  details: {
+    location: string;
+    duration: string;
+    schedule: string;
+  };
+  additionalContent?: {
+    visionTitle: string;
+    bulletPoints: string[];
+    closingNote: string;
+  };
+  ctaMoreInfo: string;
+  ctaBookNow: string;
+  ctaContact: string;
 }
 
-// Types pour les accessoires
-interface Accessory {
-  id: string;
-  name: string;
-  type: AccessoryType;
-  price: number;
-  quantity: number;
+// Types pour le contenu des accessoires
+interface AccessoriesContent {
+  title: string;
   description: string;
-  imageUrl: string;
+  image: string;
 }
 ```
 

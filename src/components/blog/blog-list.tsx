@@ -2,7 +2,7 @@
 
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
-import { BlogPost } from "@/types/blog";
+import { BlogPost } from "@/types";
 import { useState } from "react";
 import { BlogCard } from "./blog-card";
 import { TagFilter } from "./tag-filter";

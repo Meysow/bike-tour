@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
-import { BlogPost } from "@/types/blog";
+import { BlogPost } from "@/types";
 import { X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 

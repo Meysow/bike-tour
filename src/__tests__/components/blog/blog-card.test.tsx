@@ -1,6 +1,6 @@
 import { render, screen } from "@/__tests__/utils/test-utils";
 import { BlogCard } from "@/components/blog/blog-card";
-import { BlogPost } from "@/types/blog";
+import { BlogPost } from "@/types";
 
 // Mock next/navigation
 jest.mock("next/navigation", () => ({

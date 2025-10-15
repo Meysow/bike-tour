@@ -1,6 +1,6 @@
 import { Icons } from "@/components/shared/icons";
 import { Badge } from "@/components/ui/badge";
-import { BlogPost } from "@/types/blog";
+import { BlogPost } from "@/types";
 import Image from "next/image";
 
 interface BlogPostProps {
