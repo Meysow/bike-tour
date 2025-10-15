@@ -123,7 +123,6 @@
     "deluxe7": {
       "name": "Deluxe 7 - Bicicleta Normal",
       "description": "Una bicicleta urbana cómoda y confiable, ideal para explorar París a tu propio ritmo con siete marchas suaves.",
-      "dailyRate": 15,
       "image": "deluxe7",
       "features": [
         "Sistema de cambios de 7 velocidades",
@@ -135,7 +134,6 @@
     "ebike": {
       "name": "Bicicleta Eléctrica - Power 1",
       "description": "Descubre París sin esfuerzo con tecnología de asistencia al pedaleo. Perfecta para distancias largas y rutas montañosas.",
-      "dailyRate": 30,
       "image": "ebike",
       "features": [
         "Asistencia eléctrica al pedaleo",
@@ -147,7 +145,6 @@
     "children": {
       "name": "Bicicleta Infantil 20\" o 24\"",
       "description": "Segura y resistente, ideal para ciclistas jóvenes de 6 a 9 años. Perfecta para salidas familiares y paseos por parques urbanos. Tamaño 20\" o 24\"",
-      "dailyRate": 15,
       "image": "children",
       "features": [
         "Ruedas de 20 pulgadas para pedalear estable",

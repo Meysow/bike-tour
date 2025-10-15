@@ -1,8 +1,8 @@
-import { routes } from "@/config/routes";
-import { getSectionTranslations } from "@/lib/utils/i18n-loader";
-import { pricingPlans } from "@/data/pricing-plans";
-import { testimonials } from "@/data/testimonials";
 import { Locale } from "@/config/i18n";
+import { BIKE_PRICING, getBikeTypes } from "@/config/pricing";
+import { routes } from "@/config/routes";
+import { testimonials } from "@/data/testimonials";
+import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 
 // Get FAQ data from i18n for testing (using English as default)
 const faqData = getSectionTranslations("en" as Locale, "faq");
@@ -11,8 +11,12 @@ const frequentlyAskedQuestions = faqData.questions || [];
 describe("Data Consistency Integration Tests", () => {
   describe("Cross-Data Validation", () => {
     it("should have consistent data structures across all data files", () => {
-      // All pricing plans should have images
-      expect(pricingPlans.every((plan) => plan.image)).toBe(true);
+      // All bike types should have daily rates and names
+      const bikeTypes = getBikeTypes();
+      expect(bikeTypes.every((type) => BIKE_PRICING[type].dailyRate)).toBe(
+        true
+      );
+      expect(bikeTypes.every((type) => BIKE_PRICING[type].name)).toBe(true);
 
       // All testimonials should have avatars
       expect(testimonials.every((t) => t.avatar)).toBe(true);
@@ -23,14 +27,14 @@ describe("Data Consistency Integration Tests", () => {
       ).toBe(true);
     });
 
-    it("should have no conflicting IDs across pricing plans", () => {
-      const ids = pricingPlans.map((plan) => plan.id);
-      const uniqueIds = new Set(ids);
-      expect(uniqueIds.size).toBe(ids.length);
+    it("should have no conflicting bike types", () => {
+      const bikeTypes = getBikeTypes();
+      const uniqueTypes = new Set(bikeTypes);
+      expect(uniqueTypes.size).toBe(bikeTypes.length);
     });
 
     it("should have consistent pricing ranges", () => {
-      const rates = pricingPlans.map((plan) => plan.dailyRate);
+      const rates = Object.values(BIKE_PRICING).map((bike) => bike.dailyRate);
       const minRate = Math.min(...rates);
       const maxRate = Math.max(...rates);
 
@@ -89,23 +93,15 @@ describe("Data Consistency Integration Tests", () => {
       });
     });
 
-    it("should have complete pricing plan details", () => {
-      pricingPlans.forEach((plan) => {
-        expect(plan.features.length).toBeGreaterThan(0);
-        expect(plan.description.length).toBeGreaterThan(20);
+    it("should have complete bike pricing details", () => {
+      Object.values(BIKE_PRICING).forEach((bike) => {
+        expect(bike.name.length).toBeGreaterThan(10);
+        expect(bike.dailyRate).toBeGreaterThan(0);
       });
     });
   });
 
   describe("Asset References", () => {
-    it("should have valid image paths in pricing plans", () => {
-      pricingPlans.forEach((plan) => {
-        expect(plan.image).toBeTruthy();
-        // Image objects from Next.js imports have a 'src' property
-        expect(plan.image).toHaveProperty("src");
-      });
-    });
-
     it("should have valid avatar paths in testimonials", () => {
       testimonials.forEach((testimonial) => {
         expect(testimonial.avatar).toMatch(
@@ -117,37 +113,44 @@ describe("Data Consistency Integration Tests", () => {
 
   describe("Business Logic Consistency", () => {
     it("should have reasonable pricing tiers", () => {
-      const sortedPlans = [...pricingPlans].sort(
-        (a, b) => a.dailyRate - b.dailyRate
+      const sortedBikes = Object.entries(BIKE_PRICING).sort(
+        ([, a], [, b]) => a.dailyRate - b.dailyRate
       );
 
       // Verify pricing is progressive
-      for (let i = 1; i < sortedPlans.length; i++) {
-        expect(sortedPlans[i].dailyRate).toBeGreaterThanOrEqual(
-          sortedPlans[i - 1].dailyRate
+      for (let i = 1; i < sortedBikes.length; i++) {
+        expect(sortedBikes[i][1].dailyRate).toBeGreaterThanOrEqual(
+          sortedBikes[i - 1][1].dailyRate
         );
       }
     });
 
-    it("should have features matching plan types", () => {
-      const ebikePlan = pricingPlans.find((p) => p.id === "ebike");
-      const deluxePlan = pricingPlans.find((p) => p.id === "deluxe7");
+    it("should have names matching bike types", () => {
+      // E-bike should mention electric
+      expect(BIKE_PRICING.ebike.name.toLowerCase()).toContain("electric");
 
-      // E-bike should mention electric features
-      const ebikeFeatures = ebikePlan?.features.join(" ").toLowerCase() || "";
-      expect(ebikeFeatures).toContain("electric");
+      // Deluxe should mention normal bike or similar
+      expect(BIKE_PRICING.deluxe7.name.toLowerCase()).toMatch(
+        /(normal|deluxe)/
+      );
 
-      // Deluxe should mention gear system
-      const deluxeFeatures = deluxePlan?.features.join(" ").toLowerCase() || "";
-      expect(deluxeFeatures).toContain("gear");
+      // Children should mention children or kids
+      expect(BIKE_PRICING.children.name.toLowerCase()).toContain("children");
     });
 
-    it("should have appropriate limitations for each plan", () => {
-      pricingPlans.forEach((plan) => {
-        expect(Array.isArray(plan.limitations)).toBe(true);
-        // Each plan should acknowledge some limitation
-        expect(plan.limitations.length).toBeGreaterThan(0);
-      });
+    it("should have appropriate pricing for each bike type", () => {
+      // Electric bike should be most expensive
+      expect(BIKE_PRICING.ebike.dailyRate).toBeGreaterThan(
+        BIKE_PRICING.deluxe7.dailyRate
+      );
+      expect(BIKE_PRICING.ebike.dailyRate).toBeGreaterThan(
+        BIKE_PRICING.children.dailyRate
+      );
+
+      // Basic bikes should be similarly priced
+      expect(BIKE_PRICING.deluxe7.dailyRate).toBe(
+        BIKE_PRICING.children.dailyRate
+      );
     });
   });
 
@@ -161,7 +164,7 @@ describe("Data Consistency Integration Tests", () => {
     });
 
     it("should have multiple pricing options", () => {
-      expect(pricingPlans.length).toBeGreaterThanOrEqual(2);
+      expect(getBikeTypes().length).toBeGreaterThanOrEqual(2);
     });
 
     it("should have diverse testimonial authors", () => {

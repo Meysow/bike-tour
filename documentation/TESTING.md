@@ -21,7 +21,7 @@ This project includes a comprehensive test suite using Jest and React Testing Li
 
 #### 3. **Data Tests** (`src/__tests__/data/`)
 
-- **pricing-plans.test.ts**: Pricing plans structure and validation
+- **pricing.test.ts**: Centralized pricing configuration validation
 - **testimonials.test.ts**: Testimonials data integrity
 - **frequently-asked-questions.test.ts**: FAQ content validation
 

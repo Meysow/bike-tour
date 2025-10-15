@@ -55,9 +55,9 @@ src/
 │   ├── site.ts                  # Configuration du site
 │   ├── fonts.ts                 # Configuration des polices
 │   ├── defaults.ts              # Valeurs par défaut
+│   ├── pricing.ts               # Configuration centralisée des prix
 │   └── lokki.ts                 # Configuration Lokki
 ├── data/                        # Données statiques
-│   ├── pricing-plans.ts         # Plans de tarification
 │   ├── tourData.ts              # Données des tours
 │   ├── testimonials.ts          # Témoignages
 │   └── static-content.ts        # Contenu statique

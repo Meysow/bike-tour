@@ -22,7 +22,8 @@ export function generateLocalizedMetadata({
   keywords = [],
   images = [],
 }: LocalizedMetadataProps): Metadata {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://rentatour.com";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://rentabikeparis.com";
   const currentPath = routes[routeKey][locale];
   const alternates = {
     canonical: `${baseUrl}${currentPath}`,
@@ -60,7 +61,8 @@ export function generateLocalizedMetadata({
  * Générer le sitemap avec toutes les URLs localisées
  */
 export function generateLocalizedSitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://rentatour.com";
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://rentabikeparis.com";
   const entries: Array<{
     url: string;
     locale: Locale;

@@ -123,7 +123,6 @@
     "deluxe7": {
       "name": "Deluxe 7 - Vélo Normal",
       "description": "Un vélo de ville confortable et fiable, idéal pour explorer Paris à votre rythme avec sept vitesses fluides.",
-      "dailyRate": 15,
       "image": "deluxe7",
       "features": [
         "Système de vitesses à 7 rapports",
@@ -135,7 +134,6 @@
     "ebike": {
       "name": "Vélo Électrique - Power 1",
       "description": "Découvrez Paris sans effort grâce à la technologie d'assistance au pédalage. Parfait pour les longues distances et les routes vallonnées.",
-      "dailyRate": 30,
       "image": "ebike",
       "features": [
         "Assistance électrique au pédalage",
@@ -147,7 +145,6 @@
     "children": {
       "name": "Vélo Enfant 20\" ou 24\"",
       "description": "Sûr et robuste, idéal pour les jeunes cyclistes de 6 à 9 ans. Parfait pour les sorties en famille et les balades dans les parcs de la ville. Taille 20\" ou 24\"",
-      "dailyRate": 15,
       "image": "children",
       "features": [
         "Roues de 20 pouces pour une conduite stable",

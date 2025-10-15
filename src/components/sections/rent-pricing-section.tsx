@@ -14,6 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
+import { getDailyRate, type BikeType } from "@/config/pricing";
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { rentImages } from "@/lib/images/rent-images";
@@ -68,10 +69,8 @@ export function RentPricingSection(): JSX.Element {
           {bikeIds.map((bikeId) => {
             const bike = t[bikeId] as BikeContent;
 
-            // Fallback dailyRate if not in translations yet
-            const dailyRate =
-              bike.dailyRate ||
-              (bikeId === "deluxe7" ? 15 : bikeId === "ebike" ? 25 : 13);
+            // Get dailyRate from centralized pricing configuration
+            const dailyRate = getDailyRate(bikeId as BikeType);
 
             return (
               <Card
