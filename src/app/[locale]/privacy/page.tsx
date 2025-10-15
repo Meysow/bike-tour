@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
+import { PrivacyHeroContent } from "./privacy-hero-content";
 import { PrivacyPageContent } from "./privacy-page-content";
 
 export default function PrivacyPage(): JSX.Element {
@@ -23,6 +24,13 @@ export default function PrivacyPage(): JSX.Element {
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="container mx-auto px-4 relative z-10">
+            <PrivacyHeroContent />
+          </div>
+        </section>
+
+        {/* Privacy Policy Content */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
             <PrivacyPageContent />
           </div>
         </section>

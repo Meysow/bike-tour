@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
+import { TermsHeroContent } from "./terms-hero-content";
 import { TermsPageContent } from "./terms-page-content";
 
 export default function TermsPage(): JSX.Element {
@@ -23,6 +24,13 @@ export default function TermsPage(): JSX.Element {
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="container mx-auto px-4 relative z-10">
+            <TermsHeroContent />
+          </div>
+        </section>
+
+        {/* Terms Content */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 max-w-4xl">
             <TermsPageContent />
           </div>
         </section>
