@@ -13,7 +13,7 @@ import Balancer from "react-wrap-balancer";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // TestimonialCard component with read more functionality
@@ -110,7 +110,7 @@ export function TestimonialsSection() {
 
         {/* Swiper Carousel */}
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[Navigation, Pagination]}
           spaceBetween={30}
           slidesPerView={1}
           navigation={{
@@ -120,10 +120,6 @@ export function TestimonialsSection() {
           pagination={{
             clickable: true,
             dynamicBullets: false,
-          }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
           }}
           breakpoints={{
             640: {

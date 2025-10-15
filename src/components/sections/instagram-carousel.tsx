@@ -11,8 +11,8 @@ import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { InstagramPost } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { useEffect, useRef, useState } from "react";
+import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -36,6 +36,12 @@ export function InstagramCarousel({
   const [posts, setPosts] = useState<InstagramPost[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const swiperRef = useRef<{
+    update: () => void;
+    updateSlides: () => void;
+    updateSize: () => void;
+    updateSlidesClasses: () => void;
+  } | null>(null);
 
   useEffect(() => {
     const fetchInstagramPosts = async () => {
@@ -99,6 +105,21 @@ export function InstagramCarousel({
     fetchInstagramPosts();
   }, [accessToken, limit]);
 
+  // Handle window resize to fix slide positioning
+  useEffect(() => {
+    const handleResize = () => {
+      if (swiperRef.current) {
+        swiperRef.current.update();
+        swiperRef.current.updateSlides();
+        swiperRef.current.updateSize();
+        swiperRef.current.updateSlidesClasses();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   if (loading) {
     return (
       <div className="flex justify-center items-center h-64">
@@ -151,7 +172,7 @@ export function InstagramCarousel({
             style={{ contain: "layout" }}
           >
             <Swiper
-              modules={[Navigation, Pagination, Autoplay]}
+              modules={[Navigation, Pagination]}
               spaceBetween={16}
               slidesPerView={1}
               navigation={{
@@ -161,10 +182,6 @@ export function InstagramCarousel({
               pagination={{
                 clickable: true,
                 dynamicBullets: false,
-              }}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
               }}
               breakpoints={{
                 640: {
@@ -180,16 +197,19 @@ export function InstagramCarousel({
                   spaceBetween: 24,
                 },
               }}
-              observer={false}
-              observeParents={false}
-              watchSlidesProgress={false}
-              resizeObserver={false}
-              updateOnWindowResize={false}
+              observer={true}
+              observeParents={true}
+              watchSlidesProgress={true}
+              resizeObserver={true}
+              updateOnWindowResize={true}
               preventInteractionOnTransition={false}
               allowTouchMove={true}
               touchStartPreventDefault={false}
               centeredSlides={false}
               loop={false}
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
               className="swiper-carousel instagram-carousel w-full"
             >
               {posts.map((post) => (

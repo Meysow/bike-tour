@@ -415,5 +415,189 @@
       "articlesFoundPlural": "articles trouvés",
       "containingAllSelectedTags": "(contenant tous les tags sélectionnés)"
     }
+  },
+  "legal": {
+    "terms": {
+      "title": "Conditions Générales d'Utilisation",
+      "subtitle": "En vigueur au {effectiveDate}",
+      "intro": "Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet l'encadrement juridique des modalités de mise à disposition du site et des services par Rentabike Paris et de définir les conditions d'accès et d'utilisation des services par « l'Utilisateur ».",
+      "intro2": "Les présentes CGU sont accessibles sur le site à la rubrique «CGU».",
+      "article1": {
+        "title": "Article 1 : Les mentions légales",
+        "content1": "L'édition et la direction de la publication du site {website} est assurée par {companyName}, domicilié au {address}.",
+        "phoneLabel": "Numéro de téléphone",
+        "emailLabel": "Adresse e-mail",
+        "content2": "L'hébergeur du site {website} est la société {hostingCompany}, dont le siège social est situé au {hostingAddress}, avec le numéro de téléphone : {hostingPhone}."
+      },
+      "article2": {
+        "title": "ARTICLE 2 : Accès au site",
+        "content1": "Le site {website} permet à l'Utilisateur un accès gratuit aux services suivants : Le site internet propose les services suivants :",
+        "service1": "Location de vélo, visites guidées",
+        "content2": "Le site est accessible gratuitement en tout lieu à tout Utilisateur ayant un accès à Internet. Tous les frais supportés par l'Utilisateur pour accéder au service (matériel informatique, logiciels, connexion Internet, etc.) sont à sa charge."
+      },
+      "article3": {
+        "title": "ARTICLE 3 : Collecte des données",
+        "content1": "Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune donnée concernant les Utilisateurs."
+      },
+      "article4": {
+        "title": "ARTICLE 4 : Propriété intellectuelle",
+        "content1": "Les marques, logos, signes ainsi que tous les contenus du site (textes, images, son…) font l'objet d'une protection par le Code de la propriété intellectuelle et plus particulièrement par le droit d'auteur.",
+        "content2": "L'Utilisateur doit solliciter l'autorisation préalable du site pour toute reproduction, publication, copie des différents contenus. Il s'engage à une utilisation des contenus du site dans un cadre strictement privé, toute utilisation à des fins commerciales et publicitaires est strictement interdite.",
+        "content3": "Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l'autorisation expresse de l'exploitant du site Internet constituerait une contrefaçon sanctionnée par l'article L 335-2 et suivants du Code de la propriété intellectuelle.",
+        "content4": "Il est rappelé conformément à l'article L122-5 du Code de propriété intellectuelle que l'Utilisateur qui reproduit, copie ou publie le contenu protégé doit citer l'auteur et sa source."
+      },
+      "article5": {
+        "title": "ARTICLE 5 : Responsabilité",
+        "content1": "Les sources des informations diffusées sur le site {website} sont réputées fiables mais le site ne garantit pas qu'il soit exempt de défauts, d'erreurs ou d'omissions.",
+        "content2": "Les informations communiquées sont présentées à titre indicatif et général sans valeur contractuelle. Malgré des mises à jour régulières, le site {website} ne peut être tenu responsable de la modification des dispositions administratives et juridiques survenant après la publication. De même, le site ne peut être tenue responsable de l'utilisation et de l'interprétation de l'information contenue dans ce site.",
+        "content3": "Le site {website} ne peut être tenu pour responsable d'éventuels virus qui pourraient infecter l'ordinateur ou tout matériel informatique de l'Internaute, suite à une utilisation, à l'accès, ou au téléchargement provenant de ce site.",
+        "content4": "La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers."
+      },
+      "article6": {
+        "title": "ARTICLE 6 : Liens hypertextes",
+        "content1": "Des liens hypertextes peuvent être présents sur le site. L'Utilisateur est informé qu'en cliquant sur ces liens, il sortira du site {website}. Ce dernier n'a pas de contrôle sur les pages web sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu."
+      },
+      "article7": {
+        "title": "ARTICLE 7 : Cookies",
+        "content1": "L'Utilisateur est informé que lors de ses visites sur le site, un cookie peut s'installer automatiquement sur son logiciel de navigation.",
+        "content2": "Les cookies sont de petits fichiers stockés temporairement sur le disque dur de l'ordinateur de l'Utilisateur par votre navigateur et qui sont nécessaires à l'utilisation du site {website}. Les cookies ne contiennent pas d'information personnelle et ne peuvent pas être utilisés pour identifier quelqu'un. Un cookie contient un identifiant unique, généré aléatoirement et donc anonyme. Certains cookies expirent à la fin de la visite de l'Utilisateur, d'autres restent.",
+        "content3": "L'information contenue dans les cookies est utilisée pour améliorer le site {website}.",
+        "content4": "En naviguant sur le site, L'Utilisateur les accepte.",
+        "content5": "L'Utilisateur pourra désactiver ces cookies par l'intermédiaire des paramètres figurant au sein de son logiciel de navigation."
+      },
+      "article8": {
+        "title": "ARTICLE 8 : Droit applicable et juridiction compétente",
+        "content1": "La législation française s'applique au présent contrat. En cas d'absence de résolution amiable d'un litige né entre les parties, les tribunaux français seront seuls compétents pour en connaître. Pour toute question relative à l'application des présentes CGU, vous pouvez joindre l'éditeur aux coordonnées inscrites à l'ARTICLE 1."
+      }
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "effectiveDate": "En vigueur au",
+      "introduction": "La présente Politique de Confidentialité décrit la façon dont",
+      "introduction2": "collecte, utilise et protège vos informations personnelles lorsque vous utilisez notre site web",
+      "introduction3": "et nos services de location de vélos et de visites guidées.",
+      "article1": {
+        "title": "Article 1 : Informations collectées",
+        "subtitle1": "1.1 Informations que vous nous fournissez",
+        "content1": "Nous collectons les informations personnelles que vous nous fournissez volontairement lorsque vous :",
+        "list1": [
+          "Réservez une location de vélo ou une visite guidée",
+          "Créez un compte sur notre site",
+          "Nous contactez par email, téléphone ou WhatsApp",
+          "Vous inscrivez à notre newsletter",
+          "Laissez un avis ou témoignage"
+        ],
+        "content2": "Ces informations peuvent inclure :",
+        "list2": [
+          "Nom et prénom",
+          "Adresse email",
+          "Numéro de téléphone",
+          "Adresse postale",
+          "Informations de paiement",
+          "Préférences concernant les visites et locations de vélos"
+        ],
+        "subtitle2": "1.2 Informations collectées automatiquement",
+        "content3": "Lorsque vous visitez notre site, nous collectons automatiquement certaines informations, notamment :",
+        "list3": [
+          "Adresse IP et informations sur votre appareil (type d'appareil, navigateur, système d'exploitation)",
+          "Pages visitées et durée des visites",
+          "Données de navigation et de clics",
+          "Cookies et technologies similaires"
+        ]
+      },
+      "article2": {
+        "title": "Article 2 : Utilisation des informations",
+        "content1": "Nous utilisons vos informations personnelles pour les finalités suivantes :",
+        "list": [
+          "Gestion des réservations : Traiter vos réservations de vélos et de visites guidées, vous envoyer des confirmations et des rappels",
+          "Communication : Répondre à vos questions, demandes d'information et réclamations",
+          "Marketing : Vous envoyer des newsletters, promotions et offres spéciales (avec votre consentement)",
+          "Amélioration du service : Analyser l'utilisation de notre site pour améliorer nos services et votre expérience utilisateur",
+          "Sécurité : Prévenir la fraude et assurer la sécurité de nos services",
+          "Obligations légales : Respecter nos obligations légales et réglementaires"
+        ]
+      },
+      "article3": {
+        "title": "Article 3 : Partage des informations",
+        "content1": "Nous ne vendons ni ne louons vos informations personnelles à des tiers. Nous pouvons partager vos informations dans les cas suivants :",
+        "list": [
+          "Prestataires de services : Nous pouvons partager vos informations avec des prestataires de services tiers qui nous aident à fournir nos services (traitement des paiements, hébergement web, services marketing)",
+          "Partenaires commerciaux : Avec votre consentement, nous pouvons partager vos informations avec nos partenaires pour des offres spéciales",
+          "Obligations légales : Si requis par la loi, une ordonnance du tribunal, ou pour protéger nos droits",
+          "Transfert d'entreprise : En cas de fusion, acquisition ou vente d'actifs"
+        ]
+      },
+      "article4": {
+        "title": "Article 4 : Cookies et technologies similaires",
+        "content1": "Notre site utilise des cookies et des technologies similaires pour améliorer votre expérience. Les cookies sont de petits fichiers texte stockés sur votre appareil.",
+        "subtitle": "Types de cookies utilisés :",
+        "list": [
+          "Cookies essentiels : Nécessaires au fonctionnement du site (gestion de session, sécurité)",
+          "Cookies de performance : Pour analyser l'utilisation du site et améliorer ses performances",
+          "Cookies de fonctionnalité : Pour mémoriser vos préférences (langue, région)",
+          "Cookies marketing : Pour vous proposer du contenu personnalisé et des publicités ciblées"
+        ],
+        "content2": "Vous pouvez contrôler et gérer les cookies via les paramètres de votre navigateur. Notez que la désactivation de certains cookies peut affecter la fonctionnalité du site."
+      },
+      "article5": {
+        "title": "Article 5 : Sécurité des données",
+        "content1": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos informations personnelles contre tout accès non autorisé, perte, destruction ou divulgation.",
+        "content2": "Ces mesures incluent :",
+        "list": [
+          "Chiffrement SSL/TLS pour les transmissions de données",
+          "Accès restreint aux données personnelles aux seuls employés autorisés",
+          "Sauvegardes régulières des données",
+          "Mise à jour régulière de nos systèmes de sécurité"
+        ],
+        "content3": "Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n'est totalement sécurisée. Nous ne pouvons donc garantir une sécurité absolue."
+      },
+      "article6": {
+        "title": "Article 6 : Vos droits (RGPD)",
+        "content1": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :",
+        "list": [
+          "Droit d'accès : Vous pouvez demander une copie de vos données personnelles",
+          "Droit de rectification : Vous pouvez demander la correction de données inexactes ou incomplètes",
+          "Droit à l'effacement : Vous pouvez demander la suppression de vos données dans certaines conditions",
+          "Droit à la limitation du traitement : Vous pouvez demander la limitation du traitement de vos données",
+          "Droit à la portabilité : Vous pouvez demander le transfert de vos données à un autre prestataire",
+          "Droit d'opposition : Vous pouvez vous opposer au traitement de vos données à des fins de marketing",
+          "Droit de retirer votre consentement : Vous pouvez retirer votre consentement à tout moment"
+        ],
+        "content2": "Pour exercer ces droits, veuillez nous contacter à l'adresse :",
+        "content3": "Vous avez également le droit de déposer une plainte auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) si vous estimez que vos droits ne sont pas respectés."
+      },
+      "article7": {
+        "title": "Article 7 : Conservation des données",
+        "content1": "Nous conservons vos informations personnelles aussi longtemps que nécessaire pour :",
+        "list": [
+          "Fournir nos services",
+          "Respecter nos obligations légales",
+          "Résoudre les litiges",
+          "Appliquer nos accords"
+        ],
+        "content2": "Les données de réservation sont généralement conservées pendant 3 ans après la dernière transaction. Les données marketing sont conservées jusqu'à votre désinscription ou retrait de consentement."
+      },
+      "article8": {
+        "title": "Article 8 : Liens vers des sites tiers",
+        "content1": "Notre site peut contenir des liens vers des sites web de tiers (réseaux sociaux, partenaires). Nous ne sommes pas responsables des pratiques de confidentialité de ces sites. Nous vous encourageons à lire les politiques de confidentialité de ces sites avant de leur fournir des informations personnelles."
+      },
+      "article9": {
+        "title": "Article 9 : Modifications de la politique",
+        "content1": "Nous pouvons modifier cette Politique de Confidentialité de temps à autre pour refléter les changements dans nos pratiques ou pour d'autres raisons opérationnelles, légales ou réglementaires.",
+        "content2": "Nous vous informerons de tout changement important en publiant la nouvelle politique sur cette page et en mettant à jour la date d'entrée en vigueur. Nous vous encourageons à consulter régulièrement cette page."
+      },
+      "article10": {
+        "title": "Article 10 : Mineurs",
+        "content1": "Nos services ne sont pas destinés aux personnes de moins de 16 ans. Nous ne collectons pas sciemment d'informations personnelles auprès de mineurs. Si vous êtes parent ou tuteur et que vous pensez que votre enfant nous a fourni des informations personnelles, veuillez nous contacter."
+      },
+      "contact": {
+        "title": "Nous contacter",
+        "content1": "Pour toute question concernant cette Politique de Confidentialité ou pour exercer vos droits, vous pouvez nous contacter :",
+        "email": "Par email :",
+        "phone": "Par téléphone :",
+        "mail": "Par courrier :"
+      },
+      "lastUpdated": "Dernière mise à jour :"
+    }
   }
 }
