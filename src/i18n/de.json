@@ -404,27 +404,21 @@
   "legal": {
     "terms": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "effectiveDate": "Gültig ab",
-      "introduction": "Diese Allgemeinen Geschäftsbedingungen (\"AGB\") regeln den rechtlichen Rahmen für die Bereitstellung der Website und der Dienstleistungen durch Rentabike Paris und definieren die Bedingungen für den Zugang und die Nutzung der Dienstleistungen durch den \"Benutzer\".",
-      "accessible": "Diese AGB sind auf der Website im Abschnitt \"AGB\" zugänglich.",
+      "subtitle": "Gültig ab {effectiveDate}",
+      "intro": "Diese Allgemeinen Geschäftsbedingungen (\"AGB\") regeln den rechtlichen Rahmen für die Bereitstellung der Website und der Dienstleistungen durch Rentabike Paris und definieren die Bedingungen für den Zugang und die Nutzung der Dienstleistungen durch den \"Benutzer\".",
+      "intro2": "Diese AGB sind auf der Website im Abschnitt \"AGB\" zugänglich.",
       "article1": {
         "title": "Artikel 1: Rechtliche Angaben",
-        "content1": "Die Bearbeitung und Leitung der Veröffentlichung der Website",
-        "content2": "wird von",
-        "content3": "mit Sitz in",
-        "content4": "Telefonnummer",
-        "content5": "E-Mail-Adresse",
-        "content6": "Der Website-Host",
-        "content7": "ist das Unternehmen",
-        "content8": "dessen Hauptsitz sich befindet in",
-        "content9": "mit der Telefonnummer"
+        "content1": "Die Bearbeitung und Leitung der Veröffentlichung der Website {website} wird von {companyName} mit Sitz in {address} durchgeführt.",
+        "phoneLabel": "Telefonnummer",
+        "emailLabel": "E-Mail-Adresse",
+        "content2": "Der Website-Host {website} ist das Unternehmen {hostingCompany}, dessen Hauptsitz sich befindet in {hostingAddress}, mit der Telefonnummer: {hostingPhone}."
       },
       "article2": {
         "title": "ARTIKEL 2: Website-Zugang",
-        "content1": "Die Website",
-        "content2": "ermöglicht dem Benutzer einen kostenlosen Zugang zu den folgenden Dienstleistungen: Die Website bietet die folgenden Dienstleistungen an:",
-        "services": "Fahrradverleih, geführte Touren",
-        "content3": "Die Website ist kostenlos überall für jeden Benutzer mit Internetzugang zugänglich. Alle Kosten, die dem Benutzer für den Zugang zum Service entstehen (Computerausrüstung, Software, Internetverbindung, etc.), gehen zu seinen Lasten."
+        "content1": "Die Website {website} ermöglicht dem Benutzer einen kostenlosen Zugang zu den folgenden Dienstleistungen: Die Website bietet die folgenden Dienstleistungen an:",
+        "service1": "Fahrradverleih, geführte Touren",
+        "content2": "Die Website ist kostenlos überall für jeden Benutzer mit Internetzugang zugänglich. Alle Kosten, die dem Benutzer für den Zugang zum Service entstehen (Computerausrüstung, Software, Internetverbindung, etc.), gehen zu seinen Lasten."
       },
       "article3": {
         "title": "ARTIKEL 3: Datensammlung",
@@ -439,27 +433,22 @@
       },
       "article5": {
         "title": "ARTIKEL 5: Haftung",
-        "content1": "Die Quellen der auf der Website verbreiteten Informationen",
-        "content2": "gelten als zuverlässig, aber die Website garantiert nicht, dass sie frei von Mängeln, Fehlern oder Auslassungen ist.",
-        "content3": "Die mitgeteilten Informationen werden zu Informations- und allgemeinen Zwecken ohne Vertragswert präsentiert. Trotz regelmäßiger Updates kann die Website",
-        "content4": "nicht für die Änderung von Verwaltungs- und Rechtsbestimmungen verantwortlich gemacht werden, die nach der Veröffentlichung auftreten. Ebenso kann die Website nicht für die Nutzung und Interpretation der auf dieser Website enthaltenen Informationen verantwortlich gemacht werden.",
-        "content5": "Die Website",
-        "content6": "kann nicht für eventuelle Viren verantwortlich gemacht werden, die den Computer oder jede Computerausrüstung des Internetnutzers infizieren könnten, infolge einer Nutzung, des Zugangs oder des Downloads von dieser Website.",
-        "content7": "Die Haftung der Website kann nicht bei höherer Gewalt oder unvorhersehbaren und unüberwindbaren Tatsachen eines Dritten geltend gemacht werden."
+        "content1": "Die Quellen der auf der Website {website} verbreiteten Informationen gelten als zuverlässig, aber die Website garantiert nicht, dass sie frei von Mängeln, Fehlern oder Auslassungen ist.",
+        "content2": "Die mitgeteilten Informationen werden zu Informations- und allgemeinen Zwecken ohne Vertragswert präsentiert. Trotz regelmäßiger Updates kann die Website {website} nicht für die Änderung von Verwaltungs- und Rechtsbestimmungen verantwortlich gemacht werden, die nach der Veröffentlichung auftreten. Ebenso kann die Website nicht für die Nutzung und Interpretation der auf dieser Website enthaltenen Informationen verantwortlich gemacht werden.",
+        "content3": "Die Website {website} kann nicht für eventuelle Viren verantwortlich gemacht werden, die den Computer oder jede Computerausrüstung des Internetnutzers infizieren könnten, infolge einer Nutzung, des Zugangs oder des Downloads von dieser Website.",
+        "content4": "Die Haftung der Website kann nicht bei höherer Gewalt oder unvorhersehbaren und unüberwindbaren Tatsachen eines Dritten geltend gemacht werden."
       },
       "article6": {
         "title": "ARTIKEL 6: Hypertext-Links",
-        "content1": "Hypertext-Links können auf der Website vorhanden sein. Der Benutzer wird darüber informiert, dass er beim Klicken auf diese Links die Website verlassen wird",
-        "content2": "Letztere hat keine Kontrolle über die Webseiten, zu denen diese Links führen, und kann in keinem Fall für deren Inhalt verantwortlich gemacht werden."
+        "content1": "Hypertext-Links können auf der Website vorhanden sein. Der Benutzer wird darüber informiert, dass er beim Klicken auf diese Links die Website {website} verlassen wird. Letztere hat keine Kontrolle über die Webseiten, zu denen diese Links führen, und kann in keinem Fall für deren Inhalt verantwortlich gemacht werden."
       },
       "article7": {
         "title": "ARTIKEL 7: Cookies",
         "content1": "Der Benutzer wird darüber informiert, dass bei seinen Besuchen auf der Website ein Cookie automatisch auf seiner Navigationssoftware installiert werden kann.",
-        "content2": "Cookies sind kleine Dateien, die temporär auf der Festplatte des Computers des Benutzers von Ihrem Browser gespeichert werden und die für die Nutzung der Website notwendig sind",
-        "content3": "Cookies enthalten keine persönlichen Informationen und können nicht zur Identifizierung einer Person verwendet werden. Ein Cookie enthält eine eindeutige Kennung, die zufällig generiert und daher anonym ist. Einige Cookies laufen am Ende des Besuchs des Benutzers ab, andere bleiben bestehen.",
-        "content4": "Die in den Cookies enthaltenen Informationen werden verwendet, um die Website zu verbessern",
-        "content5": "Durch das Surfen auf der Website akzeptiert der Benutzer sie.",
-        "content6": "Der Benutzer kann diese Cookies über die Einstellungen in seiner Navigationssoftware deaktivieren."
+        "content2": "Cookies sind kleine Dateien, die temporär auf der Festplatte des Computers des Benutzers von Ihrem Browser gespeichert werden und die für die Nutzung der Website {website} notwendig sind. Cookies enthalten keine persönlichen Informationen und können nicht zur Identifizierung einer Person verwendet werden. Ein Cookie enthält eine eindeutige Kennung, die zufällig generiert und daher anonym ist. Einige Cookies laufen am Ende des Besuchs des Benutzers ab, andere bleiben bestehen.",
+        "content3": "Die in den Cookies enthaltenen Informationen werden verwendet, um die Website {website} zu verbessern.",
+        "content4": "Durch das Surfen auf der Website akzeptiert der Benutzer sie.",
+        "content5": "Der Benutzer kann diese Cookies über die Einstellungen in seiner Navigationssoftware deaktivieren."
       },
       "article8": {
         "title": "ARTIKEL 8: Anwendbares Recht und zuständige Gerichtsbarkeit",

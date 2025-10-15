@@ -16,10 +16,7 @@ export function PrivacyHeroContent(): JSX.Element {
       </h1>
       <p className="max-w-3xl mx-auto text-lg text-white/95 sm:text-xl sm:leading-8 drop-shadow-md">
         <Balancer>
-          {t.subtitle.replace(
-            "{effectiveDate}",
-            siteConfig.legal.effectiveDate
-          )}
+          {t.effectiveDate} {siteConfig.legal.effectiveDate}
         </Balancer>
       </p>
     </div>

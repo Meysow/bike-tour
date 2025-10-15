@@ -404,9 +404,9 @@
   "legal": {
     "terms": {
       "title": "Términos de Servicio",
-      "effectiveDate": "Vigente desde",
-      "introduction": "Estos términos de servicio (\"Términos\") rigen el marco legal para la prestación del sitio web y los servicios por parte de Rentabike Paris y definen las condiciones de acceso y uso de los servicios por parte del \"Usuario\".",
-      "accessible": "Estos Términos son accesibles en el sitio web en la sección \"Términos\".",
+      "subtitle": "Vigente desde {effectiveDate}",
+      "intro": "Estos términos de servicio (\"Términos\") rigen el marco legal para la prestación del sitio web y los servicios por parte de Rentabike Paris y definen las condiciones de acceso y uso de los servicios por parte del \"Usuario\".",
+      "intro2": "Estos Términos son accesibles en el sitio web en la sección \"Términos\".",
       "article1": {
         "title": "Artículo 1: Información Legal",
         "content1": "La edición y dirección de la publicación del sitio web",

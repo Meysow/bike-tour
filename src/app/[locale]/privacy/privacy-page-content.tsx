@@ -11,9 +11,10 @@ export function PrivacyPageContent(): JSX.Element {
   return (
     <div className="prose prose-lg max-w-none">
       <p className="text-lg leading-8 text-muted-foreground mb-8">
-        {t.intro
+        {t.introduction
           .replace("{companyName}", siteConfig.company.name)
-          .replace("{website}", siteConfig.url)}
+          .replace("{website}", siteConfig.url)}{" "}
+        {t.introduction2} {t.introduction3}
       </p>
 
       {/* Article 1 */}
@@ -23,35 +24,29 @@ export function PrivacyPageContent(): JSX.Element {
         </h2>
         <div className="space-y-4 text-muted-foreground">
           <h3 className="text-xl font-semibold text-foreground">
-            {t.article1.section1.title}
+            {t.article1.subtitle1}
           </h3>
-          <p>{t.article1.section1.content}</p>
+          <p>{t.article1.content1}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>{t.article1.section1.item1}</li>
-            <li>{t.article1.section1.item2}</li>
-            <li>{t.article1.section1.item3}</li>
-            <li>{t.article1.section1.item4}</li>
-            <li>{t.article1.section1.item5}</li>
+            {t.article1.list1.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
-          <p>{t.article1.section1.content2}</p>
+          <p>{t.article1.content2}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>{t.article1.section1.item6}</li>
-            <li>{t.article1.section1.item7}</li>
-            <li>{t.article1.section1.item8}</li>
-            <li>{t.article1.section1.item9}</li>
-            <li>{t.article1.section1.item10}</li>
-            <li>{t.article1.section1.item11}</li>
+            {t.article1.list2.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
 
           <h3 className="text-xl font-semibold text-foreground mt-6">
-            {t.article1.section2.title}
+            {t.article1.subtitle2}
           </h3>
-          <p>{t.article1.section2.content}</p>
+          <p>{t.article1.content3}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>{t.article1.section2.item1}</li>
-            <li>{t.article1.section2.item2}</li>
-            <li>{t.article1.section2.item3}</li>
-            <li>{t.article1.section2.item4}</li>
+            {t.article1.list3.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
@@ -62,32 +57,11 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article2.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article2.content}</p>
+          <p>{t.article2.content1}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>
-              <strong>{t.article2.item1.title}:</strong>{" "}
-              {t.article2.item1.content}
-            </li>
-            <li>
-              <strong>{t.article2.item2.title}:</strong>{" "}
-              {t.article2.item2.content}
-            </li>
-            <li>
-              <strong>{t.article2.item3.title}:</strong>{" "}
-              {t.article2.item3.content}
-            </li>
-            <li>
-              <strong>{t.article2.item4.title}:</strong>{" "}
-              {t.article2.item4.content}
-            </li>
-            <li>
-              <strong>{t.article2.item5.title}:</strong>{" "}
-              {t.article2.item5.content}
-            </li>
-            <li>
-              <strong>{t.article2.item6.title}:</strong>{" "}
-              {t.article2.item6.content}
-            </li>
+            {t.article2.list.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
@@ -98,24 +72,11 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article3.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article3.content}</p>
+          <p>{t.article3.content1}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>
-              <strong>{t.article3.item1.title}:</strong>{" "}
-              {t.article3.item1.content}
-            </li>
-            <li>
-              <strong>{t.article3.item2.title}:</strong>{" "}
-              {t.article3.item2.content}
-            </li>
-            <li>
-              <strong>{t.article3.item3.title}:</strong>{" "}
-              {t.article3.item3.content}
-            </li>
-            <li>
-              <strong>{t.article3.item4.title}:</strong>{" "}
-              {t.article3.item4.content}
-            </li>
+            {t.article3.list.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
@@ -126,27 +87,14 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article4.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article4.content}</p>
+          <p>{t.article4.content1}</p>
           <h3 className="text-xl font-semibold text-foreground">
-            {t.article4.typesTitle}
+            {t.article4.subtitle}
           </h3>
           <ul className="list-disc pl-6 space-y-2">
-            <li>
-              <strong>{t.article4.type1.title}:</strong>{" "}
-              {t.article4.type1.content}
-            </li>
-            <li>
-              <strong>{t.article4.type2.title}:</strong>{" "}
-              {t.article4.type2.content}
-            </li>
-            <li>
-              <strong>{t.article4.type3.title}:</strong>{" "}
-              {t.article4.type3.content}
-            </li>
-            <li>
-              <strong>{t.article4.type4.title}:</strong>{" "}
-              {t.article4.type4.content}
-            </li>
+            {t.article4.list.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
           <p>{t.article4.content2}</p>
         </div>
@@ -158,13 +106,12 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article5.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article5.content}</p>
+          <p>{t.article5.content1}</p>
           <p>{t.article5.content2}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>{t.article5.item1}</li>
-            <li>{t.article5.item2}</li>
-            <li>{t.article5.item3}</li>
-            <li>{t.article5.item4}</li>
+            {t.article5.list.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
           <p>{t.article5.content3}</p>
         </div>
@@ -176,41 +123,16 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article6.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article6.content}</p>
+          <p>{t.article6.content1}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>
-              <strong>{t.article6.item1.title}:</strong>{" "}
-              {t.article6.item1.content}
-            </li>
-            <li>
-              <strong>{t.article6.item2.title}:</strong>{" "}
-              {t.article6.item2.content}
-            </li>
-            <li>
-              <strong>{t.article6.item3.title}:</strong>{" "}
-              {t.article6.item3.content}
-            </li>
-            <li>
-              <strong>{t.article6.item4.title}:</strong>{" "}
-              {t.article6.item4.content}
-            </li>
-            <li>
-              <strong>{t.article6.item5.title}:</strong>{" "}
-              {t.article6.item5.content}
-            </li>
-            <li>
-              <strong>{t.article6.item6.title}:</strong>{" "}
-              {t.article6.item6.content}
-            </li>
-            <li>
-              <strong>{t.article6.item7.title}:</strong>{" "}
-              {t.article6.item7.content}
-            </li>
+            {t.article6.list.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
           <p>
-            {t.article6.contact.replace("{email}", siteConfig.company.email)}
+            {t.article6.content2.replace("{email}", siteConfig.company.email)}
           </p>
-          <p>{t.article6.content2}</p>
+          <p>{t.article6.content3}</p>
         </div>
       </div>
 
@@ -220,12 +142,11 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article7.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article7.content}</p>
+          <p>{t.article7.content1}</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>{t.article7.item1}</li>
-            <li>{t.article7.item2}</li>
-            <li>{t.article7.item3}</li>
-            <li>{t.article7.item4}</li>
+            {t.article7.list.map((item: string, index: number) => (
+              <li key={index}>{item}</li>
+            ))}
           </ul>
           <p>{t.article7.content2}</p>
         </div>
@@ -237,7 +158,7 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article8.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article8.content}</p>
+          <p>{t.article8.content1}</p>
         </div>
       </div>
 
@@ -247,7 +168,7 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article9.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article9.content}</p>
+          <p>{t.article9.content1}</p>
           <p>{t.article9.content2}</p>
         </div>
       </div>
@@ -258,7 +179,7 @@ export function PrivacyPageContent(): JSX.Element {
           {t.article10.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.article10.content}</p>
+          <p>{t.article10.content1}</p>
         </div>
       </div>
 
@@ -268,20 +189,16 @@ export function PrivacyPageContent(): JSX.Element {
           {t.contact.title}
         </h2>
         <div className="space-y-4 text-muted-foreground">
-          <p>{t.contact.content}</p>
+          <p>{t.contact.content1}</p>
           <div className="space-y-2">
             <p>
-              <strong>{t.contact.email}:</strong> {siteConfig.company.email}
+              <strong>{t.contact.email}</strong> {siteConfig.company.email}
             </p>
             <p>
-              <strong>{t.contact.phone}:</strong> +33 {siteConfig.company.phone}
+              <strong>{t.contact.phone}</strong> {siteConfig.company.phone}
             </p>
             <p>
-              <strong>{t.contact.mail}:</strong>
-            </p>
-            <p className="pl-4">
-              {siteConfig.company.name}
-              <br />
+              <strong>{t.contact.mail}</strong> {siteConfig.company.name},{" "}
               {siteConfig.company.address}
             </p>
           </div>
@@ -291,10 +208,7 @@ export function PrivacyPageContent(): JSX.Element {
       {/* Footer note */}
       <div className="mt-12 pt-8 border-t border-border">
         <p className="text-sm text-muted-foreground italic">
-          {t.lastUpdate.replace(
-            "{effectiveDate}",
-            siteConfig.legal.effectiveDate
-          )}
+          {t.lastUpdated} {siteConfig.legal.effectiveDate}
         </p>
       </div>
     </div>

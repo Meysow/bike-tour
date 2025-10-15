@@ -4,6 +4,71 @@ import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 
+// Helper function to render text with clickable links
+const renderTextWithLinks = (
+  text: string,
+  siteConfig: typeof import("@/config/site").siteConfig
+) => {
+  const parts = text.split(
+    /(https:\/\/rentabikeparis\.fr\/|18 Ter Rue Delizy, 93500 Pantin|143 rue emile julien 34070 Montpellier|0892977093)/g
+  );
+
+  return parts.map((part, index) => {
+    if (part === "https://rentabikeparis.fr/") {
+      return (
+        <a
+          key={index}
+          href={siteConfig.company.website}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-500 hover:text-orange-600 underline font-bold"
+        >
+          {part}
+        </a>
+      );
+    } else if (part === "18 Ter Rue Delizy, 93500 Pantin") {
+      return (
+        <a
+          key={index}
+          href={`https://maps.google.com/?q=${encodeURIComponent(
+            siteConfig.company.address
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-500 hover:text-orange-600 underline font-bold"
+        >
+          {part}
+        </a>
+      );
+    } else if (part === "143 rue emile julien 34070 Montpellier") {
+      return (
+        <a
+          key={index}
+          href={`https://maps.google.com/?q=${encodeURIComponent(
+            siteConfig.hosting.address
+          )}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-orange-500 hover:text-orange-600 underline font-bold"
+        >
+          {part}
+        </a>
+      );
+    } else if (part === "0892977093") {
+      return (
+        <a
+          key={index}
+          href={`tel:${siteConfig.hosting.phone}`}
+          className="text-orange-500 hover:text-orange-600 underline font-bold"
+        >
+          {part}
+        </a>
+      );
+    }
+    return part;
+  });
+};
+
 export function TermsPageContent(): JSX.Element {
   const { locale } = useLocalizedRoutes();
   const t = getSectionTranslations(locale, "legal").terms;
@@ -24,10 +89,13 @@ export function TermsPageContent(): JSX.Element {
           </h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              {t.article1.content1
-                .replace("{website}", siteConfig.company.website)
-                .replace("{companyName}", siteConfig.company.name)
-                .replace("{address}", siteConfig.company.address)}
+              {renderTextWithLinks(
+                t.article1.content1
+                  .replace("{website}", siteConfig.company.website)
+                  .replace("{companyName}", siteConfig.company.name)
+                  .replace("{address}", siteConfig.company.address),
+                siteConfig
+              )}
             </p>
             <p>
               <strong>{t.article1.phoneLabel}</strong>{" "}
@@ -46,11 +114,14 @@ export function TermsPageContent(): JSX.Element {
               </a>
             </p>
             <p>
-              {t.article1.content2
-                .replace("{website}", siteConfig.company.website)
-                .replace("{hostingCompany}", siteConfig.hosting.company)
-                .replace("{hostingAddress}", siteConfig.hosting.address)
-                .replace("{hostingPhone}", siteConfig.hosting.phone)}
+              {renderTextWithLinks(
+                t.article1.content2
+                  .replace("{website}", siteConfig.company.website)
+                  .replace("{hostingCompany}", siteConfig.hosting.company)
+                  .replace("{hostingAddress}", siteConfig.hosting.address)
+                  .replace("{hostingPhone}", siteConfig.hosting.phone),
+                siteConfig
+              )}
             </p>
           </div>
         </div>
@@ -62,9 +133,12 @@ export function TermsPageContent(): JSX.Element {
           </h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              {t.article2.content1.replace(
-                "{website}",
-                siteConfig.company.website
+              {renderTextWithLinks(
+                t.article2.content1.replace(
+                  "{website}",
+                  siteConfig.company.website
+                ),
+                siteConfig
               )}
             </p>
             <ul className="list-disc pl-6 space-y-2">
@@ -106,21 +180,30 @@ export function TermsPageContent(): JSX.Element {
           </h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              {t.article5.content1.replace(
-                "{website}",
-                siteConfig.company.website
+              {renderTextWithLinks(
+                t.article5.content1.replace(
+                  "{website}",
+                  siteConfig.company.website
+                ),
+                siteConfig
               )}
             </p>
             <p>
-              {t.article5.content2.replace(
-                "{website}",
-                siteConfig.company.website
+              {renderTextWithLinks(
+                t.article5.content2.replace(
+                  "{website}",
+                  siteConfig.company.website
+                ),
+                siteConfig
               )}
             </p>
             <p>
-              {t.article5.content3.replace(
-                "{website}",
-                siteConfig.company.website
+              {renderTextWithLinks(
+                t.article5.content3.replace(
+                  "{website}",
+                  siteConfig.company.website
+                ),
+                siteConfig
               )}
             </p>
             <p>{t.article5.content4}</p>
@@ -134,9 +217,12 @@ export function TermsPageContent(): JSX.Element {
           </h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              {t.article6.content1.replace(
-                "{website}",
-                siteConfig.company.website
+              {renderTextWithLinks(
+                t.article6.content1.replace(
+                  "{website}",
+                  siteConfig.company.website
+                ),
+                siteConfig
               )}
             </p>
           </div>
@@ -150,15 +236,21 @@ export function TermsPageContent(): JSX.Element {
           <div className="space-y-4 text-muted-foreground">
             <p>{t.article7.content1}</p>
             <p>
-              {t.article7.content2.replace(
-                "{website}",
-                siteConfig.company.website
+              {renderTextWithLinks(
+                t.article7.content2.replace(
+                  "{website}",
+                  siteConfig.company.website
+                ),
+                siteConfig
               )}
             </p>
             <p>
-              {t.article7.content3.replace(
-                "{website}",
-                siteConfig.company.website
+              {renderTextWithLinks(
+                t.article7.content3.replace(
+                  "{website}",
+                  siteConfig.company.website
+                ),
+                siteConfig
               )}
             </p>
             <p>{t.article7.content4}</p>

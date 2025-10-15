@@ -404,27 +404,21 @@
   "legal": {
     "terms": {
       "title": "Terms of Service",
-      "effectiveDate": "Effective as of",
-      "introduction": "These terms of service (\"Terms\") govern the legal framework for the provision of the website and services by Rentabike Paris and define the conditions of access and use of the services by the \"User\".",
-      "accessible": "These Terms are accessible on the website under the \"Terms\" section.",
+      "subtitle": "Effective as of {effectiveDate}",
+      "intro": "These terms of service (\"Terms\") govern the legal framework for the provision of the website and services by Rentabike Paris and define the conditions of access and use of the services by the \"User\".",
+      "intro2": "These Terms are accessible on the website under the \"Terms\" section.",
       "article1": {
         "title": "Article 1: Legal Information",
-        "content1": "The editing and direction of the publication of the website",
-        "content2": "is provided by",
-        "content3": "domiciled at",
-        "content4": "Phone number",
-        "content5": "Email address",
-        "content6": "The website host",
-        "content7": "is the company",
-        "content8": "whose registered office is located at",
-        "content9": "with the phone number"
+        "content1": "The editing and direction of the publication of the website {website} is provided by {companyName}, domiciled at {address}.",
+        "phoneLabel": "Phone number",
+        "emailLabel": "Email address",
+        "content2": "The website host {website} is the company {hostingCompany}, whose registered office is located at {hostingAddress}, with the phone number: {hostingPhone}."
       },
       "article2": {
         "title": "ARTICLE 2: Website Access",
-        "content1": "The website",
-        "content2": "provides the User with free access to the following services: The website offers the following services:",
-        "services": "Bike rental, guided tours",
-        "content3": "The website is accessible free of charge anywhere to any User with Internet access. All costs incurred by the User to access the service (computer equipment, software, Internet connection, etc.) are at their expense."
+        "content1": "The website {website} provides the User with free access to the following services: The website offers the following services:",
+        "service1": "Bike rental, guided tours",
+        "content2": "The website is accessible free of charge anywhere to any User with Internet access. All costs incurred by the User to access the service (computer equipment, software, Internet connection, etc.) are at their expense."
       },
       "article3": {
         "title": "ARTICLE 3: Data Collection",
@@ -439,27 +433,22 @@
       },
       "article5": {
         "title": "ARTICLE 5: Liability",
-        "content1": "The sources of information disseminated on the website",
-        "content2": "are deemed reliable but the site does not guarantee that it is free from defects, errors or omissions.",
-        "content3": "The information communicated is presented for indicative and general purposes without contractual value. Despite regular updates, the website",
-        "content4": "cannot be held responsible for the modification of administrative and legal provisions occurring after publication. Similarly, the site cannot be held responsible for the use and interpretation of the information contained in this site.",
-        "content5": "The website",
-        "content6": "cannot be held responsible for any viruses that may infect the computer or any computer equipment of the Internet user, following use, access, or download from this site.",
-        "content7": "The site's liability cannot be engaged in case of force majeure or unforeseeable and insurmountable fact of a third party."
+        "content1": "The sources of information disseminated on the website {website} are deemed reliable but the site does not guarantee that it is free from defects, errors or omissions.",
+        "content2": "The information communicated is presented for indicative and general purposes without contractual value. Despite regular updates, the website {website} cannot be held responsible for the modification of administrative and legal provisions occurring after publication. Similarly, the site cannot be held responsible for the use and interpretation of the information contained in this site.",
+        "content3": "The website {website} cannot be held responsible for any viruses that may infect the computer or any computer equipment of the Internet user, following use, access, or download from this site.",
+        "content4": "The site's liability cannot be engaged in case of force majeure or unforeseeable and insurmountable fact of a third party."
       },
       "article6": {
         "title": "ARTICLE 6: Hypertext Links",
-        "content1": "Hypertext links may be present on the site. The User is informed that by clicking on these links, he will leave the site",
-        "content2": "The latter has no control over the web pages to which these links lead and cannot, in any case, be responsible for their content."
+        "content1": "Hypertext links may be present on the site. The User is informed that by clicking on these links, he will leave the site {website}. The latter has no control over the web pages to which these links lead and cannot, in any case, be responsible for their content."
       },
       "article7": {
         "title": "ARTICLE 7: Cookies",
         "content1": "The User is informed that during his visits to the site, a cookie may be automatically installed on his navigation software.",
-        "content2": "Cookies are small files temporarily stored on the User's computer hard drive by your browser and which are necessary for the use of the site",
-        "content3": "Cookies do not contain personal information and cannot be used to identify anyone. A cookie contains a unique identifier, randomly generated and therefore anonymous. Some cookies expire at the end of the User's visit, others remain.",
-        "content4": "The information contained in cookies is used to improve the site",
-        "content5": "By browsing the site, the User accepts them.",
-        "content6": "The User can disable these cookies through the settings in their navigation software."
+        "content2": "Cookies are small files temporarily stored on the User's computer hard drive by your browser and which are necessary for the use of the site {website}. Cookies do not contain personal information and cannot be used to identify anyone. A cookie contains a unique identifier, randomly generated and therefore anonymous. Some cookies expire at the end of the User's visit, others remain.",
+        "content3": "The information contained in cookies is used to improve the site {website}.",
+        "content4": "By browsing the site, the User accepts them.",
+        "content5": "The User can disable these cookies through the settings in their navigation software."
       },
       "article8": {
         "title": "ARTICLE 8: Applicable Law and Competent Jurisdiction",

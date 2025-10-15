@@ -404,9 +404,9 @@
   "legal": {
     "terms": {
       "title": "Algemene Voorwaarden",
-      "effectiveDate": "Van kracht vanaf",
-      "introduction": "Deze algemene voorwaarden (\"Voorwaarden\") regelen het juridische kader voor de verstrekking van de website en diensten door Rentabike Paris en definiëren de voorwaarden voor toegang en gebruik van de diensten door de \"Gebruiker\".",
-      "accessible": "Deze Voorwaarden zijn toegankelijk op de website onder de sectie \"Voorwaarden\".",
+      "subtitle": "Van kracht vanaf {effectiveDate}",
+      "intro": "Deze algemene voorwaarden (\"Voorwaarden\") regelen het juridische kader voor de verstrekking van de website en diensten door Rentabike Paris en definiëren de voorwaarden voor toegang en gebruik van de diensten door de \"Gebruiker\".",
+      "intro2": "Deze Voorwaarden zijn toegankelijk op de website onder de sectie \"Voorwaarden\".",
       "article1": {
         "title": "Artikel 1: Juridische Informatie",
         "content1": "De redactie en leiding van de publicatie van de website",

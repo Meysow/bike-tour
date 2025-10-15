@@ -419,27 +419,21 @@
   "legal": {
     "terms": {
       "title": "Conditions Générales d'Utilisation",
-      "effectiveDate": "En vigueur au",
-      "introduction": "Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet l'encadrement juridique des modalités de mise à disposition du site et des services par Rentabike Paris et de définir les conditions d'accès et d'utilisation des services par « l'Utilisateur ».",
-      "accessible": "Les présentes CGU sont accessibles sur le site à la rubrique «CGU».",
+      "subtitle": "En vigueur au {effectiveDate}",
+      "intro": "Les présentes conditions générales d'utilisation (dites « CGU ») ont pour objet l'encadrement juridique des modalités de mise à disposition du site et des services par Rentabike Paris et de définir les conditions d'accès et d'utilisation des services par « l'Utilisateur ».",
+      "intro2": "Les présentes CGU sont accessibles sur le site à la rubrique «CGU».",
       "article1": {
         "title": "Article 1 : Les mentions légales",
-        "content1": "L'édition et la direction de la publication du site",
-        "content2": "est assurée par",
-        "content3": "domicilié au",
-        "content4": "Numéro de téléphone",
-        "content5": "Adresse e-mail",
-        "content6": "L'hébergeur du site",
-        "content7": "est la société",
-        "content8": "dont le siège social est situé au",
-        "content9": "avec le numéro de téléphone"
+        "content1": "L'édition et la direction de la publication du site {website} est assurée par {companyName}, domicilié au {address}.",
+        "phoneLabel": "Numéro de téléphone",
+        "emailLabel": "Adresse e-mail",
+        "content2": "L'hébergeur du site {website} est la société {hostingCompany}, dont le siège social est situé au {hostingAddress}, avec le numéro de téléphone : {hostingPhone}."
       },
       "article2": {
         "title": "ARTICLE 2 : Accès au site",
-        "content1": "Le site",
-        "content2": "permet à l'Utilisateur un accès gratuit aux services suivants : Le site internet propose les services suivants :",
-        "services": "Location de vélo, visites guidées",
-        "content3": "Le site est accessible gratuitement en tout lieu à tout Utilisateur ayant un accès à Internet. Tous les frais supportés par l'Utilisateur pour accéder au service (matériel informatique, logiciels, connexion Internet, etc.) sont à sa charge."
+        "content1": "Le site {website} permet à l'Utilisateur un accès gratuit aux services suivants : Le site internet propose les services suivants :",
+        "service1": "Location de vélo, visites guidées",
+        "content2": "Le site est accessible gratuitement en tout lieu à tout Utilisateur ayant un accès à Internet. Tous les frais supportés par l'Utilisateur pour accéder au service (matériel informatique, logiciels, connexion Internet, etc.) sont à sa charge."
       },
       "article3": {
         "title": "ARTICLE 3 : Collecte des données",
@@ -454,27 +448,22 @@
       },
       "article5": {
         "title": "ARTICLE 5 : Responsabilité",
-        "content1": "Les sources des informations diffusées sur le site",
-        "content2": "sont réputées fiables mais le site ne garantit pas qu'il soit exempt de défauts, d'erreurs ou d'omissions.",
-        "content3": "Les informations communiquées sont présentées à titre indicatif et général sans valeur contractuelle. Malgré des mises à jour régulières, le site",
-        "content4": "ne peut être tenu responsable de la modification des dispositions administratives et juridiques survenant après la publication. De même, le site ne peut être tenue responsable de l'utilisation et de l'interprétation de l'information contenue dans ce site.",
-        "content5": "Le site",
-        "content6": "ne peut être tenu pour responsable d'éventuels virus qui pourraient infecter l'ordinateur ou tout matériel informatique de l'Internaute, suite à une utilisation, à l'accès, ou au téléchargement provenant de ce site.",
-        "content7": "La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers."
+        "content1": "Les sources des informations diffusées sur le site {website} sont réputées fiables mais le site ne garantit pas qu'il soit exempt de défauts, d'erreurs ou d'omissions.",
+        "content2": "Les informations communiquées sont présentées à titre indicatif et général sans valeur contractuelle. Malgré des mises à jour régulières, le site {website} ne peut être tenu responsable de la modification des dispositions administratives et juridiques survenant après la publication. De même, le site ne peut être tenue responsable de l'utilisation et de l'interprétation de l'information contenue dans ce site.",
+        "content3": "Le site {website} ne peut être tenu pour responsable d'éventuels virus qui pourraient infecter l'ordinateur ou tout matériel informatique de l'Internaute, suite à une utilisation, à l'accès, ou au téléchargement provenant de ce site.",
+        "content4": "La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers."
       },
       "article6": {
         "title": "ARTICLE 6 : Liens hypertextes",
-        "content1": "Des liens hypertextes peuvent être présents sur le site. L'Utilisateur est informé qu'en cliquant sur ces liens, il sortira du site",
-        "content2": "Ce dernier n'a pas de contrôle sur les pages web sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu."
+        "content1": "Des liens hypertextes peuvent être présents sur le site. L'Utilisateur est informé qu'en cliquant sur ces liens, il sortira du site {website}. Ce dernier n'a pas de contrôle sur les pages web sur lesquelles aboutissent ces liens et ne saurait, en aucun cas, être responsable de leur contenu."
       },
       "article7": {
         "title": "ARTICLE 7 : Cookies",
         "content1": "L'Utilisateur est informé que lors de ses visites sur le site, un cookie peut s'installer automatiquement sur son logiciel de navigation.",
-        "content2": "Les cookies sont de petits fichiers stockés temporairement sur le disque dur de l'ordinateur de l'Utilisateur par votre navigateur et qui sont nécessaires à l'utilisation du site",
-        "content3": "Les cookies ne contiennent pas d'information personnelle et ne peuvent pas être utilisés pour identifier quelqu'un. Un cookie contient un identifiant unique, généré aléatoirement et donc anonyme. Certains cookies expirent à la fin de la visite de l'Utilisateur, d'autres restent.",
-        "content4": "L'information contenue dans les cookies est utilisée pour améliorer le site",
-        "content5": "En naviguant sur le site, L'Utilisateur les accepte.",
-        "content6": "L'Utilisateur pourra désactiver ces cookies par l'intermédiaire des paramètres figurant au sein de son logiciel de navigation."
+        "content2": "Les cookies sont de petits fichiers stockés temporairement sur le disque dur de l'ordinateur de l'Utilisateur par votre navigateur et qui sont nécessaires à l'utilisation du site {website}. Les cookies ne contiennent pas d'information personnelle et ne peuvent pas être utilisés pour identifier quelqu'un. Un cookie contient un identifiant unique, généré aléatoirement et donc anonyme. Certains cookies expirent à la fin de la visite de l'Utilisateur, d'autres restent.",
+        "content3": "L'information contenue dans les cookies est utilisée pour améliorer le site {website}.",
+        "content4": "En naviguant sur le site, L'Utilisateur les accepte.",
+        "content5": "L'Utilisateur pourra désactiver ces cookies par l'intermédiaire des paramètres figurant au sein de son logiciel de navigation."
       },
       "article8": {
         "title": "ARTICLE 8 : Droit applicable et juridiction compétente",
