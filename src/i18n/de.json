@@ -400,5 +400,200 @@
       "articlesFoundPlural": "Artikel gefunden",
       "containingAllSelectedTags": "(enthält alle ausgewählten Tags)"
     }
+  },
+  "legal": {
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "effectiveDate": "Gültig ab",
+      "introduction": "Diese Allgemeinen Geschäftsbedingungen (\"AGB\") regeln den rechtlichen Rahmen für die Bereitstellung der Website und der Dienstleistungen durch Rentabike Paris und definieren die Bedingungen für den Zugang und die Nutzung der Dienstleistungen durch den \"Benutzer\".",
+      "accessible": "Diese AGB sind auf der Website im Abschnitt \"AGB\" zugänglich.",
+      "article1": {
+        "title": "Artikel 1: Rechtliche Angaben",
+        "content1": "Die Bearbeitung und Leitung der Veröffentlichung der Website",
+        "content2": "wird von",
+        "content3": "mit Sitz in",
+        "content4": "Telefonnummer",
+        "content5": "E-Mail-Adresse",
+        "content6": "Der Website-Host",
+        "content7": "ist das Unternehmen",
+        "content8": "dessen Hauptsitz sich befindet in",
+        "content9": "mit der Telefonnummer"
+      },
+      "article2": {
+        "title": "ARTIKEL 2: Website-Zugang",
+        "content1": "Die Website",
+        "content2": "ermöglicht dem Benutzer einen kostenlosen Zugang zu den folgenden Dienstleistungen: Die Website bietet die folgenden Dienstleistungen an:",
+        "services": "Fahrradverleih, geführte Touren",
+        "content3": "Die Website ist kostenlos überall für jeden Benutzer mit Internetzugang zugänglich. Alle Kosten, die dem Benutzer für den Zugang zum Service entstehen (Computerausrüstung, Software, Internetverbindung, etc.), gehen zu seinen Lasten."
+      },
+      "article3": {
+        "title": "ARTIKEL 3: Datensammlung",
+        "content1": "Die Website ist von der Meldung an die Nationale Kommission für Informatik und Freiheiten (CNIL) befreit, soweit sie keine Daten über Benutzer sammelt."
+      },
+      "article4": {
+        "title": "ARTIKEL 4: Geistiges Eigentum",
+        "content1": "Die Marken, Logos, Zeichen und alle Inhalte der Website (Texte, Bilder, Ton...) unterliegen dem Schutz durch den Code des geistigen Eigentums und insbesondere dem Urheberrecht.",
+        "content2": "Der Benutzer muss vorherige Genehmigung der Website für jede Reproduktion, Veröffentlichung, Kopie der verschiedenen Inhalte einholen. Er verpflichtet sich, die Inhalte der Website in einem streng privaten Rahmen zu nutzen, jede Nutzung zu kommerziellen und werblichen Zwecken ist streng verboten.",
+        "content3": "Jede vollständige oder teilweise Darstellung dieser Website durch irgendein Verfahren ohne ausdrückliche Genehmigung des Website-Betreibers würde eine Verletzung darstellen, die durch Artikel L 335-2 und folgende des Codes des geistigen Eigentums sanktioniert wird.",
+        "content4": "Es wird gemäß Artikel L122-5 des Codes des geistigen Eigentums daran erinnert, dass der Benutzer, der geschützte Inhalte reproduziert, kopiert oder veröffentlicht, den Autor und seine Quelle zitieren muss."
+      },
+      "article5": {
+        "title": "ARTIKEL 5: Haftung",
+        "content1": "Die Quellen der auf der Website verbreiteten Informationen",
+        "content2": "gelten als zuverlässig, aber die Website garantiert nicht, dass sie frei von Mängeln, Fehlern oder Auslassungen ist.",
+        "content3": "Die mitgeteilten Informationen werden zu Informations- und allgemeinen Zwecken ohne Vertragswert präsentiert. Trotz regelmäßiger Updates kann die Website",
+        "content4": "nicht für die Änderung von Verwaltungs- und Rechtsbestimmungen verantwortlich gemacht werden, die nach der Veröffentlichung auftreten. Ebenso kann die Website nicht für die Nutzung und Interpretation der auf dieser Website enthaltenen Informationen verantwortlich gemacht werden.",
+        "content5": "Die Website",
+        "content6": "kann nicht für eventuelle Viren verantwortlich gemacht werden, die den Computer oder jede Computerausrüstung des Internetnutzers infizieren könnten, infolge einer Nutzung, des Zugangs oder des Downloads von dieser Website.",
+        "content7": "Die Haftung der Website kann nicht bei höherer Gewalt oder unvorhersehbaren und unüberwindbaren Tatsachen eines Dritten geltend gemacht werden."
+      },
+      "article6": {
+        "title": "ARTIKEL 6: Hypertext-Links",
+        "content1": "Hypertext-Links können auf der Website vorhanden sein. Der Benutzer wird darüber informiert, dass er beim Klicken auf diese Links die Website verlassen wird",
+        "content2": "Letztere hat keine Kontrolle über die Webseiten, zu denen diese Links führen, und kann in keinem Fall für deren Inhalt verantwortlich gemacht werden."
+      },
+      "article7": {
+        "title": "ARTIKEL 7: Cookies",
+        "content1": "Der Benutzer wird darüber informiert, dass bei seinen Besuchen auf der Website ein Cookie automatisch auf seiner Navigationssoftware installiert werden kann.",
+        "content2": "Cookies sind kleine Dateien, die temporär auf der Festplatte des Computers des Benutzers von Ihrem Browser gespeichert werden und die für die Nutzung der Website notwendig sind",
+        "content3": "Cookies enthalten keine persönlichen Informationen und können nicht zur Identifizierung einer Person verwendet werden. Ein Cookie enthält eine eindeutige Kennung, die zufällig generiert und daher anonym ist. Einige Cookies laufen am Ende des Besuchs des Benutzers ab, andere bleiben bestehen.",
+        "content4": "Die in den Cookies enthaltenen Informationen werden verwendet, um die Website zu verbessern",
+        "content5": "Durch das Surfen auf der Website akzeptiert der Benutzer sie.",
+        "content6": "Der Benutzer kann diese Cookies über die Einstellungen in seiner Navigationssoftware deaktivieren."
+      },
+      "article8": {
+        "title": "ARTIKEL 8: Anwendbares Recht und zuständige Gerichtsbarkeit",
+        "content1": "Französisches Recht gilt für diesen Vertrag. Im Falle des Fehlens einer gütlichen Beilegung eines zwischen den Parteien entstandenen Streits werden die französischen Gerichte allein zuständig sein, darüber zu entscheiden. Für alle Fragen bezüglich der Anwendung dieser AGB können Sie den Herausgeber unter den in ARTIKEL 1 aufgeführten Kontaktdaten erreichen."
+      }
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie",
+      "effectiveDate": "Gültig ab",
+      "introduction": "Diese Datenschutzrichtlinie beschreibt, wie",
+      "introduction2": "Ihre persönlichen Informationen sammelt, verwendet und schützt, wenn Sie unsere Website",
+      "introduction3": "und unsere Fahrradverleih- und geführten Touren-Services nutzen.",
+      "article1": {
+        "title": "Artikel 1: Gesammelte Informationen",
+        "subtitle1": "1.1 Informationen, die Sie uns zur Verfügung stellen",
+        "content1": "Wir sammeln persönliche Informationen, die Sie uns freiwillig zur Verfügung stellen, wenn Sie:",
+        "list1": [
+          "Eine Fahrradmiete oder geführte Tour buchen",
+          "Ein Konto auf unserer Website erstellen",
+          "Uns per E-Mail, Telefon oder WhatsApp kontaktieren",
+          "Sich für unseren Newsletter anmelden",
+          "Eine Bewertung oder ein Zeugnis hinterlassen"
+        ],
+        "content2": "Diese Informationen können umfassen:",
+        "list2": [
+          "Vor- und Nachname",
+          "E-Mail-Adresse",
+          "Telefonnummer",
+          "Postanschrift",
+          "Zahlungsinformationen",
+          "Präferenzen bezüglich Touren und Fahrradverleih"
+        ],
+        "subtitle2": "1.2 Automatisch gesammelte Informationen",
+        "content3": "Wenn Sie unsere Website besuchen, sammeln wir automatisch bestimmte Informationen, einschließlich:",
+        "list3": [
+          "IP-Adresse und Informationen über Ihr Gerät (Gerätetyp, Browser, Betriebssystem)",
+          "Besuchte Seiten und Dauer der Besuche",
+          "Navigations- und Klickdaten",
+          "Cookies und ähnliche Technologien"
+        ]
+      },
+      "article2": {
+        "title": "Artikel 2: Verwendung der Informationen",
+        "content1": "Wir verwenden Ihre persönlichen Informationen für die folgenden Zwecke:",
+        "list": [
+          "Buchungsverwaltung: Bearbeitung Ihrer Fahrrad- und geführten Tour-Reservierungen, Versendung von Bestätigungen und Erinnerungen",
+          "Kommunikation: Beantwortung Ihrer Fragen, Informationsanfragen und Beschwerden",
+          "Marketing: Versendung von Newslettern, Werbeaktionen und Sonderangeboten (mit Ihrer Zustimmung)",
+          "Serviceverbesserung: Analyse der Nutzung unserer Website zur Verbesserung unserer Services und Ihrer Benutzererfahrung",
+          "Sicherheit: Verhinderung von Betrug und Gewährleistung der Sicherheit unserer Services",
+          "Rechtliche Verpflichtungen: Einhaltung unserer rechtlichen und regulatorischen Verpflichtungen"
+        ]
+      },
+      "article3": {
+        "title": "Artikel 3: Weitergabe von Informationen",
+        "content1": "Wir verkaufen oder vermieten Ihre persönlichen Informationen nicht an Dritte. Wir können Ihre Informationen in den folgenden Fällen teilen:",
+        "list": [
+          "Dienstleister: Wir können Ihre Informationen mit Drittanbietern teilen, die uns bei der Bereitstellung unserer Services helfen (Zahlungsabwicklung, Webhosting, Marketing-Services)",
+          "Geschäftspartner: Mit Ihrer Zustimmung können wir Ihre Informationen mit unseren Partnern für Sonderangebote teilen",
+          "Rechtliche Verpflichtungen: Wenn es gesetzlich vorgeschrieben ist, durch Gerichtsbeschluss oder zum Schutz unserer Rechte",
+          "Unternehmensübertragung: Im Falle einer Fusion, Übernahme oder eines Verkaufs von Vermögenswerten"
+        ]
+      },
+      "article4": {
+        "title": "Artikel 4: Cookies und ähnliche Technologien",
+        "content1": "Unsere Website verwendet Cookies und ähnliche Technologien, um Ihre Erfahrung zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
+        "subtitle": "Verwendete Cookie-Typen:",
+        "list": [
+          "Essenzielle Cookies: Notwendig für den Betrieb der Website (Sitzungsverwaltung, Sicherheit)",
+          "Leistungs-Cookies: Zur Analyse der Website-Nutzung und Verbesserung ihrer Leistung",
+          "Funktionalitäts-Cookies: Zur Speicherung Ihrer Präferenzen (Sprache, Region)",
+          "Marketing-Cookies: Zur Bereitstellung personalisierter Inhalte und zielgerichteter Werbung"
+        ],
+        "content2": "Sie können Cookies über Ihre Browser-Einstellungen kontrollieren und verwalten. Beachten Sie, dass die Deaktivierung bestimmter Cookies die Funktionalität der Website beeinträchtigen kann."
+      },
+      "article5": {
+        "title": "Artikel 5: Datensicherheit",
+        "content1": "Wir implementieren angemessene technische und organisatorische Sicherheitsmaßnahmen, um Ihre persönlichen Informationen vor unbefugtem Zugriff, Verlust, Zerstörung oder Offenlegung zu schützen.",
+        "content2": "Diese Maßnahmen umfassen:",
+        "list": [
+          "SSL/TLS-Verschlüsselung für Datenübertragungen",
+          "Eingeschränkter Zugang zu persönlichen Daten nur für autorisierte Mitarbeiter",
+          "Regelmäßige Datensicherungen",
+          "Regelmäßige Updates unserer Sicherheitssysteme"
+        ],
+        "content3": "Jedoch ist keine Methode der Übertragung über das Internet oder der elektronischen Speicherung vollständig sicher. Wir können daher keine absolute Sicherheit garantieren."
+      },
+      "article6": {
+        "title": "Artikel 6: Ihre Rechte (DSGVO)",
+        "content1": "Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie folgende Rechte:",
+        "list": [
+          "Recht auf Zugang: Sie können eine Kopie Ihrer persönlichen Daten anfordern",
+          "Recht auf Berichtigung: Sie können die Korrektur ungenauer oder unvollständiger Daten anfordern",
+          "Recht auf Löschung: Sie können die Löschung Ihrer Daten unter bestimmten Bedingungen anfordern",
+          "Recht auf Einschränkung der Verarbeitung: Sie können die Einschränkung der Verarbeitung Ihrer Daten anfordern",
+          "Recht auf Datenübertragbarkeit: Sie können die Übertragung Ihrer Daten an einen anderen Anbieter anfordern",
+          "Recht auf Widerspruch: Sie können der Verarbeitung Ihrer Daten zu Marketingzwecken widersprechen",
+          "Recht auf Widerruf der Einwilligung: Sie können Ihre Einwilligung jederzeit widerrufen"
+        ],
+        "content2": "Um diese Rechte auszuüben, kontaktieren Sie uns bitte unter:",
+        "content3": "Sie haben auch das Recht, eine Beschwerde bei der Nationalen Kommission für Informatik und Freiheiten (CNIL) einzureichen, wenn Sie der Meinung sind, dass Ihre Rechte nicht respektiert werden."
+      },
+      "article7": {
+        "title": "Artikel 7: Datenspeicherung",
+        "content1": "Wir speichern Ihre persönlichen Informationen so lange, wie es notwendig ist, um:",
+        "list": [
+          "Unsere Services bereitzustellen",
+          "Unsere rechtlichen Verpflichtungen zu erfüllen",
+          "Streitigkeiten zu lösen",
+          "Unsere Vereinbarungen durchzusetzen"
+        ],
+        "content2": "Buchungsdaten werden in der Regel 3 Jahre nach der letzten Transaktion gespeichert. Marketing-Daten werden bis zu Ihrer Abmeldung oder dem Widerruf der Einwilligung gespeichert."
+      },
+      "article8": {
+        "title": "Artikel 8: Links zu Drittanbieter-Websites",
+        "content1": "Unsere Website kann Links zu Drittanbieter-Websites (soziale Netzwerke, Partner) enthalten. Wir sind nicht verantwortlich für die Datenschutzpraktiken dieser Websites. Wir ermutigen Sie, die Datenschutzrichtlinien dieser Websites zu lesen, bevor Sie ihnen persönliche Informationen zur Verfügung stellen."
+      },
+      "article9": {
+        "title": "Artikel 9: Richtlinienänderungen",
+        "content1": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit ändern, um Änderungen in unseren Praktiken oder aus anderen operativen, rechtlichen oder regulatorischen Gründen widerzuspiegeln.",
+        "content2": "Wir werden Sie über alle wichtigen Änderungen informieren, indem wir die neue Richtlinie auf dieser Seite veröffentlichen und das Gültigkeitsdatum aktualisieren. Wir ermutigen Sie, diese Seite regelmäßig zu überprüfen."
+      },
+      "article10": {
+        "title": "Artikel 10: Minderjährige",
+        "content1": "Unsere Services richten sich nicht an Personen unter 16 Jahren. Wir sammeln wissentlich keine persönlichen Informationen von Minderjährigen. Wenn Sie ein Elternteil oder Vormund sind und glauben, dass Ihr Kind uns persönliche Informationen zur Verfügung gestellt hat, kontaktieren Sie uns bitte."
+      },
+      "contact": {
+        "title": "Kontaktieren Sie uns",
+        "content1": "Für alle Fragen zu dieser Datenschutzrichtlinie oder zur Ausübung Ihrer Rechte können Sie uns kontaktieren:",
+        "email": "Per E-Mail:",
+        "phone": "Per Telefon:",
+        "mail": "Per Post:"
+      },
+      "lastUpdated": "Zuletzt aktualisiert:"
+    }
   }
 }
