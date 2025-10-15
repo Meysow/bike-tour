@@ -75,21 +75,44 @@
   }
 
   /* Responsive slide widths for Instagram carousel */
+  .instagram-carousel .swiper-slide {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    @apply h-auto flex-shrink-0;
+  }
+
+  /* Ensure mobile slides are completely stable */
+  @media (max-width: 639px) {
+    .instagram-carousel .swiper-slide {
+      width: 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+    }
+  }
+
   @media (min-width: 640px) {
     .instagram-carousel .swiper-slide {
       width: calc(50% - 8px) !important;
+      min-width: calc(50% - 8px) !important;
+      max-width: calc(50% - 8px) !important;
     }
   }
 
   @media (min-width: 768px) {
     .instagram-carousel .swiper-slide {
       width: calc(33.333% - 13.333px) !important;
+      min-width: calc(33.333% - 13.333px) !important;
+      max-width: calc(33.333% - 13.333px) !important;
     }
   }
 
   @media (min-width: 1024px) {
     .instagram-carousel .swiper-slide {
       width: calc(25% - 18px) !important;
+      min-width: calc(25% - 18px) !important;
+      max-width: calc(25% - 18px) !important;
     }
   }
 

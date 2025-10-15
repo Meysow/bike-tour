@@ -146,7 +146,10 @@ export function InstagramCarousel({
         </div>
 
         <div className="space-y-8 w-full">
-          <div className="w-full overflow-hidden">
+          <div
+            className="w-full overflow-hidden relative"
+            style={{ contain: "layout" }}
+          >
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={16}
@@ -177,9 +180,16 @@ export function InstagramCarousel({
                   spaceBetween: 24,
                 },
               }}
-              observer={true}
-              observeParents={true}
-              watchSlidesProgress={true}
+              observer={false}
+              observeParents={false}
+              watchSlidesProgress={false}
+              resizeObserver={false}
+              updateOnWindowResize={false}
+              preventInteractionOnTransition={false}
+              allowTouchMove={true}
+              touchStartPreventDefault={false}
+              centeredSlides={false}
+              loop={false}
               className="swiper-carousel instagram-carousel w-full"
             >
               {posts.map((post) => (
