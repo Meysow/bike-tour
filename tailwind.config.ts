@@ -136,6 +136,9 @@ const config = {
         "fade-in": "fade-in 0.4s",
         "fade-out": "fade-out 0.4s",
       },
+      backgroundClip: {
+        text: "text",
+      },
     },
   },
   plugins: [tailwindcssAnimate, typography],

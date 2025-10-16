@@ -61,6 +61,46 @@
 }
 
 @layer components {
+  /* Gradient Text Styles - Cross-browser compatibility */
+  .gradient-text {
+    /* Create the gradient background */
+    background: linear-gradient(to right, hsl(var(--primary)), #e879f9);
+
+    /* Apply gradient to text with vendor prefixes */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* Make text transparent to show gradient */
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    /* Ensure the element has a defined size */
+    display: inline-block;
+
+    /* Fallback for browsers that don't support background-clip: text */
+    @supports not (background-clip: text) {
+      background: none;
+      -webkit-text-fill-color: initial;
+      color: hsl(var(--primary));
+    }
+
+    /* Additional fallback for older browsers */
+    @supports not (-webkit-background-clip: text) {
+      background: none;
+      -webkit-text-fill-color: initial;
+      color: hsl(var(--primary));
+    }
+  }
+
+  /* Specific fix for Chrome on macOS */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .gradient-text {
+      /* Force hardware acceleration */
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+    }
+  }
+
   /* Swiper Carousel Styles */
   .swiper-carousel {
     @apply w-full max-w-full;

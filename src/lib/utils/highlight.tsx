@@ -24,7 +24,7 @@ export function HighlightText({
         if (part.startsWith("<highlight>") && part.endsWith("</highlight>")) {
           const content = part.replace(/<\/?highlight>/g, "");
           const highlightClass = gradient
-            ? "bg-gradient-to-r from-primary to-fuchsia-400 bg-clip-text text-transparent font-extrabold"
+            ? "gradient-text font-extrabold"
             : "font-semibold";
 
           return (
