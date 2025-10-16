@@ -8,6 +8,8 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    GOOGLE_BUSINESS_ID: z.string(),
+    GOOGLE_PLACES_API_KEY: z.string(),
   },
 
   /**
@@ -26,8 +28,10 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
-    NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN: process.env.NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN,
+    NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN:
+      process.env.NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN,
     NODE_ENV: process.env.NODE_ENV,
+    GOOGLE_BUSINESS_ID: process.env.GOOGLE_BUSINESS_ID,
+    GOOGLE_PLACES_API_KEY: process.env.GOOGLE_PLACES_API_KEY,
   },
 });
-

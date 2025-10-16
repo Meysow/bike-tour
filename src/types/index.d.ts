@@ -11,6 +11,9 @@ export interface Testimonial {
   name: string;
   role: string;
   avatar: string; // Image key (e.g., "derrick-bowman", "troy-castillo", etc.)
+  rating?: number;
+  date?: string;
+  source?: "google" | "static";
 }
 
 export interface TourContent {

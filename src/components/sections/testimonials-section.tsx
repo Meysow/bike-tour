@@ -2,13 +2,12 @@
 
 import { Icons } from "@/components/shared/icons";
 import { Card, CardContent } from "@/components/ui/card";
-import { testimonials } from "@/data/testimonials";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { Testimonial } from "@/types";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Balancer from "react-wrap-balancer";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -61,7 +60,11 @@ function TestimonialCard({
           {[...Array(5)].map((_, i) => (
             <Icons.star
               key={i}
-              className="w-4 h-4 text-yellow-400 fill-current"
+              className={`w-4 h-4 ${
+                i < (testimonial.rating || 5)
+                  ? "text-yellow-400 fill-current"
+                  : "text-gray-300"
+              }`}
             />
           ))}
         </div>
@@ -88,6 +91,63 @@ function TestimonialCard({
 export function TestimonialsSection() {
   const { locale } = useLocalizedRoutes();
   const t = getSectionTranslations(locale, "testimonials");
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchTestimonials() {
+      try {
+        setLoading(true);
+        const response = await fetch("/api/reviews?limit=9");
+        const data = await response.json();
+
+        if (data.error) {
+          throw new Error(data.message || "Failed to fetch reviews");
+        }
+
+        setTestimonials(data.testimonials || []);
+      } catch (err) {
+        console.error("Error fetching testimonials:", err);
+        setError(
+          err instanceof Error ? err.message : "Failed to load testimonials"
+        );
+        // Fallback to static testimonials
+        const { testimonials: staticTestimonials } = await import(
+          "@/data/testimonials"
+        );
+        setTestimonials(
+          staticTestimonials.map((t) => ({ ...t, source: "static" as const }))
+        );
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchTestimonials();
+  }, []);
+
+  if (loading) {
+    return (
+      <section className="w-full">
+        <div className="container mx-auto text-center">
+          <div className="flex flex-col items-center gap-4 mb-8">
+            <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+              <HighlightText gradient={true}>{t.title}</HighlightText>
+            </h2>
+            <h3 className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+              <HighlightText gradient={false} className="text-foreground">
+                {t.subtitle}
+              </HighlightText>
+            </h3>
+          </div>
+          <div className="flex justify-center items-center py-12">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section
