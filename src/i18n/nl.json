@@ -400,5 +400,200 @@
       "articlesFoundPlural": "artikelen gevonden",
       "containingAllSelectedTags": "(bevat alle geselecteerde tags)"
     }
+  },
+  "legal": {
+    "terms": {
+      "title": "Algemene Voorwaarden",
+      "subtitle": "Van kracht vanaf {effectiveDate}",
+      "intro": "Deze algemene voorwaarden (\"Voorwaarden\") regelen het juridische kader voor de verstrekking van de website en diensten door Rentabike Paris en definiëren de voorwaarden voor toegang en gebruik van de diensten door de \"Gebruiker\".",
+      "intro2": "Deze Voorwaarden zijn toegankelijk op de website onder de sectie \"Voorwaarden\".",
+      "article1": {
+        "title": "Artikel 1: Juridische Informatie",
+        "content1": "De redactie en leiding van de publicatie van de website",
+        "content2": "wordt verzorgd door",
+        "content3": "gedomicilieerd te",
+        "content4": "Telefoonnummer",
+        "content5": "E-mailadres",
+        "content6": "De website host",
+        "content7": "is het bedrijf",
+        "content8": "wiens hoofdkantoor gevestigd is te",
+        "content9": "met het telefoonnummer"
+      },
+      "article2": {
+        "title": "ARTIKEL 2: Website Toegang",
+        "content1": "De website",
+        "content2": "biedt de Gebruiker gratis toegang tot de volgende diensten: De website biedt de volgende diensten aan:",
+        "services": "Fietsverhuur, rondleidingen",
+        "content3": "De website is gratis toegankelijk overal voor elke Gebruiker met internettoegang. Alle kosten die de Gebruiker maakt om toegang te krijgen tot de service (computerapparatuur, software, internetverbinding, etc.) zijn voor zijn rekening."
+      },
+      "article3": {
+        "title": "ARTIKEL 3: Gegevensverzameling",
+        "content1": "De website is vrijgesteld van aangifte bij de Nationale Commissie voor Informatietechnologie en Vrijheden (CNIL) voor zover het geen gegevens verzamelt betreffende Gebruikers."
+      },
+      "article4": {
+        "title": "ARTIKEL 4: Intellectueel Eigendom",
+        "content1": "De merken, logo's, tekens en alle inhoud van de site (teksten, afbeeldingen, geluid...) zijn onderworpen aan bescherming door de Code van Intellectueel Eigendom en meer bepaald door het auteursrecht.",
+        "content2": "De Gebruiker moet voorafgaande toestemming van de site vragen voor elke reproductie, publicatie, kopie van de verschillende inhoud. Hij verbindt zich ertoe de inhoud van de site te gebruiken in een strikt privé kader, elk gebruik voor commerciële en reclamedoeleinden is ten strengste verboden.",
+        "content3": "Elke totale of gedeeltelijke weergave van deze site door enig procedé, zonder uitdrukkelijke toestemming van de website exploitant zou een inbreuk vormen gesanctioneerd door artikel L 335-2 en volgende van de Code van Intellectueel Eigendom.",
+        "content4": "Het wordt herinnerd conform artikel L122-5 van de Code van Intellectueel Eigendom dat de Gebruiker die beschermde inhoud reproduceert, kopieert of publiceert de auteur en zijn bron moet citeren."
+      },
+      "article5": {
+        "title": "ARTIKEL 5: Aansprakelijkheid",
+        "content1": "De bronnen van informatie verspreid op de website",
+        "content2": "worden als betrouwbaar beschouwd maar de site garandeert niet dat het vrij is van defecten, fouten of weglatingen.",
+        "content3": "De gecommuniceerde informatie wordt gepresenteerd voor indicatieve en algemene doeleinden zonder contractuele waarde. Ondanks regelmatige updates kan de website",
+        "content4": "niet verantwoordelijk worden gehouden voor de wijziging van administratieve en juridische bepalingen die optreden na publicatie. Evenmin kan de site verantwoordelijk worden gehouden voor het gebruik en de interpretatie van de informatie vervat in deze site.",
+        "content5": "De website",
+        "content6": "kan niet verantwoordelijk worden gehouden voor eventuele virussen die de computer of enig computerapparaat van de Internetgebruiker kunnen infecteren, als gevolg van gebruik, toegang, of download van deze site.",
+        "content7": "De aansprakelijkheid van de site kan niet worden ingeroepen in geval van overmacht of onvoorzienbare en onoverkomelijke feit van een derde."
+      },
+      "article6": {
+        "title": "ARTIKEL 6: Hypertext Links",
+        "content1": "Hypertext links kunnen aanwezig zijn op de site. De Gebruiker wordt geïnformeerd dat door op deze links te klikken, hij de site zal verlaten",
+        "content2": "Deze laatste heeft geen controle over de webpagina's waar deze links naartoe leiden en kan in geen geval verantwoordelijk worden gehouden voor hun inhoud."
+      },
+      "article7": {
+        "title": "ARTIKEL 7: Cookies",
+        "content1": "De Gebruiker wordt geïnformeerd dat tijdens zijn bezoeken aan de site, een cookie automatisch kan worden geïnstalleerd op zijn navigatiesoftware.",
+        "content2": "Cookies zijn kleine bestanden tijdelijk opgeslagen op de harde schijf van de computer van de Gebruiker door uw browser en die nodig zijn voor het gebruik van de site",
+        "content3": "Cookies bevatten geen persoonlijke informatie en kunnen niet worden gebruikt om iemand te identificeren. Een cookie bevat een unieke identifier, willekeurig gegenereerd en dus anoniem. Sommige cookies verlopen aan het einde van het bezoek van de Gebruiker, andere blijven bestaan.",
+        "content4": "De informatie vervat in de cookies wordt gebruikt om de site te verbeteren",
+        "content5": "Door op de site te surfen, accepteert de Gebruiker ze.",
+        "content6": "De Gebruiker kan deze cookies deactiveren via de instellingen in zijn navigatiesoftware."
+      },
+      "article8": {
+        "title": "ARTIKEL 8: Toepasselijk Recht en Bevoegde Rechtbank",
+        "content1": "Het Franse recht is van toepassing op dit contract. In geval van afwezigheid van minnelijke oplossing van een geschil ontstaan tussen de partijen, zullen de Franse rechtbanken alleen bevoegd zijn om er kennis van te nemen. Voor elke vraag betreffende de toepassing van deze Voorwaarden kunt u de uitgever bereiken op de coördinaten ingeschreven in ARTIKEL 1."
+      }
+    },
+    "privacy": {
+      "title": "Privacybeleid",
+      "effectiveDate": "Van kracht vanaf",
+      "introduction": "Dit Privacybeleid beschrijft hoe",
+      "introduction2": "uw persoonlijke informatie verzamelt, gebruikt en beschermt wanneer u onze website",
+      "introduction3": "en onze fietsverhuur- en rondleidingsdiensten gebruikt.",
+      "article1": {
+        "title": "Artikel 1: Verzamelde Informatie",
+        "subtitle1": "1.1 Informatie die u ons verstrekt",
+        "content1": "We verzamelen persoonlijke informatie die u ons vrijwillig verstrekt wanneer u:",
+        "list1": [
+          "Een fietsverhuur of rondleiding boekt",
+          "Een account aanmaakt op onze site",
+          "Ons contacteert via email, telefoon of WhatsApp",
+          "U inschrijft voor onze nieuwsbrief",
+          "Een recensie of getuigenis achterlaat"
+        ],
+        "content2": "Deze informatie kan omvatten:",
+        "list2": [
+          "Voor- en achternaam",
+          "E-mailadres",
+          "Telefoonnummer",
+          "Postadres",
+          "Betalingsinformatie",
+          "Voorkeuren betreffende rondleidingen en fietsverhuur"
+        ],
+        "subtitle2": "1.2 Automatisch verzamelde informatie",
+        "content3": "Wanneer u onze site bezoekt, verzamelen we automatisch bepaalde informatie, waaronder:",
+        "list3": [
+          "IP-adres en informatie over uw apparaat (apparaattype, browser, besturingssysteem)",
+          "Bezochte pagina's en duur van bezoeken",
+          "Navigatie- en klikgegevens",
+          "Cookies en vergelijkbare technologieën"
+        ]
+      },
+      "article2": {
+        "title": "Artikel 2: Gebruik van Informatie",
+        "content1": "We gebruiken uw persoonlijke informatie voor de volgende doeleinden:",
+        "list": [
+          "Reserveringsbeheer: Uw fiets- en rondleidingsreserveringen verwerken, bevestigingen en herinneringen sturen",
+          "Communicatie: Reageren op uw vragen, informatieverzoeken en klachten",
+          "Marketing: Nieuwsbrieven, promoties en speciale aanbiedingen sturen (met uw toestemming)",
+          "Serviceverbetering: Het gebruik van onze site analyseren om onze diensten en uw gebruikerservaring te verbeteren",
+          "Beveiliging: Fraude voorkomen en de beveiliging van onze diensten waarborgen",
+          "Juridische Verplichtingen: Onze juridische en regelgevingsverplichtingen naleven"
+        ]
+      },
+      "article3": {
+        "title": "Artikel 3: Delen van Informatie",
+        "content1": "We verkopen of verhuren uw persoonlijke informatie niet aan derden. We kunnen uw informatie delen in de volgende gevallen:",
+        "list": [
+          "Dienstverleners: We kunnen uw informatie delen met derde dienstverleners die ons helpen onze diensten te leveren (betalingsverwerking, webhosting, marketingdiensten)",
+          "Zakelijke Partners: Met uw toestemming kunnen we uw informatie delen met onze partners voor speciale aanbiedingen",
+          "Juridische Verplichtingen: Indien vereist door wet, gerechtelijk bevel, of om onze rechten te beschermen",
+          "Bedrijfsoverdracht: In geval van fusie, overname of verkoop van activa"
+        ]
+      },
+      "article4": {
+        "title": "Artikel 4: Cookies en Vergelijkbare Technologieën",
+        "content1": "Onze site gebruikt cookies en vergelijkbare technologieën om uw ervaring te verbeteren. Cookies zijn kleine tekstbestanden opgeslagen op uw apparaat.",
+        "subtitle": "Gebruikte cookie-typen:",
+        "list": [
+          "Essentiële cookies: Noodzakelijk voor de werking van de site (sessiebeheer, beveiliging)",
+          "Prestatiecookies: Om het gebruik van de site te analyseren en de prestaties te verbeteren",
+          "Functionaliteitscookies: Om uw voorkeuren te onthouden (taal, regio)",
+          "Marketingcookies: Om u gepersonaliseerde inhoud en gerichte advertenties aan te bieden"
+        ],
+        "content2": "U kunt cookies beheren via uw browserinstellingen. Let op dat het uitschakelen van bepaalde cookies de functionaliteit van de site kan beïnvloeden."
+      },
+      "article5": {
+        "title": "Artikel 5: Gegevensbeveiliging",
+        "content1": "We implementeren passende technische en organisatorische beveiligingsmaatregelen om uw persoonlijke informatie te beschermen tegen ongeautoriseerde toegang, verlies, vernietiging of openbaarmaking.",
+        "content2": "Deze maatregelen omvatten:",
+        "list": [
+          "SSL/TLS-versleuteling voor gegevensoverdracht",
+          "Beperkte toegang tot persoonlijke gegevens alleen voor geautoriseerde werknemers",
+          "Regelmatige gegevensback-ups",
+          "Regelmatige updates van onze beveiligingssystemen"
+        ],
+        "content3": "Echter, geen methode van overdracht via internet of elektronische opslag is volledig veilig. We kunnen daarom geen absolute beveiliging garanderen."
+      },
+      "article6": {
+        "title": "Artikel 6: Uw Rechten (AVG)",
+        "content1": "In overeenstemming met de Algemene Verordening Gegevensbescherming (AVG) heeft u de volgende rechten:",
+        "list": [
+          "Recht op toegang: U kunt een kopie van uw persoonlijke gegevens aanvragen",
+          "Recht op rectificatie: U kunt de correctie van onjuiste of onvolledige gegevens aanvragen",
+          "Recht op vergetelheid: U kunt de verwijdering van uw gegevens aanvragen onder bepaalde voorwaarden",
+          "Recht op beperking van verwerking: U kunt de beperking van verwerking van uw gegevens aanvragen",
+          "Recht op gegevensoverdraagbaarheid: U kunt de overdracht van uw gegevens naar een andere provider aanvragen",
+          "Recht van bezwaar: U kunt bezwaar maken tegen de verwerking van uw gegevens voor marketingdoeleinden",
+          "Recht om uw toestemming in te trekken: U kunt uw toestemming te allen tijde intrekken"
+        ],
+        "content2": "Om deze rechten uit te oefenen, neem contact met ons op via:",
+        "content3": "U heeft ook het recht om een klacht in te dienen bij de Nationale Commissie voor Informatietechnologie en Vrijheden (CNIL) als u van mening bent dat uw rechten niet worden gerespecteerd."
+      },
+      "article7": {
+        "title": "Artikel 7: Gegevensbewaring",
+        "content1": "We bewaren uw persoonlijke informatie zo lang als nodig om:",
+        "list": [
+          "Onze diensten te leveren",
+          "Onze juridische verplichtingen na te komen",
+          "Geschillen op te lossen",
+          "Onze overeenkomsten af te dwingen"
+        ],
+        "content2": "Reserveringsgegevens worden doorgaans 3 jaar na de laatste transactie bewaard. Marketinggegevens worden bewaard tot u zich afmeldt of uw toestemming intrekt."
+      },
+      "article8": {
+        "title": "Artikel 8: Links naar Derde Websites",
+        "content1": "Onze site kan links bevatten naar websites van derden (sociale netwerken, partners). We zijn niet verantwoordelijk voor de privacypraktijken van deze sites. We moedigen u aan om de privacybeleidsregels van deze sites te lezen voordat u hen persoonlijke informatie verstrekt."
+      },
+      "article9": {
+        "title": "Artikel 9: Wijzigingen in het Beleid",
+        "content1": "We kunnen dit Privacybeleid van tijd tot tijd wijzigen om veranderingen in onze praktijken of om andere operationele, juridische of regelgevingsredenen weer te geven.",
+        "content2": "We zullen u op de hoogte stellen van belangrijke wijzigingen door het nieuwe beleid op deze pagina te publiceren en de ingangsdatum bij te werken. We moedigen u aan om deze pagina regelmatig te controleren."
+      },
+      "article10": {
+        "title": "Artikel 10: Minderjarigen",
+        "content1": "Onze diensten zijn niet bedoeld voor personen onder de 16 jaar. We verzamelen bewust geen persoonlijke informatie van minderjarigen. Als u ouder of voogd bent en denkt dat uw kind ons persoonlijke informatie heeft verstrekt, neem dan contact met ons op."
+      },
+      "contact": {
+        "title": "Neem Contact Op",
+        "content1": "Voor vragen over dit Privacybeleid of om uw rechten uit te oefenen, kunt u contact met ons opnemen:",
+        "email": "Per e-mail:",
+        "phone": "Per telefoon:",
+        "mail": "Per post:"
+      },
+      "lastUpdated": "Laatst bijgewerkt:"
+    }
   }
 }

@@ -400,5 +400,200 @@
       "articlesFoundPlural": "artículos encontrados",
       "containingAllSelectedTags": "(contiene todas las etiquetas seleccionadas)"
     }
+  },
+  "legal": {
+    "terms": {
+      "title": "Términos de Servicio",
+      "subtitle": "Vigente desde {effectiveDate}",
+      "intro": "Estos términos de servicio (\"Términos\") rigen el marco legal para la prestación del sitio web y los servicios por parte de Rentabike Paris y definen las condiciones de acceso y uso de los servicios por parte del \"Usuario\".",
+      "intro2": "Estos Términos son accesibles en el sitio web en la sección \"Términos\".",
+      "article1": {
+        "title": "Artículo 1: Información Legal",
+        "content1": "La edición y dirección de la publicación del sitio web",
+        "content2": "está a cargo de",
+        "content3": "domiciliado en",
+        "content4": "Número de teléfono",
+        "content5": "Dirección de correo electrónico",
+        "content6": "El host del sitio web",
+        "content7": "es la empresa",
+        "content8": "cuya sede social está ubicada en",
+        "content9": "con el número de teléfono"
+      },
+      "article2": {
+        "title": "ARTÍCULO 2: Acceso al Sitio",
+        "content1": "El sitio web",
+        "content2": "permite al Usuario un acceso gratuito a los siguientes servicios: El sitio web ofrece los siguientes servicios:",
+        "services": "Alquiler de bicicletas, tours guiados",
+        "content3": "El sitio web es accesible gratuitamente en cualquier lugar para cualquier Usuario con acceso a Internet. Todos los costos soportados por el Usuario para acceder al servicio (equipamiento informático, software, conexión a Internet, etc.) corren por su cuenta."
+      },
+      "article3": {
+        "title": "ARTÍCULO 3: Recopilación de Datos",
+        "content1": "El sitio web está exento de declaración a la Comisión Nacional de Informática y Libertades (CNIL) en la medida en que no recopila ningún dato concerniente a los Usuarios."
+      },
+      "article4": {
+        "title": "ARTÍCULO 4: Propiedad Intelectual",
+        "content1": "Las marcas, logos, signos y todos los contenidos del sitio (textos, imágenes, sonido...) están sujetos a protección por el Código de la Propiedad Intelectual y más particularmente por el derecho de autor.",
+        "content2": "El Usuario debe solicitar autorización previa del sitio para cualquier reproducción, publicación, copia de los diferentes contenidos. Se compromete a utilizar los contenidos del sitio en un marco estrictamente privado, cualquier uso con fines comerciales y publicitarios está estrictamente prohibido.",
+        "content3": "Cualquier representación total o parcial de este sitio por cualquier procedimiento que sea, sin la autorización expresa del operador del sitio web constituiría una falsificación sancionada por el artículo L 335-2 y siguientes del Código de la Propiedad Intelectual.",
+        "content4": "Se recuerda conforme al artículo L122-5 del Código de Propiedad Intelectual que el Usuario que reproduce, copia o publica el contenido protegido debe citar al autor y su fuente."
+      },
+      "article5": {
+        "title": "ARTÍCULO 5: Responsabilidad",
+        "content1": "Las fuentes de información difundidas en el sitio web",
+        "content2": "se consideran fiables pero el sitio no garantiza que esté exento de defectos, errores u omisiones.",
+        "content3": "La información comunicada se presenta a título indicativo y general sin valor contractual. A pesar de actualizaciones regulares, el sitio web",
+        "content4": "no puede ser considerado responsable de la modificación de las disposiciones administrativas y jurídicas que ocurran después de la publicación. Asimismo, el sitio no puede ser considerado responsable del uso y la interpretación de la información contenida en este sitio.",
+        "content5": "El sitio web",
+        "content6": "no puede ser considerado responsable de eventuales virus que puedan infectar el ordenador o cualquier material informático del Internauta, como consecuencia de un uso, acceso, o descarga proveniente de este sitio.",
+        "content7": "La responsabilidad del sitio no puede ser comprometida en caso de fuerza mayor o hecho imprevisible e insuperable de un tercero."
+      },
+      "article6": {
+        "title": "ARTÍCULO 6: Enlaces Hipertexto",
+        "content1": "Pueden estar presentes enlaces hipertexto en el sitio. El Usuario está informado de que al hacer clic en estos enlaces, saldrá del sitio",
+        "content2": "Este último no tiene control sobre las páginas web a las que conducen estos enlaces y no podría, en ningún caso, ser responsable de su contenido."
+      },
+      "article7": {
+        "title": "ARTÍCULO 7: Cookies",
+        "content1": "El Usuario está informado de que durante sus visitas al sitio, una cookie puede instalarse automáticamente en su software de navegación.",
+        "content2": "Las cookies son pequeños archivos almacenados temporalmente en el disco duro del ordenador del Usuario por su navegador y que son necesarios para el uso del sitio",
+        "content3": "Las cookies no contienen información personal y no pueden ser utilizadas para identificar a alguien. Una cookie contiene un identificador único, generado aleatoriamente y por tanto anónimo. Algunas cookies expiran al final de la visita del Usuario, otras permanecen.",
+        "content4": "La información contenida en las cookies se utiliza para mejorar el sitio",
+        "content5": "Al navegar por el sitio, el Usuario las acepta.",
+        "content6": "El Usuario podrá desactivar estas cookies a través de los parámetros que figuran en su software de navegación."
+      },
+      "article8": {
+        "title": "ARTÍCULO 8: Derecho Aplicable y Jurisdicción Competente",
+        "content1": "La legislación francesa se aplica al presente contrato. En caso de ausencia de resolución amigable de una disputa nacida entre las partes, los tribunales franceses serán los únicos competentes para conocerla. Para cualquier pregunta relativa a la aplicación de estos Términos, puede contactar al editor en las coordenadas inscritas en el ARTÍCULO 1."
+      }
+    },
+    "privacy": {
+      "title": "Política de Privacidad",
+      "effectiveDate": "Vigente desde",
+      "introduction": "Esta Política de Privacidad describe cómo",
+      "introduction2": "recopila, utiliza y protege su información personal cuando utiliza nuestro sitio web",
+      "introduction3": "y nuestros servicios de alquiler de bicicletas y tours guiados.",
+      "article1": {
+        "title": "Artículo 1: Información Recopilada",
+        "subtitle1": "1.1 Información que usted nos proporciona",
+        "content1": "Recopilamos información personal que usted nos proporciona voluntariamente cuando:",
+        "list1": [
+          "Reserva un alquiler de bicicleta o tour guiado",
+          "Crea una cuenta en nuestro sitio",
+          "Nos contacta por email, teléfono o WhatsApp",
+          "Se suscribe a nuestro boletín",
+          "Deja una reseña o testimonio"
+        ],
+        "content2": "Esta información puede incluir:",
+        "list2": [
+          "Nombre y apellido",
+          "Dirección de correo electrónico",
+          "Número de teléfono",
+          "Dirección postal",
+          "Información de pago",
+          "Preferencias sobre tours y alquileres de bicicletas"
+        ],
+        "subtitle2": "1.2 Información recopilada automáticamente",
+        "content3": "Cuando visita nuestro sitio, recopilamos automáticamente cierta información, incluyendo:",
+        "list3": [
+          "Dirección IP e información sobre su dispositivo (tipo de dispositivo, navegador, sistema operativo)",
+          "Páginas visitadas y duración de las visitas",
+          "Datos de navegación y clics",
+          "Cookies y tecnologías similares"
+        ]
+      },
+      "article2": {
+        "title": "Artículo 2: Uso de la Información",
+        "content1": "Utilizamos su información personal para los siguientes propósitos:",
+        "list": [
+          "Gestión de Reservas: Procesar sus reservas de bicicletas y tours guiados, enviarle confirmaciones y recordatorios",
+          "Comunicación: Responder a sus preguntas, solicitudes de información y reclamaciones",
+          "Marketing: Enviarle boletines, promociones y ofertas especiales (con su consentimiento)",
+          "Mejora del Servicio: Analizar el uso de nuestro sitio para mejorar nuestros servicios y su experiencia de usuario",
+          "Seguridad: Prevenir el fraude y asegurar la seguridad de nuestros servicios",
+          "Obligaciones Legales: Cumplir con nuestras obligaciones legales y regulatorias"
+        ]
+      },
+      "article3": {
+        "title": "Artículo 3: Compartir Información",
+        "content1": "No vendemos ni alquilamos su información personal a terceros. Podemos compartir su información en los siguientes casos:",
+        "list": [
+          "Proveedores de Servicios: Podemos compartir su información con proveedores de servicios terceros que nos ayudan a proporcionar nuestros servicios (procesamiento de pagos, hosting web, servicios de marketing)",
+          "Socios Comerciales: Con su consentimiento, podemos compartir su información con nuestros socios para ofertas especiales",
+          "Obligaciones Legales: Si es requerido por la ley, orden judicial, o para proteger nuestros derechos",
+          "Transferencia de Negocio: En caso de fusión, adquisición o venta de activos"
+        ]
+      },
+      "article4": {
+        "title": "Artículo 4: Cookies y Tecnologías Similares",
+        "content1": "Nuestro sitio utiliza cookies y tecnologías similares para mejorar su experiencia. Las cookies son pequeños archivos de texto almacenados en su dispositivo.",
+        "subtitle": "Tipos de cookies utilizadas:",
+        "list": [
+          "Cookies esenciales: Necesarias para el funcionamiento del sitio (gestión de sesión, seguridad)",
+          "Cookies de rendimiento: Para analizar el uso del sitio y mejorar su rendimiento",
+          "Cookies de funcionalidad: Para recordar sus preferencias (idioma, región)",
+          "Cookies de marketing: Para ofrecerle contenido personalizado y publicidad dirigida"
+        ],
+        "content2": "Puede controlar y gestionar las cookies a través de la configuración de su navegador. Tenga en cuenta que desactivar ciertas cookies puede afectar la funcionalidad del sitio."
+      },
+      "article5": {
+        "title": "Artículo 5: Seguridad de Datos",
+        "content1": "Implementamos medidas de seguridad técnicas y organizacionales apropiadas para proteger su información personal contra acceso no autorizado, pérdida, destrucción o divulgación.",
+        "content2": "Estas medidas incluyen:",
+        "list": [
+          "Cifrado SSL/TLS para transmisiones de datos",
+          "Acceso restringido a datos personales solo a empleados autorizados",
+          "Copias de seguridad regulares de datos",
+          "Actualizaciones regulares de nuestros sistemas de seguridad"
+        ],
+        "content3": "Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es completamente seguro. Por lo tanto, no podemos garantizar una seguridad absoluta."
+      },
+      "article6": {
+        "title": "Artículo 6: Sus Derechos (RGPD)",
+        "content1": "Conforme al Reglamento General de Protección de Datos (RGPD), usted tiene los siguientes derechos:",
+        "list": [
+          "Derecho de acceso: Puede solicitar una copia de sus datos personales",
+          "Derecho de rectificación: Puede solicitar la corrección de datos inexactos o incompletos",
+          "Derecho al borrado: Puede solicitar la eliminación de sus datos en ciertas condiciones",
+          "Derecho a la limitación del procesamiento: Puede solicitar la limitación del procesamiento de sus datos",
+          "Derecho a la portabilidad: Puede solicitar la transferencia de sus datos a otro proveedor",
+          "Derecho de oposición: Puede oponerse al procesamiento de sus datos con fines de marketing",
+          "Derecho a retirar su consentimiento: Puede retirar su consentimiento en cualquier momento"
+        ],
+        "content2": "Para ejercer estos derechos, contáctenos en:",
+        "content3": "También tiene el derecho de presentar una queja ante la Comisión Nacional de Informática y Libertades (CNIL) si considera que sus derechos no están siendo respetados."
+      },
+      "article7": {
+        "title": "Artículo 7: Conservación de Datos",
+        "content1": "Conservamos su información personal durante el tiempo necesario para:",
+        "list": [
+          "Proporcionar nuestros servicios",
+          "Cumplir con nuestras obligaciones legales",
+          "Resolver disputas",
+          "Aplicar nuestros acuerdos"
+        ],
+        "content2": "Los datos de reserva generalmente se conservan durante 3 años después de la última transacción. Los datos de marketing se conservan hasta que se dé de baja o retire su consentimiento."
+      },
+      "article8": {
+        "title": "Artículo 8: Enlaces a Sitios de Terceros",
+        "content1": "Nuestro sitio puede contener enlaces a sitios web de terceros (redes sociales, socios). No somos responsables de las prácticas de privacidad de estos sitios. Le animamos a leer las políticas de privacidad de estos sitios antes de proporcionarles información personal."
+      },
+      "article9": {
+        "title": "Artículo 9: Modificaciones de la Política",
+        "content1": "Podemos modificar esta Política de Privacidad de vez en cuando para reflejar cambios en nuestras prácticas o por otras razones operativas, legales o regulatorias.",
+        "content2": "Le informaremos de cualquier cambio importante publicando la nueva política en esta página y actualizando la fecha de vigencia. Le animamos a consultar esta página regularmente."
+      },
+      "article10": {
+        "title": "Artículo 10: Menores",
+        "content1": "Nuestros servicios no están destinados a personas menores de 16 años. No recopilamos conscientemente información personal de menores. Si es padre o tutor y cree que su hijo nos ha proporcionado información personal, contáctenos."
+      },
+      "contact": {
+        "title": "Contáctanos",
+        "content1": "Para cualquier pregunta sobre esta Política de Privacidad o para ejercer sus derechos, puede contactarnos:",
+        "email": "Por email:",
+        "phone": "Por teléfono:",
+        "mail": "Por correo:"
+      },
+      "lastUpdated": "Última actualización:"
+    }
   }
 }

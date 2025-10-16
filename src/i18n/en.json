@@ -400,5 +400,189 @@
       "articlesFoundPlural": "articles found",
       "containingAllSelectedTags": "(containing all selected tags)"
     }
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "subtitle": "Effective as of {effectiveDate}",
+      "intro": "These terms of service (\"Terms\") govern the legal framework for the provision of the website and services by Rentabike Paris and define the conditions of access and use of the services by the \"User\".",
+      "intro2": "These Terms are accessible on the website under the \"Terms\" section.",
+      "article1": {
+        "title": "Article 1: Legal Information",
+        "content1": "The editing and direction of the publication of the website {website} is provided by {companyName}, domiciled at {address}.",
+        "phoneLabel": "Phone number",
+        "emailLabel": "Email address",
+        "content2": "The website host {website} is the company {hostingCompany}, whose registered office is located at {hostingAddress}, with the phone number: {hostingPhone}."
+      },
+      "article2": {
+        "title": "ARTICLE 2: Website Access",
+        "content1": "The website {website} provides the User with free access to the following services: The website offers the following services:",
+        "service1": "Bike rental, guided tours",
+        "content2": "The website is accessible free of charge anywhere to any User with Internet access. All costs incurred by the User to access the service (computer equipment, software, Internet connection, etc.) are at their expense."
+      },
+      "article3": {
+        "title": "ARTICLE 3: Data Collection",
+        "content1": "The website is exempt from declaration to the National Commission for Information Technology and Civil Liberties (CNIL) insofar as it does not collect any data concerning Users."
+      },
+      "article4": {
+        "title": "ARTICLE 4: Intellectual Property",
+        "content1": "The trademarks, logos, signs and all content of the site (texts, images, sound...) are subject to protection by the Intellectual Property Code and more particularly by copyright.",
+        "content2": "The User must request prior authorization from the site for any reproduction, publication, copy of the various contents. He undertakes to use the contents of the site in a strictly private framework, any use for commercial and advertising purposes is strictly prohibited.",
+        "content3": "Any total or partial representation of this site by any process whatsoever, without the express authorization of the website operator would constitute an infringement sanctioned by article L 335-2 and following of the Intellectual Property Code.",
+        "content4": "It is recalled in accordance with article L122-5 of the Intellectual Property Code that the User who reproduces, copies or publishes the protected content must cite the author and his source."
+      },
+      "article5": {
+        "title": "ARTICLE 5: Liability",
+        "content1": "The sources of information disseminated on the website {website} are deemed reliable but the site does not guarantee that it is free from defects, errors or omissions.",
+        "content2": "The information communicated is presented for indicative and general purposes without contractual value. Despite regular updates, the website {website} cannot be held responsible for the modification of administrative and legal provisions occurring after publication. Similarly, the site cannot be held responsible for the use and interpretation of the information contained in this site.",
+        "content3": "The website {website} cannot be held responsible for any viruses that may infect the computer or any computer equipment of the Internet user, following use, access, or download from this site.",
+        "content4": "The site's liability cannot be engaged in case of force majeure or unforeseeable and insurmountable fact of a third party."
+      },
+      "article6": {
+        "title": "ARTICLE 6: Hypertext Links",
+        "content1": "Hypertext links may be present on the site. The User is informed that by clicking on these links, he will leave the site {website}. The latter has no control over the web pages to which these links lead and cannot, in any case, be responsible for their content."
+      },
+      "article7": {
+        "title": "ARTICLE 7: Cookies",
+        "content1": "The User is informed that during his visits to the site, a cookie may be automatically installed on his navigation software.",
+        "content2": "Cookies are small files temporarily stored on the User's computer hard drive by your browser and which are necessary for the use of the site {website}. Cookies do not contain personal information and cannot be used to identify anyone. A cookie contains a unique identifier, randomly generated and therefore anonymous. Some cookies expire at the end of the User's visit, others remain.",
+        "content3": "The information contained in cookies is used to improve the site {website}.",
+        "content4": "By browsing the site, the User accepts them.",
+        "content5": "The User can disable these cookies through the settings in their navigation software."
+      },
+      "article8": {
+        "title": "ARTICLE 8: Applicable Law and Competent Jurisdiction",
+        "content1": "French law applies to this contract. In case of absence of amicable resolution of a dispute arising between the parties, the French courts will have sole jurisdiction to hear it. For any question relating to the application of these Terms, you can contact the publisher at the coordinates listed in ARTICLE 1."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "effectiveDate": "Effective as of",
+      "introduction": "This Privacy Policy describes how",
+      "introduction2": "collects, uses and protects your personal information when you use our website",
+      "introduction3": "and our bike rental and guided tour services.",
+      "article1": {
+        "title": "Article 1: Information Collected",
+        "subtitle1": "1.1 Information You Provide to Us",
+        "content1": "We collect personal information that you voluntarily provide to us when you:",
+        "list1": [
+          "Book a bike rental or guided tour",
+          "Create an account on our site",
+          "Contact us by email, phone or WhatsApp",
+          "Subscribe to our newsletter",
+          "Leave a review or testimonial"
+        ],
+        "content2": "This information may include:",
+        "list2": [
+          "First and last name",
+          "Email address",
+          "Phone number",
+          "Mailing address",
+          "Payment information",
+          "Preferences regarding tours and bike rentals"
+        ],
+        "subtitle2": "1.2 Automatically Collected Information",
+        "content3": "When you visit our site, we automatically collect certain information, including:",
+        "list3": [
+          "IP address and information about your device (device type, browser, operating system)",
+          "Pages visited and duration of visits",
+          "Navigation and click data",
+          "Cookies and similar technologies"
+        ]
+      },
+      "article2": {
+        "title": "Article 2: Use of Information",
+        "content1": "We use your personal information for the following purposes:",
+        "list": [
+          "Booking Management: Process your bike and guided tour reservations, send you confirmations and reminders",
+          "Communication: Respond to your questions, information requests and complaints",
+          "Marketing: Send you newsletters, promotions and special offers (with your consent)",
+          "Service Improvement: Analyze the use of our site to improve our services and your user experience",
+          "Security: Prevent fraud and ensure the security of our services",
+          "Legal Obligations: Comply with our legal and regulatory obligations"
+        ]
+      },
+      "article3": {
+        "title": "Article 3: Information Sharing",
+        "content1": "We do not sell or rent your personal information to third parties. We may share your information in the following cases:",
+        "list": [
+          "Service Providers: We may share your information with third-party service providers who help us provide our services (payment processing, web hosting, marketing services)",
+          "Business Partners: With your consent, we may share your information with our partners for special offers",
+          "Legal Obligations: If required by law, court order, or to protect our rights",
+          "Business Transfer: In case of merger, acquisition or asset sale"
+        ]
+      },
+      "article4": {
+        "title": "Article 4: Cookies and Similar Technologies",
+        "content1": "Our site uses cookies and similar technologies to improve your experience. Cookies are small text files stored on your device.",
+        "subtitle": "Types of cookies used:",
+        "list": [
+          "Essential cookies: Necessary for the operation of the site (session management, security)",
+          "Performance cookies: To analyze site usage and improve its performance",
+          "Functionality cookies: To remember your preferences (language, region)",
+          "Marketing cookies: To offer you personalized content and targeted advertising"
+        ],
+        "content2": "You can control and manage cookies through your browser settings. Note that disabling certain cookies may affect site functionality."
+      },
+      "article5": {
+        "title": "Article 5: Data Security",
+        "content1": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, loss, destruction or disclosure.",
+        "content2": "These measures include:",
+        "list": [
+          "SSL/TLS encryption for data transmissions",
+          "Restricted access to personal data to authorized employees only",
+          "Regular data backups",
+          "Regular updates of our security systems"
+        ],
+        "content3": "However, no method of transmission over the Internet or electronic storage is completely secure. We therefore cannot guarantee absolute security."
+      },
+      "article6": {
+        "title": "Article 6: Your Rights (GDPR)",
+        "content1": "In accordance with the General Data Protection Regulation (GDPR), you have the following rights:",
+        "list": [
+          "Right of access: You can request a copy of your personal data",
+          "Right of rectification: You can request the correction of inaccurate or incomplete data",
+          "Right to erasure: You can request the deletion of your data under certain conditions",
+          "Right to restriction of processing: You can request the limitation of processing of your data",
+          "Right to data portability: You can request the transfer of your data to another provider",
+          "Right to object: You can object to the processing of your data for marketing purposes",
+          "Right to withdraw consent: You can withdraw your consent at any time"
+        ],
+        "content2": "To exercise these rights, please contact us at:",
+        "content3": "You also have the right to file a complaint with the National Commission for Information Technology and Civil Liberties (CNIL) if you believe your rights are not being respected."
+      },
+      "article7": {
+        "title": "Article 7: Data Retention",
+        "content1": "We retain your personal information for as long as necessary to:",
+        "list": [
+          "Provide our services",
+          "Comply with our legal obligations",
+          "Resolve disputes",
+          "Enforce our agreements"
+        ],
+        "content2": "Booking data is generally retained for 3 years after the last transaction. Marketing data is retained until you unsubscribe or withdraw consent."
+      },
+      "article8": {
+        "title": "Article 8: Links to Third-Party Sites",
+        "content1": "Our site may contain links to third-party websites (social networks, partners). We are not responsible for the privacy practices of these sites. We encourage you to read the privacy policies of these sites before providing them with personal information."
+      },
+      "article9": {
+        "title": "Article 9: Policy Changes",
+        "content1": "We may modify this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal or regulatory reasons.",
+        "content2": "We will notify you of any significant changes by posting the new policy on this page and updating the effective date. We encourage you to check this page regularly."
+      },
+      "article10": {
+        "title": "Article 10: Minors",
+        "content1": "Our services are not intended for persons under 16 years of age. We do not knowingly collect personal information from minors. If you are a parent or guardian and believe your child has provided us with personal information, please contact us."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content1": "For any questions regarding this Privacy Policy or to exercise your rights, you can contact us:",
+        "email": "By email:",
+        "phone": "By phone:",
+        "mail": "By mail:"
+      },
+      "lastUpdated": "Last updated:"
+    }
   }
 }
