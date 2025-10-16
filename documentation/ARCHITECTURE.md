@@ -69,7 +69,6 @@ src/
 ├── providers/                   # Providers React
 │   ├── providers.tsx            # Provider principal
 │   ├── theme-provider.tsx       # Gestion des thèmes
-│   └── smooth-scroll-provider.tsx # Scroll fluide
 ├── styles/                      # Styles globaux
 │   └── globals.css              # CSS global
 └── types/                       # Définitions TypeScript
