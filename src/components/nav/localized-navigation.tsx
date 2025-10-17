@@ -27,7 +27,7 @@ export function LocalizedNavigation(): JSX.Element {
 
   return (
     <NavigationMenu className="hidden transition-all duration-300 ease-in-out md:flex">
-      <NavigationMenuList className="md:gap-0 lg:gap-2">
+      <NavigationMenuList className="md:gap-0 lg:gap-1 xl:gap-2">
         {navItems.map((item) => (
           <NavigationMenuItem key={item.title}>
             <NavigationMenuLink asChild>
@@ -35,7 +35,7 @@ export function LocalizedNavigation(): JSX.Element {
                 href={item.href}
                 className={cn(
                   navigationMenuTriggerStyle(),
-                  "bg-transparent",
+                  "bg-transparent px-2 md:px-3 lg:px-4",
                   isActive(item.href) && "text-primary"
                 )}
               >

@@ -43,6 +43,17 @@ describe("Navigation Utilities", () => {
       const linkFr = createLocalizedLink("terms", "fr");
       expect(linkFr).toBe("/conditions-generales-utilisation");
     });
+
+    it("should handle FAQ route", () => {
+      const linkEn = createLocalizedLink("faq", "en");
+      expect(linkEn).toBe("/frequently-asked-questions");
+
+      const linkFr = createLocalizedLink("faq", "fr");
+      expect(linkFr).toBe("/questions-frequentes");
+
+      const linkEs = createLocalizedLink("faq", "es");
+      expect(linkEs).toBe("/preguntas-frecuentes");
+    });
   });
 
   describe("getAllLocalizedRoutes", () => {
@@ -56,6 +67,7 @@ describe("Navigation Utilities", () => {
         about: "/about-us",
         privacy: "/privacy-policy",
         terms: "/terms-and-conditions",
+        faq: "/frequently-asked-questions",
       });
     });
 
@@ -69,6 +81,7 @@ describe("Navigation Utilities", () => {
         about: "/a-propos",
         privacy: "/politique-de-confidentialite",
         terms: "/conditions-generales-utilisation",
+        faq: "/questions-frequentes",
       });
     });
 
@@ -76,18 +89,21 @@ describe("Navigation Utilities", () => {
       const allRoutes = getAllLocalizedRoutes("de");
       expect(allRoutes.tours).toBe("/gefuehrte-radtour-paris");
       expect(allRoutes.rent).toBe("/fahrradverleih-paris");
+      expect(allRoutes.faq).toBe("/haufige-fragen");
     });
 
     it("should return all routes for Dutch locale", () => {
       const allRoutes = getAllLocalizedRoutes("nl");
       expect(allRoutes.tours).toBe("/begeleide-fietstour-parijs");
       expect(allRoutes.rent).toBe("/fietsverhuur-parijs");
+      expect(allRoutes.faq).toBe("/veelgestelde-vragen");
     });
 
     it("should return all routes for Spanish locale", () => {
       const allRoutes = getAllLocalizedRoutes("es");
       expect(allRoutes.tours).toBe("/tour-guiado-bicicleta-paris");
       expect(allRoutes.rent).toBe("/alquiler-bicicletas-paris");
+      expect(allRoutes.faq).toBe("/preguntas-frecuentes");
     });
   });
 
@@ -132,6 +148,22 @@ describe("Navigation Utilities", () => {
     it("should handle home page translation", () => {
       const altUrl = getAlternateLanguageUrl("/", "en", "fr");
       expect(altUrl).toBe("/");
+    });
+
+    it("should handle FAQ page translation", () => {
+      const altUrlEnToFr = getAlternateLanguageUrl(
+        "/frequently-asked-questions",
+        "en",
+        "fr"
+      );
+      expect(altUrlEnToFr).toBe("/questions-frequentes");
+
+      const altUrlFrToEs = getAlternateLanguageUrl(
+        "/questions-frequentes",
+        "fr",
+        "es"
+      );
+      expect(altUrlFrToEs).toBe("/preguntas-frecuentes");
     });
   });
 });

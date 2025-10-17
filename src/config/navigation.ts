@@ -43,7 +43,7 @@ export const navigationConfig = {
     tours: "Visitas Guiadas",
     rent: "Alquiler de Bicicletas",
     blog: "Blog",
-    about: "Sobre Nosotros",
+    about: "Nosotros",
     faq: "FAQ",
   },
 } as const;
