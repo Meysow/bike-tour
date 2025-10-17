@@ -2,7 +2,6 @@ import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { AccessoriesSection } from "@/components/sections/accessories-section";
 import { ContactSection } from "@/components/sections/contact-section";
-import { FAQSection } from "@/components/sections/faq-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { InstagramCarousel } from "@/components/sections/instagram-carousel";
 import { LocationMapSection } from "@/components/sections/location-map-section";
@@ -31,7 +30,6 @@ export default function HomePage(): JSX.Element {
         <TestimonialsSection />
         <InstagramCarousel />
         <PartnersSection />
-        <FAQSection />
         <ContactSection />
         <LocationMapSection />
       </div>

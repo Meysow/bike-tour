@@ -12,6 +12,7 @@ export const navigationConfig = {
     rent: "Bike Rentals",
     blog: "Blog",
     about: "About Us",
+    faq: "FAQ",
   },
   fr: {
     home: "Accueil",
@@ -19,6 +20,7 @@ export const navigationConfig = {
     rent: "Location de Vélos",
     blog: "Blog",
     about: "À Propos",
+    faq: "FAQ",
   },
   de: {
     home: "Startseite",
@@ -26,6 +28,7 @@ export const navigationConfig = {
     rent: "Fahrradverleih",
     blog: "Blog",
     about: "Über Uns",
+    faq: "FAQ",
   },
   nl: {
     home: "Home",
@@ -33,6 +36,7 @@ export const navigationConfig = {
     rent: "Fietsverhuur",
     blog: "Blog",
     about: "Over Ons",
+    faq: "FAQ",
   },
   es: {
     home: "Inicio",
@@ -40,6 +44,7 @@ export const navigationConfig = {
     rent: "Alquiler de Bicicletas",
     blog: "Blog",
     about: "Sobre Nosotros",
+    faq: "FAQ",
   },
 } as const;
 
@@ -71,6 +76,10 @@ export function getNavItems(locale: Locale): NavItem[] {
     {
       title: labels.about,
       href: routes.about[safeLocale],
+    },
+    {
+      title: labels.faq,
+      href: routes.faq[safeLocale],
     },
   ];
 }

@@ -76,6 +76,14 @@ export const routes = {
     es: "/politica-de-privacidad",
     filePath: "/privacy",
   },
+  faq: {
+    en: "/frequently-asked-questions",
+    fr: "/questions-frequentes",
+    de: "/haufige-fragen",
+    nl: "/veelgestelde-vragen",
+    es: "/preguntas-frecuentes",
+    filePath: "/faq",
+  },
 } as const;
 
 export type RouteKey = keyof typeof routes;

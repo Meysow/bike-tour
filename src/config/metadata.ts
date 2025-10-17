@@ -198,3 +198,31 @@ export const privacyMetadata: PageMetadata = {
     es: "Aprende cómo RentaBike París recopila, usa y protege tus datos personales. Nuestra política de privacidad y prácticas de protección de datos.",
   },
 };
+
+/**
+ * Metadata pour la page FAQ
+ */
+export const faqMetadata: PageMetadata = {
+  title: {
+    en: "Frequently Asked Questions - RentaBike Paris",
+    fr: "Questions Fréquentes - RentaBike Paris",
+    de: "Häufig Gestellte Fragen - RentaBike Paris",
+    nl: "Veelgestelde Vragen - RentaBike Parijs",
+    es: "Preguntas Frecuentes - RentaBike París",
+  },
+  description: {
+    en: "Find answers to all your questions about bike rentals and tours in Paris. Opening hours, prices, delivery, deposits, and more. Get all the info you need!",
+    fr: "Trouvez des réponses à toutes vos questions sur la location de vélos et les visites à Paris. Horaires, prix, livraison, dépôts et plus. Obtenez toutes les infos dont vous avez besoin !",
+    de: "Finden Sie Antworten auf alle Ihre Fragen zu Fahrradverleih und Touren in Paris. Öffnungszeiten, Preise, Lieferung, Kaution und mehr. Holen Sie sich alle Informationen, die Sie brauchen!",
+    nl: "Vind antwoorden op al uw vragen over fietsverhuur en tours in Parijs. Openingstijden, prijzen, levering, borg en meer. Krijg alle info die je nodig hebt!",
+    es: "Encuentra respuestas a todas tus preguntas sobre alquiler de bicicletas y tours en París. Horarios, precios, entrega, depósitos y más. ¡Obtén toda la información que necesitas!",
+  },
+  keywords: [
+    "FAQ bike rental Paris",
+    "questions fréquentes location vélo",
+    "Paris bike tour questions",
+    "bike rental information",
+    "Paris cycling FAQ",
+  ],
+  ogImage: "/images/hero/louvre.jpg",
+};
