@@ -1,11 +1,10 @@
 "use client";
 
 import { Icons } from "@/components/shared/icons";
-import { LoadingSpinner } from "@/components/shared/loading-spinner";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
-import { env } from "@/env.mjs";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
+import { instagramLocalService } from "@/lib/services/instagram-local";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { InstagramPost } from "@/types";
@@ -21,21 +20,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 interface InstagramCarouselProps {
-  accessToken?: string;
   limit?: number;
   className?: string;
+  showAll?: boolean; // Show all 15 images or just limit
 }
 
 export function InstagramCarousel({
-  accessToken = env.NEXT_PUBLIC_INSTAGRAM_ACCESS_TOKEN,
-  limit = 8,
+  limit = 15,
   className = "",
+  showAll = false,
 }: InstagramCarouselProps) {
   const { locale } = useLocalizedRoutes();
   const t = getSectionTranslations(locale, "instagram");
   const [posts, setPosts] = useState<InstagramPost[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+
   const swiperRef = useRef<{
     update: () => void;
     updateSlides: () => void;
@@ -44,66 +42,13 @@ export function InstagramCarousel({
   } | null>(null);
 
   useEffect(() => {
-    const fetchInstagramPosts = async () => {
-      if (!accessToken) {
-        // Si pas de token, on utilise des images de démonstration
-        const demoImages = [
-          "/images/bikes/couple-riding.webp",
-          "/images/bikes/riding.webp",
-          "/images/hero/palais-royal.jpg",
-          "/images/hero/louvre.jpg",
-          "/images/bikes/ebike.webp",
-          "/images/bikes/deluxe7.webp",
-          "/images/hero/burren.jpg",
-          "/images/bikes/bike-illustration.webp",
-        ];
+    // Load Instagram posts from local images
+    const instagramPosts = showAll
+      ? instagramLocalService.getAllPosts()
+      : instagramLocalService.getPosts(limit);
 
-        const demoPosts: InstagramPost[] = demoImages
-          .slice(0, limit)
-          .map((img, index) => ({
-            id: `demo-${index}`,
-            media_type: "IMAGE" as const,
-            media_url: img,
-            caption: `Découvrez Paris à vélo ! #BikeToursParis #ExploreParis`,
-            permalink: "#",
-            timestamp: new Date().toISOString(),
-          }));
-
-        setPosts(demoPosts);
-        setLoading(false);
-        return;
-      }
-
-      try {
-        const response = await fetch(
-          `https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,caption,permalink,timestamp&limit=${limit}&access_token=${accessToken}`
-        );
-
-        if (!response.ok) {
-          throw new Error("Erreur lors de la récupération des posts Instagram");
-        }
-
-        const data = await response.json();
-
-        // Filtrer uniquement les images et vidéos
-        const filteredPosts = data.data.filter(
-          (post: InstagramPost) =>
-            post.media_type === "IMAGE" || post.media_type === "VIDEO"
-        );
-
-        setPosts(filteredPosts);
-      } catch (err) {
-        setError(
-          err instanceof Error ? err.message : "Une erreur est survenue"
-        );
-        console.error("Erreur Instagram API:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchInstagramPosts();
-  }, [accessToken, limit]);
+    setPosts(instagramPosts);
+  }, [limit, showAll]);
 
   // Handle window resize to fix slide positioning
   useEffect(() => {
@@ -119,24 +64,6 @@ export function InstagramCarousel({
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-64">
-        <LoadingSpinner />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="text-center p-8">
-        <p className="text-muted-foreground">
-          Impossible de charger les photos Instagram pour le moment.
-        </p>
-      </div>
-    );
-  }
 
   if (posts.length === 0) {
     return (
@@ -218,9 +145,9 @@ export function InstagramCarousel({
                     href={post.permalink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block group"
+                    className="block group transform transition-transform duration-300 ease-out"
                   >
-                    <div className="relative aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-fuchsia-400/5 border border-primary/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 hover:shadow-lg">
+                    <div className="relative aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-fuchsia-400/5 border border-primary/10 transition-all duration-300 ease-out hover:shadow-xl group">
                       <Image
                         src={post.media_url}
                         alt={post.caption || "Photo Instagram"}
