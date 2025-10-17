@@ -91,6 +91,24 @@ export function InstagramCarousel({
               {t.subtitle}
             </HighlightText>
           </h3>
+
+          {/* Call to action vers Instagram */}
+          <div className="flex justify-center mt-6">
+            <Button
+              asChild
+              className="h-12 px-8 font-bold tracking-wide text-white bg-gradient-to-r from-primary to-fuchsia-400 hover:opacity-90 transition-opacity"
+            >
+              <Link
+                href={siteConfig.links.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2"
+              >
+                <Icons.instagram className="w-5 h-5" />
+                Follow us on Instagram
+              </Link>
+            </Button>
+          </div>
         </div>
 
         <div className="space-y-8 w-full">
@@ -190,24 +208,6 @@ export function InstagramCarousel({
             >
               <Icons.chevronRight className="w-5 h-5 text-primary" />
             </button>
-          </div>
-
-          {/* Call to action vers Instagram */}
-          <div className="flex justify-center">
-            <Button
-              asChild
-              className="h-12 px-8 font-bold tracking-wide text-white bg-gradient-to-r from-primary to-fuchsia-400 hover:opacity-90 transition-opacity"
-            >
-              <Link
-                href={siteConfig.links.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
-              >
-                <Icons.instagram className="w-5 h-5" />
-                Follow us on Instagram
-              </Link>
-            </Button>
           </div>
         </div>
       </div>
