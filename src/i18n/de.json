@@ -38,7 +38,25 @@
       "allToursInclude": "Alle unsere Touren beinhalten professionelle Führer, qualitativ hochwertige Fahrräder und unvergessliche Erinnerungen. Buchen Sie Ihr Abenteuer noch heute!",
       "bookTourNow": "Jetzt eine Tour buchen",
       "meetingPoint": "Treffpunkt",
-      "meetingPointDesc": "Alle unsere Touren starten von unserem Geschäft. Kommen Sie 15 Minuten früher für die Fahrradanpassung und das Sicherheitsbriefing!"
+      "meetingPointDesc": "Alle unsere Touren starten von unserem Geschäft. Kommen Sie 15 Minuten früher für die Fahrradanpassung und das Sicherheitsbriefing!",
+      "highlights": {
+        "louvre": "Louvre-Museum & Tuileriengarten",
+        "notreDame": "Notre-Dame Kathedrale",
+        "latinQuarter": "Lateinviertel & Saint-Germain",
+        "champsElysees": "Champs-Élysées & Arc de Triomphe",
+        "eiffelTower": "Eiffelturm & Seine",
+        "canalSaintMartin": "Canal Saint-Martin & Seine Schleusen",
+        "ironFootbridges": "Romantische Eisenbrücken",
+        "trendyCafes": "Trendige Cafés & Boutiquen",
+        "placeRepublique": "Place de la République",
+        "hiddenCourtyards": "Versteckte Innenhöfe & Street Art"
+      },
+      "practicalDetails": {
+        "startingPoint": "20 Rue Greneta, 75002 Paris",
+        "duration1": "3 Stunden - 12 Kilometer",
+        "duration2": "2,5 Stunden - 10 Kilometer",
+        "availability": "Täglich - Abfahrten um 10:30 / 14:30 Uhr"
+      }
     },
     "1": {
       "title": "Geführte Fahrradtour durch Paris",

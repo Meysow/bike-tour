@@ -38,7 +38,25 @@
       "allToursInclude": "All our tours include professional guides, quality bikes, and unforgettable memories. Book your adventure today!",
       "bookTourNow": "Book a Tour Now",
       "meetingPoint": "Meeting <highlight>Point</highlight>",
-      "meetingPointDesc": "All our tours start from our shop. Come 15 minutes early for bike fitting and safety briefing!"
+      "meetingPointDesc": "All our tours start from our shop. Come 15 minutes early for bike fitting and safety briefing!",
+      "highlights": {
+        "louvre": "Louvre Museum & Tuileries Garden",
+        "notreDame": "Notre-Dame Cathedral",
+        "latinQuarter": "Latin Quarter & Saint-Germain",
+        "champsElysees": "Champs-Élysées & Arc de Triomphe",
+        "eiffelTower": "Eiffel Tower & Seine River",
+        "canalSaintMartin": "Canal Saint-Martin & Its Locks",
+        "ironFootbridges": "Romantic Iron Footbridges",
+        "trendyCafes": "Trendy Cafés & Boutiques",
+        "placeRepublique": "Place de la République",
+        "hiddenCourtyards": "Hidden Courtyards & Street Art"
+      },
+      "practicalDetails": {
+        "startingPoint": "20 Rue Greneta, 75002 Paris",
+        "duration1": "3 Hours - 12 kilometers",
+        "duration2": "2.5 Hours - 10 kilometers",
+        "availability": "Every day - 10:30 am / 2:30 pm departures"
+      }
     },
     "1": {
       "title": "Paris Guided Bike Tour",

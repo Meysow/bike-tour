@@ -74,23 +74,23 @@ export default function ToursPage(): JSX.Element {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Louvre Museum & Tuileries Garden
+                        {t.page.highlights.louvre}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Notre-Dame Cathedral
+                        {t.page.highlights.notreDame}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Latin Quarter & Saint-Germain
+                        {t.page.highlights.latinQuarter}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Champs-Élysées & Arc de Triomphe
+                        {t.page.highlights.champsElysees}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Eiffel Tower & Seine River
+                        {t.page.highlights.eiffelTower}
                       </li>
                     </ul>
                   </div>
@@ -107,7 +107,7 @@ export default function ToursPage(): JSX.Element {
                             {t.page.startingPoint}
                           </div>
                           <div className="text-sm text-muted-foreground">
-                            20 Rue Greneta, 75002 Paris
+                            {t.page.practicalDetails.startingPoint}
                           </div>
                         </div>
                       </div>
@@ -118,7 +118,7 @@ export default function ToursPage(): JSX.Element {
                             {t.page.durationDistance}
                           </div>
                           <div className="text-sm text-muted-foreground">
-                            3 Hours - 12 kilometers
+                            {t.page.practicalDetails.duration1}
                           </div>
                         </div>
                       </div>
@@ -129,7 +129,7 @@ export default function ToursPage(): JSX.Element {
                             {t.page.availability}
                           </div>
                           <div className="text-sm text-muted-foreground">
-                            Every day - 10:30 am / 2:30 pm departures
+                            {t.page.practicalDetails.availability}
                           </div>
                         </div>
                       </div>
@@ -250,23 +250,23 @@ export default function ToursPage(): JSX.Element {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Canal Saint-Martin & Its Locks
+                        {t.page.highlights.canalSaintMartin}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Romantic Iron Footbridges
+                        {t.page.highlights.ironFootbridges}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Trendy Cafés & Boutiques
+                        {t.page.highlights.trendyCafes}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Place de la République
+                        {t.page.highlights.placeRepublique}
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        Hidden Courtyards & Street Art
+                        {t.page.highlights.hiddenCourtyards}
                       </li>
                     </ul>
                   </div>
@@ -283,7 +283,7 @@ export default function ToursPage(): JSX.Element {
                             {t.page.startingPoint}
                           </div>
                           <div className="text-sm text-muted-foreground">
-                            20 Rue Greneta, 75002 Paris
+                            {t.page.practicalDetails.startingPoint}
                           </div>
                         </div>
                       </div>
@@ -294,7 +294,7 @@ export default function ToursPage(): JSX.Element {
                             {t.page.durationDistance}
                           </div>
                           <div className="text-sm text-muted-foreground">
-                            2.5 Hours - 10 kilometers
+                            {t.page.practicalDetails.duration2}
                           </div>
                         </div>
                       </div>
@@ -305,7 +305,7 @@ export default function ToursPage(): JSX.Element {
                             {t.page.availability}
                           </div>
                           <div className="text-sm text-muted-foreground">
-                            Every day - 10:30 am / 2:30 pm departures
+                            {t.page.practicalDetails.availability}
                           </div>
                         </div>
                       </div>

@@ -38,7 +38,25 @@
       "allToursInclude": "Toutes nos visites incluent des guides professionnels, des vélos de qualité et des souvenirs inoubliables. Réservez votre aventure dès aujourd'hui !",
       "bookTourNow": "Réserver une Visite Maintenant",
       "meetingPoint": "Point de <highlight>Rendez-vous</highlight>",
-      "meetingPointDesc": "Toutes nos visites partent de notre boutique. Arrivez 15 minutes à l'avance pour l'ajustement du vélo et le briefing de sécurité !"
+      "meetingPointDesc": "Toutes nos visites partent de notre boutique. Arrivez 15 minutes à l'avance pour l'ajustement du vélo et le briefing de sécurité !",
+      "highlights": {
+        "louvre": "Musée du Louvre & Jardin des Tuileries",
+        "notreDame": "Cathédrale Notre-Dame",
+        "latinQuarter": "Quartier Latin & Saint-Germain",
+        "champsElysees": "Champs-Élysées & Arc de Triomphe",
+        "eiffelTower": "Tour Eiffel & Seine",
+        "canalSaintMartin": "Canal Saint-Martin & Ses Écluses",
+        "ironFootbridges": "Passerelles Romantiques en Fer",
+        "trendyCafes": "Cafés Branchés & Boutiques",
+        "placeRepublique": "Place de la République",
+        "hiddenCourtyards": "Cours Cachées & Street Art"
+      },
+      "practicalDetails": {
+        "startingPoint": "20 Rue Greneta, 75002 Paris",
+        "duration1": "3 Heures - 12 kilomètres",
+        "duration2": "2h30 - 10 kilomètres",
+        "availability": "Tous les jours - Départs à 10h30 / 14h30"
+      }
     },
     "1": {
       "title": "Visite Guidée de Paris à Vélo",

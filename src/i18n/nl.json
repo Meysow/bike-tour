@@ -38,7 +38,25 @@
       "allToursInclude": "Al onze tours omvatten professionele gidsen, kwaliteitsfietsen en onvergetelijke herinneringen. Boek je avontuur vandaag nog!",
       "bookTourNow": "Nu een Tour Boeken",
       "meetingPoint": "Ontmoetingspunt",
-      "meetingPointDesc": "Alle onze tours starten vanuit onze winkel. Kom 15 minuten eerder voor fietsfitting en veiligheidsbriefing!"
+      "meetingPointDesc": "Alle onze tours starten vanuit onze winkel. Kom 15 minuten eerder voor fietsfitting en veiligheidsbriefing!",
+      "highlights": {
+        "louvre": "Louvre Museum & Tuilerieën Tuin",
+        "notreDame": "Notre-Dame Kathedraal",
+        "latinQuarter": "Latijnse Wijk & Saint-Germain",
+        "champsElysees": "Champs-Élysées & Arc de Triomphe",
+        "eiffelTower": "Eiffeltoren & Seine",
+        "canalSaintMartin": "Canal Saint-Martin & Zijn Sluizen",
+        "ironFootbridges": "Romantische IJzeren Voetgangersbruggen",
+        "trendyCafes": "Trendy Cafés & Boutiques",
+        "placeRepublique": "Place de la République",
+        "hiddenCourtyards": "Verborgen Binnenplaatsen & Straatkunst"
+      },
+      "practicalDetails": {
+        "startingPoint": "20 Rue Greneta, 75002 Parijs",
+        "duration1": "3 Uren - 12 kilometer",
+        "duration2": "2,5 Uren - 10 kilometer",
+        "availability": "Dagelijks - Vertrekken om 10:30 / 14:30 uur"
+      }
     },
     "1": {
       "title": "Begeleide Fietstour door Parijs",
