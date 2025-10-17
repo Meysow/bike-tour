@@ -218,18 +218,7 @@ export default function ToursPage(): JSX.Element {
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 to-fuchsia-400/5">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative lg:order-2">
-                <Image
-                  alt="Canal Saint-Martin bike tour"
-                  src="/images/hero/palais-royal.jpg"
-                  width={600}
-                  height={500}
-                  className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-              </div>
-
-              <div className="space-y-6 lg:order-1">
+              <div className="space-y-6">
                 <div className="space-y-4">
                   <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
                     <span className="text-sm font-semibold text-primary">
@@ -385,6 +374,17 @@ export default function ToursPage(): JSX.Element {
                     </Link>
                   </Button>
                 </div>
+              </div>
+
+              <div className="relative">
+                <Image
+                  alt="Canal Saint-Martin bike tour"
+                  src="/images/hero/palais-royal.jpg"
+                  width={600}
+                  height={500}
+                  className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
               </div>
             </div>
           </div>
