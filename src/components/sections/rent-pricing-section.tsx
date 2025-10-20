@@ -143,8 +143,9 @@ export function RentPricingSection(): JSX.Element {
                     </ul>
                   </div>
                   <Button
-                    variant="outline"
-                    className="h-10 w-full border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide"
+                    variant="moreInfo"
+                    size="lg"
+                    className="w-full"
                     asChild
                   >
                     <Link

@@ -162,7 +162,7 @@ export default function RentPage(): JSX.Element {
                       </div>
 
                       <Button
-                        variant="outline"
+                        variant="moreInfo"
                         className="h-10 w-full border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide"
                         asChild
                       >

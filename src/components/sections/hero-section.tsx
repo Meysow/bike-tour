@@ -40,7 +40,7 @@ export function HeroSection() {
           <Link
             href={createLink("tours")}
             className={cn(
-              buttonVariants(),
+              buttonVariants({ variant: "bookNow" }),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 min-w-40 px-6"
             )}
             aria-label={t.ctaTours}
@@ -50,7 +50,7 @@ export function HeroSection() {
           <Link
             href={createLink("rent")}
             className={cn(
-              buttonVariants({ variant: "outline" }),
+              buttonVariants({ variant: "moreInfo" }),
               "transition-all duration-1000 ease-out md:hover:-translate-y-2 min-w-40 px-6"
             )}
             aria-label={t.ctaRent}

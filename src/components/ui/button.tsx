@@ -22,6 +22,10 @@ const buttonVariants = cva(
         navbarIcon:
           "m-0 p-1 transition-all duration-300 ease-in-out hover:bg-accent hover:text-accent-foreground",
         user: "flex items-center justify-center",
+        moreInfo:
+          "border bg-gradient-to-br from-primary/20 to-fuchsia-400/20 font-bold tracking-wide shadow-lg hover:shadow-xl transition-all duration-300",
+        bookNow:
+          "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold tracking-wide shadow-lg hover:shadow-xl transition-all duration-300",
       },
       size: {
         default: "h-9 px-4 py-2",

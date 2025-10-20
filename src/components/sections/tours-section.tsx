@@ -90,7 +90,9 @@ export function ToursSection(): JSX.Element {
                     <div className="flex flex-col sm:flex-row gap-3 px-4">
                       <Button
                         asChild
-                        className="h-10 flex-1 font-bold tracking-wide bg-secondary/80 hover:bg-secondary text-secondary-foreground shadow-md hover:shadow-lg transition-all border-2 border-secondary"
+                        variant="moreInfo"
+                        size="lg"
+                        className="flex-1"
                       >
                         <Link href={createLink("tours")}>
                           {content.ctaMoreInfo}
@@ -98,7 +100,9 @@ export function ToursSection(): JSX.Element {
                       </Button>
                       <Button
                         asChild
-                        className="h-10 flex-1 font-bold tracking-wide bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md hover:shadow-lg transition-all"
+                        variant="bookNow"
+                        size="lg"
+                        className="flex-1"
                       >
                         <Link
                           href={siteConfig.links.tourBooking}
@@ -188,7 +192,9 @@ export function ToursSection(): JSX.Element {
                       <div className="flex flex-col sm:flex-row gap-3">
                         <Button
                           asChild
-                          className="h-10 flex-1 font-bold tracking-wide bg-secondary/80 hover:bg-secondary text-secondary-foreground shadow-md hover:shadow-lg transition-all border-2 border-secondary"
+                          variant="moreInfo"
+                          size="lg"
+                          className="flex-1"
                         >
                           <Link href={createLink("tours")}>
                             {content.ctaMoreInfo}
@@ -196,7 +202,9 @@ export function ToursSection(): JSX.Element {
                         </Button>
                         <Button
                           asChild
-                          className="h-10 flex-1 font-bold tracking-wide bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white shadow-md hover:shadow-lg transition-all"
+                          variant="bookNow"
+                          size="lg"
+                          className="flex-1"
                         >
                           <Link href={`${createLink("home")}#contact-section`}>
                             {content.ctaContact}
