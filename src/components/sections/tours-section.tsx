@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -49,15 +50,20 @@ export function ToursSection(): JSX.Element {
               return (
                 <Card
                   key={tourId}
-                  className="h-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative flex flex-col"
+                  className="h-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 flex flex-col"
                 >
-                  <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md">
-                    {content.price}
-                  </div>
-                  <CardHeader className="max-[470px]:pt-12">
-                    <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                      {content.title}
-                    </CardDescription>
+                  <CardHeader className="flex flex-col gap-3">
+                    <div className="flex flex-wrap justify-between items-start gap-3">
+                      <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
+                        {content.title}
+                      </CardDescription>
+                      <Badge
+                        variant="price"
+                        className="px-3 md:px-4 py-1 text-sm md:text-lg font-semibold"
+                      >
+                        {content.price}
+                      </Badge>
+                    </div>
                     <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
                       <Balancer>{content.subtitle}</Balancer>
                     </CardTitle>
@@ -87,12 +93,12 @@ export function ToursSection(): JSX.Element {
                       </Balancer>
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-3 px-4">
+                    <div className="flex flex-col gap-3 px-4 sm:flex-row">
                       <Button
                         asChild
                         variant="moreInfo"
                         size="lg"
-                        className="flex-1"
+                        className="w-full sm:flex-1"
                       >
                         <Link href={createLink("tours")}>
                           {content.ctaMoreInfo}
@@ -102,7 +108,7 @@ export function ToursSection(): JSX.Element {
                         asChild
                         variant="bookNow"
                         size="lg"
-                        className="flex-1"
+                        className="w-full sm:flex-1"
                       >
                         <Link
                           href={siteConfig.links.tourBooking}
@@ -135,18 +141,23 @@ export function ToursSection(): JSX.Element {
               return (
                 <Card
                   key={tourId}
-                  className="h-fit w-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 relative"
+                  className="h-fit w-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
                 >
-                  <div className="absolute top-6 right-4 rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 px-3 md:px-4 py-1 text-sm md:text-lg font-semibold text-white shadow-md z-10">
-                    {content.price}
-                  </div>
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {/* Contenu texte à gauche */}
                     <div className="p-6 space-y-6">
-                      <div className="max-[500px]:pt-8">
-                        <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                          {content.title}
-                        </CardDescription>
+                      <div className="flex flex-col gap-3">
+                        <div className="flex flex-wrap justify-between items-start gap-3">
+                          <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
+                            {content.title}
+                          </CardDescription>
+                          <Badge
+                            variant="price"
+                            className="px-3 md:px-4 py-1 text-sm md:text-lg font-semibold"
+                          >
+                            {content.price}
+                          </Badge>
+                        </div>
                         <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
                           <Balancer>{content.subtitle}</Balancer>
                         </CardTitle>
@@ -189,12 +200,12 @@ export function ToursSection(): JSX.Element {
                         </div>
                       </div>
 
-                      <div className="flex flex-col sm:flex-row gap-3">
+                      <div className="flex flex-col gap-3 sm:flex-row">
                         <Button
                           asChild
                           variant="moreInfo"
                           size="lg"
-                          className="flex-1"
+                          className="w-full sm:flex-1"
                         >
                           <Link href={createLink("tours")}>
                             {content.ctaMoreInfo}
@@ -204,7 +215,7 @@ export function ToursSection(): JSX.Element {
                           asChild
                           variant="bookNow"
                           size="lg"
-                          className="flex-1"
+                          className="w-full sm:flex-1"
                         >
                           <Link href={`${createLink("home")}#contact-section`}>
                             {content.ctaContact}
