@@ -1,51 +1,56 @@
-//TODO : voir si on conserve ce component:
+"use client";
 
-// import { type Accessories } from "@/types";
-// import Image from "next/image";
-// import { useEffect } from "react";
+import Image from "next/image";
+import { useState } from "react";
 
-// interface ModalProps {
-//   feature: Accessories;
-//   onClose: () => void;
-// }
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { type Accessories } from "@/types";
 
-// export function Modal({ feature, onClose }: ModalProps) {
-//   // Close modal on `Escape` key press
-//   useEffect(() => {
-//     const handleKeyDown = (event: KeyboardEvent) => {
-//       if (event.key === "Escape") {
-//         onClose();
-//       }
-//     };
-//     document.addEventListener("keydown", handleKeyDown);
-//     return () => document.removeEventListener("keydown", handleKeyDown);
-//   }, [onClose]);
+interface ModalProps {
+  feature: Accessories;
+  children: React.ReactNode;
+}
 
-//   return (
-//     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-//       <div className="relative w-11/12 max-w-lg p-6 bg-white rounded-lg shadow-lg">
-//         <button
-//           className="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
-//           onClick={onClose}
-//         >
-//           ✕
-//         </button>
-//         <Image
-//           src={feature.image}
-//           alt={feature.title}
-//           width={400}
-//           height={300}
-//           className="w-full h-48 object-cover rounded-lg mb-4"
-//         />
-//         <h3 className="text-2xl font-semibold mb-2">{feature.title}</h3>
-//         <p className="text-gray-700 mb-4">{feature.description}</p>
-//         <button
-//           onClick={onClose}
-//           className="w-full py-2 mt-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition duration-200"
-//         >
-//           Close
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
+export function Modal({ feature, children }: ModalProps) {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>{children}</DialogTrigger>
+      <DialogContent className="max-w-lg">
+        <DialogHeader>
+          <DialogTitle className="text-2xl font-semibold">
+            {feature.title}
+          </DialogTitle>
+          <DialogDescription className="text-gray-700">
+            {feature.description}
+          </DialogDescription>
+        </DialogHeader>
+
+        <div className="space-y-4">
+          <Image
+            src={feature.image}
+            alt={feature.title}
+            width={400}
+            height={300}
+            className="w-full h-48 object-cover rounded-lg"
+          />
+
+          <div className="flex justify-end">
+            <Button onClick={() => setOpen(false)} className="w-full sm:w-auto">
+              Close
+            </Button>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  );
+}
