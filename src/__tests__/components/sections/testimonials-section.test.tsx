@@ -4,7 +4,15 @@ import { render, screen } from "@testing-library/react";
 // Mock next/image
 jest.mock("next/image", () => ({
   __esModule: true,
-  default: ({ src, alt, ...props }: { src: string; alt: string; [key: string]: unknown }) => (
+  default: ({
+    src,
+    alt,
+    ...props
+  }: {
+    src: string;
+    alt: string;
+    [key: string]: unknown;
+  }) => (
     // eslint-disable-next-line @next/next/no-img-element
     <img src={src} alt={alt} {...props} />
   ),
@@ -12,23 +20,45 @@ jest.mock("next/image", () => ({
 
 // Mock carousel components
 jest.mock("@/components/ui/carousel", () => ({
-  Carousel: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
+  Carousel: ({
+    children,
+    ...props
+  }: {
+    children: React.ReactNode;
+    [key: string]: unknown;
+  }) => (
     <div data-testid="carousel" {...props}>
       {children}
     </div>
   ),
-  CarouselContent: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
+  CarouselContent: ({
+    children,
+    ...props
+  }: {
+    children: React.ReactNode;
+    [key: string]: unknown;
+  }) => (
     <div data-testid="carousel-content" {...props}>
       {children}
     </div>
   ),
-  CarouselItem: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
+  CarouselItem: ({
+    children,
+    ...props
+  }: {
+    children: React.ReactNode;
+    [key: string]: unknown;
+  }) => (
     <div data-testid="carousel-item" {...props}>
       {children}
     </div>
   ),
   CarouselPrevious: (props: { [key: string]: unknown }) => (
-    <button data-testid="carousel-previous" aria-label="Previous slide" {...props}>
+    <button
+      data-testid="carousel-previous"
+      aria-label="Previous slide"
+      {...props}
+    >
       Previous
     </button>
   ),
@@ -49,7 +79,9 @@ describe("TestimonialsSection", () => {
   it("renders the testimonials section with title and subtitle", () => {
     render(<TestimonialsSection />);
 
-    expect(screen.getByText("Join our thriving community of")).toBeInTheDocument();
+    expect(
+      screen.getByText("Join our thriving community of")
+    ).toBeInTheDocument();
     expect(screen.getByText("Satisfied Riders")).toBeInTheDocument();
     expect(
       screen.getByText(/Discover how our customers have made their rides/)
@@ -62,7 +94,9 @@ describe("TestimonialsSection", () => {
     // Check for first testimonial content
     expect(screen.getByText("Derrick Bowman")).toBeInTheDocument();
     expect(screen.getByText("CEO at PixelCraft Studios")).toBeInTheDocument();
-    expect(screen.getByText(/This bike rental service made our trip unforgettable/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/This bike rental service made our trip unforgettable/)
+    ).toBeInTheDocument();
   });
 
   it("renders navigation buttons", () => {
