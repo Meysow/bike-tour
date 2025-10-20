@@ -8,6 +8,7 @@ import { Header } from "@/components/nav/header";
 import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
 import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
@@ -44,11 +45,12 @@ export default function ToursPage(): JSX.Element {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <div className="space-y-4">
-                  <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
-                    <span className="text-sm font-semibold text-primary">
-                      {t["1"].title}
-                    </span>
-                  </div>
+                  <Badge
+                    variant="category"
+                    className="px-4 py-2 text-sm font-semibold"
+                  >
+                    {t["1"].title}
+                  </Badge>
                   <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
                     <Balancer>{t["1"].subtitle}</Balancer>
                   </h2>
@@ -220,11 +222,12 @@ export default function ToursPage(): JSX.Element {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <div className="space-y-4">
-                  <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
-                    <span className="text-sm font-semibold text-primary">
-                      {t["2"].title}
-                    </span>
-                  </div>
+                  <Badge
+                    variant="category"
+                    className="px-4 py-2 text-sm font-semibold"
+                  >
+                    {t["2"].title}
+                  </Badge>
                   <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
                     <Balancer>{t["2"].subtitle}</Balancer>
                   </h2>
@@ -396,11 +399,12 @@ export default function ToursPage(): JSX.Element {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <div className="space-y-4">
-                  <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20">
-                    <span className="text-sm font-semibold text-primary">
-                      {t["3"].title}
-                    </span>
-                  </div>
+                  <Badge
+                    variant="category"
+                    className="px-4 py-2 text-sm font-semibold"
+                  >
+                    {t["3"].title}
+                  </Badge>
                   <h2 className="font-urbanist text-4xl font-bold tracking-tight sm:text-5xl">
                     <Balancer>{t["3"].subtitle}</Balancer>
                   </h2>

@@ -17,6 +17,8 @@ const badgeVariants = cva(
         outline: "text-foreground",
         price:
           "border-transparent text-white shadow-md rounded-lg bg-gradient-to-r from-primary/95 to-fuchsia-400/70 bg-clip-padding",
+        category:
+          "bg-gradient-to-r from-primary/10 to-fuchsia-400/10 border border-primary/20 text-primary hover:from-primary/20 hover:to-fuchsia-400/20",
       },
     },
     defaultVariants: {

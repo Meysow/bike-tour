@@ -3,6 +3,7 @@
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
+import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { cn } from "@/lib/utils";
@@ -101,10 +102,13 @@ export default function NotFound() {
 
         <div className="flex flex-col items-center gap-6 text-center max-w-3xl">
           {/* Error code badge */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2 text-sm font-medium text-primary">
+          <Badge
+            variant="category"
+            className="px-4 py-2 text-sm font-medium gap-2"
+          >
             <BikeIcon className="h-4 w-4" />
             <span>{t.errorCode}</span>
-          </div>
+          </Badge>
 
           {/* Main title */}
           <h1 className="animate-fade-up font-urbanist text-4xl font-extrabold tracking-tight leading-tight sm:text-5xl md:text-6xl">
