@@ -1,9 +1,14 @@
 "use client";
 
-// TODO: Implement the loader for every page
-
-import { ClipLoader } from "react-spinners";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export const Loader = () => {
-  return <ClipLoader color="#3498db" size={50} />;
+  return (
+    <div className="flex items-center justify-center p-8">
+      <div className="flex flex-col items-center gap-4">
+        <Skeleton className="h-12 w-12 rounded-full" />
+        <Skeleton className="h-4 w-32" />
+      </div>
+    </div>
+  );
 };
