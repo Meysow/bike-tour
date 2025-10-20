@@ -2,6 +2,13 @@
 
 import { Icons } from "@/components/shared/icons";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { testimonials } from "@/data/testimonials";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
@@ -10,11 +17,6 @@ import { Testimonial } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
 import Balancer from "react-wrap-balancer";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // TestimonialCard component with read more functionality
 function TestimonialCard({
@@ -108,62 +110,32 @@ export function TestimonialsSection() {
           </h3>
         </div>
 
-        {/* Swiper Carousel */}
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation={{
-            nextEl: ".swiper-button-next-testimonials",
-            prevEl: ".swiper-button-prev-testimonials",
+        {/* Carousel */}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: false,
           }}
-          pagination={{
-            clickable: true,
-            dynamicBullets: false,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 25,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          }}
-          style={{ "--swiper-theme-color": "#e2651d" } as React.CSSProperties}
-          className="swiper-carousel testimonials-carousel w-full"
+          className="w-full"
         >
-          {testimonials.map((testimonial) => (
-            <SwiperSlide key={testimonial.name} className="py-8 rounded-xl">
-              <TestimonialCard
-                testimonial={testimonial}
-                readMoreText={t.readMore}
-                readLessText={t.readLess}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        {/* Custom Navigation Buttons */}
-        <div className="flex justify-center items-center gap-4 mt-8">
-          <button
-            className="swiper-button-prev-testimonials p-3 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 transition-all duration-300 border border-primary/20"
-            aria-label="Previous testimonial"
-          >
-            <Icons.chevronLeft className="w-5 h-5 text-primary" />
-          </button>
-          <button
-            className="swiper-button-next-testimonials p-3 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 transition-all duration-300 border border-primary/20"
-            aria-label="Next testimonial"
-          >
-            <Icons.chevronRight className="w-5 h-5 text-primary" />
-          </button>
-        </div>
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {testimonials.map((testimonial) => (
+              <CarouselItem key={testimonial.name} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="py-8 rounded-xl">
+                  <TestimonialCard
+                    testimonial={testimonial}
+                    readMoreText={t.readMore}
+                    readLessText={t.readLess}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          
+          {/* Navigation buttons */}
+          <CarouselPrevious className="left-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+          <CarouselNext className="right-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+        </Carousel>
       </div>
     </section>
   );

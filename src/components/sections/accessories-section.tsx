@@ -1,6 +1,13 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { accessoriesImages } from "@/lib/images/accessories-images";
 import { HighlightText } from "@/lib/utils/highlight";
@@ -8,11 +15,6 @@ import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { AccessoriesContent } from "@/types";
 import Image from "next/image";
 import Balancer from "react-wrap-balancer";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 
 export function AccessoriesSection() {
   const { locale } = useLocalizedRoutes();
@@ -50,64 +52,53 @@ export function AccessoriesSection() {
           </h3>
         </div>
 
-        {/* Swiper Carousel */}
-        <Swiper
-          modules={[Navigation, Pagination]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation
-          pagination={{
-            clickable: true,
-            dynamicBullets: false,
+        {/* Carousel */}
+        <Carousel
+          opts={{
+            align: "start",
+            loop: false,
           }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 25,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-          }}
-          style={{ "--swiper-theme-color": "#e2651d" } as React.CSSProperties}
-          className="swiper-carousel accessories-carousel w-full"
+          className="w-full"
         >
-          {accessoryIds.map((accessoryId) => {
-            const accessory = t[accessoryId] as AccessoriesContent;
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {accessoryIds.map((accessoryId) => {
+              const accessory = t[accessoryId] as AccessoriesContent;
 
-            return (
-              <SwiperSlide key={accessoryId} className="py-8 rounded-xl">
-                <Card className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out hover:opacity-90 md:hover:-translate-y-2 rounded-xl overflow-hidden">
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={
-                        accessoriesImages[
-                          accessory.image as keyof typeof accessoriesImages
-                        ]
-                      }
-                      alt={accessory.title}
-                      fill
-                      className="object-cover"
-                    />
+              return (
+                <CarouselItem key={accessoryId} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                  <div className="py-8 rounded-xl">
+                    <Card className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out hover:opacity-90 md:hover:-translate-y-2 rounded-xl overflow-hidden">
+                      <div className="relative h-48 w-full">
+                        <Image
+                          src={
+                            accessoriesImages[
+                              accessory.image as keyof typeof accessoriesImages
+                            ]
+                          }
+                          alt={accessory.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <CardHeader>
+                        <CardTitle className="font-urbanist text-lg font-semibold tracking-wider">
+                          <Balancer>{accessory.title}</Balancer>
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="leading-6 text-muted-foreground md:text-sm lg:text-base h-24 md:h-20 lg:h-36 xl:h-28">
+                        <Balancer>{accessory.description}</Balancer>
+                      </CardContent>
+                    </Card>
                   </div>
-                  <CardHeader>
-                    <CardTitle className="font-urbanist text-lg font-semibold tracking-wider">
-                      <Balancer>{accessory.title}</Balancer>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="leading-6 text-muted-foreground md:text-sm lg:text-base h-24 md:h-20 lg:h-36 xl:h-28">
-                    <Balancer>{accessory.description}</Balancer>
-                  </CardContent>
-                </Card>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          
+          {/* Navigation buttons */}
+          <CarouselPrevious className="left-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+          <CarouselNext className="right-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+        </Carousel>
       </div>
     </section>
   );

@@ -1,11 +1,6 @@
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { render, screen } from "@testing-library/react";
 
-// Mock CSS imports
-jest.mock("swiper/css", () => ({}));
-jest.mock("swiper/css/navigation", () => ({}));
-jest.mock("swiper/css/pagination", () => ({}));
-
 // Mock next/image
 jest.mock("next/image", () => ({
   __esModule: true,
@@ -15,25 +10,33 @@ jest.mock("next/image", () => ({
   ),
 }));
 
-// Mock Swiper components
-jest.mock("swiper/react", () => ({
-  Swiper: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
-    <div data-testid="swiper" {...props}>
+// Mock carousel components
+jest.mock("@/components/ui/carousel", () => ({
+  Carousel: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
+    <div data-testid="carousel" {...props}>
       {children}
     </div>
   ),
-  SwiperSlide: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
-    <div data-testid="swiper-slide" {...props}>
+  CarouselContent: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
+    <div data-testid="carousel-content" {...props}>
       {children}
     </div>
   ),
-}));
-
-// Mock Swiper modules
-jest.mock("swiper/modules", () => ({
-  Navigation: "Navigation",
-  Pagination: "Pagination",
-  Autoplay: "Autoplay",
+  CarouselItem: ({ children, ...props }: { children: React.ReactNode; [key: string]: unknown }) => (
+    <div data-testid="carousel-item" {...props}>
+      {children}
+    </div>
+  ),
+  CarouselPrevious: (props: { [key: string]: unknown }) => (
+    <button data-testid="carousel-previous" aria-label="Previous slide" {...props}>
+      Previous
+    </button>
+  ),
+  CarouselNext: (props: { [key: string]: unknown }) => (
+    <button data-testid="carousel-next" aria-label="Next slide" {...props}>
+      Next
+    </button>
+  ),
 }));
 
 // Mock react-wrap-balancer
@@ -65,14 +68,20 @@ describe("TestimonialsSection", () => {
   it("renders navigation buttons", () => {
     render(<TestimonialsSection />);
 
-    expect(screen.getByLabelText("Previous testimonial")).toBeInTheDocument();
-    expect(screen.getByLabelText("Next testimonial")).toBeInTheDocument();
+    expect(screen.getByTestId("carousel-previous")).toBeInTheDocument();
+    expect(screen.getByTestId("carousel-next")).toBeInTheDocument();
   });
 
-  it("renders swiper component", () => {
+  it("renders carousel component", () => {
     render(<TestimonialsSection />);
 
-    expect(screen.getByTestId("swiper")).toBeInTheDocument();
-    expect(screen.getAllByTestId("swiper-slide")).toHaveLength(9); // 9 testimonials
+    expect(screen.getByTestId("carousel")).toBeInTheDocument();
+    expect(screen.getByTestId("carousel-content")).toBeInTheDocument();
+    expect(screen.getAllByTestId("carousel-item")).toHaveLength(9); // 9 testimonials
+
+    // Check that testimonials are rendered
+    expect(screen.getByText("Derrick Bowman")).toBeInTheDocument();
+    expect(screen.getByText("Beth Craig")).toBeInTheDocument();
+    expect(screen.getByText("Alfredo Bradley")).toBeInTheDocument();
   });
 });

@@ -2,6 +2,13 @@
 
 import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { instagramLocalService } from "@/lib/services/instagram-local";
@@ -10,14 +17,7 @@ import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { InstagramPost } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { useEffect, useState } from "react";
 
 interface InstagramCarouselProps {
   limit?: number;
@@ -34,13 +34,6 @@ export function InstagramCarousel({
   const t = getSectionTranslations(locale, "instagram");
   const [posts, setPosts] = useState<InstagramPost[]>([]);
 
-  const swiperRef = useRef<{
-    update: () => void;
-    updateSlides: () => void;
-    updateSize: () => void;
-    updateSlidesClasses: () => void;
-  } | null>(null);
-
   useEffect(() => {
     // Load Instagram posts from local images
     const instagramPosts = showAll
@@ -49,21 +42,6 @@ export function InstagramCarousel({
 
     setPosts(instagramPosts);
   }, [limit, showAll]);
-
-  // Handle window resize to fix slide positioning
-  useEffect(() => {
-    const handleResize = () => {
-      if (swiperRef.current) {
-        swiperRef.current.update();
-        swiperRef.current.updateSlides();
-        swiperRef.current.updateSize();
-        swiperRef.current.updateSlidesClasses();
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   if (posts.length === 0) {
     return (
@@ -112,102 +90,55 @@ export function InstagramCarousel({
         </div>
 
         <div className="space-y-8 w-full">
-          <div
-            className="w-full overflow-hidden relative"
-            style={{ contain: "layout" }}
-          >
-            <Swiper
-              modules={[Navigation, Pagination]}
-              spaceBetween={16}
-              slidesPerView={1}
-              navigation={{
-                nextEl: ".swiper-button-next-custom",
-                prevEl: ".swiper-button-prev-custom",
+          <div className="w-full relative">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: false,
               }}
-              pagination={{
-                clickable: true,
-                dynamicBullets: false,
-              }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 16,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                },
-                1024: {
-                  slidesPerView: 4,
-                  spaceBetween: 24,
-                },
-              }}
-              observer={true}
-              observeParents={true}
-              watchSlidesProgress={true}
-              resizeObserver={true}
-              updateOnWindowResize={true}
-              preventInteractionOnTransition={false}
-              allowTouchMove={true}
-              touchStartPreventDefault={false}
-              centeredSlides={false}
-              loop={false}
-              onSwiper={(swiper) => {
-                swiperRef.current = swiper;
-              }}
-              className="swiper-carousel instagram-carousel w-full"
+              className="w-full"
             >
-              {posts.map((post) => (
-                <SwiperSlide key={post.id}>
-                  <Link
-                    href={post.permalink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block group transform transition-transform duration-300 ease-out"
-                  >
-                    <div className="relative aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-fuchsia-400/5 border border-primary/10 transition-all duration-300 ease-out hover:shadow-xl group">
-                      <Image
-                        src={post.media_url}
-                        alt={post.caption || "Photo Instagram"}
-                        fill
-                        className="object-cover transition-all duration-500 group-hover:scale-110"
-                        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                      />
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {posts.map((post) => (
+                  <CarouselItem key={post.id} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                    <Link
+                      href={post.permalink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block group transform transition-transform duration-300 ease-out"
+                    >
+                      <div className="relative aspect-square overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-fuchsia-400/5 border border-primary/10 transition-all duration-300 ease-out hover:shadow-xl group">
+                        <Image
+                          src={post.media_url}
+                          alt={post.caption || "Photo Instagram"}
+                          fill
+                          className="object-cover transition-all duration-500 group-hover:scale-110"
+                          sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                        />
 
-                      {/* Overlay avec icône Instagram */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <div className="bg-white/90 p-3 rounded-full shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                          <Icons.instagram className="w-6 h-6 text-primary" />
+                        {/* Overlay avec icône Instagram */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                          <div className="bg-white/90 p-3 rounded-full shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                            <Icons.instagram className="w-6 h-6 text-primary" />
+                          </div>
                         </div>
+
+                        {/* Badge pour les vidéos */}
+                        {post.media_type === "VIDEO" && (
+                          <div className="absolute top-3 right-3 bg-gradient-to-r from-primary to-fuchsia-400 rounded-full p-2 shadow-md">
+                            <Icons.play className="w-4 h-4 text-white" />
+                          </div>
+                        )}
                       </div>
-
-                      {/* Badge pour les vidéos */}
-                      {post.media_type === "VIDEO" && (
-                        <div className="absolute top-3 right-3 bg-gradient-to-r from-primary to-fuchsia-400 rounded-full p-2 shadow-md">
-                          <Icons.play className="w-4 h-4 text-white" />
-                        </div>
-                      )}
-                    </div>
-                  </Link>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
-
-          {/* Boutons de navigation personnalisés */}
-          <div className="flex justify-center items-center gap-4">
-            <button
-              className="swiper-button-prev-custom p-3 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 transition-all duration-300 border border-primary/20"
-              aria-label="Previous slide"
-            >
-              <Icons.chevronLeft className="w-5 h-5 text-primary" />
-            </button>
-            <button
-              className="swiper-button-next-custom p-3 rounded-full bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 transition-all duration-300 border border-primary/20"
-              aria-label="Next slide"
-            >
-              <Icons.chevronRight className="w-5 h-5 text-primary" />
-            </button>
+                    </Link>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              
+              {/* Navigation buttons */}
+              <CarouselPrevious className="left-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+              <CarouselNext className="right-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+            </Carousel>
           </div>
         </div>
       </div>
