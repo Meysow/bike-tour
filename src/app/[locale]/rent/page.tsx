@@ -4,6 +4,7 @@ import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { GoogleMap } from "@/components/shared/google-map";
 import { Icons } from "@/components/shared/icons";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
@@ -235,11 +236,13 @@ export default function RentPage(): JSX.Element {
 
                 return (
                   <div key={accessoryId} className="text-center space-y-4">
-                    <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                      <span className="text-2xl">
-                        {icons[accessoryId as keyof typeof icons]}
-                      </span>
-                    </div>
+                    <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                      <AvatarFallback className="bg-transparent">
+                        <span className="text-2xl">
+                          {icons[accessoryId as keyof typeof icons]}
+                        </span>
+                      </AvatarFallback>
+                    </Avatar>
 
                     <h3 className="font-semibold text-lg">{accessory.title}</h3>
 
@@ -269,9 +272,11 @@ export default function RentPage(): JSX.Element {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  1
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary to-fuchsia-400">
+                  <AvatarFallback className="bg-transparent text-white font-bold text-xl">
+                    1
+                  </AvatarFallback>
+                </Avatar>
 
                 <h3 className="font-semibold text-lg">{t.page.step1Title}</h3>
 
@@ -281,9 +286,11 @@ export default function RentPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  2
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary to-fuchsia-400">
+                  <AvatarFallback className="bg-transparent text-white font-bold text-xl">
+                    2
+                  </AvatarFallback>
+                </Avatar>
 
                 <h3 className="font-semibold text-lg">{t.page.step2Title}</h3>
 
@@ -293,9 +300,11 @@ export default function RentPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                  3
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary to-fuchsia-400">
+                  <AvatarFallback className="bg-transparent text-white font-bold text-xl">
+                    3
+                  </AvatarFallback>
+                </Avatar>
 
                 <h3 className="font-semibold text-lg">{t.page.step3Title}</h3>
 

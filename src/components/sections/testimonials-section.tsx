@@ -120,7 +120,10 @@ export function TestimonialsSection() {
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {testimonials.map((testimonial) => (
-              <CarouselItem key={testimonial.name} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+              <CarouselItem
+                key={testimonial.name}
+                className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3"
+              >
                 <div className="py-8 rounded-xl">
                   <TestimonialCard
                     testimonial={testimonial}
@@ -131,10 +134,10 @@ export function TestimonialsSection() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          
+
           {/* Navigation buttons */}
-          <CarouselPrevious className="left-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
-          <CarouselNext className="right-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
         </Carousel>
       </div>
     </section>

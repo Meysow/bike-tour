@@ -65,7 +65,10 @@ export function AccessoriesSection() {
               const accessory = t[accessoryId] as AccessoriesContent;
 
               return (
-                <CarouselItem key={accessoryId} className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <CarouselItem
+                  key={accessoryId}
+                  className="pl-2 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3"
+                >
                   <div className="py-8 rounded-xl">
                     <Card className="bg-gradient-to-r from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out hover:opacity-90 md:hover:-translate-y-2 rounded-xl overflow-hidden">
                       <div className="relative h-48 w-full">
@@ -94,10 +97,10 @@ export function AccessoriesSection() {
               );
             })}
           </CarouselContent>
-          
+
           {/* Navigation buttons */}
-          <CarouselPrevious className="left-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
-          <CarouselNext className="right-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
         </Carousel>
       </div>
     </section>

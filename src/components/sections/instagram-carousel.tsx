@@ -100,7 +100,10 @@ export function InstagramCarousel({
             >
               <CarouselContent className="-ml-2 md:-ml-4">
                 {posts.map((post) => (
-                  <CarouselItem key={post.id} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <CarouselItem
+                    key={post.id}
+                    className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+                  >
                     <Link
                       href={post.permalink}
                       target="_blank"
@@ -134,10 +137,10 @@ export function InstagramCarousel({
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              
+
               {/* Navigation buttons */}
-              <CarouselPrevious className="left-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
-              <CarouselNext className="right-4 bg-gradient-to-r from-primary/10 to-fuchsia-400/10 hover:from-primary/20 hover:to-fuchsia-400/20 border-primary/20" />
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
             </Carousel>
           </div>
         </div>
