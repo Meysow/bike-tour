@@ -45,7 +45,7 @@ export function FAQSection() {
           {t.questions.map((item: FAQQuestion) => (
             <Accordion key={item.question} type="single" collapsible>
               <AccordionItem value={item.question}>
-                <AccordionTrigger className="sm:text-xl sm:leading-6">
+                <AccordionTrigger className="sm:text-xl sm:leading-6 text-left">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground sm:text-lg sm:leading-6">
