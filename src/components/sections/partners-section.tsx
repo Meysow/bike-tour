@@ -1,10 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
-import { PartnersStack } from "@/data/partners-stack";
-
-import { Icons } from "@/components/shared/icons";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
@@ -26,7 +21,8 @@ export function PartnersSection(): JSX.Element {
         </h3>
       </div>
       <div className="hidden w-full bg-background py-8 sm:grid mt-8">
-        <div className="container flex w-full max-w-4xl flex-wrap place-items-center items-center justify-center gap-6 sm:gap-[38px] md:gap-[36px] lg:gap-x-12">
+        {/* TODO : remplacer les icons par les nouveaux icons de Leo et uncomment the code below*/}
+        {/* <div className="container flex w-full max-w-4xl flex-wrap place-items-center items-center justify-center gap-6 sm:gap-[38px] md:gap-[36px] lg:gap-x-12">
           {PartnersStack.map((partner) => {
             const Icon = Icons[partner.icon as keyof typeof Icons];
 
@@ -42,7 +38,7 @@ export function PartnersSection(): JSX.Element {
               </Link>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   );

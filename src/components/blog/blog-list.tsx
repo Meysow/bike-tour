@@ -1,5 +1,6 @@
 "use client";
 
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { BlogPost } from "@/types";
@@ -19,9 +20,11 @@ export function BlogList({ posts }: BlogListProps) {
     return (
       <div className="text-center py-12">
         <div className="max-w-md mx-auto">
-          <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center mb-4">
-            <span className="text-2xl">📝</span>
-          </div>
+          <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 mb-4">
+            <AvatarFallback className="bg-transparent">
+              <span className="text-2xl">📝</span>
+            </AvatarFallback>
+          </Avatar>
           <h3 className="text-xl font-semibold text-foreground mb-2">
             {t.list.noArticlesTitle}
           </h3>

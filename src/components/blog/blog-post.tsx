@@ -1,4 +1,5 @@
-import { Icons } from "@/components/shared/icons";
+import { CalendarIcon, ClockIcon, PersonIcon } from "@radix-ui/react-icons";
+
 import { Badge } from "@/components/ui/badge";
 import { BlogPost } from "@/types";
 import Image from "next/image";
@@ -17,15 +18,15 @@ export function BlogPostComponent({ post }: BlogPostProps) {
 
         <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
           <div className="flex items-center gap-2">
-            <Icons.calendar className="h-4 w-4" />
+            <CalendarIcon className="h-4 w-4" />
             <span>{new Date(post.date).toLocaleDateString("fr-FR")}</span>
           </div>
           <div className="flex items-center gap-2">
-            <Icons.clock className="h-4 w-4" />
+            <ClockIcon className="h-4 w-4" />
             <span>{post.readingTime} min de lecture</span>
           </div>
           <div className="flex items-center gap-2">
-            <Icons.user className="h-4 w-4" />
+            <PersonIcon className="h-4 w-4" />
             <span>Par {post.author}</span>
           </div>
         </div>

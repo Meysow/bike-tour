@@ -12,10 +12,10 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { type Accessories } from "@/types";
+import { type AccessoriesContent } from "@/types";
 
 interface ModalProps {
-  feature: Accessories;
+  feature: AccessoriesContent;
   children: React.ReactNode;
 }
 

@@ -1,6 +1,5 @@
 "use client";
 
-import { Icons } from "@/components/shared/icons";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -13,6 +12,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
+import { TrashIcon } from "@radix-ui/react-icons";
 
 interface ConfirmationModalProps {
   title: string;
@@ -38,7 +38,7 @@ export function ConfirmationModal({
       <AlertDialogTrigger asChild>
         {trigger || (
           <Button variant="outline" size="sm">
-            <Icons.trash className="h-4 w-4 mr-2" />
+            <TrashIcon className="h-4 w-4 mr-2" />
             Delete
           </Button>
         )}

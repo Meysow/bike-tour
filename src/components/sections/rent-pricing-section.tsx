@@ -1,10 +1,10 @@
 "use client";
 
+import { CheckIcon, Cross2Icon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 
-import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -124,7 +124,7 @@ export function RentPricingSection(): JSX.Element {
                     <ul className="flex flex-col gap-3">
                       {bike.features.map((bike, index) => (
                         <li className="flex items-center gap-2" key={index}>
-                          <Icons.check className="size-4" />
+                          <CheckIcon className="size-4" />
                           <Balancer>{bike}</Balancer>
                         </li>
                       ))}
@@ -136,7 +136,7 @@ export function RentPricingSection(): JSX.Element {
                           key={index}
                           className="flex items-center gap-3 text-muted-foreground"
                         >
-                          <Icons.close className="size-4" />
+                          <Cross2Icon className="size-4" />
                           <Balancer>{limit}</Balancer>
                         </li>
                       ))}

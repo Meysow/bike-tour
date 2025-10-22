@@ -1,12 +1,13 @@
 "use client";
 
+import { CheckIcon, PersonIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { GoogleMap } from "@/components/shared/google-map";
-import { Icons } from "@/components/shared/icons";
 import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
@@ -93,15 +94,15 @@ export default function AboutPage(): JSX.Element {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center overflow-hidden">
-                  <Image
+                <Avatar className="w-24 h-24 mx-auto">
+                  <AvatarImage
                     src="/images/avatars/rafalkowalski.jpeg"
                     alt="Pierre - Lead Guide"
-                    width={96}
-                    height={96}
-                    className="w-full h-full object-cover"
                   />
-                </div>
+                  <AvatarFallback className="bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                    <PersonIcon className="size-8 text-primary" />
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">{t.page.pierre.name}</h3>
                 <p className="text-sm text-muted-foreground">
                   {t.page.pierre.role}
@@ -112,15 +113,15 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center overflow-hidden">
-                  <Image
+                <Avatar className="w-24 h-24 mx-auto">
+                  <AvatarImage
                     src="/images/avatars/jennyblack.jpeg"
                     alt="Marie - Art Specialist"
-                    width={96}
-                    height={96}
-                    className="w-full h-full object-cover"
                   />
-                </div>
+                  <AvatarFallback className="bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                    <PersonIcon className="size-8 text-primary" />
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">{t.page.marie.name}</h3>
                 <p className="text-sm text-muted-foreground">
                   {t.page.marie.role}
@@ -131,15 +132,15 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center overflow-hidden">
-                  <Image
+                <Avatar className="w-24 h-24 mx-auto">
+                  <AvatarImage
                     src="/images/avatars/kevinhamilton.jpeg"
                     alt="Jean - Bike Technician"
-                    width={96}
-                    height={96}
-                    className="w-full h-full object-cover"
                   />
-                </div>
+                  <AvatarFallback className="bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                    <PersonIcon className="size-8 text-primary" />
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">{t.page.jean.name}</h3>
                 <p className="text-sm text-muted-foreground">
                   {t.page.jean.role}
@@ -166,9 +167,11 @@ export default function AboutPage(): JSX.Element {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <Icons.check className="size-8 text-primary" />
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                  <AvatarFallback className="bg-transparent">
+                    <CheckIcon className="size-8 text-primary" />
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">
                   {t.page.safetyFirst.title}
                 </h3>
@@ -178,9 +181,11 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">🌍</span>
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-2xl">🌍</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">
                   {t.page.ecoFriendly.title}
                 </h3>
@@ -190,9 +195,11 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">❤️</span>
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-2xl">❤️</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">
                   {t.page.localLove.title}
                 </h3>
@@ -202,9 +209,11 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">🏆</span>
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-2xl">🏆</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">
                   {t.page.qualityService.title}
                 </h3>
@@ -214,9 +223,11 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">🎯</span>
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-2xl">🎯</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">
                   {t.page.personalized.title}
                 </h3>
@@ -226,9 +237,11 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-2xl">🤝</span>
-                </div>
+                <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-2xl">🤝</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-lg">
                   {t.page.community.title}
                 </h3>
@@ -254,9 +267,11 @@ export default function AboutPage(): JSX.Element {
 
             <div className="max-w-3xl mx-auto space-y-8">
               <div className="text-center space-y-4">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20 rounded-full flex items-center justify-center">
-                  <span className="text-3xl">🚴‍♂️</span>
-                </div>
+                <Avatar className="w-24 h-24 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-3xl">🚴‍♂️</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold text-2xl">
                   {t.page.swapfietsTitle}
                 </h3>
@@ -283,9 +298,11 @@ export default function AboutPage(): JSX.Element {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="w-12 h-12 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white">📧</span>
-                </div>
+                <Avatar className="w-12 h-12 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 mb-4">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-white">📧</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold mb-2">{t.page.emailUs}</h3>
                 <p className="text-muted-foreground">
                   {siteConfig.company.email}
@@ -293,9 +310,11 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center">
-                <div className="w-12 h-12 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white">📱</span>
-                </div>
+                <Avatar className="w-12 h-12 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 mb-4">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-white">📱</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold mb-2">{t.page.callUs}</h3>
                 <p className="text-muted-foreground">
                   {siteConfig.company.phone}
@@ -303,9 +322,11 @@ export default function AboutPage(): JSX.Element {
               </div>
 
               <div className="text-center">
-                <div className="w-12 h-12 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-white">📍</span>
-                </div>
+                <Avatar className="w-12 h-12 mx-auto bg-gradient-to-r from-primary to-fuchsia-400 mb-4">
+                  <AvatarFallback className="bg-transparent">
+                    <span className="text-white">📍</span>
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="font-semibold mb-2">{t.page.findUs}</h3>
                 <p className="text-muted-foreground">
                   {siteConfig.company.location}

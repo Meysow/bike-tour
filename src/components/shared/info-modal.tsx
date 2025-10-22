@@ -1,6 +1,5 @@
 "use client";
 
-import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -10,6 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { InfoCircledIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 
 interface InfoModalProps {
@@ -41,7 +41,7 @@ export function InfoModal({
       <DialogTrigger asChild>
         {trigger || (
           <Button variant="outline" size="sm">
-            <Icons.info className="h-4 w-4 mr-2" />
+            <InfoCircledIcon className="h-4 w-4 mr-2" />
             More Info
           </Button>
         )}

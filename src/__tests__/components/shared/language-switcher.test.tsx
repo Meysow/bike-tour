@@ -22,15 +22,13 @@ jest.mock("@/hooks/use-localized-routes", () => ({
   }),
 }));
 
-// Mock Icons component
-jest.mock("@/components/shared/icons", () => ({
-  Icons: {
-    check: ({ className }: { className?: string }) => (
-      <span className={className} data-testid="check-icon">
-        ✓
-      </span>
-    ),
-  },
+// Mock Radix UI Icons
+jest.mock("@radix-ui/react-icons", () => ({
+  CheckIcon: ({ className }: { className?: string }) => (
+    <span className={className} data-testid="check-icon">
+      ✓
+    </span>
+  ),
 }));
 
 describe("LanguageSwitcher Component", () => {

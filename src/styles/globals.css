@@ -77,6 +77,12 @@
     /* Ensure the element has a defined size */
     display: inline-block;
 
+    /* Fix for text clipping - ensure descenders are visible */
+    position: relative;
+    overflow: visible;
+    padding-bottom: 0.1em;
+    line-height: 1;
+
     /* Fallback for browsers that don't support background-clip: text */
     @supports not (background-clip: text) {
       background: none;
@@ -100,5 +106,4 @@
       -webkit-transform: translateZ(0);
     }
   }
-
 }
