@@ -28,7 +28,16 @@ export default async function BlogPage({ params }: BlogPageProps) {
           <div className="absolute inset-0 z-[-1] bg-gradient-to-t from-primary/25 to-transparent opacity-30 rounded-full blur-lg h-[85%] w-[75%] mx-auto" />
           <div className="container mx-auto px-4">
             <div className="text-center space-y-4">
-              <h1 className="font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+              <h1
+                className="font-urbanist text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+                style={{
+                  lineHeight: "1",
+                  textRendering: "optimizeLegibility",
+                  fontFeatureSettings: '"kern" 1, "liga" 1',
+                  paddingBottom: "0.15em",
+                  overflow: "visible",
+                }}
+              >
                 <HighlightText>{t.page.heroTitle}</HighlightText>
               </h1>
               <p className="max-w-3xl mx-auto text-lg text-muted-foreground sm:text-xl sm:leading-8">

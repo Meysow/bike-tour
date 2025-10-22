@@ -30,7 +30,16 @@ export function ToursSection(): JSX.Element {
     <section id="tour-section" aria-label="Tour section" className="w-full">
       <div className="container grid max-w-6xl justify-center gap-16">
         <div className="flex flex-col items-center gap-6 text-center">
-          <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl">
+          <h2
+            className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-4xl"
+            style={{
+              lineHeight: "1",
+              textRendering: "optimizeLegibility",
+              fontFeatureSettings: '"kern" 1, "liga" 1',
+              paddingBottom: "0.1em",
+              overflow: "visible",
+            }}
+          >
             <HighlightText gradient={true}>{t.title}</HighlightText>
           </h2>
           <h3 className="max-w-2xl text-muted-foreground sm:text-xl sm:leading-8">
