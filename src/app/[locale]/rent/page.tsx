@@ -1,9 +1,16 @@
 "use client";
 
+import {
+  CheckIcon,
+  Cross2Icon,
+  EnvelopeClosedIcon,
+  PaperPlaneIcon,
+  PersonIcon,
+} from "@radix-ui/react-icons";
+
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { GoogleMap } from "@/components/shared/google-map";
-import { Icons } from "@/components/shared/icons";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -143,7 +150,7 @@ export default function RentPage(): JSX.Element {
                         <ul className="flex flex-col gap-3">
                           {bike.features.map((item) => (
                             <li className="flex items-center gap-2" key={item}>
-                              <Icons.check className="size-4" />
+                              <CheckIcon className="size-4" />
                               <Balancer>{item}</Balancer>
                             </li>
                           ))}
@@ -155,7 +162,7 @@ export default function RentPage(): JSX.Element {
                               key={item}
                               className="flex items-center gap-3 text-muted-foreground"
                             >
-                              <Icons.close className="size-4" />
+                              <Cross2Icon className="size-4" />
                               <Balancer>{item}</Balancer>
                             </li>
                           ))}
@@ -366,7 +373,7 @@ export default function RentPage(): JSX.Element {
 
               <div className="flex flex-col items-center gap-2 text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <Icons.paperPlane className="size-5" />
+                  <PaperPlaneIcon className="size-5" />
 
                   <span className="font-medium">
                     {siteConfig.company.location}
@@ -374,13 +381,13 @@ export default function RentPage(): JSX.Element {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <Icons.user className="size-5" />
+                  <PersonIcon className="size-5" />
 
                   <span>{siteConfig.company.phone}</span>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <Icons.email className="size-5" />
+                  <EnvelopeClosedIcon className="size-5" />
 
                   <span>{siteConfig.company.email}</span>
                 </div>

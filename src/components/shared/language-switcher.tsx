@@ -1,9 +1,9 @@
 "use client";
 
+import { CheckIcon } from "@radix-ui/react-icons";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
-import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -93,7 +93,7 @@ export function LanguageSwitcher() {
             <span className="text-lg">{language.flag}</span>
             <span className="flex-1">{language.name}</span>
             {currentLocale === language.code && (
-              <Icons.check className="h-4 w-4 text-primary" />
+              <CheckIcon className="h-4 w-4 text-primary" />
             )}
           </DropdownMenuItem>
         ))}

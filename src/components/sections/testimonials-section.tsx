@@ -1,6 +1,5 @@
 "use client";
 
-import { Icons } from "@/components/shared/icons";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -14,6 +13,7 @@ import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { Testimonial } from "@/types";
+import { StarIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { useState } from "react";
 import Balancer from "react-wrap-balancer";
@@ -61,7 +61,7 @@ function TestimonialCard({
         {/* Star Rating */}
         <div className="flex items-center justify-center mb-4">
           {[...Array(5)].map((_, i) => (
-            <Icons.star
+            <StarIcon
               key={i}
               className="w-4 h-4 text-yellow-400 fill-current"
             />

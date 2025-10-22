@@ -1,5 +1,11 @@
 "use client";
 
+import {
+  EnvelopeClosedIcon,
+  PaperPlaneIcon,
+  PersonIcon,
+} from "@radix-ui/react-icons";
+
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { Icons } from "../shared/icons";
@@ -106,15 +112,15 @@ export function Footer(): JSX.Element {
               </p>
               <ul className="mt-8 space-y-4 text-sm text-muted-foreground ">
                 <li className="flex gap-2">
-                  <Icons.email className="size-5" />
+                  <EnvelopeClosedIcon className="size-5" />
                   <span>{siteConfig.company.email}</span>
                 </li>
                 <li className="flex gap-2">
-                  <Icons.user className="size-5" />
+                  <PersonIcon className="size-5" />
                   <span>{siteConfig.company.phone}</span>
                 </li>
                 <li className="flex gap-2">
-                  <Icons.paperPlane className="size-5" />
+                  <PaperPlaneIcon className="size-5" />
                   <span>{siteConfig.company.location}</span>
                 </li>
               </ul>

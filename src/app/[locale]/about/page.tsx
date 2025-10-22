@@ -1,11 +1,11 @@
 "use client";
 
+import { CheckIcon, PersonIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
 import { GoogleMap } from "@/components/shared/google-map";
-import { Icons } from "@/components/shared/icons";
 import { WhatsAppFloatButtonWrapper } from "@/components/shared/whatsapp-float-button-wrapper";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -100,7 +100,7 @@ export default function AboutPage(): JSX.Element {
                     alt="Pierre - Lead Guide"
                   />
                   <AvatarFallback className="bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
-                    <Icons.user className="size-8 text-primary" />
+                    <PersonIcon className="size-8 text-primary" />
                   </AvatarFallback>
                 </Avatar>
                 <h3 className="font-semibold text-lg">{t.page.pierre.name}</h3>
@@ -119,7 +119,7 @@ export default function AboutPage(): JSX.Element {
                     alt="Marie - Art Specialist"
                   />
                   <AvatarFallback className="bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
-                    <Icons.user className="size-8 text-primary" />
+                    <PersonIcon className="size-8 text-primary" />
                   </AvatarFallback>
                 </Avatar>
                 <h3 className="font-semibold text-lg">{t.page.marie.name}</h3>
@@ -138,7 +138,7 @@ export default function AboutPage(): JSX.Element {
                     alt="Jean - Bike Technician"
                   />
                   <AvatarFallback className="bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
-                    <Icons.user className="size-8 text-primary" />
+                    <PersonIcon className="size-8 text-primary" />
                   </AvatarFallback>
                 </Avatar>
                 <h3 className="font-semibold text-lg">{t.page.jean.name}</h3>
@@ -169,7 +169,7 @@ export default function AboutPage(): JSX.Element {
               <div className="text-center space-y-4">
                 <Avatar className="w-16 h-16 mx-auto bg-gradient-to-r from-primary/20 to-fuchsia-400/20">
                   <AvatarFallback className="bg-transparent">
-                    <Icons.check className="size-8 text-primary" />
+                    <CheckIcon className="size-8 text-primary" />
                   </AvatarFallback>
                 </Avatar>
                 <h3 className="font-semibold text-lg">

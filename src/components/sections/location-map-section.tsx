@@ -1,7 +1,15 @@
 "use client";
 
+import {
+  CalendarIcon,
+  ClockIcon,
+  DrawingPinIcon,
+  EnvelopeClosedIcon,
+  MobileIcon,
+  PaperPlaneIcon,
+} from "@radix-ui/react-icons";
+
 import { GoogleMap } from "@/components/shared/google-map";
-import { Icons } from "@/components/shared/icons";
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
@@ -21,27 +29,27 @@ export function LocationMapSection(): JSX.Element {
 
           <div className="flex flex-col items-center gap-2 text-muted-foreground">
             <div className="flex items-center gap-2">
-              <Icons.paperPlane className="size-5" />
+              <PaperPlaneIcon className="size-5" />
               <span className="font-medium">{siteConfig.company.location}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icons.mapPin className="size-5" />
+              <DrawingPinIcon className="size-5" />
               <span>{t.location.metro}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icons.clock className="size-5" />
+              <ClockIcon className="size-5" />
               <span>{t.location.walkingTime}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icons.calendar className="size-5" />
+              <CalendarIcon className="size-5" />
               <span>{t.location.hours}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icons.phone className="size-5" />
+              <MobileIcon className="size-5" />
               <span>{siteConfig.company.phone}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Icons.email className="size-5" />
+              <EnvelopeClosedIcon className="size-5" />
               <span>{siteConfig.company.email}</span>
             </div>
           </div>

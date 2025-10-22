@@ -1,6 +1,5 @@
 "use client";
 
-import { Icons } from "@/components/shared/icons";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -15,6 +14,7 @@ import { instagramLocalService } from "@/lib/services/instagram-local";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { InstagramPost } from "@/types";
+import { InstagramLogoIcon, PlayIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -82,7 +82,7 @@ export function InstagramCarousel({
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2"
               >
-                <Icons.instagram className="w-5 h-5" />
+                <InstagramLogoIcon className="w-5 h-5" />
                 Follow us on Instagram
               </Link>
             </Button>
@@ -122,14 +122,14 @@ export function InstagramCarousel({
                         {/* Overlay avec icône Instagram */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                           <div className="bg-white/90 p-3 rounded-full shadow-lg transform scale-75 group-hover:scale-100 transition-transform duration-300">
-                            <Icons.instagram className="w-6 h-6 text-primary" />
+                            <InstagramLogoIcon className="w-6 h-6 text-primary" />
                           </div>
                         </div>
 
                         {/* Badge pour les vidéos */}
                         {post.media_type === "VIDEO" && (
                           <div className="absolute top-3 right-3 bg-gradient-to-r from-primary to-fuchsia-400 rounded-full p-2 shadow-md">
-                            <Icons.play className="w-4 h-4 text-white" />
+                            <PlayIcon className="w-4 h-4 text-white" />
                           </div>
                         )}
                       </div>

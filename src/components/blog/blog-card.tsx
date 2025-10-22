@@ -1,6 +1,5 @@
 "use client";
 
-import { Icons } from "@/components/shared/icons";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -11,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { BlogPost } from "@/types";
+import { CalendarIcon, ClockIcon, PersonIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -36,10 +36,10 @@ export function BlogCard({ post }: BlogCardProps) {
         )}
         <CardHeader>
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-            <Icons.calendar className="h-4 w-4" />
+            <CalendarIcon className="h-4 w-4" />
             <span>{new Date(post.date).toLocaleDateString("fr-FR")}</span>
             <span>•</span>
-            <Icons.clock className="h-4 w-4" />
+            <ClockIcon className="h-4 w-4" />
             <span>{post.readingTime} min de lecture</span>
           </div>
           <CardTitle className="group-hover:text-primary transition-colors">
@@ -58,7 +58,7 @@ export function BlogCard({ post }: BlogCardProps) {
             ))}
           </div>
           <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
-            <Icons.user className="h-4 w-4" />
+            <PersonIcon className="h-4 w-4" />
             <span>Par {post.author}</span>
           </div>
         </CardContent>

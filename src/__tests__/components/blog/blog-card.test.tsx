@@ -24,25 +24,23 @@ jest.mock("next/image", () => ({
   },
 }));
 
-// Mock Icons
-jest.mock("@/components/shared/icons", () => ({
-  Icons: {
-    calendar: ({ className }: { className?: string }) => (
-      <span className={className} data-testid="calendar-icon">
-        📅
-      </span>
-    ),
-    clock: ({ className }: { className?: string }) => (
-      <span className={className} data-testid="clock-icon">
-        🕐
-      </span>
-    ),
-    user: ({ className }: { className?: string }) => (
-      <span className={className} data-testid="user-icon">
-        👤
-      </span>
-    ),
-  },
+// Mock Radix UI Icons
+jest.mock("@radix-ui/react-icons", () => ({
+  CalendarIcon: ({ className }: { className?: string }) => (
+    <span className={className} data-testid="calendar-icon">
+      📅
+    </span>
+  ),
+  ClockIcon: ({ className }: { className?: string }) => (
+    <span className={className} data-testid="clock-icon">
+      🕐
+    </span>
+  ),
+  PersonIcon: ({ className }: { className?: string }) => (
+    <span className={className} data-testid="user-icon">
+      👤
+    </span>
+  ),
 }));
 
 const mockBlogPost: BlogPost = {
