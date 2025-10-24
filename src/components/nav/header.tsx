@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 import { siteConfig } from "@/config/site";
@@ -7,7 +8,6 @@ import { siteConfig } from "@/config/site";
 import { InfoBanner } from "@/components/nav/info-banner";
 import { LocalizedNavigation } from "@/components/nav/localized-navigation";
 import { LocalizedNavigationMobile } from "@/components/nav/localized-navigation-mobile";
-import { Icons } from "@/components/shared/icons";
 import { LanguageSwitcher } from "@/components/shared/language-switcher";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
 
@@ -26,7 +26,14 @@ export function Header(): JSX.Element {
               href="/"
               className="flex items-center justify-center gap-2 text-lg font-bold tracking-wide transition-all duration-300 ease-in-out"
             >
-              <Icons.bike className="size-12 md:hidden lg:flex" />
+              <Image
+                src="/images/logo/logo.png"
+                alt="RentaBikeParis Logo"
+                width={48}
+                height={48}
+                className="size-12 md:hidden lg:flex object-contain"
+                priority
+              />
               <span className="hidden md:flex">{siteConfig.name}</span>
             </Link>
           </div>

@@ -5,6 +5,7 @@ import {
   PaperPlaneIcon,
   PersonIcon,
 } from "@radix-ui/react-icons";
+import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
@@ -17,7 +18,13 @@ export function Footer(): JSX.Element {
       <div className="max-w-screen-xl px-6 pt-12 pb-6 mx-auto sm:px-8 lg:px-12 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="hidden sm:flex items-center lg:flex-col lg:items-start lg:gap-4">
-            <Icons.bike className="size-28 md:size-36 lg:size-48 flex-shrink-0 -mt-3" />
+            <Image
+              src="/images/logo/logo.png"
+              alt="RentaBikeParis Logo"
+              width={192}
+              height={192}
+              className="size-28 md:size-36 lg:size-48 flex-shrink-0 -mt-3 object-contain"
+            />
             <p className="max-w-md mx-auto  sm:text-left text-muted-foreground">
               Discover Paris on two wheels! Our bike rental and guided tours
               offer an unforgettable way to see the city, tailored to all
