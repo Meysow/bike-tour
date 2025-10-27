@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { siteConfig } from "@/config/site";
+import FullBanner from "../../../public/images/logo/full-banner.png";
+import LogoBanner from "../../../public/images/logo/logo-banner.png";
 
 import { InfoBanner } from "@/components/nav/info-banner";
 import { LocalizedNavigation } from "@/components/nav/localized-navigation";
@@ -26,15 +27,20 @@ export function Header(): JSX.Element {
               href="/"
               className="flex items-center justify-center gap-2 text-lg font-bold tracking-wide transition-all duration-300 ease-in-out"
             >
+              {/* Small and Medium screens (up to 1159px) - logo-banner */}
               <Image
-                src="/images/logo/logo.png"
+                src={LogoBanner}
                 alt="RentaBikeParis Logo"
-                width={48}
-                height={48}
-                className="size-12 md:hidden lg:flex object-contain"
+                className="h-12 w-auto max-[1159px]:block min-[1160px]:hidden object-contain"
                 priority
               />
-              <span className="hidden md:flex">{siteConfig.name}</span>
+              {/* Large screens (1160px and up) - full-banner */}
+              <Image
+                src={FullBanner}
+                alt="RentaBikeParis Logo"
+                className="hidden min-[1160px]:block h-12 w-auto object-contain"
+                priority
+              />
             </Link>
           </div>
 
