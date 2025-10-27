@@ -14,10 +14,23 @@ import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { Testimonial } from "@/types";
-import { StarIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import { useState } from "react";
 import Balancer from "react-wrap-balancer";
+
+// Custom filled star SVG component
+function FilledStar({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+    </svg>
+  );
+}
 
 // TestimonialCard component with read more functionality
 function TestimonialCard({
@@ -62,10 +75,7 @@ function TestimonialCard({
         {/* Star Rating */}
         <div className="flex items-center justify-center mb-4">
           {[...Array(5)].map((_, i) => (
-            <StarIcon
-              key={i}
-              className="w-4 h-4 text-yellow-400 fill-current"
-            />
+            <FilledStar key={i} className="w-4 h-4 text-yellow-400" />
           ))}
         </div>
 

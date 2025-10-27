@@ -5,6 +5,7 @@ import { env } from "@/env.mjs";
 const links = {
   facebook: "https://www.facebook.com/rentabikeparis",
   instagram: "https://www.instagram.com/rentabikeparis",
+  googleReviews: "https://g.page/r/CZW5O-on8XABEBM/review",
   tripadvisor:
     "https://www.tripadvisor.com/Attraction_Review-g187147-d26877237-Reviews-Rentabike_Paris_Locations_de_velos_et_tours_guides_a_Paris-Paris_Ile_de_France.html",
   rentalBooking: "https://rentabikeparis.lokki.rent/",
