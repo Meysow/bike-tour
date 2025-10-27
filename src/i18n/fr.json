@@ -213,6 +213,12 @@
     "readMore": "Lire plus",
     "readLess": "Lire moins"
   },
+  "googleReview": {
+    "reviewsCount": "570",
+    "reviews": "avis",
+    "excellentRating": "Note excellente",
+    "viewOnGoogle": "Voir sur Google"
+  },
   "instagram": {
     "title": "Suivez nos <highlight>Aventures</highlight>",
     "subtitle": "Découvrez les plus beaux moments de nos visites à vélo à travers Paris et rejoignez notre communauté de <highlight>cyclistes</highlight>."

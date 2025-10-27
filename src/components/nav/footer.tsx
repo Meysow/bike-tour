@@ -7,6 +7,8 @@ import {
 } from "@radix-ui/react-icons";
 import Image from "next/image";
 
+import Logo from "../../../public/images/logo/logo.png";
+
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { Icons } from "../shared/icons";
@@ -19,11 +21,11 @@ export function Footer(): JSX.Element {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="hidden sm:flex items-center lg:flex-col lg:items-start lg:gap-4">
             <Image
-              src="/images/logo/logo.png"
+              src={Logo}
               alt="RentaBikeParis Logo"
               width={192}
               height={192}
-              className="size-28 md:size-36 lg:size-48 flex-shrink-0 -mt-3 object-contain"
+              className="h-28 w-auto md:h-36 lg:h-48 flex-shrink-0 -mt-3 object-contain"
             />
             <p className="max-w-md mx-auto  sm:text-left text-muted-foreground">
               Discover Paris on two wheels! Our bike rental and guided tours

@@ -213,6 +213,12 @@
     "readMore": "Mehr lesen",
     "readLess": "Weniger lesen"
   },
+  "googleReview": {
+    "reviewsCount": "570",
+    "reviews": "Bewertungen",
+    "excellentRating": "Ausgezeichnete Bewertung",
+    "viewOnGoogle": "Auf Google ansehen"
+  },
   "instagram": {
     "title": "Folgen Sie unseren <highlight>Abenteuern</highlight>",
     "subtitle": "Entdecken Sie die schönsten Momente unserer Fahrradtouren durch Paris und treten Sie unserer Gemeinschaft von <highlight>Radfahrern</highlight> bei."

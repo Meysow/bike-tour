@@ -213,6 +213,12 @@
     "readMore": "Leer más",
     "readLess": "Leer menos"
   },
+  "googleReview": {
+    "reviewsCount": "570",
+    "reviews": "reseñas",
+    "excellentRating": "Calificación excelente",
+    "viewOnGoogle": "Ver en Google"
+  },
   "instagram": {
     "title": "Sigue nuestras <highlight>Aventuras</highlight>",
     "subtitle": "Descubre los momentos más hermosos de nuestros tours en bicicleta por París y únete a nuestra comunidad de <highlight>ciclistas</highlight>."

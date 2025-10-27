@@ -213,6 +213,12 @@
     "readMore": "Lees meer",
     "readLess": "Lees minder"
   },
+  "googleReview": {
+    "reviewsCount": "570",
+    "reviews": "beoordelingen",
+    "excellentRating": "Uitstekende beoordeling",
+    "viewOnGoogle": "Bekijk op Google"
+  },
   "instagram": {
     "title": "Volg onze <highlight>Avonturen</highlight>",
     "subtitle": "Ontdek de mooiste momenten van onze fietstochten door Parijs en sluit je aan bij onze gemeenschap van <highlight>rijders</highlight>."

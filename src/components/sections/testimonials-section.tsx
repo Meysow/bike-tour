@@ -1,5 +1,6 @@
 "use client";
 
+import { GoogleReviewWidget } from "@/components/shared/google-review-widget";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -108,6 +109,13 @@ export function TestimonialsSection() {
               {t.subtitle}
             </HighlightText>
           </h3>
+        </div>
+
+        {/* Google Review Widget */}
+        <div className="flex justify-center mb-8">
+          <div className="w-full max-w-md">
+            <GoogleReviewWidget />
+          </div>
         </div>
 
         {/* Carousel */}
