@@ -61,7 +61,7 @@
     "1": {
       "title": "Visite Guidée de Paris à Vélo",
       "subtitle": "Tout autour de Paris en Vélo",
-      "description": "Découvrez Paris comme un vrai Parisien ! Cette visite guidée vous emmène à travers les monuments emblématiques et les rues typiques de la capitale. Accessible à tous les niveaux, elle inclut les deux rives de la Seine. Votre guide partagera des histoires fascinantes sur l'histoire de Paris. Préparez-vous pour une aventure inoubliable !",
+      "description": "Découvrez Paris comme un vrai Parisien ! Explorez les monuments emblématiques et vivez une aventure inoubliable à travers la capitale.",
       "price": "À partir de 40€",
       "image": "louvre",
       "details": {
@@ -75,7 +75,7 @@
     "2": {
       "title": "Tour Découverte du Canal Saint-Martin",
       "subtitle": "Expérience Parisienne Authentique",
-      "description": "Découvrez ma perle cachée préférée à Paris ! 🚴‍♂️ Cette visite du Canal Saint-Martin vous emmène loin des foules touristiques pour explorer le cœur bohème des 10e et 11e arrondissements. Nous longerons le canal pittoresque, passerons ses écluses emblématiques et découvrirons des cafés cachés et boutiques d'artisans. C'est Paris comme les locaux le vivent ! ✨",
+      "description": "Découvrez ma perle cachée préférée à Paris ! 🚴‍♂️ Explorez le cœur bohème des 10e et 11e arrondissements loin des foules touristiques. ✨",
       "price": "À partir de 40€",
       "image": "palais",
       "details": {
@@ -89,7 +89,7 @@
     "3": {
       "title": "Visites Privées, Team Building, Événements",
       "subtitle": "Visites Privées",
-      "description": "Nous nous adaptons à vos besoins ! Visites personnalisées, team building, événements spéciaux... Nous créons l'expérience parfaite pour vous. Contactez-nous pour discuter de votre projet !",
+      "description": "Nous nous adaptons à vos besoins ! Visites personnalisées, team building, événements spéciaux... Contactez-nous !",
       "price": "Devis Personnalisé",
       "image": "prive",
       "details": {
