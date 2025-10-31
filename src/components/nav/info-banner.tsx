@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { LinkedinLogoIcon } from "@radix-ui/react-icons";
 
 import { Icons } from "@/components/shared/icons";
 import { siteConfig } from "@/config/site";
@@ -67,6 +68,15 @@ export function InfoBanner(): JSX.Element {
             aria-label="TripAdvisor"
           >
             <Icons.tripadvisor className="h-4 w-4 md:h-5 md:w-5" />
+          </Link>
+          <Link
+            href={siteConfig.links.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+            aria-label="LinkedIn"
+          >
+            <LinkedinLogoIcon className="h-4 w-4 md:h-5 md:w-5" />
           </Link>
         </div>
       </div>

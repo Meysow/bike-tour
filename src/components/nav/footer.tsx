@@ -2,6 +2,7 @@
 
 import {
   EnvelopeClosedIcon,
+  LinkedinLogoIcon,
   PaperPlaneIcon,
   PersonIcon,
 } from "@radix-ui/react-icons";
@@ -72,6 +73,17 @@ export function Footer(): JSX.Element {
                     >
                       <Icons.tripadvisor className="size-5" />
                       <span>TripAdvisor</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href={siteConfig.links.linkedIn}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <LinkedinLogoIcon className="size-5" />
+                      <span>LinkedIn</span>
                     </a>
                   </li>
                 </ul>
