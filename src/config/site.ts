@@ -17,7 +17,7 @@ const links = {
 };
 
 export const siteConfig = {
-  name: "RentaTour",
+  name: "Rentabike Paris",
   description:
     "Experience Paris like never before with our tailored bike tours and rental services. We provide everything you need for a memorable ride through the city's iconic landmarks and hidden gems, ensuring a smooth, hassle-free adventure. Whether you're planning a leisurely tour or just need a bike for the day, we've got you covered.",
   links,

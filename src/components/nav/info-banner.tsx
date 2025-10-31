@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { LinkedinLogoIcon } from "@radix-ui/react-icons";
+import {
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 
-import { Icons } from "@/components/shared/icons";
 import { siteConfig } from "@/config/site";
+import { Icons } from "@/components/shared/icons";
 
 export function InfoBanner(): JSX.Element {
   return (
@@ -43,22 +46,13 @@ export function InfoBanner(): JSX.Element {
         {/* Social Media Icons */}
         <div className="flex items-center gap-3 md:gap-4">
           <Link
-            href={siteConfig.links.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
-            aria-label="Facebook"
-          >
-            <Icons.facebook className="h-4 w-4 md:h-5 md:w-5 fill-current" />
-          </Link>
-          <Link
             href={siteConfig.links.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
             aria-label="Instagram"
           >
-            <Icons.instagram className="h-4 w-4 md:h-5 md:w-5" />
+            <InstagramLogoIcon className="h-4 w-4 md:h-5 md:w-5" />
           </Link>
           <Link
             href={siteConfig.links.tripadvisor}
@@ -76,7 +70,7 @@ export function InfoBanner(): JSX.Element {
             className="hover:opacity-80 transition-opacity"
             aria-label="LinkedIn"
           >
-            <LinkedinLogoIcon className="h-4 w-4 md:h-5 md:w-5" />
+            <LinkedInLogoIcon className="h-4 w-4 md:h-5 md:w-5" />
           </Link>
         </div>
       </div>

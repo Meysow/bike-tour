@@ -2,7 +2,8 @@
 
 import {
   EnvelopeClosedIcon,
-  LinkedinLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
   PaperPlaneIcon,
   PersonIcon,
 } from "@radix-ui/react-icons";
@@ -44,23 +45,12 @@ export function Footer(): JSX.Element {
                 <ul className="space-y-4 text-sm pl-4">
                   <li>
                     <a
-                      href={siteConfig.links.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <Icons.facebook className="size-5" />
-                      <span>Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href={siteConfig.links.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      <Icons.instagram className="size-5" />
+                      <InstagramLogoIcon className="size-5" />
                       <span>Instagram</span>
                     </a>
                   </li>
@@ -82,7 +72,7 @@ export function Footer(): JSX.Element {
                       rel="noopener noreferrer"
                       className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                     >
-                      <LinkedinLogoIcon className="size-5" />
+                      <LinkedInLogoIcon className="size-5" />
                       <span>LinkedIn</span>
                     </a>
                   </li>
