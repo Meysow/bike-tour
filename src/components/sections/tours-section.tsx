@@ -14,6 +14,7 @@ import {
 import { siteConfig } from "@/config/site";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
 import { tourImages } from "@/lib/images/tour-images";
+import { cn } from "@/lib/utils";
 import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { TourContent } from "@/types";
@@ -49,75 +50,78 @@ export function ToursSection(): JSX.Element {
           </h3>
         </div>
 
-        <div className="grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
-          {/* Public tours side by side */}
-          {tourIds
-            .filter((tourId) => tourId !== "3") // Exclude private tour (ID "3")
-            .map((tourId) => {
-              const content = t[tourId] as TourContent;
+        <div className="grid gap-4 md:grid-cols-3 lg:gap-6">
+          {tourIds.map((tourId) => {
+            const content = t[tourId] as TourContent;
 
-              return (
-                <Card
-                  key={tourId}
-                  className="h-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3 flex flex-col"
-                >
-                  <CardHeader className="flex flex-col gap-3">
-                    <div className="flex flex-wrap justify-between items-start gap-3">
-                      <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                        {content.title}
-                      </CardDescription>
-                      <Badge
-                        variant="price"
-                        className="px-3 md:px-4 py-1 text-sm md:text-lg font-semibold"
-                      >
-                        {content.price}
-                      </Badge>
-                    </div>
-                    <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                      <Balancer>{content.subtitle}</Balancer>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-6 p-0 flex flex-col flex-grow">
-                    <p className="px-4 text-base leading-8 tracking-wide text-muted-foreground flex-grow">
-                      <Balancer>
-                        {content.description}
-                        {content.details.location && (
-                          <>
-                            <br className="hidden md:inline-block" />
-                            {content.details.location}
-                          </>
-                        )}
-                        {content.details.duration && (
-                          <>
-                            <br className="hidden md:inline-block" />
-                            {content.details.duration}
-                          </>
-                        )}
-                        {content.details.schedule && (
-                          <>
-                            <br className="hidden md:inline-block" />
-                            {content.details.schedule}
-                          </>
-                        )}
-                      </Balancer>
+            return (
+              <Card
+                key={tourId}
+                className={cn(
+                  "flex flex-col transition-all duration-1000 ease-out hover:opacity-80 md:hover:-translate-y-3",
+                  "bg-gradient-to-br from-primary/10 to-fuchsia-400/10"
+                )}
+              >
+                <div className="relative h-48 w-full">
+                  <Image
+                    alt={content.title}
+                    src={tourImages[content.image as keyof typeof tourImages]}
+                    fill
+                    className="object-cover rounded-t-lg"
+                  />
+                  <Badge
+                    variant="price"
+                    className="absolute top-2 right-2 px-2 py-0.5 text-xs font-semibold rounded-full"
+                  >
+                    {content.price}
+                  </Badge>
+                </div>
+
+                <CardHeader className="overflow-hidden bg-gradient-to-r from-primary/10 to-fuchsia-400/10">
+                  <CardDescription className="text-base font-medium tracking-wide text-muted-foreground">
+                    {content.title}
+                  </CardDescription>
+
+                  <CardTitle className="font-urbanist text-2xl tracking-wide mt-2">
+                    <Balancer>{content.subtitle}</Balancer>
+                  </CardTitle>
+                </CardHeader>
+
+                <CardContent className="flex flex-1 flex-col justify-between text-sm lg:text-base">
+                  <div className="py-4">
+                    <p className="text-muted-foreground">
+                      <Balancer>{content.description}</Balancer>
                     </p>
+                  </div>
 
-                    <div className="flex flex-col gap-3 px-4 sm:flex-row">
-                      <Button
-                        asChild
-                        variant="moreInfo"
-                        size="lg"
-                        className="w-full sm:flex-1"
-                      >
-                        <Link href={createLink("tours")}>
-                          {content.ctaMoreInfo}
-                        </Link>
-                      </Button>
+                  <div className="flex flex-col gap-3 pt-4">
+                    <Button
+                      asChild
+                      variant="moreInfo"
+                      size="lg"
+                      className="w-full"
+                    >
+                      <Link href={createLink("tours")}>
+                        {content.ctaMoreInfo}
+                      </Link>
+                    </Button>
+                    {tourId === "3" ? (
                       <Button
                         asChild
                         variant="bookNow"
                         size="lg"
-                        className="w-full sm:flex-1"
+                        className="w-full"
+                      >
+                        <Link href={`${createLink("home")}#contact-section`}>
+                          {content.ctaContact}
+                        </Link>
+                      </Button>
+                    ) : (
+                      <Button
+                        asChild
+                        variant="bookNow"
+                        size="lg"
+                        className="w-full"
                       >
                         <Link
                           href={siteConfig.links.tourBooking}
@@ -127,126 +131,12 @@ export function ToursSection(): JSX.Element {
                           {content.ctaBookNow}
                         </Link>
                       </Button>
-                    </div>
-
-                    <Image
-                      alt={content.title}
-                      src={tourImages[content.image as keyof typeof tourImages]}
-                      className="overflow-hidden rounded-b-xl object-cover"
-                    />
-                  </CardContent>
-                </Card>
-              );
-            })}
-        </div>
-
-        {/* Private tour below, full width */}
-        <div className="grid max-w-6xl grid-cols-1 gap-4 md:gap-6">
-          {tourIds
-            .filter((tourId) => tourId === "3") // Only private tour (ID "3")
-            .map((tourId) => {
-              const content = t[tourId] as TourContent;
-
-              return (
-                <Card
-                  key={tourId}
-                  className="h-fit w-full bg-gradient-to-br from-primary/10 to-fuchsia-400/10 transition-all duration-1000 ease-out md:hover:-translate-y-3"
-                >
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    {/* Contenu texte à gauche */}
-                    <div className="p-6 space-y-6">
-                      <div className="flex flex-col gap-3">
-                        <div className="flex flex-wrap justify-between items-start gap-3">
-                          <CardDescription className="py-2 text-base font-medium tracking-wide text-muted-foreground">
-                            {content.title}
-                          </CardDescription>
-                          <Badge
-                            variant="price"
-                            className="px-3 md:px-4 py-1 text-sm md:text-lg font-semibold"
-                          >
-                            {content.price}
-                          </Badge>
-                        </div>
-                        <CardTitle className="font-urbanist text-3xl font-black tracking-wide">
-                          <Balancer>{content.subtitle}</Balancer>
-                        </CardTitle>
-                      </div>
-
-                      <div className="text-base leading-8 tracking-wide text-muted-foreground">
-                        <div className="space-y-4">
-                          <p>
-                            <Balancer>{content.description}</Balancer>
-                          </p>
-                          {content.additionalContent && (
-                            <>
-                              <p className="font-semibold text-foreground">
-                                <Balancer>
-                                  {content.additionalContent.visionTitle}
-                                </Balancer>
-                              </p>
-                              <ul className="space-y-2">
-                                {content.additionalContent.bulletPoints.map(
-                                  (point, index) => (
-                                    <li
-                                      key={index}
-                                      className="flex items-start gap-2"
-                                    >
-                                      <span className="text-primary">•</span>
-                                      <span>
-                                        <Balancer>{point}</Balancer>
-                                      </span>
-                                    </li>
-                                  )
-                                )}
-                              </ul>
-                              <p className="italic">
-                                <Balancer>
-                                  {content.additionalContent.closingNote}
-                                </Balancer>
-                              </p>
-                            </>
-                          )}
-                        </div>
-                      </div>
-
-                      <div className="flex flex-col gap-3 sm:flex-row">
-                        <Button
-                          asChild
-                          variant="moreInfo"
-                          size="lg"
-                          className="w-full sm:flex-1"
-                        >
-                          <Link href={createLink("tours")}>
-                            {content.ctaMoreInfo}
-                          </Link>
-                        </Button>
-                        <Button
-                          asChild
-                          variant="bookNow"
-                          size="lg"
-                          className="w-full sm:flex-1"
-                        >
-                          <Link href={`${createLink("home")}#contact-section`}>
-                            {content.ctaContact}
-                          </Link>
-                        </Button>
-                      </div>
-                    </div>
-
-                    {/* Image à droite */}
-                    <div className="relative">
-                      <Image
-                        alt={content.title}
-                        src={
-                          tourImages[content.image as keyof typeof tourImages]
-                        }
-                        className="w-full h-full object-cover rounded-xl"
-                      />
-                    </div>
+                    )}
                   </div>
-                </Card>
-              );
-            })}
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
