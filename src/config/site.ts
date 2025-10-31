@@ -8,6 +8,7 @@ const links = {
   googleReviews: "https://g.page/r/CZW5O-on8XABEBM/review",
   tripadvisor:
     "https://www.tripadvisor.com/Attraction_Review-g187147-d26877237-Reviews-Rentabike_Paris_Locations_de_velos_et_tours_guides_a_Paris-Paris_Ile_de_France.html",
+  linkedIn: "https://www.linkedin.com/company/rentabike-paris/",
   rentalBooking: "https://rentabikeparis.lokki.rent/",
   tourBooking: "https://rentabikeparis.lokki.rent/en/events",
   authorsWebsite: "https://tdportfolio-self.vercel.app/",
@@ -16,7 +17,7 @@ const links = {
 };
 
 export const siteConfig = {
-  name: "RentaTour",
+  name: "Rentabike Paris",
   description:
     "Experience Paris like never before with our tailored bike tours and rental services. We provide everything you need for a memorable ride through the city's iconic landmarks and hidden gems, ensuring a smooth, hassle-free adventure. Whether you're planning a leisurely tour or just need a bike for the day, we've got you covered.",
   links,
