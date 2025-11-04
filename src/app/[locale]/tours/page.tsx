@@ -99,6 +99,11 @@ export default function ToursPage(): JSX.Element {
                         {t.page.highlights.eiffelTower}
                       </li>
                     </ul>
+                    <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
+                      <span className="text-base">🇫🇷</span>
+                      <span className="text-base">🇬🇧</span>
+                      <span className="text-base">🇩🇪</span>
+                    </div>
                   </div>
 
                   <div className="space-y-4">
@@ -276,6 +281,11 @@ export default function ToursPage(): JSX.Element {
                         {t.page.highlights.hiddenCourtyards}
                       </li>
                     </ul>
+                    <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
+                      <span className="text-base">🇫🇷</span>
+                      <span className="text-base">🇬🇧</span>
+                      <span className="text-base">🇩🇪</span>
+                    </div>
                   </div>
 
                   <div className="space-y-4">
@@ -437,6 +447,11 @@ export default function ToursPage(): JSX.Element {
                       )
                     )}
                   </ul>
+                  <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
+                  </div>
                   <p className="text-muted-foreground italic">
                     {t["3"].additionalContent.closingNote}
                   </p>
