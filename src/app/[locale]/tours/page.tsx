@@ -66,6 +66,12 @@ export default function ToursPage(): JSX.Element {
                       {t.page.perPerson}
                     </span>
                   </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>{t.page.availableLanguages}</span>
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
+                  </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
@@ -99,25 +105,6 @@ export default function ToursPage(): JSX.Element {
                         {t.page.highlights.eiffelTower}
                       </li>
                     </ul>
-                    <div className="space-y-4 mt-6">
-                      <h3 className="font-semibold text-lg">
-                        {t.page.availableLanguages}
-                      </h3>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-primary rounded-full"></span>
-                          <span>🇫🇷 {t.page.languages.french}</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-primary rounded-full"></span>
-                          <span>🇬🇧 {t.page.languages.english}</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-primary rounded-full"></span>
-                          <span>🇩🇪 {t.page.languages.german}</span>
-                        </li>
-                      </ul>
-                    </div>
                   </div>
 
                   <div className="space-y-4">
@@ -262,6 +249,12 @@ export default function ToursPage(): JSX.Element {
                       {t.page.perPerson}
                     </span>
                   </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>{t.page.availableLanguages}</span>
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
+                  </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
@@ -295,25 +288,6 @@ export default function ToursPage(): JSX.Element {
                         {t.page.highlights.hiddenCourtyards}
                       </li>
                     </ul>
-                    <div className="space-y-4 mt-6">
-                      <h3 className="font-semibold text-lg">
-                        {t.page.availableLanguages}
-                      </h3>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-primary rounded-full"></span>
-                          <span>🇫🇷 {t.page.languages.french}</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-primary rounded-full"></span>
-                          <span>🇬🇧 {t.page.languages.english}</span>
-                        </li>
-                        <li className="flex items-center gap-2">
-                          <span className="w-2 h-2 bg-primary rounded-full"></span>
-                          <span>🇩🇪 {t.page.languages.german}</span>
-                        </li>
-                      </ul>
-                    </div>
                   </div>
 
                   <div className="space-y-4">
@@ -455,6 +429,12 @@ export default function ToursPage(): JSX.Element {
                       {t["3"].price}
                     </span>
                   </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>{t.page.availableLanguages}</span>
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
+                  </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
@@ -475,25 +455,6 @@ export default function ToursPage(): JSX.Element {
                       )
                     )}
                   </ul>
-                  <div className="space-y-4 mt-6">
-                    <h3 className="font-semibold text-lg">
-                      {t.page.availableLanguages}
-                    </h3>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        <span>🇫🇷 {t.page.languages.french}</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        <span>🇬🇧 {t.page.languages.english}</span>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-2 h-2 bg-primary rounded-full"></span>
-                        <span>🇩🇪 {t.page.languages.german}</span>
-                      </li>
-                    </ul>
-                  </div>
                   <p className="text-muted-foreground italic">
                     {t["3"].additionalContent.closingNote}
                   </p>
