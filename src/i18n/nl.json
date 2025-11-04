@@ -18,6 +18,12 @@
       "heroTitle": "Ontdek onze <highlight>Uitgebreide Tours</highlight>",
       "heroSubtitle": "Sluit je aan bij ons voor onvergetelijke fietstours door het hart van Parijs. Verken iconische bezienswaardigheden, ontdek verborgen juwelen en ervaar de stad als een echte Parijzenaar met onze ervaren lokale gidsen.",
       "perPerson": "per persoon",
+      "availableLanguages": "Beschikbaar in:",
+      "languages": {
+        "french": "Frans",
+        "english": "Engels",
+        "german": "Duits"
+      },
       "tourHighlights": "Tour Hoogtepunten",
       "practicalInfo": "Praktische Informatie",
       "startingPoint": "Startpunt",

@@ -66,6 +66,12 @@ export default function ToursPage(): JSX.Element {
                       {t.page.perPerson}
                     </span>
                   </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>{t.page.availableLanguages}</span>
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
+                  </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
@@ -243,6 +249,12 @@ export default function ToursPage(): JSX.Element {
                       {t.page.perPerson}
                     </span>
                   </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>{t.page.availableLanguages}</span>
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
+                  </div>
                 </div>
 
                 <p className="text-lg leading-8 text-muted-foreground">
@@ -416,6 +428,12 @@ export default function ToursPage(): JSX.Element {
                     <span className="text-3xl font-bold text-primary">
                       {t["3"].price}
                     </span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span>{t.page.availableLanguages}</span>
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
                   </div>
                 </div>
 

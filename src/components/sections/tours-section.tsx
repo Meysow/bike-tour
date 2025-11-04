@@ -85,6 +85,11 @@ export function ToursSection(): JSX.Element {
                   <CardTitle className="font-urbanist text-2xl tracking-wide mt-2">
                     <Balancer>{content.subtitle}</Balancer>
                   </CardTitle>
+                  <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
+                    <span className="text-base">🇫🇷</span>
+                    <span className="text-base">🇬🇧</span>
+                    <span className="text-base">🇩🇪</span>
+                  </div>
                 </CardHeader>
 
                 <CardContent className="flex flex-1 flex-col justify-between text-sm lg:text-base">

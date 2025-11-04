@@ -6,18 +6,24 @@
     "about": "À Propos"
   },
   "hero": {
-    "title": "Découvrez <highlight>Paris</highlight> Comme un Vrai Parisien",
-    "subtitle": "Préparez-vous pour une <highlight>aventure inoubliable</highlight> à travers la Ville Lumière ! Explorez les monuments emblématiques et les trésors cachés tout en découvrant la liberté de rouler comme un local. Que vous soyez là pour quelques heures ou toute une semaine, nous avons l'expérience parfaite pour vous !",
+    "title": "<highlight>Visite guidées & Location</highlight> de vélos à paris",
+    "subtitle": "Bienvenue chez <highlight>Rentabike Paris</highlight>, votre partenaire local pour explorer la capitale à vélo ! Que vous souhaitiez louer un vélo ou participer à une visite guidée, nous vous accompagnons pour vivre une expérience unique au cœur de la Ville Lumière. Sécurité, confort et plaisir sont nos maîtres mots.",
     "ctaTours": "Réservez Votre Tour !",
     "ctaRent": "Louez Votre Vélo !"
   },
   "tours": {
-    "title": "Découvrez Nos <highlight>Visites à Vélo Incroyables</highlight>",
-    "subtitle": "Préparez-vous pour une <highlight>aventure incroyable</highlight> dans les rues de Paris ! Avec mon expertise locale et ma passion pour le vélo, nous créerons ensemble des souvenirs inoubliables. Chaque visite est soigneusement conçue pour vous offrir le mélange parfait entre amusement, découverte et expériences parisiennes authentiques !",
+    "title": "Nos <highlight>Visites Guidées à Vélo</highlight>",
+    "subtitle": "Visiter Paris à vélo, c'est bien. Avec nos guides, c'est encore mieux ! Un mélange d'expertise locale et de bonne humeur pour des balades inoubliables. Nous sommes impatients de vous partager notre beau Paris ! 💫",
     "page": {
       "heroTitle": "Découvrez nos <highlight>Visites Complètes</highlight>",
-      "heroSubtitle": "Rejoignez-nous pour des visites à vélo inoubliables au cœur de Paris. Explorez les monuments emblématiques, découvrez des joyaux cachés et vivez la ville comme un vrai Parisien avec nos guides locaux experts.",
+      "heroSubtitle": "Participez à nos visites guidées et explorez les monuments emblématiques et les trésors cachés avec nos guides experts. Une expérience authentique et mémorable pour tous.",
       "perPerson": "par personne",
+      "availableLanguages": "Disponible en:",
+      "languages": {
+        "french": "Français",
+        "english": "Anglais",
+        "german": "Allemand"
+      },
       "tourHighlights": "Points Forts de la Visite",
       "practicalInfo": "Informations Pratiques",
       "startingPoint": "Point de Départ",
@@ -113,10 +119,10 @@
   },
   "rent": {
     "title": "Découvrez Paris avec nos <highlight>Vélos de Qualité</highlight>",
-    "subtitle": "Choisissez parmi notre flotte soigneusement sélectionnée de <highlight>vélos de qualité</highlight>, chacun prêt à vous offrir l'expérience cycliste parfaite !",
+    "subtitle": "Explorez Paris comme un local grâce à nos options de location de vélos flexibles et adaptées à tous.",
     "page": {
       "heroTitle": "Louez nos <highlight>Super Vélos</highlight>",
-      "heroSubtitle": "Choisissez parmi notre large gamme de vélos, parfaits pour explorer Paris à votre rythme. Sélectionnez le vélo qui correspond à votre style et prenez la route avec confort et facilité.",
+      "heroSubtitle": "Découvrez la liberté d'explorer Paris à votre rythme avec notre flotte soigneusement sélectionnée. Matériel haut de gamme et sécurisé, prêt à vous offrir une expérience cycliste parfaite.",
       "perDay": "/ jour",
       "discountNote": "10% de réduction appliquée pour les locations de 4 jours ou plus !",
       "accessoriesTitle": "Complétez votre balade avec des <highlight>accessoires</highlight>",
@@ -128,8 +134,7 @@
       "step2Description": "Récupérez votre vélo dans notre boutique. Nous vous fournirons un briefing de sécurité et l'ajustement du casque.",
       "step3Title": "Rendre & Profiter",
       "step3Description": "Rendez votre vélo à la fin de votre location. Partagez votre aventure parisienne avec nous !",
-      "readyExplore": "Prêt à explorer Paris sur deux roues ?",
-      "readyDescription": "Réservez votre location de vélo dès aujourd'hui et découvrez Paris à votre rythme. Vélos de qualité, prix imbattables et souvenirs inoubliables vous attendent !",
+      "readyExplore": "Réservez votre location de vélo dès aujourd'hui et découvrez Paris à votre rythme.",
       "bookBikeNow": "Réserver un Vélo Maintenant",
       "contactUs": "Nous Contacter",
       "pickupLocationTitle": "Lieu de <highlight>Retrait</highlight>"
@@ -174,8 +179,14 @@
     "ctaRentNow": "Louer Maintenant"
   },
   "accessories": {
-    "title": "Améliorez votre balade avec nos <highlight>Accessoires</highlight>",
-    "subtitle": "Découvrez notre sélection d'accessoires conçus pour rendre votre voyage plus confortable, <highlight>sûr</highlight> et agréable. Que vous ayez besoin de casques, paniers, sièges enfants ou supports téléphone, nous avons les extras dont vous avez besoin pour compléter votre balade parfaite à travers Paris.",
+    "title": "❤️ Pourquoi choisir Rentabike Paris ?",
+    "subtitle": "Améliorez votre balade avec nos <highlight>accessoires</highlight> et profitez pleinement de votre expérience à vélo à Paris :",
+    "features": [
+      "Équipe locale et multilingue (français, anglais, allemand)",
+      "Groupes à taille humaine pour une ambiance fun et conviviale",
+      "Matériel haut de gamme et sécurisé (par Swapfiets)",
+      "Des expériences authentiques pour voir Paris autrement"
+    ],
     "helmet": {
       "title": "Casque",
       "description": "La sécurité avant tout ! Nos casques confortables et durables sont disponibles en différentes tailles et designs pour assurer un ajustement parfait et une protection optimale pendant votre balade.",
@@ -220,8 +231,8 @@
     "viewOnGoogle": "Voir sur Google"
   },
   "instagram": {
-    "title": "Suivez nos <highlight>Aventures</highlight>",
-    "subtitle": "Découvrez les plus beaux moments de nos visites à vélo à travers Paris et rejoignez notre communauté de <highlight>cyclistes</highlight>."
+    "title": "Ils parlent de <highlight>Rentabike</highlight>",
+    "subtitle": "Découvrez les moments partagés par notre communauté de cyclistes satisfaits et suivez nos aventures sur Instagram."
   },
   "partners": {
     "title": "Rencontrez nos <highlight>Partenaires Extraordinaires</highlight>",

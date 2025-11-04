@@ -18,6 +18,12 @@
       "heroTitle": "Descubre nuestros <highlight>Tours Completos</highlight>",
       "heroSubtitle": "Únete a nosotros en tours en bicicleta inolvidables por el corazón de París. Explora monumentos icónicos, descubre joyas ocultas y vive la ciudad como un verdadero parisino con nuestros guías locales expertos.",
       "perPerson": "por persona",
+      "availableLanguages": "Disponible en:",
+      "languages": {
+        "french": "Francés",
+        "english": "Inglés",
+        "german": "Alemán"
+      },
       "tourHighlights": "Destacados del Tour",
       "practicalInfo": "Información Práctica",
       "startingPoint": "Punto de Partida",
