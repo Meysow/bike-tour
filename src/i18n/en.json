@@ -18,6 +18,12 @@
       "heroTitle": "Discover our <highlight>Wholesome Tours</highlight>",
       "heroSubtitle": "Join us on unforgettable bike tours through the heart of Paris. Explore iconic landmarks, discover hidden gems, and experience the city like a true Parisian with our expert local guides.",
       "perPerson": "per person",
+      "availableLanguages": "Available in:",
+      "languages": {
+        "french": "French",
+        "english": "English",
+        "german": "German"
+      },
       "tourHighlights": "Tour Highlights",
       "practicalInfo": "Practical Info",
       "startingPoint": "Starting Point",

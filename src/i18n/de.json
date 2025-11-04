@@ -18,6 +18,12 @@
       "heroTitle": "Entdecken Sie unsere <highlight>Umfassenden Touren</highlight>",
       "heroSubtitle": "Begleiten Sie uns auf unvergessliche Fahrradtouren durch das Herz von Paris. Erkunden Sie ikonische Wahrzeichen, entdecken Sie versteckte Schätze und erleben Sie die Stadt wie ein echter Pariser mit unseren erfahrenen lokalen Führern.",
       "perPerson": "pro Person",
+      "availableLanguages": "Verfügbar in:",
+      "languages": {
+        "french": "Französisch",
+        "english": "Englisch",
+        "german": "Deutsch"
+      },
       "tourHighlights": "Tour-Höhepunkte",
       "practicalInfo": "Praktische Informationen",
       "startingPoint": "Startpunkt",

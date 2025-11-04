@@ -18,6 +18,12 @@
       "heroTitle": "Découvrez nos <highlight>Visites Complètes</highlight>",
       "heroSubtitle": "Participez à nos visites guidées et explorez les monuments emblématiques et les trésors cachés avec nos guides experts. Une expérience authentique et mémorable pour tous.",
       "perPerson": "par personne",
+      "availableLanguages": "Disponible en:",
+      "languages": {
+        "french": "Français",
+        "english": "Anglais",
+        "german": "Allemand"
+      },
       "tourHighlights": "Points Forts de la Visite",
       "practicalInfo": "Informations Pratiques",
       "startingPoint": "Point de Départ",
