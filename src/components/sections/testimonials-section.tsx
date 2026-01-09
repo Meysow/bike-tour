@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { testimonials } from "@/data/testimonials";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
-import { HighlightText } from "@/lib/utils/highlight";
+// import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { Testimonial } from "@/types";
 import Image from "next/image";
@@ -158,7 +158,7 @@ export function TestimonialsSection() {
             <GoogleReviewWidget />
           </div>
         </div>
-        
+
       </div>
     </section>
   );
