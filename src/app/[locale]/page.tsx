@@ -26,10 +26,10 @@ export default function HomePage(): JSX.Element {
         <HeroSection />
         <ToursSection />
         <RentPricingSection />
-        <AccessoriesSection />
-        <TestimonialsSection />
+        {/* <AccessoriesSection /> */}
         <InstagramCarousel />
-        <PartnersSection />
+        <TestimonialsSection />
+        {/* <PartnersSection /> */}
         <ContactSection />
         <LocationMapSection />
       </div>

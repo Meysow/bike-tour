@@ -116,7 +116,7 @@ export async function POST(request: Request) {
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: `RentaBikeParis Contact Form <contact@rentabikeparis.fr>`, // TODO:Replace with your verified domain
+      from: `RentaBikeParis Contact Form <contact@rentabikeparis.com>`, // TODO:Replace with your verified domain
       to: [siteConfig.company.email],
       replyTo: formData.email,
       subject: `New Contact Form: ${formData.subject}`,

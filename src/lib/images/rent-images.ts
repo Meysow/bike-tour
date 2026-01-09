@@ -1,6 +1,6 @@
-import deluxe7Image from "../../../public/images/bikes/deluxe7.webp";
-import childrenBikeImage from "../../../public/images/bikes/ebike.webp";
-import ebikeImage from "../../../public/images/bikes/ebike2.webp";
+import deluxe7Image from "../../../public/images/bikes/velo-rentabikeparis-deluxe.png";
+import childrenBikeImage from "../../../public/images/bikes/velo-rentabikeparis-enfant.png";
+import ebikeImage from "../../../public/images/bikes/velo-rentabikeparis-electrique.png";
 
 export const rentImages = {
   deluxe7: deluxe7Image,

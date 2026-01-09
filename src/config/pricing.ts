@@ -5,15 +5,15 @@
 
 export const BIKE_PRICING = {
   deluxe7: {
-    dailyRate: 15,
+    dailyRate: 20,
     name: "Deluxe 7 - Normal Bike",
   },
   ebike: {
-    dailyRate: 30,
+    dailyRate: 40,
     name: "Electric Bike - Power 1",
   },
   children: {
-    dailyRate: 15,
+    dailyRate: 20,
     name: 'Children\'s Bike 20" or 24"',
   },
 } as const;

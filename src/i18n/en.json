@@ -6,14 +6,14 @@
     "about": "About Us"
   },
   "hero": {
-    "title": "Discover <highlight>Paris</highlight> Like a True Parisian",
-    "subtitle": "Get ready for an <highlight>unforgettable adventure</highlight> through the City of Light! Explore iconic landmarks and hidden gems while experiencing the freedom of cycling like a local. Whether you're here for a few hours or a whole week, we've got the perfect experience for you!",
+    "title": "Discover <highlight>Paris</highlight> By Bike",
+    "subtitle": "Welcome to <highlight>Rentabike Paris</highlight> your local partner to explore Paris by bike. You deserve to experience hte freedom of <highlight>cycling like a local!</highlight> Choose whether you prefer to join one of our guided bike tours or cycle on your own path.",
     "ctaTours": "Book Your Tour!",
     "ctaRent": "Rent Your Bike!"
   },
   "tours": {
-    "title": "Discover Our <highlight>Amazing Bike Tours</highlight>",
-    "subtitle": "Get ready for an <highlight>incredible adventure</highlight> through the streets of Paris! With my local expertise and passion for cycling, we'll create unforgettable memories together. Each tour is carefully crafted to give you the perfect blend of fun, discovery, and authentic Parisian experiences!",
+    "title": "Discover Our <highlight>City Bike Tours</highlight>",
+    "subtitle": "Avec nos visites guidées de Paris à vélo, la découverte de la capitale devient un jeu d'enfant ! Du Marais au quartier Latin, le long de la Seine ou du canal Saint-Martin, vous découvrirez Paris autrement entre monuments et coins secrets. Uun mélange entre expertise locale et bonne humeur. Nous sommes impatient de vous partager notre beau Paris.",
     "page": {
       "heroTitle": "Discover our <highlight>Wholesome Tours</highlight>",
       "heroSubtitle": "Join us on unforgettable bike tours through the heart of Paris. Explore iconic landmarks, discover hidden gems, and experience the city like a true Parisian with our expert local guides.",
@@ -118,10 +118,10 @@
     }
   },
   "rent": {
-    "title": "Experience Paris with <highlight>Quality Bikes</highlight>",
-    "subtitle": "Choose from our carefully selected fleet of <highlight>quality bikes</highlight>, each one ready to provide you with the perfect cycling experience!",
+    "title": "Rent a Bike <highlight>in Paris</highlight>",
+    "subtitle": "Our bikes are not only <highlight>cool and stylish</highlight> but also of <highlight>high quality</highlight>, featuring a variety of colors and signed with their iconic blue tires. #Swapfiets",
     "page": {
-      "heroTitle": "Rent our <highlight>Awesome Bikes</highlight>",
+      "heroTitle": "Bike Rental <highlight>in Paris</highlight>",
       "heroSubtitle": "Choose from our wide range of bikes, perfect for exploring Paris at your own pace. Select the bike that suits your style and hit the road with comfort and ease.",
       "perDay": "/ day",
       "discountNote": "10% discount applied for rentals of 4 or more days!",
@@ -145,37 +145,37 @@
       "longTerm": "4 Days and more (save 10%)"
     },
     "deluxe7": {
-      "name": "Deluxe 7 - Normal Bike",
+      "name": "Pedal Bike - Deluxe 7",
       "description": "A comfortable and reliable city bike, ideal for exploring Paris at your own pace with seven smooth gears.",
       "image": "deluxe7",
       "features": [
-        "7-speed gear system",
+        "7-speed gear",
         "Comfortable saddle for long rides",
         "Robust city-friendly design"
       ],
       "limitations": ["No electric assistance"]
     },
     "ebike": {
-      "name": "Electric Bike - Power 1",
+      "name": "Electric Bike⚡- Power 1",
       "description": "Discover Paris effortlessly with pedal-assist technology. Perfect for longer distances and hilly routes.",
       "image": "ebike",
       "features": [
         "Electric pedal-assist",
-        "Battery range of up to 50 miles",
+        "Battery range of up to 30 miles",
         "Easy-to-use throttle control"
       ],
       "limitations": ["Higher weight due to battery"]
     },
     "children": {
-      "name": "Children's Bike 20\" or 24\"",
-      "description": "Safe and sturdy, ideal for young riders aged 6-9. Perfect for family outings and city park rides. Size 20\" or 24\"",
+      "name": "Kid's Bike 20\" or 24\"",
+      "description": "Our kids bike are ideal for young riders to get on a ride with the whole family.",
       "image": "children",
       "features": [
-        "20-inch wheels for stable riding",
-        "Easy-grip handlebars",
-        "Lightweight frame"
+        "From 6 to 14 years old (120 to 150cm)",
+        "Easy to handle",
+        "6-speed gear"
       ],
-      "limitations": ["Not suitable for children under 6"]
+      "limitations": ["Not suitable for children under 120cm"]
     },
     "ctaRentNow": "Rent Now"
   },

@@ -32,7 +32,7 @@ export const siteConfig = {
     location: "20 rue Greneta, 75002 Paris",
     phone: "+33 6 95 96 47 47",
     whatsapp: "+33695964747", // Format international sans espaces pour WhatsApp
-    email: "contact@rentabikeparis.fr",
+    email: "contact@rentabikeparis.com",
     website: "https://rentabikeparis.fr/",
   },
   // Hosting information
