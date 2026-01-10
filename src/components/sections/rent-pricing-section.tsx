@@ -30,7 +30,7 @@ export function RentPricingSection(): JSX.Element {
   const [isMultiDay, setIsMultiDay] = React.useState(false); // toggle for single or multi-day view
 
   // Simple array of bike IDs
-  const bikeIds = ["deluxe7", "ebike", "children"] as const;
+  const bikeIds = ["children", "deluxe7", "ebike", ] as const;
 
   const calculatePrice = (dailyRate: number, isFourDaysOrMore: boolean) => {
     return isFourDaysOrMore ? dailyRate * 0.9 : dailyRate; // Apply a 10% discount for 4-day rentals

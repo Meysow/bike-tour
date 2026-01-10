@@ -1,11 +1,11 @@
 import { Footer } from "@/components/nav/footer";
 import { Header } from "@/components/nav/header";
-import { AccessoriesSection } from "@/components/sections/accessories-section";
+// import { AccessoriesSection } from "@/components/sections/accessories-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { InstagramCarousel } from "@/components/sections/instagram-carousel";
 import { LocationMapSection } from "@/components/sections/location-map-section";
-import { PartnersSection } from "@/components/sections/partners-section";
+// import { PartnersSection } from "@/components/sections/partners-section";
 import { RentPricingSection } from "@/components/sections/rent-pricing-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { ToursSection } from "@/components/sections/tours-section";
@@ -26,10 +26,10 @@ export default function HomePage(): JSX.Element {
         <HeroSection />
         <ToursSection />
         <RentPricingSection />
-        <AccessoriesSection />
-        <TestimonialsSection />
+        {/* <AccessoriesSection /> */}
         <InstagramCarousel />
-        <PartnersSection />
+        <TestimonialsSection />
+        {/* <PartnersSection /> */}
         <ContactSection />
         <LocationMapSection />
       </div>

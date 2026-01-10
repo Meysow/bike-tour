@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { testimonials } from "@/data/testimonials";
 import { useLocalizedRoutes } from "@/hooks/use-localized-routes";
-import { HighlightText } from "@/lib/utils/highlight";
+// import { HighlightText } from "@/lib/utils/highlight";
 import { getSectionTranslations } from "@/lib/utils/i18n-loader";
 import { Testimonial } from "@/types";
 import Image from "next/image";
@@ -109,8 +109,9 @@ export function TestimonialsSection() {
       className="w-full"
     >
       <div className="container mx-auto text-center">
+
         {/* Title and Subtitle */}
-        <div className="flex flex-col items-center gap-4 mb-8">
+        {/* <div className="flex flex-col items-center gap-4 mb-8">
           <h2 className="font-urbanist text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             <HighlightText gradient={true}>{t.title}</HighlightText>
           </h2>
@@ -119,14 +120,7 @@ export function TestimonialsSection() {
               {t.subtitle}
             </HighlightText>
           </h3>
-        </div>
-
-        {/* Google Review Widget */}
-        <div className="flex justify-center mb-8">
-          <div className="w-full max-w-md">
-            <GoogleReviewWidget />
-          </div>
-        </div>
+        </div> */}
 
         {/* Carousel */}
         <Carousel
@@ -157,6 +151,14 @@ export function TestimonialsSection() {
           <CarouselPrevious className="left-4" />
           <CarouselNext className="right-4" />
         </Carousel>
+
+                {/* Google Review Widget */}
+                <div className="flex justify-center mb-8">
+          <div className="w-full max-w-md">
+            <GoogleReviewWidget />
+          </div>
+        </div>
+
       </div>
     </section>
   );

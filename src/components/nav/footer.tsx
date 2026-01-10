@@ -30,9 +30,7 @@ export function Footer(): JSX.Element {
               className="h-28 w-auto md:h-36 lg:h-48 flex-shrink-0 -mt-3 object-contain"
             />
             <p className="max-w-md mx-auto  sm:text-left text-muted-foreground">
-              Discover Paris on two wheels! Our bike rental and guided tours
-              offer an unforgettable way to see the city, tailored to all
-              experience levels.
+              Ride on! &quot;let the winds of adventure carry you&quot;
             </p>
           </div>
 
